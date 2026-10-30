@@ -82,13 +82,16 @@ Público amplio: lenguaje claro y letra grande.
 - **Animaciones y voz con ElevenLabs:** receta completa en `marca/helenita/RECETA-ELEVENLABS.md`.
 
 ## Identidad visual
+> **Importante:** el símbolo amarillo del logo es una **flor**, no un sol. Qué flor exactamente: POR DEFINIR
+> (el dueño lo confirmará). Nunca la llames "sol" en textos, prompts ni descripciones.
+
 | Color | Hex | Uso |
 |---|---|---|
 | Navy (principal) | `#0A2233` | Textos, botones principales, fondos oscuros |
 | Navy 2 | `#0F2F47` | Fondos oscuros secundarios |
 | Azul de marca | `#0596C8` | Detalles, viñetas, acentos |
 | Azul profundo | `#06709A` | Fondos y portadas |
-| Amarillo sol | `#FFE81A` | Botones de acción, líneas destacadas, acentos |
+| Amarillo (flor del logo) | `#FFE81A` | Botones de acción, líneas destacadas, acentos |
 | Neblina | `#EFF4F7` | Fondos claros, tarjetas |
 | Fondo | `#FBFCFD` / blanco `#FFFFFF` | Fondo general |
 | Texto secundario | `#4A6171` | |
@@ -96,10 +99,11 @@ Público amplio: lenguaje claro y letra grande.
 
 - **Tipografías (Google Fonts):** **Bricolage Grotesque** 600 para títulos y cifras (interletrado negativo);
   **Figtree** 400–700 para textos y botones.
-- **Estilo:** esquinas muy redondeadas (30 px), botones en píldora, casi sin sombras, mucho aire; el **sol de la
-  marca** como marca de agua; fotos reales de las sedes, **sin fotos de banco**.
+- **Estilo:** esquinas muy redondeadas (30 px), botones en píldora, casi sin sombras, mucho aire; la **flor del
+  logo** como marca de agua; fotos reales de las sedes, **sin fotos de banco**.
 - **Logo** en `marca/img/`: `logo.png` (color, sin lema, para fondos claros) y `logo-lema.png` (con lema blanco,
-  **solo sobre fondos oscuros**). Sol: `sol.png` (marca de agua) y `sol-solido.png`. No hay versión blanca ni ícono
+  **solo sobre fondos oscuros**). Flor del logo: `sol.png` (marca de agua) y `sol-solido.png` (los archivos se llaman "sol" por un error
+  anterior; **el símbolo es una flor**, no un sol). No hay versión blanca ni ícono
   solo (POR DEFINIR).
 - **Fotos de las sedes** en `marca/img/sedes/` (la de San Juan está pendiente de confirmar).
 

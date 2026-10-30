@@ -12,7 +12,7 @@ dueño sigue necesitándolo, y si JARVIS y el dueño difieren, manda el dueño.
 1. Tu rol está en `agentes/<tu-rol>.md`. Léelo al empezar la sesión y actúa siempre según él.
 2. Lee también `marca/marca.md` (identidad, tono, servicios) y `equipo.md` (quién hace qué). Para datos
    exactos (textos de la web, servicios por sede) consulta `marca/contexto-completo.md`.
-   Imágenes de marca (logo, sol, Helenita, sedes) en `marca/img/`. Recetas de animación y voz de Helenita con
+   Imágenes de marca (logo, flor del logo, Helenita, sedes) en `marca/img/`. Recetas de animación y voz de Helenita con
    ElevenLabs en `marca/helenita/RECETA-ELEVENLABS.md`.
 3. Si te piden algo que corresponde a otro agente, dilo en una línea y sugiere a cuál pasárselo.
    Si es pequeño y cercano a tu rol, puedes hacerlo.
@@ -31,6 +31,27 @@ dueño sigue necesitándolo, y si JARVIS y el dueño difieren, manda el dueño.
   inventes cifras, certificaciones ni servicios que la IPS no tenga habilitados. Ante la duda, marca la afirmación
   como "por validar con el área médica".
 - **Datos de la IPS:** usa solo lo que está en `marca/marca.md` o lo que el dueño te diga. Lo que falte, pregúntalo.
+
+## Trabajar con referencias (posts o videos de otros)
+Cuando el dueño envíe un post, carrusel, historia o video como referencia para hacer "algo igual pero con
+nuestro estilo":
+1. **Analiza la referencia** y resúmela en pocas líneas: formato y tamaño, estructura (láminas o escenas en
+   orden), jerarquía del texto, composición, ritmo y duración, transiciones, tipo de gancho y llamado a la
+   acción. En videos, extrae cuadros con `ffmpeg` (por ejemplo uno por segundo o una hoja de contacto) y, si
+   tiene voz, transcríbela para entender el guion.
+2. **Adapta, no copies:** toma la idea, la estructura y el ritmo, pero usa los colores, tipografías, logo,
+   Helenita, fotos y tono de usted de `marca/`. Nunca reutilices imágenes, videos, música, logos, personajes ni
+   textos de la referencia (son de otra marca y tienen derechos), ni imites a otra IPS al punto de confundirse
+   con ella.
+3. **Guarda la referencia** (si es un archivo) en `referencias/AAAA-MM-DD-nombre/` junto con tu análisis
+   (`analisis.md`), para que otros agentes puedan reutilizarla. No guardes referencias que muestren pacientes
+   identificables.
+4. Entrega mostrando la referencia y tu versión lado a lado cuando sea posible.
+
+**Cómo llegan las referencias:** lo más fácil es una **captura de pantalla** o el **archivo descargado**
+(imagen o video) adjunto en el chat. Los enlaces de Instagram, TikTok o Facebook casi nunca se pueden abrir
+desde la nube (piden iniciar sesión); si el dueño manda solo un enlace y no puedes verlo, pídele la captura o el
+video descargado. También sirven enlaces directos públicos o Google Drive, si está conectado.
 
 ## Dónde guardar el trabajo
 - Cada entrega va en `entregas/<tu-rol>/AAAA-MM-DD-nombre-corto.<ext>` (Markdown para textos; PNG/JPG/MP4/HTML
