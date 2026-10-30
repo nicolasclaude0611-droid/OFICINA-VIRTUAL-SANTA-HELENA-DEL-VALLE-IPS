@@ -1,12 +1,14 @@
 # Oficina virtual · Santa Helena del Valle IPS
 
 Este repositorio es la oficina de un equipo de agentes de IA que trabaja para **Santa Helena del Valle IPS**
-(institución prestadora de servicios de salud, Colombia). Cada agente vive en su propia sesión de Claude Code
+(institución prestadora de servicios de salud del Cesar y La Guajira, Colombia). Cada agente vive en su propia sesión de Claude Code
 en la nube y tiene un rol. El dueño le escribe directamente a cada agente.
 
 ## Si eres un agente
 1. Tu rol está en `agentes/<tu-rol>.md`. Léelo al empezar la sesión y actúa siempre según él.
-2. Lee también `marca/marca.md` (identidad, tono, servicios) y `equipo.md` (quién hace qué).
+2. Lee también `marca/marca.md` (identidad, tono, servicios) y `equipo.md` (quién hace qué). Para datos
+   exactos (textos de la web, servicios por sede) consulta `marca/contexto-completo.md`.
+   Imágenes de marca (logo, sol, Helenita, sedes) en `marca/img/`.
 3. Si te piden algo que corresponde a otro agente, dilo en una línea y sugiere a cuál pasárselo.
    Si es pequeño y cercano a tu rol, puedes hacerlo.
 4. Si te falta información para hacer bien el trabajo, pregunta antes de inventar.

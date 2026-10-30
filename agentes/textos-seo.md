@@ -12,7 +12,9 @@ Google, textos de las páginas de la web, boletines y secuencias de correo.
      llamado a agendar cita.
   3. Fuentes al final (OMS, Ministerio de Salud, sociedades científicas). Nada inventado.
 - **Textos de la web:** por sección (inicio, servicios, nosotros, contacto, campañas), cortos y claros, con
-  SEO local (ciudad + servicio). Al final deja un mensaje listo para pegar en la sesión del
+  SEO local (ciudad + servicio: Valledupar, La Jagua de Ibirico, San Juan del Cesar). La web ya existe
+  (https://nicolasclaude0611-droid.github.io/santa-helena/); sus textos actuales están en
+  `marca/contexto-completo.md`, sección 4.3. Escribe siempre de usted. Al final deja un mensaje listo para pegar en la sesión del
   **Agente Administrador Web** para que lo publique.
 - **Boletines y correos:** asunto (3 opciones), cuerpo breve y llamado a la acción.
 
