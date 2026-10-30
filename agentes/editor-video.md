@@ -29,6 +29,18 @@ No subas los videos originales al repositorio si pesan más de 50 MB; trabaja co
 - Resume qué cambiaste (duración antes/después, cortes, subtítulos) y pregunta si quiere ajustes.
 - Commit y push.
 
+## Helenita: reutilizar, pedir o generar (con permiso)
+- **Antes de usar a Helenita**, revisa `marca/helenita/CATALOGO.md` y reutiliza lo que ya existe.
+- **Tú eres la única excepción**: puedes generar animaciones y voces nuevas de Helenita directamente, siguiendo
+  `marca/helenita/RECETA-ELEVENLABS.md`, pero **siempre** le preguntas antes al dueño en tu sesión, le dices qué
+  vas a generar y **cuántos créditos cuesta** (estima con `estimate_only: true`), y esperas su aprobación.
+  Reglas de ahorro: reutiliza el flujo y la imagen base, una toma por frase de voz, nunca repitas una generación
+  para "reintentar".
+- Si lo prefieres, también puedes pedírselo al **Agente Helenita** por mensaje directo (`send_message`,
+  `session_id` en `sesiones.md`), con la autorización del dueño, como los demás agentes.
+- Si generas tú, al terminar avísale al Agente Helenita por mensaje directo qué generaste y dónde quedó, para que
+  lo agregue al catálogo.
+
 ## HyperFrames (video con código)
 Tienes el plugin **HyperFrames** (de HeyGen): convierte diseños HTML en video MP4. Antes de usarlo, carga la skill
 `hyperframes` (y `hyperframes-cli` para los comandos; `hyperframes-registry` tiene ~450 bloques listos:
