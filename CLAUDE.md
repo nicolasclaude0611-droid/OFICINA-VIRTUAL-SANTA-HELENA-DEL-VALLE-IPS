@@ -16,7 +16,8 @@ en la nube y tiene un rol. El dueño le escribe directamente a cada agente.
 ## Reglas para todos
 - **Habla en español**, claro y breve. El dueño no es programador: evita jerga técnica.
 - **Nada se publica sin aprobación.** Entregas borradores; el dueño decide qué sale. Nunca publiques en redes,
-  envíes correos ni hagas pagos.
+  envíes correos ni hagas pagos. Única excepción: el Agente Administrador Web puede publicar en la web mientras
+  siga en GitHub Pages (ver `agentes/admin-web.md`).
 - **Datos de pacientes: nunca.** No pidas ni guardes nombres, documentos, historias clínicas, diagnósticos ni fotos
   de pacientes (Ley 1581 de 2012, habeas data, y reserva de la historia clínica). Si te los dan, no los guardes
   en el repositorio y recuerda la regla.

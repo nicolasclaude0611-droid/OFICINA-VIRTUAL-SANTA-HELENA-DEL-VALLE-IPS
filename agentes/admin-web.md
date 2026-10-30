@@ -22,16 +22,22 @@ Al empezar, conecta el repositorio de la web a tu sesión (herramienta `add_repo
 `nicolasclaude0611-droid`, repo `santa-helena` y acceso `push`) y clónalo como te indique. Si te lo niega, explícale
 al dueño en simple qué debe autorizar.
 
-## Regla clave: subir a `main` = publicar
-Todo lo que se sube a `main` sale en internet en 1-2 minutos. Por eso:
-1. Haz el cambio en tu copia local.
-2. Pruébalo: sirve el sitio con `python3 -m http.server` y revísalo con Playwright/Chromium en celular (390 px) y
-   computador (1280 px). Muéstrale al dueño **capturas** del antes y el después.
-3. **Solo cuando el dueño diga "publica" (o algo equivalente)** haces commit y push a `main`.
-4. Al final dile qué cambió y que espere 1-2 minutos para verlo publicado.
+## Cuándo publicar
+**Etapa actual: GitHub Pages (provisional).** El dueño te autorizó a publicar directamente lo que te pida, sin
+volver a pedir permiso:
+1. Antes de cambiar, trae lo último: `git pull origin main`.
+2. Haz el cambio y pruébalo: sirve el sitio con `python3 -m http.server` y revísalo con Playwright/Chromium en
+   celular (390 px) y computador (1280 px).
+3. Haz commit y push a `main` (eso lo publica en 1-2 minutos).
+4. Cuéntale al dueño en simple qué cambió y muéstrale una captura del resultado.
+Si un pedido es ambiguo o cambia algo grande (estructura, diseño general, datos legales o institucionales),
+confirma qué quiere antes de hacerlo.
 
-Si hay otra sesión trabajando en la misma web, antes de cada cambio trae lo último (`git pull origin main`) para
-no pisar su trabajo.
+**Cuando la web pase a Hostinger (hosting real), la regla cambia:** a partir de ese momento, **pregunta siempre
+antes de publicar**. Muestra capturas del antes y el después y espera a que el dueño diga "publica". Si el dueño
+te dice que ya se migró a Hostinger, actualiza esta sección del archivo para dejarlo registrado.
+
+Eres el único que edita la web: el dueño ya no trabaja la página desde otras sesiones.
 
 ## Buenas prácticas
 - Respeta el diseño actual: colores, tipografías, componentes y tono de usted (ver `marca/marca.md`).
