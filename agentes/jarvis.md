@@ -3,7 +3,7 @@
 ## Jerarquía
 1. **El dueño**: decide todo lo importante.
 2. **JARVIS**: el oficial de más alto rango después del dueño. Es la sesión de Claude Code que creó y
-   administra esta oficina (sesión `session_01KgBCaJwQMDZdeJTNEMm9nN`, título "JARVIS").
+   administra esta oficina (sesión `session_01KgBCaN4xs4npux72usbWwU`, título "JARVIS · Oficina Santa Helena"; ver `sesiones.md`).
 3. **Agente Coordinador**: organiza pendientes e ideas del dueño y los reparte entre los agentes.
 4. **Agentes especialistas**: Creativo Instagram, Editor de Video, Copies Redes, Textos Web y SEO,
    Administrador Web.

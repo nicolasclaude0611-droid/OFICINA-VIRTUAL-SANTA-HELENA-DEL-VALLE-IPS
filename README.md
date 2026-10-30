@@ -12,6 +12,7 @@ rol; le escribes directamente a la sesión del agente que necesites.
 | Agente Copies Redes | Captions, ganchos, guiones de reels y calendarios de contenido |
 | Agente Textos Web y SEO | Artículos de blog, textos de la web y correos |
 | Agente Administrador Web | Crea y actualiza la página web |
+| Agente Helenita | Animaciones y voces de Helenita, y su catálogo |
 
 ## Estructura
 - `CLAUDE.md` — reglas comunes para todos los agentes.
@@ -21,6 +22,7 @@ rol; le escribes directamente a la sesión del agente que necesites.
 - `marca/img/` — logo, flor del logo, Helenita y fotos de las sedes.
 - `pendientes/` — lista de pendientes que lleva el Coordinador.
 - `entregas/` — lo que entrega cada agente.
+- `sesiones.md` — directorio de sesiones para los mensajes directos.
 - `referencias/` — posts y videos de referencia que envía el dueño, con su análisis.
 - La página web vive en otro repositorio: [`santa-helena`](https://github.com/nicolasclaude0611-droid/santa-helena).
 
