@@ -10,7 +10,9 @@ Estado: **borrador para aprobación del dueño**. No se ha publicado nada.
 Notas de diseño
 - Helenita: se usaron cuadros de sus animaciones ya hechas (saludar, hablar, pensar, señalar, pulgar),
   porque los PNG de `marca/img/helenita/` son todos la misma pose quieta. Sin costo de créditos.
-- El círculo «50 años» de la lámina 3 solo repite el dato del texto aprobado.
+- Versión 2 (correcciones del dueño): lámina 3 con «50 años» grande en amarillo; lámina 4 con Helenita señalando la mitad
+  de la lista y la nota centrada debajo; lámina 5 con «En nuestras tres sedes» abajo, centrado y más grande;
+  textos mejor alineados en todas.
 - Lámina 5 usa las fotos reales de las tres sedes.
 - Amarillo solo en el botón de WhatsApp, la palabra «WhatsApp» y los puntos de avance.
 

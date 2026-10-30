@@ -52,14 +52,17 @@ h2{font-size:76px}
   </defs>
 </svg>
 
+<style>
+.col{position:absolute;left:64px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+</style>
 <!-- 1 PORTADA -->
 <section class="slide dark" id="l1">
   <img class="flor" src="img/sol.png" style="right:-160px;top:-180px">
   <img class="logo" src="img/logo-lema.png" style="left:64px;top:56px;width:250px">
-  <svg class="liston" style="left:64px;top:250px;width:70px;height:105px"><use href="#liston"/></svg>
-  <div style="position:absolute;left:64px;top:380px;width:600px">
+  <div class="col" style="top:210px;bottom:110px;width:600px">
+    <svg style="width:64px;height:96px;margin-bottom:30px"><use href="#liston"/></svg>
     <h1>Noviembre <span class="azul">Azul</span>: cuidarse también es de hombres</h1>
-    <p class="apoyo" style="margin-top:36px;width:520px">Hola, soy Helenita, de Santa Helena del Valle IPS. Este mes le cuento cómo cuidar la salud del hombre.</p>
+    <p class="apoyo" style="margin-top:34px;width:520px">Hola, soy Helenita, de Santa Helena del Valle IPS. Este mes le cuento cómo cuidar la salud del hombre.</p>
   </div>
   <img class="helenita" src="img/helenita-saludar.png" style="right:-250px">
   <div class="pie"><div class="puntos"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div><span style="margin-right:330px;opacity:.85">Deslice →</span></div>
@@ -70,10 +73,10 @@ h2{font-size:76px}
   <img class="flor" src="img/sol.png" style="left:-200px;bottom:-260px">
   <img class="logo" src="img/logo.png" style="right:64px;top:56px;width:190px">
   <div style="position:absolute;left:64px;top:64px"><span class="etiqueta">Noviembre Azul</span></div>
-  <svg class="liston" style="left:64px;top:190px;width:150px;height:225px"><use href="#liston"/></svg>
-  <div style="position:absolute;left:64px;top:450px;width:500px">
+  <div class="col" style="top:170px;bottom:110px;width:520px">
+    <svg style="width:120px;height:180px;margin-bottom:36px"><use href="#liston"/></svg>
     <h2>¿Qué es Noviembre Azul?</h2>
-    <p class="apoyo" style="margin-top:32px">Durante este mes hablamos de la salud del hombre. El listón azul invita a prevenir el cáncer de próstata, sin pena.</p>
+    <p class="apoyo" style="margin-top:30px;width:500px">Durante este mes hablamos de la salud del hombre. El listón azul invita a prevenir el cáncer de próstata, sin pena.</p>
   </div>
   <img class="helenita" src="img/helenita-hablar.png" style="right:-250px">
   <div class="pie"><div class="puntos" style="color:var(--navy)"><i></i><i class="on"></i><i></i><i></i><i></i><i></i></div></div>
@@ -82,14 +85,17 @@ h2{font-size:76px}
 <!-- 3 POR QUÉ NO ESPERAR -->
 <section class="slide dark" id="l3">
   <img class="flor" src="img/sol.png" style="right:-180px;bottom:-240px">
-  <div style="position:absolute;left:64px;top:64px"><span class="etiqueta">Noviembre Azul</span></div>
-  <svg class="liston" style="right:64px;top:56px;width:46px;height:69px"><use href="#liston"/></svg>
-  <div style="position:absolute;left:64px;top:190px;width:600px">
-    <h2>¿Por qué no esperar a sentir algo?</h2>
-    <p class="apoyo" style="margin-top:36px;width:540px">En sus primeras etapas suele no dar síntomas. Por eso conviene consultar desde los <b style="color:#fff">50</b>, o antes si hay antecedentes familiares.</p>
-  </div>
-  <div style="position:absolute;left:64px;top:735px;display:flex;align-items:center;gap:20px">
-    <div style="width:132px;height:132px;border-radius:50%;background:var(--azul);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Bricolage Grotesque';font-weight:600;line-height:1"><span style="font-size:58px;letter-spacing:-.04em">50</span><span style="font-family:Figtree;font-size:20px;font-weight:700;margin-top:4px">años</span></div>
+  <div style="position:absolute;left:64px;top:64px;display:flex;align-items:center;gap:18px"><span class="etiqueta">Noviembre Azul</span><svg style="width:34px;height:51px"><use href="#liston"/></svg></div>
+  <div class="col" style="top:150px;bottom:150px;width:600px">
+    <h2 style="font-size:80px">¿Por qué no esperar a sentir algo?</h2>
+    <p class="apoyo" style="margin-top:28px;width:560px">En sus primeras etapas suele no dar síntomas. Por eso conviene consultar desde los 50, o antes si hay antecedentes familiares.</p>
+    <div style="margin-top:22px;display:flex;align-items:center;gap:22px">
+      <span style="font-family:'Bricolage Grotesque';font-weight:700;font-size:290px;line-height:.78;letter-spacing:-.06em;color:var(--amarillo)">50</span>
+      <span style="display:flex;flex-direction:column;line-height:1;font-family:'Bricolage Grotesque';font-weight:600">
+        <span style="font-size:30px;color:#9BDDF5;letter-spacing:.02em;margin-bottom:6px">desde los</span>
+        <span style="font-size:96px;color:#fff;letter-spacing:-.04em">años</span>
+      </span>
+    </div>
   </div>
   <p style="position:absolute;left:64px;bottom:96px;font-size:22px;color:#9FB5C4;font-style:italic">Información general. Su médico le indicará qué exámenes necesita.</p>
   <img class="helenita" src="img/helenita-pensar.png" style="right:-260px">
@@ -98,25 +104,24 @@ h2{font-size:76px}
 
 <!-- 4 SEÑALES -->
 <section class="slide light" id="l4">
-  <img class="flor" src="img/sol.png" style="right:-220px;top:-220px">
-  <svg class="liston" style="right:64px;top:56px;width:46px;height:69px"><use href="#liston"/></svg>
-  <div style="position:absolute;left:64px;top:64px;width:860px">
-    <span class="etiqueta">Noviembre Azul</span>
-    <h2 style="margin-top:28px">Señales para consultar a su médico</h2>
+  <img class="flor" src="img/sol.png" style="left:-120px;bottom:-330px">
+  <img class="helenita" src="img/helenita-senalar.png" style="left:-325px;bottom:140px;width:820px;height:820px;-webkit-mask-image:linear-gradient(to bottom,#000 74%,transparent 96%);mask-image:linear-gradient(to bottom,#000 74%,transparent 96%)">
+  <div style="position:absolute;left:530px;top:118px;width:486px">
+    <div style="display:flex;align-items:center;gap:18px"><span class="etiqueta">Noviembre Azul</span><svg style="width:34px;height:51px"><use href="#liston"/></svg></div>
+    <h2 style="margin-top:26px;font-size:68px">Señales para consultar a su médico</h2>
   </div>
-  <img class="helenita" src="img/helenita-senalar.png" style="left:-300px;width:820px;height:820px">
-  <div style="position:absolute;left:400px;top:330px;width:616px">
-    <ul style="list-style:none;display:flex;flex-direction:column;gap:16px">
+  <div style="position:absolute;left:530px;top:462px;width:486px">
+    <ul style="list-style:none;display:flex;flex-direction:column;gap:14px">
       <li class="item">Orinar muy seguido de noche</li>
       <li class="item">Chorro débil</li>
       <li class="item">Dificultad para orinar</li>
       <li class="item">Sangre en orina o semen</li>
     </ul>
+    <p style="margin-top:30px;text-align:center;font-size:27px;line-height:1.35;color:var(--gris);font-weight:600">Pueden tener otras causas:<br>su médico lo evalúa.</p>
   </div>
-  <p style="position:absolute;left:560px;top:752px;width:456px;font-size:28px;line-height:1.35;color:var(--gris);font-weight:600">Pueden tener otras causas: su médico lo evalúa.</p>
   <style>
-    .item{background:#fff;border-radius:30px;padding:24px 28px;font-size:34px;font-weight:700;display:flex;align-items:center;gap:22px}
-    .item::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;background:var(--azul);box-shadow:0 0 0 8px rgba(5,150,200,.18)}
+    .item{background:#fff;border-radius:30px;padding:20px 24px;font-size:30px;font-weight:700;display:flex;align-items:center;gap:20px;white-space:nowrap}
+    .item::before{content:"";flex:none;width:20px;height:20px;border-radius:50%;background:var(--azul);box-shadow:0 0 0 7px rgba(5,150,200,.18)}
   </style>
   <div class="pie"><span></span><div class="puntos" style="color:var(--navy)"><i></i><i></i><i></i><i class="on"></i><i></i><i></i></div></div>
 </section>
@@ -125,11 +130,11 @@ h2{font-size:76px}
 <section class="slide deep" id="l5">
   <img class="flor" src="img/sol.png" style="left:-220px;top:-240px">
   <img class="logo" src="img/logo-lema.png" style="left:64px;top:48px;width:200px">
-  <div style="position:absolute;left:64px;top:190px;width:900px">
+  <div style="position:absolute;left:64px;top:190px;width:952px">
     <h2>Aquí lo acompañamos en cada paso</h2>
-    <p class="apoyo" style="margin-top:22px;width:940px;font-size:32px">Consulta de medicina general y medicina interna, y toma de muestras de laboratorio que su médico le ordene. En nuestras tres sedes.</p>
+    <p class="apoyo" style="margin-top:22px;font-size:33px">Consulta de medicina general y medicina interna, y toma de muestras de laboratorio que su médico le ordene.</p>
   </div>
-  <div style="position:absolute;left:64px;right:64px;top:548px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+  <div style="position:absolute;left:64px;right:64px;top:470px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
     <div class="serv">
       <svg viewBox="0 0 64 64"><path d="M18 8v18a12 12 0 0 0 24 0V8" /><path d="M30 38v6a12 12 0 0 0 24 0v-6"/><circle cx="54" cy="32" r="6"/><path d="M14 8h8M38 8h8"/></svg>
       <span>Medicina general</span>
@@ -143,36 +148,36 @@ h2{font-size:76px}
       <span>Toma de muestras</span>
     </div>
   </div>
-  <div style="position:absolute;left:64px;right:64px;top:760px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+  <div style="position:absolute;left:64px;right:64px;top:682px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
     <div class="sede"><img src="img/valledupar.jpg"><span>Valledupar</span></div>
     <div class="sede"><img src="img/la-jagua.jpg"><span>La Jagua de Ibirico</span></div>
     <div class="sede"><img src="img/san-juan.jpg"><span>San Juan del Cesar</span></div>
   </div>
+  <p style="position:absolute;left:64px;right:64px;top:930px;text-align:center;font-family:'Bricolage Grotesque';font-weight:600;font-size:46px;letter-spacing:-.02em;color:#fff">En nuestras <span style="color:var(--amarillo)">tres sedes</span></p>
   <style>
     .serv{background:#fff;border-radius:30px;height:190px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;color:var(--navy);font-size:28px;font-weight:700}
     .serv svg{width:84px;height:84px;fill:none;stroke:var(--azul);stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round}
-    .sede{position:relative;height:230px;border-radius:30px;overflow:hidden}
+    .sede{position:relative;height:220px;border-radius:30px;overflow:hidden}
     .sede img{width:100%;height:100%;object-fit:cover}
     .sede span{position:absolute;left:12px;right:12px;bottom:12px;background:var(--navy);color:#fff;border-radius:999px;padding:10px 12px;text-align:center;font-size:22px;font-weight:700}
   </style>
-  <div class="pie" style="bottom:28px"><span></span><div class="puntos"><i></i><i></i><i></i><i></i><i class="on"></i><i></i></div></div>
+  <div style="position:absolute;right:64px;top:1046px" class="puntos"><i></i><i></i><i></i><i></i><i class="on" style="background:var(--amarillo)"></i><i></i></div>
 </section>
 
 <!-- 6 CTA -->
 <section class="slide dark" id="l6">
   <img class="flor" src="img/sol.png" style="right:-170px;top:-200px">
   <svg class="liston" style="left:64px;top:64px;width:56px;height:84px"><use href="#liston"/></svg>
-  <div style="position:absolute;left:64px;top:200px;width:620px">
+  <div class="col" style="top:170px;bottom:290px;width:640px">
     <h1 style="font-size:88px">Agende hoy su cita por <span style="color:var(--amarillo)">WhatsApp</span></h1>
-    <p class="apoyo" style="margin-top:32px;width:540px">Escríbanos al 311 339 8988. Cuidarse a tiempo es un acto de amor por usted y por su familia.</p>
-    <div style="margin-top:44px;display:inline-flex;align-items:center;gap:18px;background:var(--amarillo);color:var(--navy);border-radius:999px;padding:22px 40px 22px 28px;font-family:'Bricolage Grotesque';font-weight:700;font-size:52px;letter-spacing:-.02em">
+    <p class="apoyo" style="margin-top:30px;width:540px">Escríbanos al 311 339 8988. Cuidarse a tiempo es un acto de amor por usted y por su familia.</p>
+    <div style="margin-top:40px;display:inline-flex;align-items:center;gap:18px;background:var(--amarillo);color:var(--navy);border-radius:999px;padding:22px 40px 22px 28px;font-family:'Bricolage Grotesque';font-weight:700;font-size:52px;letter-spacing:-.02em">
       <svg viewBox="0 0 32 32" width="52" height="52"><path fill="#0A2233" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.2 1.3 3.4c.2.2 2.3 3.5 5.6 4.9 2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
       311 339 8988
     </div>
   </div>
   <img class="logo" src="img/logo-lema.png" style="left:64px;bottom:96px;width:300px">
   <img class="helenita" src="img/helenita-pulgar.png" style="right:-250px">
-  <div class="pie"><span></span><div class="puntos" style="margin-right:auto;margin-left:340px;display:none"></div></div>
   <div style="position:absolute;right:64px;bottom:44px" class="puntos"><i></i><i></i><i></i><i></i><i></i><i class="on" style="background:var(--amarillo)"></i></div>
 </section>
 </body>
