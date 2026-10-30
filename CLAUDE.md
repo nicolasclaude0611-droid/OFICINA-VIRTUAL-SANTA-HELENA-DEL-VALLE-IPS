@@ -48,6 +48,16 @@ nuestro estilo":
    identificables.
 4. Entrega mostrando la referencia y tu versión lado a lado cuando sea posible.
 
+**Para ver videos usa `/watch`** (plugin claude-watch, activado para todos): `/watch <archivo o enlace> <para qué lo
+miras>`. Saca una imagen por cada cambio de escena, mide el ritmo (cortes por minuto), analiza en detalle los
+primeros 10 segundos (el gancho) y arma un informe `report.md` que debes completar. Notas para la nube:
+- Funciona siempre con **videos adjuntos**. Los enlaces de YouTube, Instagram y TikTok normalmente los bloquean
+  desde la nube; si falla, pide al dueño el video descargado.
+- No hay clave de Whisper configurada: usa `--no-whisper` y, si el video tiene voz y no trae subtítulos,
+  transcribe el audio con el conector de ElevenLabs (extrae el audio con `ffmpeg`).
+- Omite los pasos de Obsidian: no usamos esa bóveda. Guarda el informe completado en `referencias/`.
+- `yt-dlp` se instala solo al iniciar la sesión; si falta: `pip install --break-system-packages yt-dlp`.
+
 **Cómo llegan las referencias:** lo más fácil es una **captura de pantalla** o el **archivo descargado**
 (imagen o video) adjunto en el chat. Los enlaces de Instagram, TikTok o Facebook casi nunca se pueden abrir
 desde la nube (piden iniciar sesión); si el dueño manda solo un enlace y no puedes verlo, pídele la captura o el
@@ -65,6 +75,7 @@ video descargado. También sirven enlaces directos públicos o Google Drive, si 
 - `ffmpeg` y Python con Pillow (video, audio e imágenes).
 - Plugin **HyperFrames** (video hecho con HTML), activado para este repositorio en `.claude/settings.json`.
   Lo usan sobre todo Creativo Instagram, Editor de Video y Administrador Web.
+- Plugin **watch** (`/watch`, de claude-watch): permite "ver" videos cuadro a cuadro. Activado para todos.
 - Búsqueda web y lectura de páginas.
 - Conectores de la cuenta, si el dueño los activó en claude.ai: ElevenLabs (imágenes, video, voz y
   transcripción), Google Drive, Gmail, Calendar. Generar con ElevenLabs gasta créditos: avisa antes de
