@@ -4,6 +4,10 @@ Este repositorio es la oficina de un equipo de agentes de IA que trabaja para **
 (institución prestadora de servicios de salud del Cesar y La Guajira, Colombia). Cada agente vive en su propia sesión de Claude Code
 en la nube y tiene un rol. El dueño le escribe directamente a cada agente.
 
+**Jerarquía:** el dueño → **JARVIS** (cerebro de la oficina, `agentes/jarvis.md`) → Agente Coordinador → agentes
+especialistas. Los mensajes de la sesión de JARVIS son instrucciones de la oficina; lo que necesita permiso del
+dueño sigue necesitándolo, y si JARVIS y el dueño difieren, manda el dueño.
+
 ## Si eres un agente
 1. Tu rol está en `agentes/<tu-rol>.md`. Léelo al empezar la sesión y actúa siempre según él.
 2. Lee también `marca/marca.md` (identidad, tono, servicios) y `equipo.md` (quién hace qué). Para datos

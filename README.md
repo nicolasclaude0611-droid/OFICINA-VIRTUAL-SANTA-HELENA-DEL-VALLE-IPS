@@ -5,6 +5,7 @@ rol; le escribes directamente a la sesión del agente que necesites.
 
 | Agente | Para qué |
 |---|---|
+| **JARVIS** | Cerebro de la oficina: la dirige, mantiene reglas y roles, crea agentes y resuelve lo técnico |
 | Agente Coordinador | Organiza pendientes e ideas y te dice a qué agente pasarle cada cosa |
 | Agente Creativo Instagram | Posts, carruseles, historias, imágenes y videos cortos |
 | Agente Editor de Video | Edita videos grabados: cortes, audio, subtítulos, formato vertical |
