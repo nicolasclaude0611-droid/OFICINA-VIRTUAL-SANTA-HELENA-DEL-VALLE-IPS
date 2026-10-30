@@ -17,16 +17,17 @@ horarios, EPS y cualquier información nueva que te pida el dueño.
 - Si cambias `styles.css` o `script.js`, sube el número de versión `?v=AAAAMMDDx` en `index.html` para que los
   celulares no muestren la versión vieja.
 
-## Helenita con ElevenLabs (animaciones y voz)
-Antes de crear o modificar algo de Helenita lee **`marca/helenita/RECETA-ELEVENLABS.md`**. Ahí está todo:
-el flujo de ElevenLabs ya armado (ids de flujo y nodos), los prompts que funcionaron, los costos medidos, cómo
-quitar el fondo verde gratis con `keyer.py`, y la voz (Valeria, `eleven_v4`, escribir «Elenita»).
-Reglas de ahorro que pidió el dueño:
-- Reutiliza la imagen base y el flujo existentes; no regeneres lo que ya está hecho.
-- Estima siempre con `estimate_only: true` antes de generar y dile al dueño cuántos créditos va a costar.
-- Una toma por frase de voz; nunca repitas una llamada de generación para "reintentar" (cobra otra vez).
-- Las animaciones ya hechas (saludar, reposo, hablar, pensar, señalar, pulgar) y las voces están en el
-  repositorio de la web (`media/helenita/`, `media/voz/`): reutilízalas antes de generar nuevas.
+## Helenita: usar lo que existe o pedírselo al Agente Helenita
+- **Antes de usar a Helenita**, revisa `marca/helenita/CATALOGO.md`: ahí están las animaciones (saludar, reposo,
+  hablar, pensar, señalar, pulgar) y las voces que ya existen. Úsalas siempre que sirvan.
+- **Tú no generas animaciones ni voces nuevas de Helenita.** Si hace falta una nueva:
+  1. Pídele permiso al dueño aquí, en tu sesión: qué necesitas y para qué pieza.
+  2. Con su autorización, envía el pedido directo a la sesión del **Agente Helenita** con `send_message`
+     (servidor `claude-code-remote`; `session_id` en `sesiones.md`; si no ves la herramienta, búscala con
+     ToolSearch `select:mcp__claude-code-remote__send_message`). Incluye: qué necesitas (acción o frase exacta),
+     para qué pieza y que el dueño lo autorizó en tu sesión.
+  3. El Agente Helenita le confirmará el costo al dueño y, cuando termine, te devolverá por mensaje directo dónde
+     quedaron los archivos.
 
 ## Acceso al repositorio
 Al empezar, conecta el repositorio de la web a tu sesión (herramienta `add_repo` con owner
@@ -59,7 +60,7 @@ para la versión final.
 - Si al empezar no ves las skills de HyperFrames, instálalo: `claude plugin marketplace add heygen-com/hyperframes`
   y `claude plugin install hyperframes@hyperframes`.
 - La skill `media-use` ofrece recursos de HeyGen (voz, avatares, música); **no los uses** sin permiso del dueño,
-  porque pueden tener costo. Para la voz de Helenita usa ElevenLabs según la receta. Para música y efectos, solo
+  porque pueden tener costo. La voz de Helenita: usa las existentes o pídesela al Agente Helenita. Para música y efectos, solo
   material libre de derechos o el que dé el dueño.
 - Respeta colores, tipografías (Bricolage Grotesque y Figtree) y logo de `marca/`.
 
