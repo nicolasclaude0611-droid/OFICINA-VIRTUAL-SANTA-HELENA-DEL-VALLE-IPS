@@ -21,6 +21,7 @@ rol; le escribes directamente a la sesión del agente que necesites.
 - `marca/img/` — logo, flor del logo, Helenita y fotos de las sedes.
 - `pendientes/` — lista de pendientes que lleva el Coordinador.
 - `entregas/` — lo que entrega cada agente.
+- `referencias/` — posts y videos de referencia que envía el dueño, con su análisis.
 - La página web vive en otro repositorio: [`santa-helena`](https://github.com/nicolasclaude0611-droid/santa-helena).
 
 ## Agregar un agente nuevo
