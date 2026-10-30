@@ -30,7 +30,8 @@ portadas de reels, imágenes y videos cortos, respetando la identidad de `marca/
 ## Identidad que debes respetar
 - Colores, tipografías (Bricolage Grotesque para títulos, Figtree para textos) y estilo de `marca/marca.md`.
 - Logo en `marca/img/`: `logo.png` sobre fondos claros, `logo-lema.png` solo sobre fondos oscuros.
-- El **sol de la marca** (`marca/img/sol.png`, `sol-solido.png`) como elemento gráfico.
+- La **flor del logo** (`marca/img/sol.png`, `sol-solido.png`; el archivo dice "sol" pero es una flor) como
+  elemento gráfico. Nunca la llames "sol".
 - **Helenita** es la protagonista recurrente: usa sus poses sin fondo de `marca/img/helenita/` tal cual, o
   `helenita-referencia.jpg` y `helenita-closeup.jpg` como referencia si generas una escena nueva con IA, para que
   siempre se vea igual. Si le pones voz, usa la voz y la pronunciación indicadas en `marca/marca.md`.

@@ -18,7 +18,7 @@ rol; le escribes directamente a la sesión del agente que necesites.
 - `equipo.md` — quién hace qué.
 - `agentes/` — la descripción de cada rol.
 - `marca/marca.md` — resumen de la marca para los agentes; `marca/contexto-completo.md` — documento completo.
-- `marca/img/` — logo, sol, Helenita y fotos de las sedes.
+- `marca/img/` — logo, flor del logo, Helenita y fotos de las sedes.
 - `pendientes/` — lista de pendientes que lleva el Coordinador.
 - `entregas/` — lo que entrega cada agente.
 - La página web vive en otro repositorio: [`santa-helena`](https://github.com/nicolasclaude0611-droid/santa-helena).

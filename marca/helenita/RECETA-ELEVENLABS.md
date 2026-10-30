@@ -2,6 +2,7 @@
 > Las rutas como `helenita/fuentes/`, `media/helenita/` o `media/voz/` son de ese repositorio (público): clónalo
 > para tener los videos y fuentes. `keyer.py` y `gorro.py` también están copiados aquí, en `marca/helenita/tools/`.
 > Si actualizas la receta, la versión oficial es la del repositorio de la web.
+> Nota: el símbolo del logo es una **flor amarilla**, no un sol (en los prompts escribir "yellow flower").
 
 # Receta: animaciones de Helenita con ElevenLabs
 
@@ -142,7 +143,7 @@ Con `data-format="stack"` se fuerza el modo Safari para probarlo en Chrome.
 > Recreate exactly the same character from the reference image: same face, big brown eyes, warm smile,
 > auburn-brown hair with side-swept bangs, small braid along the hairline and a long wavy ponytail over
 > her right shoulder; same royal blue medical scrub top with mandarin collar and V-neck, with the small
-> "Santa Helena del Valle IPS" logo (yellow sun) on the left chest; same royal blue scrub pants. Same soft
+> "Santa Helena del Valle IPS" logo (yellow flower) on the left chest; same royal blue scrub pants. Same soft
 > 2D illustrated cartoon style, same colors and proportions. Pose: standing facing the camera, relaxed and
 > friendly, both arms hanging naturally at her sides, hands fully visible. Framing: centered, from the top
 > of the head down to mid-thigh, the character occupies about 75% of the image height, with empty space on
@@ -182,7 +183,7 @@ llevarse la mano al corazón (gracias), sostener una tabla de citas.
 
 - El texto del logo en la imagen base sale algo borroso ("oel Valls IPS"). A tamaño web no se nota.
 - En movimientos rápidos la mano queda difusa en 2 o 3 cuadros (desenfoque de movimiento del modelo).
-- No usar `despill` de ffmpeg: vuelve naranja el sol amarillo del logo. `keyer.py` ya lo resuelve.
+- No usar `despill` de ffmpeg: vuelve naranja la flor amarilla del logo. `keyer.py` ya lo resuelve.
 
 
 ## Voz de Helenita

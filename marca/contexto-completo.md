@@ -3,6 +3,10 @@
 Documento de traspaso y **fuente oficial de información de la marca** para cualquier persona o agente de IA que
 continúe el trabajo. Corte: 30 de octubre de 2026 (versión del sitio en la rama `main`).
 
+> **Corrección del dueño (30 oct 2026):** el símbolo amarillo del logo es una **flor**, no un sol. Donde este
+> documento dice "sol" (incluidos los nombres de archivo `sol.png` y `sol-solido.png`), se refiere a la flor.
+> Qué flor exactamente: POR DEFINIR.
+
 **Convenciones de este documento**
 - **POR DEFINIR**: dato que no tenemos. No lo inventen; pídanlo al responsable del proyecto.
 - **(supuesto)**: inferencia nuestra, no confirmada por la empresa.
