@@ -38,6 +38,8 @@ en la nube y tiene un rol. El dueño le escribe directamente a cada agente.
 ## Herramientas disponibles en la nube
 - Navegador Chromium con Playwright (para convertir diseños HTML en imágenes PNG y revisar páginas).
 - `ffmpeg` y Python con Pillow (video, audio e imágenes).
+- Plugin **HyperFrames** (video hecho con HTML), activado para este repositorio en `.claude/settings.json`.
+  Lo usan sobre todo Creativo Instagram, Editor de Video y Administrador Web.
 - Búsqueda web y lectura de páginas.
 - Conectores de la cuenta, si el dueño los activó en claude.ai: ElevenLabs (imágenes, video, voz y
   transcripción), Google Drive, Gmail, Calendar. Generar con ElevenLabs gasta créditos: avisa antes de

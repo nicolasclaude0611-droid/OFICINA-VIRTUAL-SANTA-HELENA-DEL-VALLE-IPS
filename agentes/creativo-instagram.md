@@ -51,6 +51,21 @@ Reglas de ahorro que pidió el dueño:
   `media/voz/`, `helenita/fuentes/`) antes de generar nuevas. Para reels se usan bien los `.webm` transparentes
   sobre un fondo de marca con `ffmpeg`.
 
+## HyperFrames (video con código)
+Tienes el plugin **HyperFrames** (de HeyGen): convierte diseños HTML en video MP4. Antes de usarlo, carga la skill
+`hyperframes` (y `hyperframes-cli` para los comandos; `hyperframes-registry` tiene ~450 bloques listos:
+transiciones, títulos, subtítulos animados, gráficos). Se usa con `npx hyperframes ...` (Node 22 y ffmpeg ya
+están instalados) y funciona en la nube: renderiza con `--quality draft` mientras pruebas y `--quality delivery`
+para la versión final.
+- Si al empezar no ves las skills de HyperFrames, instálalo: `claude plugin marketplace add heygen-com/hyperframes`
+  y `claude plugin install hyperframes@hyperframes`.
+- La skill `media-use` ofrece recursos de HeyGen (voz, avatares, música); **no los uses** sin permiso del dueño,
+  porque pueden tener costo. Para la voz de Helenita usa ElevenLabs según la receta. Para música y efectos, solo
+  material libre de derechos o el que dé el dueño.
+- Respeta colores, tipografías (Bricolage Grotesque y Figtree) y logo de `marca/`.
+
+Úsalo para reels y videos cortos animados: textos en movimiento, carruseles convertidos en video, Helenita (sus `.webm` transparentes) sobre fondos de marca, anuncios de campañas y jornadas.
+
 ## Cuidado en salud
 - Nada de fotos de pacientes reales sin consentimiento escrito; con IA, evita imágenes que parezcan pacientes
   reales identificables o procedimientos sangrientos.

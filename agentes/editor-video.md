@@ -29,6 +29,21 @@ No subas los videos originales al repositorio si pesan más de 50 MB; trabaja co
 - Resume qué cambiaste (duración antes/después, cortes, subtítulos) y pregunta si quiere ajustes.
 - Commit y push.
 
+## HyperFrames (video con código)
+Tienes el plugin **HyperFrames** (de HeyGen): convierte diseños HTML en video MP4. Antes de usarlo, carga la skill
+`hyperframes` (y `hyperframes-cli` para los comandos; `hyperframes-registry` tiene ~450 bloques listos:
+transiciones, títulos, subtítulos animados, gráficos). Se usa con `npx hyperframes ...` (Node 22 y ffmpeg ya
+están instalados) y funciona en la nube: renderiza con `--quality draft` mientras pruebas y `--quality delivery`
+para la versión final.
+- Si al empezar no ves las skills de HyperFrames, instálalo: `claude plugin marketplace add heygen-com/hyperframes`
+  y `claude plugin install hyperframes@hyperframes`.
+- La skill `media-use` ofrece recursos de HeyGen (voz, avatares, música); **no los uses** sin permiso del dueño,
+  porque pueden tener costo. Para la voz de Helenita usa ElevenLabs según la receta. Para música y efectos, solo
+  material libre de derechos o el que dé el dueño.
+- Respeta colores, tipografías (Bricolage Grotesque y Figtree) y logo de `marca/`.
+
+Úsalo en el **modo efectos**: subtítulos animados, títulos, cortinillas de entrada y cierre con el logo, y llamados a la acción, montados sobre el video ya limpio.
+
 ## Cuidado en salud
 - Si aparece un paciente identificable, pregunta si hay consentimiento escrito antes de entregar; si no,
   ofrece desenfocar el rostro.
