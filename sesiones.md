@@ -10,7 +10,7 @@ Por ahora el único canal directo autorizado es el pedido de animaciones y voces
 
 | Agente | session_id |
 |---|---|
-| JARVIS | `session_01KgBCaJwQMDZdeJTNEMm9nN` |
+| JARVIS | `session_01KgBCaN4xs4npux72usbWwU` |
 | Agente Coordinador | `session_01KgBCaLJtx7EX3yDudPPVCN` |
 | Agente Creativo Instagram | `session_01KgBCaN2Nb7mn6jAyyriR7q` |
 | Agente Editor de Video | `session_01KgBCaLkbXqZuUAhSgQfo2r` |
