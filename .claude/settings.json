@@ -24,8 +24,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "command -v yt-dlp >/dev/null 2>&1 || pip install -q --break-system-packages yt-dlp >/dev/null 2>&1 || true",
-            "timeout": 120
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/preparar-sesion.sh\"",
+            "timeout": 180
           }
         ]
       }

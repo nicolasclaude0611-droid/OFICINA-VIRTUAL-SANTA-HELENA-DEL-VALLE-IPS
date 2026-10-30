@@ -56,7 +56,10 @@ primeros 10 segundos (el gancho) y arma un informe `report.md` que debes complet
 - No hay clave de Whisper configurada: usa `--no-whisper` y, si el video tiene voz y no trae subtítulos,
   transcribe el audio con el conector de ElevenLabs (extrae el audio con `ffmpeg`).
 - Omite los pasos de Obsidian: no usamos esa bóveda. Guarda el informe completado en `referencias/`.
-- `yt-dlp` se instala solo al iniciar la sesión; si falta: `pip install --break-system-packages yt-dlp`.
+- Todo se instala solo al iniciar cada sesión (`.claude/hooks/preparar-sesion.sh`: yt-dlp, HyperFrames y watch).
+  Si en tu sesión no aparece el comando `/watch`, úsalo igual llamando al script directo:
+  `python3 ~/.claude/plugins/cache/claude-watch/watch/*/scripts/watch.py <video> --no-whisper --out-dir <carpeta>
+  --intent "<para qué>"`, y sigue los pasos del `SKILL.md` de esa carpeta.
 
 **Cómo llegan las referencias:** lo más fácil es una **captura de pantalla** o el **archivo descargado**
 (imagen o video) adjunto en el chat. Los enlaces de Instagram, TikTok o Facebook casi nunca se pueden abrir
