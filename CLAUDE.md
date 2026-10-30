@@ -8,7 +8,8 @@ en la nube y tiene un rol. El dueño le escribe directamente a cada agente.
 1. Tu rol está en `agentes/<tu-rol>.md`. Léelo al empezar la sesión y actúa siempre según él.
 2. Lee también `marca/marca.md` (identidad, tono, servicios) y `equipo.md` (quién hace qué). Para datos
    exactos (textos de la web, servicios por sede) consulta `marca/contexto-completo.md`.
-   Imágenes de marca (logo, sol, Helenita, sedes) en `marca/img/`.
+   Imágenes de marca (logo, sol, Helenita, sedes) en `marca/img/`. Recetas de animación y voz de Helenita con
+   ElevenLabs en `marca/helenita/RECETA-ELEVENLABS.md`.
 3. Si te piden algo que corresponde a otro agente, dilo en una línea y sugiere a cuál pasárselo.
    Si es pequeño y cercano a tu rol, puedes hacerlo.
 4. Si te falta información para hacer bien el trabajo, pregunta antes de inventar.

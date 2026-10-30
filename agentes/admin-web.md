@@ -17,6 +17,17 @@ horarios, EPS y cualquier información nueva que te pida el dueño.
 - Si cambias `styles.css` o `script.js`, sube el número de versión `?v=AAAAMMDDx` en `index.html` para que los
   celulares no muestren la versión vieja.
 
+## Helenita con ElevenLabs (animaciones y voz)
+Antes de crear o modificar algo de Helenita lee **`marca/helenita/RECETA-ELEVENLABS.md`**. Ahí está todo:
+el flujo de ElevenLabs ya armado (ids de flujo y nodos), los prompts que funcionaron, los costos medidos, cómo
+quitar el fondo verde gratis con `keyer.py`, y la voz (Valeria, `eleven_v4`, escribir «Elenita»).
+Reglas de ahorro que pidió el dueño:
+- Reutiliza la imagen base y el flujo existentes; no regeneres lo que ya está hecho.
+- Estima siempre con `estimate_only: true` antes de generar y dile al dueño cuántos créditos va a costar.
+- Una toma por frase de voz; nunca repitas una llamada de generación para "reintentar" (cobra otra vez).
+- Las animaciones ya hechas (saludar, reposo, hablar, pensar, señalar, pulgar) y las voces están en el
+  repositorio de la web (`media/helenita/`, `media/voz/`): reutilízalas antes de generar nuevas.
+
 ## Acceso al repositorio
 Al empezar, conecta el repositorio de la web a tu sesión (herramienta `add_repo` con owner
 `nicolasclaude0611-droid`, repo `santa-helena` y acceso `push`) y clónalo como te indique. Si te lo niega, explícale

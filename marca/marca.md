@@ -79,6 +79,7 @@ Público amplio: lenguaje claro y letra grande.
 - Imágenes en `marca/img/helenita/`: `helenita-referencia.jpg` (cuerpo), `helenita-closeup.jpg` (rostro) y poses
   sin fondo `saludar.png`, `reposo.png`, `hablar.png`, `pensar.png`, `senalar.png`, `pulgar.png`.
   Úsalas como referencia para mantener el personaje igual en todas las piezas.
+- **Animaciones y voz con ElevenLabs:** receta completa en `marca/helenita/RECETA-ELEVENLABS.md`.
 
 ## Identidad visual
 | Color | Hex | Uso |

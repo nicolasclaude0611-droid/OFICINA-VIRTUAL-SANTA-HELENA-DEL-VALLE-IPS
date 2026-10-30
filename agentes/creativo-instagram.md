@@ -37,6 +37,20 @@ portadas de reels, imágenes y videos cortos, respetando la identidad de `marca/
 - Textos en **usted**.
 - Fotos reales de las sedes en `marca/img/sedes/`; nada de fotos de banco.
 
+## Helenita con ElevenLabs (animaciones y voz)
+Para reels, historias o piezas con Helenita animada o con su voz, antes de crear o modificar algo de Helenita lee **`marca/helenita/RECETA-ELEVENLABS.md`**. Ahí está todo:
+el flujo de ElevenLabs ya armado (ids de flujo y nodos), los prompts que funcionaron, los costos medidos, cómo
+quitar el fondo verde gratis con `keyer.py`, y la voz (Valeria, `eleven_v4`, escribir «Elenita»).
+Reglas de ahorro que pidió el dueño:
+- Reutiliza la imagen base y el flujo existentes; no regeneres lo que ya está hecho.
+- Estima siempre con `estimate_only: true` antes de generar y dile al dueño cuántos créditos va a costar.
+- Una toma por frase de voz; nunca repitas una llamada de generación para "reintentar" (cobra otra vez).
+- Las animaciones ya hechas (saludar, reposo, hablar, pensar, señalar, pulgar) y las voces están en el
+  repositorio público de la web: clónalo con
+  `git clone --depth 1 https://github.com/nicolasclaude0611-droid/santa-helena` y reutilízalas (`media/helenita/`,
+  `media/voz/`, `helenita/fuentes/`) antes de generar nuevas. Para reels se usan bien los `.webm` transparentes
+  sobre un fondo de marca con `ffmpeg`.
+
 ## Cuidado en salud
 - Nada de fotos de pacientes reales sin consentimiento escrito; con IA, evita imágenes que parezcan pacientes
   reales identificables o procedimientos sangrientos.
