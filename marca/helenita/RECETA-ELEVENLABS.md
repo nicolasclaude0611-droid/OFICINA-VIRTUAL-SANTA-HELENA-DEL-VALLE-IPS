@@ -28,6 +28,7 @@ Flujo **"Helenita · animaciones web"** en la cuenta actual, id `AJAfEJsy6Qq6KRP
 | Imagen base · verde (subida desde `helenita/fuentes/helenita-base-verde.png`) | `IOkSMzBv4r5HiNtu8gKG` |
 | 04 · Señalar (Kling 2.5 Turbo) | `SzIPZkfp3TyOXdbDyIdG` · hecho |
 | 05 · Pulgar arriba (Kling 2.5 Turbo) | `woGMbA09k0y79ssVUctX` · hecho |
+| 07 · Celebrar · 08 · Empatía · 09 · Sorpresa · 10 · Invitar · 11 · Corazón | `4HYksDT8dOQd8IURVqon` · `k8VQECLbA2yVEmcMSNdV` · `iFlcFERRce3XbzOpRXxB` · `lCKoYS4xZcvaIxYzc1Ry` · `7fSznh3sFnskvoYIaUAc` · hechos (2026-10-30) |
 
 Para una animación nueva se reutiliza `IOkSMzBv4r5HiNtu8gKG` como `start_frame` y `end_frame`.
 
@@ -174,7 +175,16 @@ Reglas que funcionaron:
 | hablar | talks warmly to the viewer, explaining something helpful: her mouth moves as she speaks, she nods gently, raises her left hand in front of her chest with an open palm in a welcoming explaining gesture, then lowers it |
 | señalar | She smiles, extends her left arm out to the right side of the frame and points with her index finger toward the right edge, turning her head and eyes to look in that direction as if inviting the viewer to look there, then looks back at the viewer with a smile, lowers her arm |
 | pulgar | She gives the viewer a happy, confident thumbs up with her right hand raised in front of her chest, smiling broadly with a cheerful little nod and a quick wink, then lowers her hand |
+| celebrar | She celebrates joyfully: she raises both arms up high above her head with open hands, smiling very broadly with bright happy eyes and a cheerful little bounce, then lowers her arms (negativo extra: "jumping out of frame") |
+| empatia | She looks at the viewer with a gentle, caring expression, slowly places her right hand softly on the center of her chest over her heart, tilts her head slightly and gives a warm, soft smile, then lowers her hand (negativo extra: "sad, crying") |
+| sorpresa | She reacts with a happy surprise: her big eyes open wide and her eyebrows rise, she brings both hands up and gently places her palms on her cheeks with a delighted open-mouth smile, then lowers her hands (negativo extra: "scared, screaming, fear, sad") |
+| invitar | She smiles warmly and makes a welcoming "come in, please" gesture: she sweeps her left arm open out toward the right side of the frame with the palm facing up, as if kindly inviting the viewer to come in, with a friendly nod, then brings her arm back down (negativo extra: "walking") |
+| corazon | She smiles lovingly at the viewer and brings both hands together in front of her chest to form a heart shape with her fingers, fingertips curved and touching at the top and thumbs touching at the bottom, holds the heart for a moment with a sweet smile, then lowers her hands (negativo extra: "fused fingers") |
 | pensar | She thinks for a moment: she raises her right hand and gently touches her chin with her index finger, looks up and to the side with a curious, thoughtful expression, then her face lights up with a friendly smile as if she found the answer, she lowers her hand (negativo extra: "sad, worried") |
+
+Medido (2026-10-30): 5 clips de 5 s en una sola corrida = 10.605 créditos (2.121 c/u), ~2 min. Las 5 salieron
+limpias a la primera. Varias expresiones en un solo clip de 10 s no se probó: la receta indica una acción por clip.
+Volteo gratis (espejo): `ffmpeg -i fuente-verde.mp4 -vf hflip ...` y luego `keyer.py`; ojo, invierte el logo.
 
 Ideas para nuevas: despedirse, aplaudir, sostener un celular (WhatsApp), señalar hacia abajo,
 llevarse la mano al corazón (gracias), sostener una tabla de citas.
