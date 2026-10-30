@@ -17,6 +17,6 @@ Por ahora el único canal directo autorizado es el pedido de animaciones y voces
 | Agente Copies Redes | `session_01KgBCaJ2LjXqorjzkCFXnuX` |
 | Agente Textos Web y SEO | `session_01KgBCaHdTaY1j2KtjyjQMar` |
 | Agente Administrador Web | `session_01KgBCaLP9RysCNRVRUvwMra` |
-| Agente Helenita | (pendiente) |
+| Agente Helenita | `session_01KgBCaMB8QHmUGaTXAHNyUM` |
 
 Si un agente se vuelve a abrir en una sesión nueva, JARVIS actualiza esta tabla.
