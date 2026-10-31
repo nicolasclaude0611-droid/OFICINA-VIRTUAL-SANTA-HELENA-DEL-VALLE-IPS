@@ -206,3 +206,14 @@ llevarse la mano al corazón (gracias), sostener una tabla de citas.
   «Por último, escriba los datos del paciente.» · `listo` «¡Listo! Su mensaje ya está en WhatsApp. Solo debe enviarlo.»
 - Procesado (gratis): recortar silencios, normalizar volumen y comprimir:
   `ffmpeg -i in.mp3 -af "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,apad=pad_dur=0.1,loudnorm=I=-16:TP=-1.5" -ac 1 -ar 44100 -b:a 64k media/voz/nombre.mp3`
+
+
+## Helenita hablando con boca sincronizada (medido 2026-10-31)
+- Flujo «Helenita · comercial web (voz y boca)» `nI0TQ6XQbtpMcO23rUko`: base verde subida por URL (nodo
+  `dA0TtlEY8LsIDrRggbXL`), nodos de voz `eleven_v4` y nodos `avatar` con `bytedance-omnihuman-v1.5` conectados a la
+  imagen (puerto `image`) y a la voz (puerto `audio`). El modelo no acepta indicaciones: el gesto sale de la voz.
+- Costo real: ~960 créditos por segundo de video en 1080p (8,2 s = 7.834). El estimado antes de tener la voz sale más
+  alto: re-estimar después de generar la voz. MiniMax H3 Max Lip Sync costaba ~5.000 por clip (alternativa barata).
+- Etiquetas de emoción en `eleven_v4` funcionan entre corchetes al inicio: `[softly, a little sad]`, `[determined]`,
+  `[surprised, happy]`, `[warmly, proud]`, `[cheerful]`. No se leen en voz alta.
+- La toma salió limpia a la primera; el fondo verde se recorta bien con `keyer.py --size 1080`.
