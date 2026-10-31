@@ -3,6 +3,7 @@
 > Lo mantiene el Agente Coordinador.
 
 ## Para hoy
+- [ ] Revisión completa de ortografía y corrección de toda la página web — Agente Administrador Web — 31-oct
 
 ## Esta semana
 - [ ] Carrusel Noviembre Azul (cuadrado 1080x1080, Helenita protagonista, listón azul) · paso 1: textos — Agente Copies Redes — sáb 31-oct
