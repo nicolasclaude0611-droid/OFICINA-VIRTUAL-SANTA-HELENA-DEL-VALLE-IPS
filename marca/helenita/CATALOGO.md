@@ -38,6 +38,9 @@ En la web, `media/voz/`:
 ## Piezas hechas con Helenita
 - `entregas/editor-video/2026-10-30-prueba-helenita-logo.mp4` (rama `agente/editor-video`): video de prueba de
   10 s presentando el logo (saludar, señalar, pulgar), sin voz.
+- `entregas/editor-video/2026-10-31-comercial-helenita-estrena-casa.mp4` (rama `agente/editor-video`): comercial
+  interno de la web nueva, 88 s, 16:9, para directivos. Usa saludar, pensar, sorpresa, celebrar, corazón, pulgar,
+  boca-v3, boca-v8 y las voces v1–v8 de `voces/comercial-web/`. **Pendiente de aprobación del dueño.**
 
 ## Nuevas (agregadas por el Agente Helenita)
 _Formato: fecha · archivo · qué hace o texto exacto · créditos gastados · para qué pieza/agente._
