@@ -74,9 +74,9 @@ continúe el trabajo. Corte: 30 de octubre de 2026 (versión del sitio en la ram
 
 | Sede | Horario |
 |---|---|
-| Valledupar | Lun. a vie. 7:00 a. m. a 7:00 p. m. · sáb. 7:30 a. m. a 1:00 p. m. |
-| La Jagua de Ibirico | POR DEFINIR |
-| San Juan del Cesar | POR DEFINIR |
+| Valledupar | Lun. a vie. 6:30 a. m. a 12:30 p. m. y 1:30 p. m. a 6:30 p. m. |
+| La Jagua de Ibirico | Lun. a vie. 6:30 a. m. a 12:30 p. m. y 1:30 p. m. a 6:30 p. m. |
+| San Juan del Cesar | Lun. a vie. 6:30 a. m. a 12:30 p. m. y 1:30 p. m. a 6:30 p. m. |
 | Domingos y festivos | POR DEFINIR |
 
 ### 1.5 Contacto y agendamiento
@@ -103,7 +103,7 @@ continúe el trabajo. Corte: 30 de octubre de 2026 (versión del sitio en la ram
 |---|---|
 | Valledupar | EPS Sanitas, Salud Total, Unisalud, Suramericana (SURA), FOMAG, Ecopetrol, AXA Colpatria, Colsanitas y Particular |
 | San Juan del Cesar | EPS Sanitas y Particular |
-| La Jagua de Ibirico | **POR DEFINIR.** El responsable quedó de enviarlos; mientras tanto, en el formulario el campo es de texto libre. |
+| La Jagua de Ibirico | Nueva EPS y Particular (confirmado por el responsable el 31 oct 2026). En la web el formulario aún tiene texto libre hasta que se actualice. |
 
 Datos de la sección para aseguradores (texto de la web): modelo alineado con las Rutas Integrales de Atención en
 Salud (Resolución 3280 de 2018) y con los Equipos de Salud Territorial (Resolución 2788 de 2022); contratación por
@@ -741,16 +741,16 @@ círculo es tocable.
 
 ### 5.2 Pendientes
 
-- **EPS de La Jagua de Ibirico**: el responsable las enviará. Luego actualizar `SEDES` en `script.js` y quitar la
-  nota en `CLAUDE.md`.
-- **Horarios** de La Jagua y San Juan; domingos y festivos.
+- **Web:** poner las EPS de La Jagua (Nueva EPS y Particular) en `SEDES` de `script.js` y el horario nuevo de las
+  3 sedes (confirmados el 31 oct 2026).
+- **Horarios** de domingos y festivos.
 - **Noticias reales** para reemplazar los 6 ejemplos, idealmente con fotos.
 - **Política de privacidad / tratamiento de datos**: falta el documento para enlazarlo.
 - **Redes sociales**: enlaces oficiales.
 - **Misión** e **historia** de la empresa.
 - **Confirmar** que la foto asignada a San Juan del Cesar es de esa sede.
 - **Confirmar** el origen de los datos institucionales de la versión inicial (visión 2028, códigos de habilitación,
-  95.000 usuarios, horario de Valledupar, Laboratorio Cristiam Gram, normas citadas).
+  95.000 usuarios, Laboratorio Cristiam Gram, normas citadas).
 - **Colposcopia** y **Citología VPH** aparecen en la vidriera de Valledupar pero no en la lista REPS que nos dieron:
   confirmar.
 - **Dominio propio** para el sitio.

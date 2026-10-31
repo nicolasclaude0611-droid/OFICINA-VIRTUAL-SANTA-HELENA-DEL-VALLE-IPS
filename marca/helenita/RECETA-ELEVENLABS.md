@@ -28,6 +28,7 @@ Flujo **"Helenita · animaciones web"** en la cuenta actual, id `AJAfEJsy6Qq6KRP
 | Imagen base · verde (subida desde `helenita/fuentes/helenita-base-verde.png`) | `IOkSMzBv4r5HiNtu8gKG` |
 | 04 · Señalar (Kling 2.5 Turbo) | `SzIPZkfp3TyOXdbDyIdG` · hecho |
 | 05 · Pulgar arriba (Kling 2.5 Turbo) | `woGMbA09k0y79ssVUctX` · hecho |
+| 07 · Celebrar · 08 · Empatía · 09 · Sorpresa · 10 · Invitar · 11 · Corazón | `4HYksDT8dOQd8IURVqon` · `k8VQECLbA2yVEmcMSNdV` · `iFlcFERRce3XbzOpRXxB` · `lCKoYS4xZcvaIxYzc1Ry` · `7fSznh3sFnskvoYIaUAc` · hechos (2026-10-30) |
 
 Para una animación nueva se reutiliza `IOkSMzBv4r5HiNtu8gKG` como `start_frame` y `end_frame`.
 
@@ -174,7 +175,16 @@ Reglas que funcionaron:
 | hablar | talks warmly to the viewer, explaining something helpful: her mouth moves as she speaks, she nods gently, raises her left hand in front of her chest with an open palm in a welcoming explaining gesture, then lowers it |
 | señalar | She smiles, extends her left arm out to the right side of the frame and points with her index finger toward the right edge, turning her head and eyes to look in that direction as if inviting the viewer to look there, then looks back at the viewer with a smile, lowers her arm |
 | pulgar | She gives the viewer a happy, confident thumbs up with her right hand raised in front of her chest, smiling broadly with a cheerful little nod and a quick wink, then lowers her hand |
+| celebrar | She celebrates joyfully: she raises both arms up high above her head with open hands, smiling very broadly with bright happy eyes and a cheerful little bounce, then lowers her arms (negativo extra: "jumping out of frame") |
+| empatia | She looks at the viewer with a gentle, caring expression, slowly places her right hand softly on the center of her chest over her heart, tilts her head slightly and gives a warm, soft smile, then lowers her hand (negativo extra: "sad, crying") |
+| sorpresa | She reacts with a happy surprise: her big eyes open wide and her eyebrows rise, she brings both hands up and gently places her palms on her cheeks with a delighted open-mouth smile, then lowers her hands (negativo extra: "scared, screaming, fear, sad") |
+| invitar | She smiles warmly and makes a welcoming "come in, please" gesture: she sweeps her left arm open out toward the right side of the frame with the palm facing up, as if kindly inviting the viewer to come in, with a friendly nod, then brings her arm back down (negativo extra: "walking") |
+| corazon | She smiles lovingly at the viewer and brings both hands together in front of her chest to form a heart shape with her fingers, fingertips curved and touching at the top and thumbs touching at the bottom, holds the heart for a moment with a sweet smile, then lowers her hands (negativo extra: "fused fingers") |
 | pensar | She thinks for a moment: she raises her right hand and gently touches her chin with her index finger, looks up and to the side with a curious, thoughtful expression, then her face lights up with a friendly smile as if she found the answer, she lowers her hand (negativo extra: "sad, worried") |
+
+Medido (2026-10-30): 5 clips de 5 s en una sola corrida = 10.605 créditos (2.121 c/u), ~2 min. Las 5 salieron
+limpias a la primera. Varias expresiones en un solo clip de 10 s no se probó: la receta indica una acción por clip.
+Volteo gratis (espejo): `ffmpeg -i fuente-verde.mp4 -vf hflip ...` y luego `keyer.py`; ojo, invierte el logo.
 
 Ideas para nuevas: despedirse, aplaudir, sostener un celular (WhatsApp), señalar hacia abajo,
 llevarse la mano al corazón (gracias), sostener una tabla de citas.
@@ -191,8 +201,19 @@ llevarse la mano al corazón (gracias), sostener una tabla de citas.
 - Voz: **Valeria - Friendly Woman** (`JddqVF50ZSIR7SRbJE6u`, colección «santa helena»), modelo `eleven_v4`.
 - `creative_generate_speech` con `generations_count: 1` (una toma por frase). Cuesta ~1 crédito por carácter.
 - Flujo: `zRkRwkVPQEaFglX6gKux`. Las 5 frases actuales costaron 261 créditos.
-- Frases (`media/voz/`): `saludo` «¡Hola! Soy Elenita. Con gusto le acompaño a agendar su cita.» (**escribir «Elenita» sin H**: con «Helenita» la voz dice «Gelenita») · `paso1` «Para comenzar,
+- Frases (`media/voz/`): `saludo` «¡Hola! Soy Elenita. Con gusto le acompaño a agendar su cita.» (**escribir «Elenita» sin H**: con «Helenita» la voz dice «Gelenita». Igual con el departamento: **escribir «Cesár»**, si no dice «César», el nombre propio) · `paso1` «Para comenzar,
   elija la sede donde desea ser atendido.» · `paso2` «Muy bien. Ahora, elija el servicio que necesita.» · `paso3`
   «Por último, escriba los datos del paciente.» · `listo` «¡Listo! Su mensaje ya está en WhatsApp. Solo debe enviarlo.»
 - Procesado (gratis): recortar silencios, normalizar volumen y comprimir:
   `ffmpeg -i in.mp3 -af "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,apad=pad_dur=0.1,loudnorm=I=-16:TP=-1.5" -ac 1 -ar 44100 -b:a 64k media/voz/nombre.mp3`
+
+
+## Helenita hablando con boca sincronizada (medido 2026-10-31)
+- Flujo «Helenita · comercial web (voz y boca)» `nI0TQ6XQbtpMcO23rUko`: base verde subida por URL (nodo
+  `dA0TtlEY8LsIDrRggbXL`), nodos de voz `eleven_v4` y nodos `avatar` con `bytedance-omnihuman-v1.5` conectados a la
+  imagen (puerto `image`) y a la voz (puerto `audio`). El modelo no acepta indicaciones: el gesto sale de la voz.
+- Costo real: ~960 créditos por segundo de video en 1080p (8,2 s = 7.834). El estimado antes de tener la voz sale más
+  alto: re-estimar después de generar la voz. MiniMax H3 Max Lip Sync costaba ~5.000 por clip (alternativa barata).
+- Etiquetas de emoción en `eleven_v4` funcionan entre corchetes al inicio: `[softly, a little sad]`, `[determined]`,
+  `[surprised, happy]`, `[warmly, proud]`, `[cheerful]`. No se leen en voz alta.
+- La toma salió limpia a la primera; el fondo verde se recorta bien con `keyer.py --size 1080`.
