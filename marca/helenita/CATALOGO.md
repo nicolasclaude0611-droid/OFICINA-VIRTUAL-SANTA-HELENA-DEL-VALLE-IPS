@@ -73,10 +73,11 @@ Originales sin procesar: `entregas/helenita/2026-10-31-comercial-web/voces/origi
 | `v5.mp3` | «Todo es claro, se ve bien en el celular y los servicios están ordenados por áreas.» | 5,2 s |
 | `v6.mp3` | «Hay noticias y consejos de salud, las tres sedes con su mapa, preguntas frecuentes y un formulario de PQRS que deja el correo listo para enviar.» | 9,6 s |
 | `v7.mp3` | «Ya no soy una imagen quieta. Hablo, saludo, pienso y celebro: en la web, en redes y en videos como este.» | 7,9 s |
-| `v8.mp3` | «Una casa nueva, a la altura de veinte años cuidando a las familias del Cesar y La Guajira. ¡La salud, nuestro compromiso!» | 7,7 s |
+| `v8.mp3` | «Una casa nueva, a la altura de veinte años cuidando a las familias del Cesar y La Guajira. ¡La salud, nuestro compromiso!» (rehecha el 31-oct: en la voz se escribe «Cesár» para que diga Ce-SAR, el departamento; 137 créditos) | 7,8 s |
 
 **Helenita hablando con boca sincronizada** (OmniHuman 1.5, 1080p, desde la imagen base en verde) en
 `marca/helenita/animaciones/comercial-web/`: `boca-v3` (sorpresa y emoción, 8,2 s, 7.834 créditos) y `boca-v8`
 (cálida, 8,0 s, 7.679 créditos). Por cada una: `-verde.mp4` (con voz), `.webm` (transparente, sin audio),
 `-stack.mp4` (Safari/iPhone), `.png` y `-audio.mp3` (la voz exacta con la que se sincronizó la boca).
-No se repiten en bucle: son tomas únicas para ese texto.
+No se repiten en bucle: son tomas únicas para ese texto. En `boca-v8` la voz se cambió por la corregida («Cesar»), ajustada gratis
+tramo por tramo a los tiempos de la boca original (diferencias de centésimas; el tramo «¡La salud,» quedó 11 % más lento).
