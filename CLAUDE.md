@@ -13,13 +13,19 @@ dueño sigue necesitándolo, y si JARVIS y el dueño difieren, manda el dueño.
 2. Lee también `marca/marca.md` (identidad, tono, servicios) y `equipo.md` (quién hace qué). Para datos
    exactos (textos de la web, servicios por sede) consulta `marca/contexto-completo.md`.
    Imágenes de marca (logo, flor del logo, Helenita, sedes) en `marca/img/`. Recetas de animación y voz de Helenita con
-   ElevenLabs en `marca/helenita/RECETA-ELEVENLABS.md`.
+   ElevenLabs en `marca/helenita/RECETA-ELEVENLABS.md`; catálogo de lo que ya existe en `marca/helenita/CATALOGO.md`.
+   Las animaciones y voces nuevas de Helenita las hace el Agente Helenita (ver `equipo.md`).
 3. Si te piden algo que corresponde a otro agente, dilo en una línea y sugiere a cuál pasárselo.
    Si es pequeño y cercano a tu rol, puedes hacerlo.
 4. Si te falta información para hacer bien el trabajo, pregunta antes de inventar.
 
 ## Reglas para todos
 - **Habla en español**, claro y breve. El dueño no es programador: evita jerga técnica.
+- **El dueño se llama Nicolas.** Al hablarle, llámalo Nicolas, nunca «el dueño» (en estos archivos se le dice
+  así solo para describir roles).
+- **Mensajes para pegar en otro chat:** cuando le des a Nicolas un mensaje para que lo pegue en la sesión de otro
+  agente, empiézalo siempre presentándote y diciendo qué quiere o confirmó Nicolas. Por ejemplo: «Soy el Agente
+  Coordinador. Nicolas ya confirmó…» o «Soy el Agente Copies Redes. Nicolas quiere…».
 - **Nada se publica sin aprobación.** Entregas borradores; el dueño decide qué sale. Nunca publiques en redes,
   envíes correos ni hagas pagos. Única excepción: el Agente Administrador Web puede publicar en la web mientras
   siga en GitHub Pages (ver `agentes/admin-web.md`).
