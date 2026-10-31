@@ -19,9 +19,9 @@
 ## Sedes y horarios
 | Sede | Dirección | Horario |
 |---|---|---|
-| **Valledupar** (Cesar) · sede principal | Carrera 11 # 14-34, local 2 | Lun-vie 7:00 a. m.–7:00 p. m. · sáb 7:30 a. m.–1:00 p. m. |
-| **La Jagua de Ibirico** (Cesar) | Carrera 3A # 8-17 | POR DEFINIR |
-| **San Juan del Cesar** (La Guajira) | Calle 7 # 9-73 | POR DEFINIR |
+| **Valledupar** (Cesar) · sede principal | Carrera 11 # 14-34, local 2 | Lun-vie 6:30 a. m.–12:30 p. m. y 1:30 p. m.–6:30 p. m. |
+| **La Jagua de Ibirico** (Cesar) | Carrera 3A # 8-17 | Lun-vie 6:30 a. m.–12:30 p. m. y 1:30 p. m.–6:30 p. m. |
+| **San Juan del Cesar** (La Guajira) | Calle 7 # 9-73 | Lun-vie 6:30 a. m.–12:30 p. m. y 1:30 p. m.–6:30 p. m. |
 
 Domingos y festivos: POR DEFINIR.
 
@@ -36,7 +36,7 @@ Domingos y festivos: POR DEFINIR.
 ## EPS y convenios
 - **Valledupar:** EPS Sanitas, Salud Total, Unisalud, SURA, FOMAG, Ecopetrol, AXA Colpatria, Colsanitas y Particular.
 - **San Juan del Cesar:** EPS Sanitas y Particular.
-- **La Jagua de Ibirico:** POR DEFINIR.
+- **La Jagua de Ibirico:** Nueva EPS y Particular.
 
 ## Servicios (solo habilitados en el REPS — no publiques otros)
 - **Medicina general y enfermería** (3 sedes).
@@ -115,5 +115,5 @@ Público amplio: lenguaje claro y letra grande.
 - Las **6 noticias actuales son ejemplos** y hay que reemplazarlas por reales.
 
 ## Pendientes de la marca (pregúntale al dueño cuando haga falta)
-EPS de La Jagua · horarios de La Jagua y San Juan · redes sociales · misión e historia · política de privacidad ·
+Domingos y festivos · redes sociales · misión e historia · política de privacidad ·
 dominio propio · confirmar colposcopia/citología VPH · versión blanca e ícono del logo.
