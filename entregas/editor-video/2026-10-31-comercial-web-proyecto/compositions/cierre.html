@@ -1,0 +1,53 @@
+<template>
+  <style>
+    @font-face { font-family: "Bricolage Grotesque"; src: url("assets/fonts/bricolage.woff2") format("woff2"); font-weight: 200 800; }
+    @font-face { font-family: "Figtree"; src: url("assets/fonts/figtree.woff2") format("woff2"); font-weight: 300 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: linear-gradient(135deg, #06709A 0%, #0A2233 75%); font-family: "Figtree", sans-serif; }
+    #ci-flor { position: absolute; left: 1250px; top: 380px; width: 900px; opacity: 0.08; }
+    #ci-hele { position: absolute; left: 60px; top: 130px; width: 950px; height: 950px; }
+    .ci-anim { position: absolute; left: 0; top: 0; width: 950px; height: 950px; }
+    #ci-textos { position: absolute; left: 960px; top: 250px; width: 860px; }
+    .ci-l { font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; letter-spacing: -0.045em; line-height: 1; color: #fff; }
+    #ci-l1 { font-size: 104px; }
+    #ci-l2 { font-size: 64px; margin-top: 20px; color: #bfe6f4; letter-spacing: -0.03em; line-height: 1.08; }
+    #ci-l3 { font-size: 88px; margin-top: 56px; color: #FFE81A; }
+    #ci-final { position: absolute; inset: 0; }
+    #ci-logo { position: absolute; left: 610px; top: 250px; width: 700px; }
+    #ci-url { position: absolute; left: 0; top: 760px; width: 1920px; text-align: center; }
+    #ci-url span { display: inline-block; font-size: 34px; font-weight: 600; color: #0A2233; background: #fff; padding: 14px 36px; border-radius: 50px; }
+    #ci-anillo { position: absolute; left: 660px; top: 240px; width: 600px; height: 600px; border-radius: 50%; border: 10px solid #FFE81A; opacity: 0; }
+  </style>
+  <div id="root" data-composition-id="cierre" data-width="1920" data-height="1080" data-layout-allow-overflow>
+    <img id="ci-flor" src="assets/img/sol.png" alt="" />
+    <div id="ci-hele">
+      <!-- Provisional: animación «hablar» del catálogo. Se reemplaza por la animación con la boca al ritmo de la voz (V8). -->
+      <video id="ci-habla1" class="ci-anim clip" src="assets/helenita/hablar.webm" data-start="0" data-duration="5" data-track-index="1" muted playsinline></video>
+      <video id="ci-habla2" class="ci-anim clip" src="assets/helenita/hablar.webm" data-start="5" data-duration="3.6" data-track-index="1" muted playsinline></video>
+    </div>
+    <div id="ci-textos">
+      <div class="ci-l" id="ci-l1">Una casa nueva,</div>
+      <div class="ci-l" id="ci-l2">a la altura de 20 años cuidando a las familias del Cesar y La Guajira.</div>
+      <div class="ci-l" id="ci-l3">¡La salud, nuestro compromiso!</div>
+    </div>
+    <div id="ci-final">
+      <div id="ci-anillo"></div>
+      <img id="ci-logo" src="assets/img/logo-lema.png" alt="Santa Helena del Valle IPS" />
+      <div id="ci-url"><span>Nuestra nueva página web</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ci-flor", { rotation: 0 }, { rotation: 35, duration: 13.2, ease: "none" }, 0);
+    tl.fromTo("#ci-hele", { opacity: 0, x: -120 }, { opacity: 1, x: 0, duration: 0.7, ease: "power3.out" }, 0);
+    tl.fromTo("#ci-l1", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 0.45);
+    tl.fromTo("#ci-l2", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 1.8);
+    tl.fromTo("#ci-l3", { opacity: 0, y: 40, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "back.out(1.6)" }, 6.1);
+    // Final: logo con lema
+    tl.to("#ci-hele", { opacity: 0, x: -200, duration: 0.5, ease: "power3.in" }, 8.2);
+    tl.to("#ci-textos", { opacity: 0, x: 200, duration: 0.5, ease: "power3.in" }, 8.2);
+    tl.fromTo("#ci-anillo", { opacity: 0.9, scale: 0.2 }, { opacity: 0, scale: 1.6, duration: 1.0, ease: "power2.out", immediateRender: false }, 8.65);
+    tl.fromTo("#ci-logo", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.7, ease: "back.out(1.8)" }, 8.6);
+    tl.fromTo("#ci-url", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 9.3);
+    window.__timelines["cierre"] = tl;
+  </script>
+</template>
