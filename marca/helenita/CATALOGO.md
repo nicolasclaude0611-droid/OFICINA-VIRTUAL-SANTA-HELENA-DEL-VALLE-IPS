@@ -41,3 +41,21 @@ En la web, `media/voz/`:
 
 ## Nuevas (agregadas por el Agente Helenita)
 _Formato: fecha · archivo · qué hace o texto exacto · créditos gastados · para qué pieza/agente._
+
+Animaciones nuevas en esta oficina: `marca/helenita/animaciones/<nombre>.webm` (transparente), `<nombre>-stack.mp4`
+(Safari/iPhone) y `<nombre>.png` (primer cuadro). Cuadro suelto con la expresión en su punto máximo (PNG
+transparente, para imágenes fijas): `marca/helenita/animaciones/cuadros/<nombre>-cuadro.png`. Originales en verde:
+`entregas/helenita/2026-10-30-expresiones/verde/<nombre>-verde.mp4` (rama `agente/helenita`).
+Todas duran 5 s, empiezan y terminan en la pose neutra (se repiten sin corte y se pueden encadenar).
+
+| Fecha | Nombre | Qué hace | Uso sugerido | Créditos | Pedido por |
+|---|---|---|---|---|---|
+| 2026-10-30 | `celebrar` | Levanta los dos brazos, muy contenta | Logros, buenas noticias, aniversario | 2.121 | JARVIS (biblioteca) |
+| 2026-10-30 | `empatia` | Mano en el pecho, sonrisa suave | Mensajes de cuidado, condolencias, salud mental | 2.121 | JARVIS (biblioteca) |
+| 2026-10-30 | `sorpresa` | Ojos grandes, manos en las mejillas (sorpresa alegre) | «¿Sabía que…?», novedades, datos curiosos | 2.121 | JARVIS (biblioteca) |
+| 2026-10-30 | `invitar` | Abre el brazo hacia la derecha de la pantalla, gesto de «pase» | Invitar a agendar, presentar una sede o servicio a la derecha | 2.121 | JARVIS (biblioteca) |
+| 2026-10-30 | `corazon` | Corazón con las manos frente al pecho | Gracias, Día de la madre, amor y amistad, cierres | 2.121 | JARVIS (biblioteca) |
+| 2026-10-30 | `senalar-izquierda` | Señala hacia la izquierda de la pantalla (espejo de `senalar`) | Indicar algo a la izquierda | 0 (volteo con ffmpeg) | JARVIS (biblioteca) |
+
+Nota `senalar-izquierda`: al ser un espejo, el logo del pecho queda al otro lado y con las letras al revés (a
+tamaño web casi no se nota). Aprobado así por el dueño. No usarla en primer plano grande.
