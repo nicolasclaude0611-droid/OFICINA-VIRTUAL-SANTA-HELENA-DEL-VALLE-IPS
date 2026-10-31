@@ -15,11 +15,12 @@ Guion aprobado por el dueño: `../2026-10-31-guion-comercial-web.md` (versión 3
 | `viva.html` | 66–74,8 s | «Helenita está viva»: 6 expresiones del catálogo |
 | `cierre.html` | 74,8–88 s | Helenita habla (V8) y cierre con el logo |
 
-**Pendiente:** en `hola.html` y `cierre.html` Helenita usa por ahora la animación `hablar` del catálogo. Se
-reemplaza por las animaciones con la boca al ritmo de la voz que está generando el Agente Helenita.
+En `hola.html` y `cierre.html` Helenita habla con la boca al ritmo de su voz (`assets/helenita/boca-v3.webm` y
+`boca-v8.webm`, del Agente Helenita). Con ellas se usa la voz exacta de la sincronización (`assets/voz/boca-v3.mp3` y
+`boca-v8.mp3`), no `v3`/`v8`, para que la boca no se desfase. La V8 ya dice «Cesar» (corrección del dueño).
 
 ## Material
-- **Voces** (`assets/voz/`): `v1`–`v8` las generó el Agente Helenita (ElevenLabs, Valeria). `pagina-*.mp3` son las
+- **Voces** (`assets/voz/`): `v1`, `v2`, `v4`–`v7`, `boca-v3` y `boca-v8` las generó el Agente Helenita (ElevenLabs, Valeria). `pagina-*.mp3` son las
   voces que ya usa la página web.
 - **Grabaciones** (`assets/grab/`): hechas con el navegador el 31-oct-2026. En el agendador se usaron **datos
   inventados** («Paciente de ejemplo», documento 1000000000), no datos de pacientes.
