@@ -5,8 +5,8 @@
 - **Voz:** Helenita, de usted. Se presenta solo en la portada.
 - **Servicios mencionados (habilitados):** medicina general, medicina interna, toma de muestras de laboratorio.
   No se mencionan urología ni el PSA.
-- **Estado:** versión 2. Gancho aprobado por el dueño (opción 1). Datos médicos basados en las fuentes del final;
-  el dueño (médico) hace la revisión final.
+- **Estado:** versión 2. Gancho aprobado por Nicolas (opción 1). Datos médicos basados en las fuentes del final;
+  Nicolas (médico) hace la revisión final.
 
 ---
 
@@ -74,7 +74,7 @@ San Juan del Cesar.
 
 ---
 
-## Fuentes (para la revisión del dueño, no van en el post)
+## Fuentes (para la revisión dNicolas, no van en el post)
 1. **American Cancer Society**, «Signs and Symptoms of Prostate Cancer»: el cáncer de próstata temprano por lo
    general no causa síntomas; en etapas más avanzadas puede dar problemas para orinar (chorro lento o débil,
    orinar más seguido, sobre todo de noche) y sangre en la orina o el semen. Estos síntomas se deben con más
@@ -95,7 +95,7 @@ San Juan del Cesar.
 ## Mensaje para el Agente Creativo Instagram (copiar y pegar)
 
 ```
-Hola, Creativo Instagram. Te paso los textos aprobados de un carrusel para diseñar.
+Soy el Agente Copies Redes. Nicolas quiere que diseñes un carrusel; ya confirmó el gancho de la portada y que no se mencione el PSA, y los datos médicos los revisa él mismo.
 Archivo: entregas/copies-redes/2026-10-30-carrusel-noviembre-azul.md (rama agente/copies-redes).
 
 Pieza: carrusel de feed de 6 láminas, 1080 x 1080, Noviembre Azul (salud del hombre y prevención del cáncer de próstata). Sale la primera semana de noviembre.
@@ -121,6 +121,6 @@ Entrega: 6 PNG de 1080 x 1080 en entregas/creativo-instagram/.
 
 ---
 
-## Para revisar o aprobar (dueño)
+## Para revisar o aprobar (Nicolas)
 1. Revisar los datos médicos con las fuentes de arriba (sobre todo el cambio en las señales de la lámina 4).
 2. Cuando esté conforme, pegar el mensaje de arriba en la sesión del Agente Creativo Instagram.
