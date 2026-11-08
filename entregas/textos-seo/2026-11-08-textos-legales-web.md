@@ -24,7 +24,7 @@ Contenido:
 ## 1. Política de tratamiento de datos personales
 
 **Santa Helena del Valle IPS SAS**
-Versión 1 · Vigente desde: **[POR CONFIRMAR CON NICOLAS: fecha de publicación]**
+Versión 1 · Vigente desde: **8 de noviembre de 2026**
 
 ### 1.1 ¿Quién es el responsable de sus datos?
 
@@ -32,7 +32,7 @@ Versión 1 · Vigente desde: **[POR CONFIRMAR CON NICOLAS: fecha de publicación
 |---|---|
 | Razón social | Santa Helena del Valle IPS SAS |
 | NIT | 900.085.612-7 |
-| Domicilio y dirección principal | Carrera 11 # 14-34, local 2, Valledupar, Cesar **[POR CONFIRMAR CON NICOLAS: si es el domicilio legal de la empresa]** |
+| Domicilio y dirección principal | Carrera 11 # 14-34, local 2, Valledupar, Cesar |
 | Otras sedes | La Jagua de Ibirico (Cesar): Carrera 3A # 8-17 · San Juan del Cesar (La Guajira): Calle 7 # 9-73 |
 | Correo para temas de datos personales | siau@santahelenadelvalleips.com |
 | Teléfono | (605) 588 5690, ext. 201 a 301 · WhatsApp 311 339 8988 |
@@ -78,8 +78,8 @@ llegan únicamente cuando usted decide enviar ese mensaje.
 ### 1.4 ¿Para qué usamos sus datos? (finalidades)
 
 1. **Citas:** recibir su solicitud, verificar la sede, el servicio y su EPS o convenio, asignar la fecha y la hora,
-   y confirmarle la cita por WhatsApp o por teléfono.
-   **[POR CONFIRMAR CON NICOLAS: si la IPS consulta la afiliación o pide autorizaciones a la EPS con estos datos.]**
+   y confirmarle la cita por WhatsApp o por teléfono. Para esto podemos consultar su afiliación y sus derechos ante
+   la EPS o el convenio que usted indique.
 2. **PQRS:** recibir, tramitar y responder sus peticiones, quejas, reclamos, sugerencias y felicitaciones dentro de
    los plazos de ley, y usar la información para mejorar la calidad de la atención.
 3. **Contacto con EPS, aseguradoras y empresas:** responder solicitudes de reuniones técnico-comerciales y de
@@ -88,10 +88,8 @@ llegan únicamente cuando usted decide enviar ese mensaje.
    Superintendencia Nacional de Salud, cuando la ley lo exija.
 
 No usamos sus datos para fines distintos a los anteriores. No los vendemos ni los cedemos a terceros para
-publicidad. Si en el futuro quisiéramos usarlos para otra finalidad (por ejemplo, recordatorios de campañas de
-salud), le pediremos una nueva autorización.
-**[POR CONFIRMAR CON NICOLAS: si la IPS quiere enviar recordatorios o información de campañas; en ese caso se
-agrega como finalidad opcional.]**
+publicidad, y no los usamos para enviarle recordatorios, campañas ni mensajes promocionales. Si en el futuro
+quisiéramos usarlos para otra finalidad, le pediremos antes una nueva autorización.
 
 ### 1.5 Datos sensibles: su información de salud
 
@@ -131,11 +129,9 @@ política.
   política de privacidad de Meta. Esa empresa puede guardar información fuera de Colombia. Santa Helena del Valle
   IPS no controla cómo WhatsApp trata la información.
 - **Correo electrónico:** las PQRS y las solicitudes de empresas se envían desde su propio correo. El mensaje
-  pasa por su proveedor de correo y por el nuestro **[POR CONFIRMAR CON NICOLAS: qué proveedor de correo usa la
-  IPS, por ejemplo Google o Microsoft]**.
+  pasa por su proveedor de correo y por el nuestro, Hostinger, que actúa como encargado del servicio de correo.
 - Si usted prefiere no usar estos servicios, puede pedir su cita por la línea de atención o en cualquiera de
-  nuestras sedes, y radicar su PQRS directamente en la sede. **[POR CONFIRMAR CON NICOLAS: que las sedes reciben
-  PQRS presenciales.]**
+  nuestras sedes, y radicar su PQRS por escrito directamente en la sede.
 
 **[REVISIÓN DEL ABOGADO: valorar si el uso de WhatsApp y del correo implica transferencia o transmisión
 internacional de datos (artículo 26 de la Ley 1581 de 2012) y cómo debe redactarse la autorización.]**
@@ -143,7 +139,8 @@ internacional de datos (artículo 26 de la Ley 1581 de 2012) y cómo debe redact
 ### 1.9 ¿Quién puede ver sus datos?
 
 Solo el personal de la IPS que necesita la información para atender su solicitud (agendamiento, SIAU, Calidad y
-Gerencia, según el caso), los proveedores que nos prestan servicios de comunicación (como el correo) y las
+Gerencia, según el caso), los proveedores que nos prestan servicios de comunicación (como Hostinger, para el
+correo), las EPS o convenios cuando debamos verificar su afiliación, y las
 autoridades que la soliciten conforme a la ley. Todos ellos deben guardar la confidencialidad de la información.
 
 ### 1.10 ¿Cómo cuidamos sus datos?
@@ -213,11 +210,22 @@ Estas empresas tratan esa información según sus propias políticas de privacid
 Usted puede bloquear o borrar las cookies y los datos guardados desde la configuración de su navegador; la página
 seguirá funcionando, pero el mapa podría no mostrarse.
 
-### 1.14 Vigencia
+### 1.14 Vigencia y tiempo de conservación
 
-Esta política rige desde **[POR CONFIRMAR CON NICOLAS: fecha de publicación]**. Conservaremos sus datos solo el
-tiempo necesario para cumplir las finalidades descritas y las obligaciones legales que nos apliquen
-**[POR CONFIRMAR CON NICOLAS: cuánto tiempo guarda la IPS los mensajes de WhatsApp y los correos de PQRS]**.
+Esta política rige desde el **8 de noviembre de 2026**.
+
+**¿Cuánto tiempo guardamos sus datos?** Solo el tiempo razonable y necesario para cumplir la finalidad para la que
+nos los dio. Después los eliminamos, salvo que una ley o un contrato nos obligue a conservarlos.
+
+- **Solicitudes de cita por WhatsApp:** mientras se gestiona la cita y se resuelve cualquier inquietud sobre
+  ella.
+- **PQRS y solicitudes de datos personales:** durante el tiempo que fijen las tablas de retención documental de
+  la IPS, para poder responder a las autoridades de control si nos lo piden.
+- **Historia clínica:** no se recoge por esta página. Se conserva por el tiempo que fijan las normas de salud.
+
+**[REVISIÓN DEL ABOGADO: la ley no fija un plazo máximo en años. Confirmar los tiempos de las tablas de retención
+documental de la IPS para las PQRS y, si se quiere, escribir aquí el número de años.]**
+
 Cuando cambiemos esta política de manera importante, lo informaremos en este sitio web antes de aplicar los
 cambios y, si cambian las finalidades, le pediremos una nueva autorización.
 
@@ -241,7 +249,7 @@ Para una franja pequeña en la parte inferior de la página. Botones: «Entendid
 ## 3. Términos y condiciones de uso del sitio
 
 **Santa Helena del Valle IPS SAS** · NIT 900.085.612-7
-Vigentes desde: **[POR CONFIRMAR CON NICOLAS: fecha de publicación]**
+Vigentes desde: **8 de noviembre de 2026**
 
 ### 3.1 Aceptación
 Al usar este sitio web usted acepta estos términos. Si no está de acuerdo, le pedimos no usarlo. Para atención
@@ -348,18 +356,14 @@ Y en el mensaje de WhatsApp y en el correo que arma la página, cambiar la últi
 
 ## 6. Lo que falta confirmar
 
-**Con Nicolas:**
-1. Fecha en que empiezan a regir los textos (será la fecha de publicación).
-2. Si la dirección de la sede de Valledupar es el domicilio legal de la empresa.
-3. Si la IPS consulta la afiliación o pide autorizaciones a la EPS con los datos de la cita.
-4. Si quiere usar los datos para recordatorios o campañas de salud (sería una finalidad aparte y opcional).
-5. Qué proveedor de correo usa la IPS.
-6. Cuánto tiempo guarda los mensajes de WhatsApp y los correos de PQRS.
-7. Si las sedes reciben PQRS y solicitudes de datos por escrito.
+**Con Nicolas:** todo resuelto el 8 nov 2026 (rige desde esa fecha; el domicilio es la sede de Valledupar; la IPS
+verifica la afiliación con la EPS; no habrá recordatorios ni campañas; el correo es de Hostinger; las sedes reciben
+PQRS por escrito).
 
 **Con el abogado (antes de publicar):**
 - Revisar todo el documento, sobre todo los puntos marcados [REVISIÓN DEL ABOGADO]: datos sensibles, envío de
-  datos por WhatsApp y correo, aviso de cookies, propiedad intelectual y limitación de responsabilidad.
+  datos por WhatsApp y correo, tiempos de conservación, aviso de cookies, propiedad intelectual y limitación de
+  responsabilidad.
 
 ---
 
@@ -367,7 +371,7 @@ Y en el mensaje de WhatsApp y en el correo que arma la página, cambiar la últi
 
 Cuando Nicolas apruebe (y después de la revisión del abogado), el Agente Textos Web y SEO le envía este encargo a
 **JARVIS** con la ruta y la rama de este archivo, y JARVIS se lo pasa al Agente Administrador Web. Antes de
-enviarlo hay que poner la fecha y quitar las marcas de «por confirmar».
+enviarlo hay que quitar las marcas de «revisión del abogado».
 
 Lo que debe hacerse en la web:
 1. Crear dos páginas nuevas con el estilo de la web: «Política de tratamiento de datos personales» (sección 1,
