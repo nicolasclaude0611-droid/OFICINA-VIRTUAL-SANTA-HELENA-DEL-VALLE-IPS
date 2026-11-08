@@ -1,11 +1,11 @@
 # Textos legales de la web · BORRADOR
 
-**Para:** página web https://nicolasclaude0611-droid.github.io/santa-helena/
+**Para:** página web https://santahelenadelvalleips.com/ (hoy en https://nicolasclaude0611-droid.github.io/santa-helena/)
 **Estado:** borrador para que Nicolas lo revise. **Debe revisarlo un abogado antes de publicarlo.**
 **Pedido por:** JARVIS, de parte de Nicolas (8 nov 2026).
 
 > **Cómo leer este documento**
-> - Lo marcado **[POR CONFIRMAR CON NICOLAS]** es un dato que no tenemos y no se debe inventar.
+> - Los datos de Nicolas ya están confirmados (8 nov 2026).
 > - Lo marcado **[REVISIÓN DEL ABOGADO]** es un punto legal donde conviene que el abogado decida la redacción final.
 > - Lo que la web hace hoy lo comprobé en la página publicada el 8 nov 2026: no tiene base de datos ni servidor
 >   propio. Las citas salen por WhatsApp y las PQRS y solicitudes de empresas, por el correo de la persona.
@@ -36,7 +36,7 @@ Versión 1 · Vigente desde: **8 de noviembre de 2026**
 | Otras sedes | La Jagua de Ibirico (Cesar): Carrera 3A # 8-17 · San Juan del Cesar (La Guajira): Calle 7 # 9-73 |
 | Correo para temas de datos personales | siau@santahelenadelvalleips.com |
 | Teléfono | (605) 588 5690, ext. 201 a 301 · WhatsApp 311 339 8988 |
-| Sitio web | https://nicolasclaude0611-droid.github.io/santa-helena/ **[POR CONFIRMAR CON NICOLAS: cambiar cuando haya dominio propio]** |
+| Sitio web | https://santahelenadelvalleips.com/ |
 
 **Área responsable de atender sus solicitudes sobre datos personales:** Sistema de Información y Atención al
 Usuario (SIAU), con copia al área de Calidad (calidad@santahelenadelvalleips.com).
