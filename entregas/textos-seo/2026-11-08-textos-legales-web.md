@@ -63,6 +63,9 @@ IPS recibe en las sedes, o solo los del sitio web.]**
 **Para solicitar una cita** (formulario «Agende su cita»):
 sede, servicio que necesita, nombres y apellidos del paciente, tipo y número de documento, fecha de nacimiento,
 celular de contacto, EPS o convenio, jornada de preferencia y observaciones (estas últimas son opcionales).
+Si el paciente es menor de edad, también el nombre y la cédula de la madre, el padre o el representante legal que
+solicita la cita. **[REVISIÓN DEL ABOGADO: frase agregada en la web por pedido de Nicolas (8 nov 2026); revisar
+junto con la sección 1.6 sobre datos de menores.]**
 
 **Para presentar una PQRS** (peticiones, quejas, reclamos, sugerencias y felicitaciones):
 tipo de solicitud, nombres y apellidos, tipo y número de documento, celular, correo electrónico, sede, asunto y
