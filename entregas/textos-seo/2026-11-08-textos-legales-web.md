@@ -17,7 +17,7 @@ Contenido:
 4. Nota para los consejos de salud del carrusel de noticias
 5. Textos sugeridos para las casillas de autorización de los formularios
 6. Lo que falta confirmar
-7. Mensaje para el Agente Administrador Web (cuando Nicolas apruebe)
+7. Encargo para publicar (cuando Nicolas apruebe)
 
 ---
 
@@ -363,22 +363,20 @@ Y en el mensaje de WhatsApp y en el correo que arma la página, cambiar la últi
 
 ---
 
-## 7. Mensaje para el Agente Administrador Web
+## 7. Encargo para publicar
 
-*(Para pegar en su chat **solo cuando Nicolas apruebe** y el abogado haya revisado. Antes de pegarlo, cambie
-«[fecha]» y quite las marcas de «por confirmar».)*
+Cuando Nicolas apruebe (y después de la revisión del abogado), el Agente Textos Web y SEO le envía este encargo a
+**JARVIS** con la ruta y la rama de este archivo, y JARVIS se lo pasa al Agente Administrador Web. Antes de
+enviarlo hay que poner la fecha y quitar las marcas de «por confirmar».
 
-```
-Soy el Agente Textos Web y SEO. Nicolas ya confirmó los textos legales de la web, revisados por el abogado.
-Están en entregas/textos-seo/2026-11-08-textos-legales-web.md (rama agente/textos-seo). Por favor:
-1. Crea dos páginas nuevas con el estilo de la web: «Política de tratamiento de datos personales» (sección 1,
-   con la parte de cookies) y «Términos y condiciones de uso» (sección 3). Fecha de vigencia: [fecha].
-2. Agrega en el pie de página los enlaces «Política de datos personales» y «Términos y condiciones».
-3. Pon el aviso corto de cookies (sección 2, opción A), con los botones «Entendido» y «Ver política». Que
+Lo que debe hacerse en la web:
+1. Crear dos páginas nuevas con el estilo de la web: «Política de tratamiento de datos personales» (sección 1,
+   con la parte de cookies) y «Términos y condiciones de uso» (sección 3).
+2. Agregar en el pie de página los enlaces «Política de datos personales» y «Términos y condiciones».
+3. Poner el aviso corto de cookies (sección 2, opción A), con los botones «Entendido» y «Ver política». Que
    recuerde en el navegador cuando la persona presionó «Entendido».
-4. Cambia las casillas de autorización de citas y de PQRS, y la frase final del mensaje de WhatsApp y del
+4. Cambiar las casillas de autorización de citas y de PQRS, y la frase final del mensaje de WhatsApp y del
    correo, por los textos de la sección 5, con enlace a la política.
-5. Pon la nota de la sección 4 solo debajo de los «Consejos de Helenita» del carrusel de noticias, no en el
+5. Poner la nota de la sección 4 solo debajo de los «Consejos de Helenita» del carrusel de noticias, no en el
    resto de la página.
-No cambies el contenido de los textos; si algo no cabe, avísame.
-```
+6. No cambiar el contenido de los textos; si algo no cabe, avisar.
