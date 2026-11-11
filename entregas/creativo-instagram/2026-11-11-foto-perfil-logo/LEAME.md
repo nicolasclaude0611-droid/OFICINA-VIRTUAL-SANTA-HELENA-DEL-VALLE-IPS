@@ -11,3 +11,4 @@ Pedido de Nicolas (vía JARVIS). Reemplaza la versión con Helenita. Borrador pa
 - Carpetas `1080/` y `2048/`: los mismos 12 archivos en los dos tamaños. `hoja-comparar.png`: todas en círculo.
 - `fuente/`: el ícono y el logo completo en PNG transparente de alta resolución (~1400–3300 px) y en SVG,
   reutilizables por otros agentes.
+- `completo-5b-azul-oscuro-con-lema.png` (1080 y 2048): logo completo con el lema sobre azul oscuro, pedido por Nicolas.
