@@ -31,7 +31,7 @@ Domingos y festivos: POR DEFINIR.
 - **Correos:** gerencia@santahelenadelvalleips.com · calidadrh@santahelenadelvalleips.com ·
   PQRS: siau@santahelenadelvalleips.com (copia a calidad@santahelenadelvalleips.com)
 - **Agendar:** sección «Agende su cita» de la web (abre WhatsApp con el mensaje listo). La IPS confirma por WhatsApp.
-- **Redes sociales:** POR DEFINIR (la vidriera dice «Síguenos en redes · Helena del valle ips»).
+- **Redes sociales:** Instagram **@santahelenadelvalleips** (https://www.instagram.com/santahelenadelvalleips/; estaba abandonado, en renovación desde nov 2026). Otras redes: POR DEFINIR (la vidriera dice «Síguenos en redes · Helena del valle ips»).
 
 ## EPS y convenios
 - **Valledupar:** EPS Sanitas, Salud Total, Unisalud, SURA, FOMAG, Ecopetrol, AXA Colpatria, Colsanitas y Particular.
