@@ -187,7 +187,7 @@ lista del REPS que nos dieron: confirmar si está habilitada antes de publicarla
 
 ### 1.9 Redes sociales
 
-- Enlaces oficiales: **POR DEFINIR.** La web no tiene enlaces a redes.
+- Enlaces oficiales: Instagram **@santahelenadelvalleips** (https://www.instagram.com/santahelenadelvalleips/), confirmado por Nicolas el 11 nov 2026. Las demás redes: POR DEFINIR. La web todavía no enlaza a redes.
 - Pista: la vidriera de Valledupar dice «Siguenos en redes · Helena del valle ips» (así, sin «Santa» y sin tilde).
   El nombre de usuario exacto en cada red está POR DEFINIR.
 
