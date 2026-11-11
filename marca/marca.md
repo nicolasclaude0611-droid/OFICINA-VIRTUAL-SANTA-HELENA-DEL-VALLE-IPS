@@ -82,7 +82,7 @@ Público amplio: lenguaje claro y letra grande.
 - **Animaciones y voz con ElevenLabs:** receta completa en `marca/helenita/RECETA-ELEVENLABS.md`.
 
 ## Identidad visual
-> **Importante:** el símbolo amarillo del logo es una **flor**, no un sol. Qué flor exactamente: POR DEFINIR
+> **Importante:** el símbolo amarillo del logo es una **margarita** (confirmado por Nicolas, 11 nov 2026), no un sol. **Regla:** la margarita **nunca se usa sola**; cuando va sin el texto del logo, siempre lleva la **«S» azul en el centro** (ícono «margarita con S»). 
 > (el dueño lo confirmará). Nunca la llames "sol" en textos, prompts ni descripciones.
 
 | Color | Hex | Uso |
@@ -103,8 +103,8 @@ Público amplio: lenguaje claro y letra grande.
   logo** como marca de agua; fotos reales de las sedes, **sin fotos de banco**.
 - **Logo** en `marca/img/`: `logo.png` (color, sin lema, para fondos claros) y `logo-lema.png` (con lema blanco,
   **solo sobre fondos oscuros**). Flor del logo: `sol.png` (marca de agua) y `sol-solido.png` (los archivos se llaman "sol" por un error
-  anterior; **el símbolo es una flor**, no un sol). No hay versión blanca ni ícono
-  solo (POR DEFINIR).
+  anterior; **el símbolo es una flor**, no un sol). No hay versión blanca ni archivo del ícono
+  «margarita con S» (POR DEFINIR). `sol.png` es solo marca de agua decorativa, no un logo.
 - **Fotos de las sedes** en `marca/img/sedes/` (la de San Juan está pendiente de confirmar).
 
 ## Página web

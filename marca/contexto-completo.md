@@ -5,7 +5,7 @@ continúe el trabajo. Corte: 30 de octubre de 2026 (versión del sitio en la ram
 
 > **Corrección del dueño (30 oct 2026):** el símbolo amarillo del logo es una **flor**, no un sol. Donde este
 > documento dice "sol" (incluidos los nombres de archivo `sol.png` y `sol-solido.png`), se refiere a la flor.
-> Qué flor exactamente: POR DEFINIR.
+> **Actualización (11 nov 2026):** la flor es una **margarita**. **Regla:** la margarita **nunca se usa sola**; cuando va sin el texto del logo, siempre lleva la **«S» azul en el centro** (ícono «margarita con S»).
 
 **Convenciones de este documento**
 - **POR DEFINIR**: dato que no tenemos. No lo inventen; pídanlo al responsable del proyecto.
