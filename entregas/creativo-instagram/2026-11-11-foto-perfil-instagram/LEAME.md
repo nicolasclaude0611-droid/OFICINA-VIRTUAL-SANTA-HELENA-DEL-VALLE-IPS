@@ -10,7 +10,7 @@ Pedido de JARVIS para Nicolas. Borrador para elegir; no se ha publicado nada.
 Todas dejan margen para que nada se corte en el círculo.
 
 ## Versión elegida por Nicolas
-- `foto-perfil-final.png`: Helenita sonriendo de la cintura para arriba, sobre azul de marca, con el logo en una
-  tarjeta blanca a la altura de la cintura. Ni la cabeza ni el logo se cortan en el círculo. Usa la imagen
+- `foto-perfil-final.png`: Helenita sonriendo de la cintura para arriba, sobre azul de marca, con el logo sin fondo
+  a la altura de la cintura (Nicolas pidió quitar el recuadro blanco). Variante: `foto-perfil-final-contorno.png`, con contorno blanco fino. Ni la cabeza ni el logo se cortan en el círculo. Usa la imagen
   existente `marca/img/helenita/reposo.png`; no se generó nada nuevo.
 - `vista-final-instagram.png`: cómo se ve en círculo a 320, 150, 77 y 44 px.
