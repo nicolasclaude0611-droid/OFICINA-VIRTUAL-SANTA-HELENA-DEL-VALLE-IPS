@@ -18,6 +18,7 @@
 | **Agente Textos Web y SEO** | `agentes/textos-seo.md` | Artículos de blog de salud, textos de páginas web, boletines y correos |
 | **Agente Helenita** | `agentes/helenita.md` | Animaciones y voces nuevas de Helenita; revisar qué existe de Helenita antes de generar |
 | **Agente Administrador Web** | `agentes/admin-web.md` | Actualizar la página web (repo `santa-helena`): noticias, campañas, servicios, horarios, EPS |
+| **Agente Propuestas Comerciales** (temporal) | `agentes/propuestas.md` | Propuesta de negocio para venderle la página nueva a la gerente |
 
 ## Cómo se pasan trabajo entre ellos
 **Regla general:** el dueño lleva los pedidos de una sesión a otra. Cuando un agente prepara algo para otro (por
