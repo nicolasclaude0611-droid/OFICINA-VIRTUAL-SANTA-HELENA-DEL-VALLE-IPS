@@ -2,7 +2,7 @@
 > Las rutas como `helenita/fuentes/`, `media/helenita/` o `media/voz/` son de ese repositorio (público): clónalo
 > para tener los videos y fuentes. `keyer.py` y `gorro.py` también están copiados aquí, en `marca/helenita/tools/`.
 > Si actualizas la receta, la versión oficial es la del repositorio de la web.
-> Nota: el símbolo del logo es una **flor amarilla**, no un sol (en los prompts escribir "yellow flower").
+> Nota: el símbolo del logo es una **margarita amarilla**, no un sol (en los prompts escribir "yellow daisy").
 
 # Receta: animaciones de Helenita con ElevenLabs
 
