@@ -14,6 +14,8 @@
 - [ ] Carrusel Noviembre Azul · publicar — Dueño — semana del 2 al 8 de nov
 
 ## Ideas (sin fecha)
+- [ ] 3 reels de Helenita (9:16), tutoriales y no publicitarios, para mostrar la página nueva: 1) recorrido por la página nueva, 2) cómo pedir una cita, 3) cómo radicar una PQRS.
+  Orden: guiones (Copies Redes) → voces nuevas si hacen falta (Agente Helenita, Nicolas aprueba el costo) → armado de los reels (Creativo Instagram) → Nicolas revisa y publica.
 
 ## Hecho
 - [x] Crear Agente Helenita, con canal directo entre agentes y aprobación de créditos por el dueño — JARVIS — hecho 30-oct
