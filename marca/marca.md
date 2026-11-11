@@ -83,7 +83,7 @@ Público amplio: lenguaje claro y letra grande.
 
 ## Identidad visual
 > **Importante:** el símbolo amarillo del logo es una **margarita** (confirmado por Nicolas, 11 nov 2026), no un sol. **Regla:** la margarita **nunca se usa sola**; cuando va sin el texto del logo, siempre lleva la **«S» azul en el centro** (ícono «margarita con S»). 
-> (el dueño lo confirmará). Nunca la llames "sol" en textos, prompts ni descripciones.
+> Nunca la llames "sol" en textos, prompts ni descripciones.
 
 | Color | Hex | Uso |
 |---|---|---|
