@@ -201,7 +201,7 @@ llevarse la mano al corazón (gracias), sostener una tabla de citas.
 - Voz: **Valeria - Friendly Woman** (`JddqVF50ZSIR7SRbJE6u`, colección «santa helena»), modelo `eleven_v4`.
 - `creative_generate_speech` con `generations_count: 1` (una toma por frase). Cuesta ~1 crédito por carácter.
 - Flujo: `zRkRwkVPQEaFglX6gKux`. Las 5 frases actuales costaron 261 créditos.
-- Frases (`media/voz/`): `saludo` «¡Hola! Soy Elenita. Con gusto le acompaño a agendar su cita.» (**escribir «Elenita» sin H**: con «Helenita» la voz dice «Gelenita». Igual con el departamento: **escribir «Cesár»**, si no dice «César», el nombre propio) · `paso1` «Para comenzar,
+- Frases (`media/voz/`): `saludo` «¡Hola! Soy Elenita. Con gusto le acompaño a agendar su cita.» (**escribir «Elenita» sin H**: con «Helenita» la voz dice «Gelenita». Igual con el departamento: **escribir «Cesár»**, si no dice «César», el nombre propio; y las siglas PQRS: **mejor no decirlas** (Nicolas prefiere «peticiones, quejas o reclamos»); si hace falta la sigla, «pecuerreése» en una palabra suena más fluido que «Pe Cu Erre Ese») · `paso1` «Para comenzar,
   elija la sede donde desea ser atendido.» · `paso2` «Muy bien. Ahora, elija el servicio que necesita.» · `paso3`
   «Por último, escriba los datos del paciente.» · `listo` «¡Listo! Su mensaje ya está en WhatsApp. Solo debe enviarlo.»
 - Procesado (gratis): recortar silencios, normalizar volumen y comprimir:
@@ -217,3 +217,5 @@ llevarse la mano al corazón (gracias), sostener una tabla de citas.
 - Etiquetas de emoción en `eleven_v4` funcionan entre corchetes al inicio: `[softly, a little sad]`, `[determined]`,
   `[surprised, happy]`, `[warmly, proud]`, `[cheerful]`. No se leen en voz alta.
 - La toma salió limpia a la primera; el fondo verde se recorta bien con `keyer.py --size 1080`.
+
+- Muchas voces a la vez: ElevenLabs las procesa de a pocas («concurrency limit») y las reintenta solo, sin cobrar de nuevo. 19 frases tardaron ~5 min.
