@@ -116,7 +116,7 @@ El reel 2 reutiliza además `paso1`, `paso2`, `paso3` y `listo` de la web.
 | `tut-r3-e8.mp3` | «Gracias por ayudarnos a mejorar.» | 2.1 s |
 
 ### Reel de la página para pacientes (2026-11-12, pedido del Agente Editor de Video, aprobado por Nicolas)
-Voces (Valeria, `eleven_v4`, 1 toma c/u, silencios recortados, -16 LUFS) en `marca/helenita/voces/reel-pacientes/`. Total: 634 créditos.
+Voces (Valeria, `eleven_v4`, 1 toma c/u, silencios recortados, -16 LUFS) en `marca/helenita/voces/reel-pacientes/`. Total: 710 créditos.
 
 | Archivo | Texto | Duración |
 |---|---|---|
@@ -125,4 +125,5 @@ Voces (Valeria, `eleven_v4`, 1 toma c/u, silencios recortados, -16 LUFS) en `mar
 | `rp-e6.mp3` | «Encuentre nuestras tres sedes, con su mapa y su horario.» | 3,5 s |
 | `rp-e7.mp3` | «Lea nuestras noticias, campañas y guías paso a paso.» | 3,7 s |
 | `rp-e8.mp3` | «Y envíenos sus peticiones, quejas o reclamos: el correo queda listo para enviar.» | 5,3 s |
+| `rp-e10.mp3` | «Visítenos en triple doble u punto Santa Helena del Valle IPS punto com.» (en la voz: «triple doble u», «i pe ese»; aprobado por Nicolas; 76 créditos) | 5,0 s |
 | `boca-v8-audio.mp3` | Cierre «…las familias del Cesar y La Guajira. ¡La salud, nuestro compromiso!» con «Cesar» bien dicho (ce-SAR); escrito «Ce-sár» en la voz, escogido por Nicolas entre 2 versiones. Ajustado tramo por tramo a la boca de `animaciones/comercial-web/boca-v8` (usar con ese video). | 8,0 s |
