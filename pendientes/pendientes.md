@@ -6,7 +6,7 @@
 - [ ] Revisión completa de ortografía y corrección de toda la página web — Agente Administrador Web — 31-oct
 
 ## Esta semana
-- [ ] Documentos que hay que ver si se suben a la página (lo habían hablado JARVIS y el Administrador Web; la política de privacidad ya está resuelta) — preguntado a JARVIS y al Administrador Web, esperando respuesta — Nicolas decide; Administrador Web los sube
+- [ ] Páginas institucionales de la web antigua que la nueva no tiene (hoy llevan a la portada): 1) derechos y deberes de los pacientes, 2) política de participación social en salud, 3) actas de reunión, 4) cumplimiento de circular, 5) encuestas FOMAG, 6) registros COVID (seguramente ya no aplica). Nicolas le pregunta al área de calidad (calidadrh@santahelenadelvalleips.com) cuáles son obligatorios o útiles y si están vigentes; luego el Administrador Web arma la sección «Información al usuario» y Textos Web y SEO revisa los textos. Archivos originales: respaldo que descargó Nicolas y carpeta web-antigua-2026-11 de Hostinger — Nicolas → calidad → Administrador Web
 - [ ] Actualizar horarios en la web: 6:30 a. m.–12:30 p. m. y 1:30–6:30 p. m., las 3 sedes, lunes a viernes y EPS de La Jagua: Nueva EPS y Particular — Agente Administrador Web — esta semana
 - [ ] Actualizar marca/marca.md con los horarios nuevos y la EPS de La Jagua — JARVIS — esta semana
 - [ ] Carrusel Noviembre Azul (cuadrado 1080x1080, Helenita protagonista, listón azul) · paso 1: textos — Agente Copies Redes — sáb 31-oct
