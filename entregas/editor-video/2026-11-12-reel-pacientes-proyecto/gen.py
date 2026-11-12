@@ -33,6 +33,7 @@ class Cel:
         self.x, self.y, self.S, self.k = x, y, S, S / CSS_W
         self.SH = round(CSS_H * self.k)
         self.tiras, self.cur, self.scroll, self.toques = [], None, 0, []
+        self.hero_n = 1
 
     def px(self, v):
         return round(v * self.k, 2)
@@ -71,9 +72,13 @@ class Cel:
         nt = EST['notiTira']
         noti = (f'<div id="noti-ventana" style="left:{self.px(nt["track_x"])}px;top:{self.px(nt["track_y"])}px;width:{self.px(370)}px;height:{self.px(nt["h_css"])}px">'
                 f'<img id="noti-tira" src="assets/est/noti-tira.png" alt="" style="width:{self.px(nt["w_css"])}px" /></div>')
+        h = EST['heroH']
+        lado = h['h']
+        hero = ''.join(f'<video id="hero-a{i}" class="clip" src="assets/helenita/saludar.webm" data-start="{i * 5.0:.2f}" data-duration="5" data-track-index="5" muted playsinline style="position:absolute;left:{self.px((h["w"] - lado) / 2)}px;top:0;width:{self.px(lado)}px;height:{self.px(lado)}px"></video>' for i in range(self.hero_n))
+        hero = f'<div id="hero-h" style="position:absolute;overflow:hidden;left:{self.px(h["x"])}px;top:{self.px(h["y"])}px;width:{self.px(h["w"])}px;height:{self.px(h["h"])}px">{hero}</div>'
         return f'''<div class="cel" id="cel" style="left:{self.x}px;top:{self.y}px;width:{self.S + 28}px;height:{self.SH + 28}px">
   <div class="pantalla" id="pantalla" style="width:{self.S}px;height:{self.SH}px">
-    <div class="pag" id="pag" style="width:{self.S}px">{tiras}{noti}</div>
+    <div class="pag" id="pag" style="width:{self.S}px">{tiras}{hero}{noti}</div>
     <img class="capa" id="antes-pant" src="assets/antes/inicio-movil.png" alt="" style="width:{self.S}px" />
     <img class="capa" id="cab" src="assets/est/header.png" alt="" style="width:{self.S}px;opacity:0" />
     {''.join(self.toques)}
@@ -128,7 +133,7 @@ def construir():
     titulos.append('<div class="tit" id="tit0">Nuestra página se renovó</div>')
     TL.append('tl.set("#tit0", {opacity:1}, 0);')
     TL.append(f'tl.to("#tit0", {{opacity:0, y:-20, duration:0.2}}, {d0 - 0.2:.2f});')
-    C.mostrar('top', 0)
+    C.mostrar('top-sinh', 0)
     TL.append('tl.fromTo("#brillo", {opacity:0, x:0}, {opacity:1, x:420, duration:0.5, ease:"power2.in", immediateRender:false}, 1.1);')
     TL.append('tl.to("#brillo", {opacity:0, x:640, duration:0.35, ease:"power2.out"}, 1.6);')
     TL.append('tl.to("#antes-pant", {opacity:0, duration:0.35}, 1.45);')
@@ -187,6 +192,7 @@ def construir():
         if j == 3:
             C.desplazar(560, f(0.05), 0.8 * d, 'sine.inOut')
         if j == 4:
+            C.hero_n = int((ini + 0.12 * d + 0.25 * d) // 5.0) + 1
             C.tocar(P['cta']['x'], P['cta']['y'] + C.scroll, f(0.06))
             C.desplazar(W, f(0.12), 0.25 * d)
             C.mostrar('w1', f(0.38), 0.05)
@@ -196,7 +202,7 @@ def construir():
             C.tocar(P['serv1']['x'], P['serv1']['y'], f(0.8)); C.mostrar('w2s', f(0.84))
             C.tocar(P['next2']['x'], P['next2']['y'], f(0.9)); C.mostrar('w3', f(0.94))
         if j == 5:
-            C.mostrar('top', ini, 0.12)
+            C.mostrar('top-sinh', ini, 0.12)
             C.desplazar(2808, ini, 0.3 * d)
             C.tocar(300, 3214, f(0.55)); C.mostrar('serv-apoyo', f(0.6))
         if j == 6:
