@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>@font-face { font-family: "Bricolage Grotesque"; src: url("assets/fonts/bricolage.woff2") format("woff2"); font-weight: 200 800; }
+@font-face { font-family: "Figtree"; src: url("assets/fonts/figtree.woff2") format("woff2"); font-weight: 300 900; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EFF4F7; }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #EFF4F7; font-family: "Figtree", sans-serif; }
+#halo { position: absolute; left: 90px; top: 380px; width: 900px; height: 1200px; border-radius: 50%; background: radial-gradient(ellipse, rgba(5,150,200,.16), rgba(5,150,200,0) 65%); }
+#fondo-azul { position: absolute; inset: 0; background: linear-gradient(165deg, #06709A 0%, #0A2233 72%); opacity: 0; }
+.cel { position: absolute; border-radius: 60px; background: #0A2233; box-shadow: 0 30px 70px rgba(10,34,51,.25); }
+.pantalla { position: absolute; left: 14px; top: 14px; overflow: hidden; border-radius: 48px; background: #fff; }
+.pag { position: absolute; left: 0; top: 0; }
+.tira { position: absolute; left: 0; opacity: 0; }
+.capa { position: absolute; left: 0; top: 0; }
+#noti-ventana { position: absolute; overflow: hidden; opacity: 0; }
+#noti-tira { position: absolute; left: 0; top: 0; }
+.toque { position: absolute; left: 0; top: 0; width: 74px; height: 74px; margin: -37px 0 0 -37px; border-radius: 50%; border: 7px solid #FFE81A; background: rgba(255,232,26,.25); opacity: 0; }
+#brillo { position: absolute; left: 140px; top: 430px; width: 260px; height: 1045px; background: linear-gradient(100deg, rgba(255,255,255,0), rgba(255,255,255,.9), rgba(255,255,255,0)); opacity: 0; }
+.etq { display: inline-block; font-size: 30px; font-weight: 700; padding: 8px 24px; border-radius: 26px; background: #FFE81A; color: #0A2233; }
+.etq.antes { background: #dfe6eb; color: #5d6f7c; }
+#etq-cel { position: absolute; left: 291px; top: 372px; }
+#etq-ahora { position: absolute; left: 291px; top: 372px; opacity: 0; }
+.tit { position: absolute; left: 60px; top: 170px; width: 960px; text-align: center; font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; font-size: 66px; line-height: 1.02; letter-spacing: -0.035em; color: #0A2233; opacity: 0; }
+.tit .ahora { display: table; margin: 0 auto 14px; font-family: "Figtree", sans-serif; font-size: 30px; font-weight: 700; letter-spacing: 0; padding: 8px 24px; border-radius: 26px; background: #FFE81A; color: #0A2233; }
+.sub { position: absolute; left: 70px; top: 1500px; width: 940px; padding: 20px 30px; border-radius: 28px; background: #0A2233; color: #fff; text-align: center; font-size: 36px; font-weight: 600; line-height: 1.22; opacity: 0; }
+#antes { position: absolute; left: 812px; top: 560px; width: 240px; opacity: 0; }
+#antes img { display: block; width: 240px; margin-top: 10px; border-radius: 12px; box-shadow: 0 10px 30px rgba(10,34,51,.18); filter: saturate(.35); }
+#guia { position: absolute; left: -120px; top: 1000px; width: 520px; height: 520px; }
+#guia .anim { position: absolute; left: 0; top: 0; width: 520px; height: 520px; }
+.grande { position: absolute; left: -40px; top: 470px; width: 1000px; height: 1000px; opacity: 0; }
+.grande video { position: absolute; left: 0; top: 0; width: 1000px; height: 1000px; }
+#grande2 { left: 40px; top: 600px; }
+.cierre { position: absolute; left: 60px; top: 230px; width: 960px; text-align: center; font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; font-size: 54px; line-height: 1.08; letter-spacing: -0.03em; color: #fff; opacity: 0; }
+.cierre.am { top: 410px; font-size: 76px; color: #FFE81A; }
+.final { position: absolute; inset: 0; background: #FBFCFD; opacity: 0; }
+.final img { position: absolute; left: 155px; top: 700px; width: 700px; }
+.final p { position: absolute; left: 0; top: 1130px; width: 1080px; text-align: center; font-size: 40px; font-weight: 700; color: #06709A; }
+</style>
+</head>
+<body>
+<!-- Reel «Nuestra página web» para pacientes · generado con gen.py -->
+<div id="root" data-composition-id="reel" data-start="0" data-duration="59.66" data-width="1080" data-height="1920" data-layout-allow-overflow>
+<div id="fondo-azul"></div>
+<div id="halo"></div>
+<div class="etq antes" id="etq-cel">Antes</div><div class="etq" id="etq-ahora">Ahora</div>
+<div class="cel" id="cel" style="left:291px;top:430px;width:498px;height:1045px">
+  <div class="pantalla" id="pantalla" style="width:470px;height:1017px">
+    <div class="pag" id="pag" style="width:470px"><img class="tira" id="t-top" src="assets/est/top.png" alt="" style="top:0.0px;width:470px" /><img class="tira" id="t-w1" src="assets/est/w1.png" alt="" style="top:1807.69px;width:470px" /><img class="tira" id="t-w1s" src="assets/est/w1s.png" alt="" style="top:1807.69px;width:470px" /><img class="tira" id="t-w2" src="assets/est/w2.png" alt="" style="top:1807.69px;width:470px" /><img class="tira" id="t-w2a" src="assets/est/w2a.png" alt="" style="top:1807.69px;width:470px" /><img class="tira" id="t-w2s" src="assets/est/w2s.png" alt="" style="top:1807.69px;width:470px" /><img class="tira" id="t-w3" src="assets/est/w3.png" alt="" style="top:1807.69px;width:470px" /><img class="tira" id="t-serv-apoyo" src="assets/est/serv-apoyo.png" alt="" style="top:3253.85px;width:470px" /><img class="tira" id="t-mid" src="assets/est/mid.png" alt="" style="top:3253.85px;width:470px" /><img class="tira" id="t-noti1" src="assets/est/noti1.png" alt="" style="top:4458.97px;width:470px" /><img class="tira" id="t-pqrs0" src="assets/est/pqrs0.png" alt="" style="top:12653.85px;width:470px" /><div id="noti-ventana" style="left:24.1px;top:4850.45px;width:445.9px;height:542.78px"><img id="noti-tira" src="assets/est/noti-tira.png" alt="" style="width:1491.95px" /></div></div>
+    <img class="capa" id="antes-pant" src="assets/antes/inicio-movil.png" alt="" style="width:470px" />
+    <img class="capa" id="cab" src="assets/est/header.png" alt="" style="width:470px;opacity:0" />
+    <div class="toque" id="tq1"></div><div class="toque" id="tq2"></div><div class="toque" id="tq3"></div><div class="toque" id="tq4"></div><div class="toque" id="tq5"></div><div class="toque" id="tq6"></div><div class="toque" id="tq7"></div><div class="toque" id="tq8"></div>
+  </div>
+</div>
+<div id="brillo"></div>
+<div id="antes"><span class="etq antes">Antes</span><img id="antes-img" src="assets/antes/citas.png" alt="" /></div>
+<div id="guia"><video id="a-e3-0" class="anim clip" src="assets/helenita/hablar.webm" data-start="15.71" data-duration="5.00" data-track-index="3" muted playsinline></video><video id="a-e3-1" class="anim clip" src="assets/helenita/hablar.webm" data-start="20.71" data-duration="0.42" data-track-index="3" muted playsinline></video><video id="a-e4-0" class="anim clip" src="assets/helenita/senalar.webm" data-start="21.13" data-duration="5.00" data-track-index="3" muted playsinline></video><video id="a-e4-1" class="anim clip" src="assets/helenita/senalar.webm" data-start="26.13" data-duration="2.49" data-track-index="3" muted playsinline></video><video id="a-e5-0" class="anim clip" src="assets/helenita/hablar.webm" data-start="28.62" data-duration="5.00" data-track-index="3" muted playsinline></video><video id="a-e5-1" class="anim clip" src="assets/helenita/hablar.webm" data-start="33.62" data-duration="0.57" data-track-index="3" muted playsinline></video><video id="a-e6-0" class="anim clip" src="assets/helenita/senalar.webm" data-start="34.19" data-duration="4.35" data-track-index="3" muted playsinline></video><video id="a-e7-0" class="anim clip" src="assets/helenita/pensar.webm" data-start="38.54" data-duration="4.06" data-track-index="3" muted playsinline></video><video id="a-e8-0" class="anim clip" src="assets/helenita/pulgar.webm" data-start="42.60" data-duration="5.00" data-track-index="3" muted playsinline></video><video id="a-e8-1" class="anim clip" src="assets/helenita/pulgar.webm" data-start="47.60" data-duration="1.06" data-track-index="3" muted playsinline></video></div>
+<div id="grande1" class="grande"><video id="boca1" class="clip" src="assets/helenita/boca-v3.webm" data-start="7.31" data-duration="8.2" data-track-index="4" muted playsinline></video></div><div id="grande2" class="grande"><video id="boca2" class="clip" src="assets/helenita/boca-v8.webm" data-start="48.96" data-duration="8.04" data-track-index="4" muted playsinline></video></div>
+<div class="tit" id="tit0">Nuestra página se renovó</div>
+<div class="tit" id="tit1"><span class="ahora">Ahora</span>Helenita le habla</div>
+<div class="tit" id="tit2">Hola, soy Helenita</div>
+<div class="tit" id="tit3">Todo desde su celular o computador</div>
+<div class="sub" id="sub3">Desde su celular o computador, en nuestra página puede hacer todo esto.</div>
+<div class="tit" id="tit4"><span class="ahora">Ahora</span>Su cita en 3 pasos</div>
+<div class="sub" id="sub4">Pida su cita en tres pasos: la sede, el servicio y sus datos. El mensaje le queda listo en WhatsApp.</div>
+<div class="tit" id="tit5"><span class="ahora">Ahora</span>Servicios por áreas</div>
+<div class="sub" id="sub5">Todo es claro, se ve bien en el celular y los servicios están ordenados por áreas.</div>
+<div class="tit" id="tit6"><span class="ahora">Ahora</span>3 sedes con mapa y horario</div>
+<div class="sub" id="sub6">Encuentre nuestras tres sedes, con su mapa y su horario.</div>
+<div class="tit" id="tit7"><span class="ahora">Ahora</span>Noticias y guías</div>
+<div class="sub" id="sub7">Lea nuestras noticias, campañas y guías paso a paso.</div>
+<div class="tit" id="tit8"><span class="ahora">Ahora</span>Peticiones, quejas o reclamos</div>
+<div class="sub" id="sub8">Y envíenos sus peticiones, quejas o reclamos: el correo queda listo para enviar.</div>
+<div class="cierre" id="cie1">Veinte años cuidando a las familias del Cesar y La Guajira.</div><div class="cierre am" id="cie2">¡La salud, nuestro compromiso!</div>
+<div class="final" id="final"><img src="assets/img/logo.png" alt="Santa Helena del Valle IPS" /><p>santahelenadelvalleips.com</p></div>
+<audio id="brillo-sfx" class="clip" src="assets/sfx/sparkle.mp3" data-start="1.15" data-duration="1.8" data-track-index="14" data-volume="0.45"></audio>
+<audio id="wh0" class="clip" src="assets/sfx/whoosh.mp3" data-start="1.05" data-duration="1.2" data-track-index="16" data-volume="0.3"></audio>
+<audio id="voz-pagina-saludo" class="clip" src="assets/voz/pagina-saludo.mp3" data-start="3.30" data-duration="3.72" data-track-index="11" data-volume="1"></audio>
+<audio id="voz-boca-v3" class="clip" src="assets/voz/boca-v3.mp3" data-start="7.31" data-duration="8.08" data-track-index="10" data-volume="1"></audio>
+<audio id="brillo2" class="clip" src="assets/sfx/sparkle.mp3" data-start="7.31" data-duration="1.5" data-track-index="14" data-volume="0.35"></audio>
+<audio id="clic1" class="clip" src="assets/sfx/click-soft.mp3" data-start="21.63" data-duration="0.35" data-track-index="16" data-volume="0.35"></audio>
+<audio id="clic2" class="clip" src="assets/sfx/click-soft.mp3" data-start="24.33" data-duration="0.35" data-track-index="17" data-volume="0.35"></audio>
+<audio id="clic3" class="clip" src="assets/sfx/click-soft.mp3" data-start="25.52" data-duration="0.35" data-track-index="15" data-volume="0.35"></audio>
+<audio id="clic4" class="clip" src="assets/sfx/click-soft.mp3" data-start="26.42" data-duration="0.35" data-track-index="16" data-volume="0.35"></audio>
+<audio id="clic5" class="clip" src="assets/sfx/click-soft.mp3" data-start="27.17" data-duration="0.35" data-track-index="17" data-volume="0.35"></audio>
+<audio id="clic6" class="clip" src="assets/sfx/click-soft.mp3" data-start="27.92" data-duration="0.35" data-track-index="15" data-volume="0.35"></audio>
+<audio id="voz-v5" class="clip" src="assets/voz/v5.mp3" data-start="28.77" data-duration="5.18" data-track-index="10" data-volume="1"></audio>
+<audio id="clic7" class="clip" src="assets/sfx/click-soft.mp3" data-start="31.73" data-duration="0.35" data-track-index="16" data-volume="0.35"></audio>
+<audio id="clic8" class="clip" src="assets/sfx/click-soft.mp3" data-start="48.10" data-duration="0.35" data-track-index="17" data-volume="0.35"></audio>
+<audio id="pop" class="clip" src="assets/sfx/pop.mp3" data-start="57.06" data-duration="0.7" data-track-index="14" data-volume="0.3"></audio>
+<audio id="musica" class="clip" src="assets/bgm/the-corporate-upbeat.mp3" data-start="0" data-duration="59.66" data-media-start="12" data-track-index="12" data-volume="0.07" data-fade-in="0.4" data-fade-out="1.8"></audio>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.set("#tit0", {opacity:1}, 0);
+tl.to("#tit0", {opacity:0, y:-20, duration:0.2}, 3.00);
+tl.set("#t-top", {opacity:1}, 0.00);
+tl.fromTo("#brillo", {opacity:0, x:0}, {opacity:1, x:420, duration:0.5, ease:"power2.in", immediateRender:false}, 1.1);
+tl.to("#brillo", {opacity:0, x:640, duration:0.35, ease:"power2.out"}, 1.6);
+tl.to("#antes-pant", {opacity:0, duration:0.35}, 1.45);
+tl.to("#cab", {opacity:1, duration:0.35}, 1.45);
+tl.to("#etq-cel", {opacity:0, duration:0.25}, 1.4);
+tl.fromTo("#etq-ahora", {opacity:0}, {opacity:1, duration:0.3, immediateRender:false}, 1.55);
+tl.to("#etq-ahora", {opacity:0, duration:0.3}, 3.0);
+tl.fromTo("#tit1", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out", immediateRender:false}, 3.20);
+tl.to("#tit1", {opacity:0, y:-20, duration:0.2}, 7.11);
+tl.set("#cel", {transformOrigin:"60% 100%"}, 3.20);
+tl.to("#cel", {scale:1.1, duration:0.9, ease:"power3.inOut"}, 3.40);
+tl.to("#cel", {scale:1, duration:0.6, ease:"power3.inOut"}, 6.71);
+tl.fromTo("#tit2", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, immediateRender:false}, 10.61);
+tl.to("#tit2", {opacity:0, duration:0.2}, 15.51);
+tl.to("#cel", {x:250, scale:0.62, transformOrigin:"100% 50%", duration:0.6, ease:"power3.inOut"}, 7.31);
+tl.to("#cel", {x:0, scale:1, duration:0.6, ease:"power3.inOut"}, 15.21);
+tl.to("#guia", {opacity:0, duration:0.25}, 7.31);
+tl.to("#guia", {opacity:1, duration:0.3}, 15.51);
+tl.fromTo("#grande1", {opacity:0, x:-80, scale:0.9}, {opacity:1, x:0, scale:1, duration:0.5, ease:"back.out(1.4)", immediateRender:false}, 7.31);
+tl.to("#grande1", {opacity:0, x:-60, duration:0.35}, 15.31);
+tl.fromTo("#tit3", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out", immediateRender:false}, 15.71);
+tl.to("#tit3", {opacity:0, y:-20, duration:0.2}, 20.93);
+tl.fromTo("#sub3", {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, immediateRender:false}, 15.81);
+tl.to("#sub3", {opacity:0, duration:0.18}, 20.95);
+tl.fromTo("#pag", {y:-0.0}, {y:-674.87, duration:4.34, ease:"sine.inOut", immediateRender:false}, 15.98);
+tl.fromTo("#tit4", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out", immediateRender:false}, 21.13);
+tl.to("#tit4", {opacity:0, y:-20, duration:0.2}, 28.42);
+tl.fromTo("#sub4", {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, immediateRender:false}, 21.23);
+tl.to("#sub4", {opacity:0, duration:0.18}, 28.44);
+tl.set("#antes-img", {attr:{src:"assets/antes/citas.png"}}, 21.13);
+tl.fromTo("#antes", {opacity:0, x:40}, {opacity:1, x:0, duration:0.4, ease:"power3.out", immediateRender:false}, 21.43);
+tl.to("#antes", {opacity:0, x:40, duration:0.25}, 28.32);
+tl.set("#tq1", {x:363.95, y:45.79}, 0);
+tl.fromTo("#tq1", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 21.58);
+tl.to("#tq1", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 21.80);
+tl.fromTo("#pag", {y:-674.87}, {y:-2413.87, duration:1.87, ease:"power2.inOut", immediateRender:false}, 22.03);
+tl.fromTo("#t-w1", {opacity:0}, {opacity:1, duration:0.05, ease:"none", immediateRender:false}, 23.98);
+tl.to("#t-top", {opacity:0, duration:0.01}, 24.03);
+tl.set("#tq2", {x:235.0, y:409.74}, 0);
+tl.fromTo("#tq2", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 24.28);
+tl.to("#tq2", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 24.50);
+tl.fromTo("#t-w1s", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 24.58);
+tl.to("#t-w1", {opacity:0, duration:0.01}, 24.73);
+tl.set("#tq3", {x:242.23, y:886.97}, 0);
+tl.fromTo("#tq3", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 25.47);
+tl.to("#tq3", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 25.69);
+tl.fromTo("#t-w2", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 25.85);
+tl.to("#t-w1s", {opacity:0, duration:0.01}, 26.00);
+tl.set("#tq4", {x:235.0, y:397.69}, 0);
+tl.fromTo("#tq4", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 26.37);
+tl.to("#tq4", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 26.59);
+tl.fromTo("#t-w2a", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 26.67);
+tl.to("#t-w2", {opacity:0, duration:0.01}, 26.82);
+tl.set("#tq5", {x:235.0, y:491.69}, 0);
+tl.fromTo("#tq5", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 27.12);
+tl.to("#tq5", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 27.34);
+tl.fromTo("#t-w2s", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 27.42);
+tl.to("#t-w2a", {opacity:0, duration:0.01}, 27.57);
+tl.set("#tq6", {x:316.95, y:696.56}, 0);
+tl.fromTo("#tq6", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 27.87);
+tl.to("#tq6", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 28.09);
+tl.fromTo("#t-w3", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 28.17);
+tl.to("#t-w2s", {opacity:0, duration:0.01}, 28.32);
+tl.fromTo("#tit5", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out", immediateRender:false}, 28.62);
+tl.to("#tit5", {opacity:0, y:-20, duration:0.2}, 33.99);
+tl.fromTo("#sub5", {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, immediateRender:false}, 28.72);
+tl.to("#sub5", {opacity:0, duration:0.18}, 34.01);
+tl.fromTo("#t-top", {opacity:0}, {opacity:1, duration:0.12, ease:"none", immediateRender:false}, 28.62);
+tl.to("#t-w3", {opacity:0, duration:0.01}, 28.74);
+tl.fromTo("#pag", {y:-2413.87}, {y:-3384.0, duration:1.67, ease:"power2.inOut", immediateRender:false}, 28.62);
+tl.set("#tq7", {x:361.54, y:489.28}, 0);
+tl.fromTo("#tq7", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 31.68);
+tl.to("#tq7", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 31.90);
+tl.fromTo("#t-serv-apoyo", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 31.96);
+tl.to("#t-top", {opacity:0, duration:0.01}, 32.11);
+tl.fromTo("#tit6", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out", immediateRender:false}, 34.19);
+tl.to("#tit6", {opacity:0, y:-20, duration:0.2}, 38.34);
+tl.fromTo("#sub6", {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, immediateRender:false}, 34.29);
+tl.to("#sub6", {opacity:0, duration:0.18}, 38.36);
+tl.fromTo("#t-mid", {opacity:0}, {opacity:1, duration:0.12, ease:"none", immediateRender:false}, 34.19);
+tl.to("#t-serv-apoyo", {opacity:0, duration:0.01}, 34.31);
+tl.fromTo("#pag", {y:-3384.0}, {y:-7780.31, duration:1.96, ease:"power2.inOut", immediateRender:false}, 34.28);
+tl.fromTo("#pag", {y:-7780.31}, {y:-8074.36, duration:1.52, ease:"power2.inOut", immediateRender:false}, 36.80);
+tl.fromTo("#tit7", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out", immediateRender:false}, 38.54);
+tl.to("#tit7", {opacity:0, y:-20, duration:0.2}, 42.40);
+tl.fromTo("#sub7", {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, immediateRender:false}, 38.64);
+tl.to("#sub7", {opacity:0, duration:0.18}, 42.42);
+tl.fromTo("#t-noti1", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 38.54);
+tl.to("#t-mid", {opacity:0, duration:0.01}, 38.69);
+tl.set("#pag", {y:-4516.82}, 38.54);
+tl.set("#noti-ventana", {opacity:1}, 38.54);
+tl.fromTo("#noti-tira", {x:0}, {x:-1046.05, duration:3.25, ease:"power1.inOut", immediateRender:false}, 39.03);
+tl.set("#noti-ventana", {opacity:0}, 42.60);
+tl.fromTo("#tit8", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out", immediateRender:false}, 42.60);
+tl.to("#tit8", {opacity:0, y:-20, duration:0.2}, 48.46);
+tl.fromTo("#sub8", {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, immediateRender:false}, 42.70);
+tl.to("#sub8", {opacity:0, duration:0.18}, 48.48);
+tl.set("#antes-img", {attr:{src:"assets/antes/pqrs.png"}}, 42.60);
+tl.fromTo("#antes", {opacity:0, x:40}, {opacity:1, x:0, duration:0.4, ease:"power3.out", immediateRender:false}, 42.90);
+tl.to("#antes", {opacity:0, x:40, duration:0.25}, 48.36);
+tl.fromTo("#pantalla", {filter:"blur(0px)"}, {filter:"blur(10px)", duration:0.12, immediateRender:false}, 42.50);
+tl.fromTo("#t-pqrs0", {opacity:0}, {opacity:1, duration:0.1, ease:"none", immediateRender:false}, 42.60);
+tl.to("#t-noti1", {opacity:0, duration:0.01}, 42.70);
+tl.set("#pag", {y:-12822.56}, 42.62);
+tl.to("#pantalla", {filter:"blur(0px)", duration:0.25}, 42.65);
+tl.fromTo("#pag", {y:-12822.56}, {y:-13617.95, duration:2.12, ease:"power2.inOut", immediateRender:false}, 43.51);
+tl.fromTo("#pag", {y:-13617.95}, {y:-14582.05, duration:1.82, ease:"power2.inOut", immediateRender:false}, 45.93);
+tl.set("#tq8", {x:235.0, y:588.1}, 0);
+tl.fromTo("#tq8", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 48.05);
+tl.to("#tq8", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 48.27);
+tl.fromTo("#fondo-azul", {opacity:0}, {opacity:1, duration:0.5, immediateRender:false}, 48.66);
+tl.to(["#cel", "#guia", "#antes"], {opacity:0, y:80, duration:0.4, ease:"power2.in"}, 48.66);
+tl.fromTo("#grande2", {opacity:0, y:80}, {opacity:1, y:0, duration:0.5, ease:"power3.out", immediateRender:false}, 48.86);
+tl.to("#grande2", {opacity:0, duration:0.3}, 56.91);
+tl.fromTo("#cie1", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, immediateRender:false}, 50.36);
+tl.fromTo("#cie2", {opacity:0, y:30, scale:0.9}, {opacity:1, y:0, scale:1, duration:0.45, ease:"back.out(1.6)", immediateRender:false}, 54.76);
+tl.to(["#cie1", "#cie2"], {opacity:0, duration:0.3}, 56.91);
+tl.fromTo("#final", {opacity:0}, {opacity:1, duration:0.4, immediateRender:false}, 57.06);
+tl.fromTo("#final img", {scale:0.8}, {scale:1, duration:0.6, ease:"back.out(1.6)", immediateRender:false}, 57.06);
+window.__timelines["reel"] = tl;
+</script>
+</body>
+</html>

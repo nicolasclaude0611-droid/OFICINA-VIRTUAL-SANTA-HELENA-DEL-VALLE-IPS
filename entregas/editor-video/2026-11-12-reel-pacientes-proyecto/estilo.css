@@ -1,0 +1,35 @@
+@font-face { font-family: "Bricolage Grotesque"; src: url("assets/fonts/bricolage.woff2") format("woff2"); font-weight: 200 800; }
+@font-face { font-family: "Figtree"; src: url("assets/fonts/figtree.woff2") format("woff2"); font-weight: 300 900; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EFF4F7; }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #EFF4F7; font-family: "Figtree", sans-serif; }
+#halo { position: absolute; left: 90px; top: 380px; width: 900px; height: 1200px; border-radius: 50%; background: radial-gradient(ellipse, rgba(5,150,200,.16), rgba(5,150,200,0) 65%); }
+#fondo-azul { position: absolute; inset: 0; background: linear-gradient(165deg, #06709A 0%, #0A2233 72%); opacity: 0; }
+.cel { position: absolute; border-radius: 60px; background: #0A2233; box-shadow: 0 30px 70px rgba(10,34,51,.25); }
+.pantalla { position: absolute; left: 14px; top: 14px; overflow: hidden; border-radius: 48px; background: #fff; }
+.pag { position: absolute; left: 0; top: 0; }
+.tira { position: absolute; left: 0; opacity: 0; }
+.capa { position: absolute; left: 0; top: 0; }
+#noti-ventana { position: absolute; overflow: hidden; opacity: 0; }
+#noti-tira { position: absolute; left: 0; top: 0; }
+.toque { position: absolute; left: 0; top: 0; width: 74px; height: 74px; margin: -37px 0 0 -37px; border-radius: 50%; border: 7px solid #FFE81A; background: rgba(255,232,26,.25); opacity: 0; }
+#brillo { position: absolute; left: 140px; top: 430px; width: 260px; height: 1045px; background: linear-gradient(100deg, rgba(255,255,255,0), rgba(255,255,255,.9), rgba(255,255,255,0)); opacity: 0; }
+.etq { display: inline-block; font-size: 30px; font-weight: 700; padding: 8px 24px; border-radius: 26px; background: #FFE81A; color: #0A2233; }
+.etq.antes { background: #dfe6eb; color: #5d6f7c; }
+#etq-cel { position: absolute; left: 291px; top: 372px; }
+#etq-ahora { position: absolute; left: 291px; top: 372px; opacity: 0; }
+.tit { position: absolute; left: 60px; top: 170px; width: 960px; text-align: center; font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; font-size: 66px; line-height: 1.02; letter-spacing: -0.035em; color: #0A2233; opacity: 0; }
+.tit .ahora { display: table; margin: 0 auto 14px; font-family: "Figtree", sans-serif; font-size: 30px; font-weight: 700; letter-spacing: 0; padding: 8px 24px; border-radius: 26px; background: #FFE81A; color: #0A2233; }
+.sub { position: absolute; left: 70px; top: 1500px; width: 940px; padding: 20px 30px; border-radius: 28px; background: #0A2233; color: #fff; text-align: center; font-size: 36px; font-weight: 600; line-height: 1.22; opacity: 0; }
+#antes { position: absolute; left: 812px; top: 560px; width: 240px; opacity: 0; }
+#antes img { display: block; width: 240px; margin-top: 10px; border-radius: 12px; box-shadow: 0 10px 30px rgba(10,34,51,.18); filter: saturate(.35); }
+#guia { position: absolute; left: -120px; top: 1000px; width: 520px; height: 520px; }
+#guia .anim { position: absolute; left: 0; top: 0; width: 520px; height: 520px; }
+.grande { position: absolute; left: -40px; top: 470px; width: 1000px; height: 1000px; opacity: 0; }
+.grande video { position: absolute; left: 0; top: 0; width: 1000px; height: 1000px; }
+#grande2 { left: 40px; top: 600px; }
+.cierre { position: absolute; left: 60px; top: 230px; width: 960px; text-align: center; font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; font-size: 54px; line-height: 1.08; letter-spacing: -0.03em; color: #fff; opacity: 0; }
+.cierre.am { top: 410px; font-size: 76px; color: #FFE81A; }
+.final { position: absolute; inset: 0; background: #FBFCFD; opacity: 0; }
+.final img { position: absolute; left: 155px; top: 700px; width: 700px; }
+.final p { position: absolute; left: 0; top: 1130px; width: 1080px; text-align: center; font-size: 40px; font-weight: 700; color: #06709A; }
