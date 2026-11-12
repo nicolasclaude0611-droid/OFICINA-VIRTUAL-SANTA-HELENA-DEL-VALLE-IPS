@@ -13,7 +13,7 @@ existen). Entre escenas dejo unas décimas de pausa.
 
 **Leyenda:** 🆕 = frase nueva (hay que generar la voz) · ♻️ = voz que ya existe en el catálogo (se reutiliza).
 
-## Cómo se arma cada escena (para el Agente Creativo Instagram)
+## Cómo se arma cada escena (para el Agente Editor de Video)
 - **Pantalla:** captura o grabación de la **página real** en vista de celular (390 × 844), ocupando la parte de
   arriba del cuadro (unos 1080 × 1250). Los pasos a mostrar están numerados abajo.
 - **Helenita:** animación transparente (`.webm`) abajo a la derecha, ≈ 600 px de alto, sobre una franja de color
@@ -174,18 +174,18 @@ No hay que animar la boca: solo voz. Las animaciones que usan los reels ya exist
 (Tabla de las 19 frases con su texto exacto: ver el archivo de guiones.)
 ```
 
-### Para el Agente Creativo Instagram
+### Para el Agente Editor de Video (arma los reels; antes decía Creativo Instagram)
 ```
-Soy el Agente Copies Redes. Nicolas quiere que armes 3 reels tutorial verticales (9:16, 1080 x 1920, 28 a 31 s cada uno) de Helenita sobre cómo usar la página nueva (santahelenadelvalleips.com). Es un tutorial, sin tono de venta.
-Guiones escena por escena (pantalla, texto en pantalla, animación y frase): entregas/copies-redes/2026-11-12-guiones-reels-tutorial-pagina.md (rama agente/copies-redes).
+Soy el Agente Copies Redes. Nicolas aprobó los guiones y quiere que armes 3 reels tutorial verticales (9:16, 1080 x 1920, 28 a 31 s cada uno) de Helenita sobre cómo usar la página nueva (santahelenadelvalleips.com). Es un tutorial, sin tono de venta.
+Guiones escena por escena (pantalla, texto en pantalla, animación y frase) y captions: entregas/copies-redes/2026-11-12-guiones-reels-tutorial-pagina.md (rama agente/copies-redes).
 
 1) Recorrido por la página · 2) Cómo pedir una cita · 3) Cómo enviar una PQRS.
-- Pantallas: graba o captura la página REAL en vista de celular (390 x 844) y recórtala arriba del cuadro (~1080 x 1250). Con datos de ejemplo claramente inventados (Paciente Ejemplo, 0000000000, 300 000 0000); nunca datos reales ni de pacientes.
-- Helenita: animaciones transparentes de marca/helenita/ (las que indica cada escena), abajo a la derecha, sin boca sincronizada.
-- Voces: las pone el Agente Helenita (las 4 del reel 2 ya existen: paso1, paso2, paso3, listo; las demás son nuevas, ya pedidas). Sincroniza cada escena con su audio.
-- Estilo: franja navy #0A2233 con detalle amarillo #FFE81A, Bricolage Grotesque 600 y Figtree, subtítulos con la frase, logo al final. Flor del logo (no sol).
+- Pantallas: graba o captura la página REAL en vista de celular (390 x 844) y recórtala arriba del cuadro (~1080 x 1250). Con datos de ejemplo claramente inventados (Paciente Ejemplo, 0000000000, 300 000 0000); nunca datos reales ni de pacientes. Los horarios de las tarjetas de sedes ya son los correctos: grábalas tal cual.
+- Helenita: animaciones transparentes de marca/helenita/ (las que indica cada escena), abajo a la derecha, sin boca sincronizada. Ella no dice «Soy Helenita» en ningún reel.
+- Voces: las pone el Agente Helenita (las 4 del reel 2 ya existen: paso1, paso2, paso3, listo; las otras 19 las está generando y te avisará dónde quedan). Sincroniza cada escena con su audio.
+- Estilo: franja navy #0A2233 con detalle amarillo #FFE81A, Bricolage Grotesque 600 y Figtree, subtítulos con la frase, logo al final. Flor del logo (no sol). Puedes usar HyperFrames como en el comercial de Helenita.
 - En el reel 3 el correo siau@santahelenadelvalleips.com va escrito en pantalla, no en la voz.
-Entrega: 3 MP4 en entregas/creativo-instagram/. Captions en el archivo de guiones.
+Entrega: 3 MP4 en entregas/editor-video/.
 ```
 
 ---
