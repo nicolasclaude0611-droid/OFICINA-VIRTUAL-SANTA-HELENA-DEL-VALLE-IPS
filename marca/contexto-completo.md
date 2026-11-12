@@ -5,7 +5,7 @@ continúe el trabajo. Corte: 30 de octubre de 2026 (versión del sitio en la ram
 
 > **Corrección del dueño (30 oct 2026):** el símbolo amarillo del logo es una **flor**, no un sol. Donde este
 > documento dice "sol" (incluidos los nombres de archivo `sol.png` y `sol-solido.png`), se refiere a la flor.
-> Qué flor exactamente: POR DEFINIR.
+> **Actualización (11 nov 2026):** la flor es una **margarita**. **Regla:** la margarita **nunca se usa sola**; cuando va sin el texto del logo, siempre lleva la **«S» azul en el centro** (ícono «margarita con S»).
 
 **Convenciones de este documento**
 - **POR DEFINIR**: dato que no tenemos. No lo inventen; pídanlo al responsable del proyecto.
@@ -37,7 +37,7 @@ continúe el trabajo. Corte: 30 de octubre de 2026 (versión del sitio en la ram
 | Habilitación | Secretaría de Salud del Cesar (código 2000100979) y Secretaría de Salud de La Guajira (código 4465001142) |
 | Capacidad instalada | 95.000 usuarios |
 | Dominio de correo | santahelenadelvalleips.com |
-| Sitio web oficial con dominio propio | POR DEFINIR (hoy se publica en GitHub Pages, ver sección 4) |
+| Sitio web oficial con dominio propio | https://santahelenadelvalleips.com/ (Hostinger), publicada el 12 nov 2026. La versión de GitHub Pages queda solo como copia de trabajo. |
 | Fecha de fundación exacta | POR DEFINIR (solo sabemos «20 años») |
 
 ### 1.2 Sedes
@@ -187,7 +187,7 @@ lista del REPS que nos dieron: confirmar si está habilitada antes de publicarla
 
 ### 1.9 Redes sociales
 
-- Enlaces oficiales: **POR DEFINIR.** La web no tiene enlaces a redes.
+- Enlaces oficiales: Instagram **@santahelenadelvalleips** (https://www.instagram.com/santahelenadelvalleips/), confirmado por Nicolas el 11 nov 2026. Las demás redes: POR DEFINIR. La web todavía no enlaza a redes.
 - Pista: la vidriera de Valledupar dice «Siguenos en redes · Helena del valle ips» (así, sin «Santa» y sin tilde).
   El nombre de usuario exacto en cada red está POR DEFINIR.
 

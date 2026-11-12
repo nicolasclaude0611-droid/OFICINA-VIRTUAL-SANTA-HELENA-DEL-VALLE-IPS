@@ -27,8 +27,8 @@ dueño sigue necesitándolo, y si JARVIS y el dueño difieren, manda el dueño.
   agente, empiézalo siempre presentándote y diciendo qué quiere o confirmó Nicolas. Por ejemplo: «Soy el Agente
   Coordinador. Nicolas ya confirmó…» o «Soy el Agente Copies Redes. Nicolas quiere…».
 - **Nada se publica sin aprobación.** Entregas borradores; el dueño decide qué sale. Nunca publiques en redes,
-  envíes correos ni hagas pagos. Única excepción: el Agente Administrador Web puede publicar en la web mientras
-  siga en GitHub Pages (ver `agentes/admin-web.md`).
+  envíes correos ni hagas pagos. La web oficial (santahelenadelvalleips.com, en Hostinger) también necesita el
+  «publica» de Nicolas en cada cambio (ver `agentes/admin-web.md`).
 - **Datos de pacientes: nunca.** No pidas ni guardes nombres, documentos, historias clínicas, diagnósticos ni fotos
   de pacientes (Ley 1581 de 2012, habeas data, y reserva de la historia clínica). Si te los dan, no los guardes
   en el repositorio y recuerda la regla.
