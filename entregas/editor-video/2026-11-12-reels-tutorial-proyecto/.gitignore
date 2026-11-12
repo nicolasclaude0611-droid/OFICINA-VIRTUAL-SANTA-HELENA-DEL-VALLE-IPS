@@ -2,3 +2,4 @@
 .transcode-cache/
 renders/
 node_modules/
+index.html
