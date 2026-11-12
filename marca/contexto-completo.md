@@ -37,7 +37,7 @@ continúe el trabajo. Corte: 30 de octubre de 2026 (versión del sitio en la ram
 | Habilitación | Secretaría de Salud del Cesar (código 2000100979) y Secretaría de Salud de La Guajira (código 4465001142) |
 | Capacidad instalada | 95.000 usuarios |
 | Dominio de correo | santahelenadelvalleips.com |
-| Sitio web oficial con dominio propio | POR DEFINIR (hoy se publica en GitHub Pages, ver sección 4) |
+| Sitio web oficial con dominio propio | https://santahelenadelvalleips.com/ (Hostinger), publicada el 12 nov 2026. La versión de GitHub Pages queda solo como copia de trabajo. |
 | Fecha de fundación exacta | POR DEFINIR (solo sabemos «20 años») |
 
 ### 1.2 Sedes
