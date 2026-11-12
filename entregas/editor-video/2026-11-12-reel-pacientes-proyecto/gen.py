@@ -137,7 +137,7 @@ def construir():
     TL.append('tl.fromTo("#etq-ahora", {opacity:0}, {opacity:1, duration:0.3, immediateRender:false}, 1.55);')
     TL.append('tl.to("#etq-ahora", {opacity:0, duration:0.3}, 3.0);')
     AUD.append('<audio id="brillo-sfx" class="clip" src="assets/sfx/sparkle.mp3" data-start="1.15" data-duration="1.8" data-track-index="14" data-volume="0.45"></audio>')
-    AUD.append('<audio id="wh0" class="clip" src="assets/sfx/whoosh.mp3" data-start="1.05" data-duration="1.2" data-track-index="16" data-volume="0.3"></audio>')
+    AUD.append('<audio id="wh0" class="clip" src="assets/sfx/whoosh.mp3" data-start="1.05" data-duration="0.55" data-track-index="16" data-volume="0.3"></audio>')
     t = d0
 
     # ---- 1 · Helenita de la página saluda ----
@@ -215,7 +215,7 @@ def construir():
             C.desplazar(10640, ini + 0.02, 0)
             TL.append(f'tl.to("#pantalla", {{filter:"blur(0px)", duration:0.25}}, {ini + 0.05:.2f});')
             C.desplazar(11300, f(0.15), 0.35 * d)
-            C.desplazar(12100, f(0.55), 0.3 * d)
+            C.desplazar(11950, f(0.55), 0.3 * d)
             C.tocar(195, 12588, f(0.9))
         t += d
 
