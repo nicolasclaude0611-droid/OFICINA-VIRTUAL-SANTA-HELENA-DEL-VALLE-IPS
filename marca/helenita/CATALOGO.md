@@ -41,6 +41,10 @@ En la web, `media/voz/`:
 - `entregas/editor-video/2026-10-31-comercial-helenita-estrena-casa.mp4` (rama `agente/editor-video`): comercial
   interno de la web nueva, 88 s, 16:9, para directivos. Usa saludar, pensar, sorpresa, celebrar, corazón, pulgar,
   boca-v3, boca-v8 y las voces v1–v8 de `voces/comercial-web/`. **Pendiente de aprobación del dueño.**
+- `entregas/editor-video/2026-11-12-reel-tutorial-1-recorrido.mp4`, `-2-pedir-cita.mp4` y `-3-pqrs.mp4` (rama
+  `agente/editor-video`): 3 reels tutorial verticales de la página nueva. Usan las voces `tutorial-pagina/` (tut-r1,
+  r2, r3), `paso1`, `paso2`, `paso3` y `listo`, y las animaciones saludar, hablar, invitar, senalar, pensar, pulgar,
+  reposo y empatia. **Aprobados por Nicolas (12-nov).**
 
 ## Nuevas (agregadas por el Agente Helenita)
 _Formato: fecha · archivo · qué hace o texto exacto · créditos gastados · para qué pieza/agente._
