@@ -12,7 +12,7 @@
 ## Ideas (sin fecha)
 - [ ] Post (carrusel cuadrado 1080x1080) mostrando las 3 sedes: Valledupar, La Jagua de Ibirico y San Juan del Cesar — Copies Redes (textos) → Creativo Instagram (diseño) — sin fecha; falta confirmar la foto de San Juan
 - [ ] 3 reels de Helenita (9:16), tutoriales y no publicitarios, para mostrar la página nueva: 1) recorrido por la página nueva, 2) cómo pedir una cita, 3) cómo radicar una PQRS.
-  Orden: guiones (Copies Redes) → voces nuevas si hacen falta (Agente Helenita, Nicolas aprueba el costo) → armado de los reels (Creativo Instagram) → Nicolas revisa y publica.
+  Orden: guiones (Copies Redes) → voces nuevas si hacen falta (Agente Helenita, Nicolas aprueba el costo) → armado de los reels (Editor de Video; JARVIS los reasignó el 12-nov: todos los reels y videos van al Editor de Video) → Nicolas revisa y publica.
 
 ## Hecho
 - [x] Carrusel Noviembre Azul: textos, diseño, revisión y publicación — Copies Redes / Creativo Instagram / Nicolas — hecho (Nicolas confirmó 12-nov)
