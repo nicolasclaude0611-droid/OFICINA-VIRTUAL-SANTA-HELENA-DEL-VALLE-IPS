@@ -84,3 +84,29 @@ Originales sin procesar: `entregas/helenita/2026-10-31-comercial-web/voces/origi
 `-stack.mp4` (Safari/iPhone), `.png` y `-audio.mp3` (la voz exacta con la que se sincronizó la boca).
 No se repiten en bucle: son tomas únicas para ese texto. En `boca-v8` la voz se cambió por la corregida («Cesar»), ajustada gratis
 tramo por tramo a los tiempos de la boca original (diferencias de centésimas; el tramo «¡La salud,» quedó 11 % más lento).
+
+### Reels tutorial de la página nueva (2026-11-12, pedido del Agente Copies Redes, aprobado por Nicolas)
+Voces (Valeria, `eleven_v4`, 1 toma c/u, silencios recortados, -16 LUFS) en `marca/helenita/voces/tutorial-pagina/`. **Helenita no dice «PQRS»** en estos reels: Nicolas pidió decir «peticiones, quejas o reclamos». Las 3 frases que la nombraban se rehicieron (primero con «pecuerreése», +189 créditos; luego sin sigla, +236). Total de este pedido: 1.475 créditos. Ninguna dice «Soy Helenita». Originales: `entregas/helenita/2026-11-12-voces-tutorial-pagina/original/`.
+El reel 2 reutiliza además `paso1`, `paso2`, `paso3` y `listo` de la web.
+
+| Archivo | Texto | Duración |
+|---|---|---|
+| `tut-r1-e1.mp3` | «¡Hola! Le muestro cómo usar la página nueva de Santa Helena del Valle IPS.» | 5.0 s |
+| `tut-r1-e2.mp3` | «Arriba está el menú: servicios, sedes, preguntas frecuentes y peticiones, quejas o reclamos.» | 7.3 s |
+| `tut-r1-e3.mp3` | «Para pedir una cita, toque Agendar cita.» | 3.2 s |
+| `tut-r1-e4.mp3` | «En Servicios elija un área y vea lo que ofrecemos.» | 3.5 s |
+| `tut-r1-e5.mp3` | «En Sedes encontrará el mapa, las direcciones, los horarios y cómo llegar.» | 5.0 s |
+| `tut-r1-e6.mp3` | «Y aquí puede enviarnos sus peticiones, quejas o reclamos, y también sugerencias o felicitaciones.» | 6.5 s |
+| `tut-r1-e7.mp3` | «Si necesita ayuda, toque mi carita abajo.» | 2.9 s |
+| `tut-r2-e1.mp3` | «¡Hola! Hoy le muestro cómo pedir su cita.» | 2.8 s |
+| `tut-r2-e2.mp3` | «Toque el botón Agendar cita.» | 2.1 s |
+| `tut-r2-e6.mp3` | «Acepte la autorización y toque Pedir esta cita.» | 3.7 s |
+| `tut-r2-e8.mp3` | «Nuestro equipo le confirmará la fecha y la hora por WhatsApp.» | 3.2 s |
+| `tut-r3-e1.mp3` | «¡Hola! Hoy le muestro cómo enviar una petición, queja o sugerencia.» | 4.6 s |
+| `tut-r3-e2.mp3` | «Toque Peticiones, quejas o reclamos en el menú.» | 3.2 s |
+| `tut-r3-e3.mp3` | «Elija el tipo de solicitud y escriba sus datos de contacto.» | 3.7 s |
+| `tut-r3-e4.mp3` | «Cuéntenos qué ocurrió, con fecha, sede y servicio.» | 3.7 s |
+| `tut-r3-e5.mp3` | «Toque Preparar correo y se abrirá el mensaje listo.» | 3.1 s |
+| `tut-r3-e6.mp3` | «Revíselo y envíelo: llega a atención al usuario, con copia a Calidad.» | 5.1 s |
+| `tut-r3-e7.mp3` | «Respondemos dentro de los términos de ley, hasta quince días hábiles.» | 4.4 s |
+| `tut-r3-e8.mp3` | «Gracias por ayudarnos a mejorar.» | 2.1 s |
