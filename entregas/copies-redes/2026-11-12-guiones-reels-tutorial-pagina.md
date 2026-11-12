@@ -1,13 +1,13 @@
 # 3 reels tutorial de Helenita · cómo usar la página nueva
 
 BORRADOR para Nicolas. Formato: reel vertical 9:16 (1080 × 1920). Tono de tutorial: sin venta ni promociones.
-Helenita es la guía, de usted. **Sin boca sincronizada**: se ve su gesto (animación del catálogo) y se oye su voz.
+Helenita es la guía, de usted, **sin presentarse en ningún reel** (Nicolas no quiere que diga «Soy Helenita» en todos los videos de la cuenta). **Sin boca sincronizada**: se ve su gesto (animación del catálogo) y se oye su voz.
 
 **Cálculos de tiempo:** la voz de Helenita habla a unos 14 caracteres por segundo (medido en las voces que ya
 existen). Entre escenas dejo unas décimas de pausa.
 | Reel | Habla | Duración estimada |
 |---|---|---|
-| 1 · Recorrido por la página | 424 caracteres | ≈ 31 s |
+| 1 · Recorrido por la página | 425 caracteres | ≈ 31 s |
 | 2 · Cómo pedir una cita | 381 caracteres | ≈ 28 s |
 | 3 · Cómo enviar una PQRS | 429 caracteres | ≈ 31 s |
 
@@ -32,17 +32,17 @@ existen). Entre escenas dejo unas décimas de pausa.
 
 | # | Seg. | Pantalla (captura de la página real) | Texto en pantalla | Animación de Helenita | Frase que dice |
 |---|---|---|---|---|---|
-| 1 | 0–6 | Inicio de la página (título «¡La salud, nuestro compromiso!») | **Así se usa nuestra página** | `saludar` | 🆕 «¡Hola! Soy Helenita. Le muestro cómo usar la página nueva de Santa Helena del Valle IPS.» |
+| 1 | 0–6 | Inicio de la página (título «¡La salud, nuestro compromiso!») | **Así se usa nuestra página** | `saludar` | 🆕 «¡Hola! Le muestro cómo usar la página nueva de Santa Helena del Valle IPS.» |
 | 2 | 6–11 | Barra de arriba, con el cursor recorriendo el menú | **Menú: Servicios · Sedes · Preguntas · PQRS** | `hablar` | 🆕 «Arriba está el menú: servicios, sedes, preguntas frecuentes y PQRS.» |
 | 3 | 11–14 | Botón «Agendar cita» resaltado | **Agendar cita** | `invitar` | 🆕 «Para pedir una cita, toque Agendar cita.» |
 | 4 | 14–18 | Sección «Nuestros servicios», cambiando de pestaña entre áreas | **Servicios por áreas** | `hablar` | 🆕 «En Servicios elija un área y vea lo que ofrecemos.» |
-| 5 | 18–22 | Sección «Nuestras sedes»: mapa y tarjetas de las 3 sedes | **Sedes: mapa y cómo llegar** | `senalar` | 🆕 «En Sedes encontrará el mapa, las direcciones y cómo llegar.» |
+| 5 | 18–22 | Sección «Nuestras sedes»: mapa y tarjetas de las 3 sedes | **Sedes: mapa, direcciones y horarios** | `senalar` | 🆕 «En Sedes encontrará el mapa, las direcciones, los horarios y cómo llegar.» |
 | 6 | 22–28 | Sección «PQRS» (formulario) | **PQRS: petición, queja, reclamo, sugerencia o felicitación** | `pensar` | 🆕 «Y en PQRS puede enviar una petición, queja, reclamo, sugerencia o felicitación.» |
 | 7 | 28–31 | Botón flotante de Helenita (carita) abajo a la derecha | **¿Dudas? Toque a Helenita** | `pulgar` | 🆕 «Si necesita ayuda, toque mi carita abajo.» |
 
 Notas:
-- La tarjeta de Valledupar muestra su horario. **Antes de grabar, confirmar que el horario que muestra la página
-  sea el correcto** (está pendiente de confirmar con Nicolas). Si no, grabe la tarjeta sin acercar el horario.
+- Los horarios de las sedes ya están en la página y en `marca/contexto-completo.md` (sección 1.4): grabe las
+  tarjetas tal como están.
 - En la escena 7 el botón flotante aparece al bajar por la página: hay que dejar que el scroll lo muestre.
 
 **Caption (corto):**
@@ -76,8 +76,7 @@ que abre WhatsApp con el mensaje listo.
 | 8 | 23–28 | Aviso del formulario: «Nuestro equipo le confirmará la fecha y la hora» | **La IPS le confirma fecha y hora por WhatsApp** | `reposo` | 🆕 «Nuestro equipo le confirmará la fecha y la hora por WhatsApp.» |
 
 Notas:
-- **No uso `saludo.mp3`** («¡Hola! Soy Helenita. Con gusto le acompaño a agendar su cita.») porque en este reel
-  Helenita ya no se presenta. Si prefiere ahorrar los 41 caracteres de la escena 1, se puede usar esa voz.
+- No uso `saludo.mp3` («¡Hola! Soy Helenita…») porque Nicolas no quiere que ella diga su nombre en todos los videos.
 - La escena 7 puede ser una captura de WhatsApp Web con datos de ejemplo; no mostrar números ni chats reales.
 - La página dice «Esta página no almacena sus datos» (si el Creativo quiere reforzarlo en pantalla, es texto real de la página).
 
@@ -132,17 +131,16 @@ santahelenadelvalleips.com (enlace en el perfil)
 
 # Frases NUEVAS para generar la voz (19 en total)
 
-La voz es Valeria (`JddqVF50ZSIR7SRbJE6u`, `eleven_v4`). Para que la diga bien: «Helenita» se escribe **«Elenita»**
-y las siglas PQRS se escriben **«Pe Cu Erre Ese»**. Estimo 1 crédito por carácter (en las voces anteriores se
+La voz es Valeria (`JddqVF50ZSIR7SRbJE6u`, `eleven_v4`). Para que la diga bien: las siglas PQRS se escriben **«Pe Cu Erre Ese»**. Si en otra pieza se nombra a Helenita, se escribe «Elenita». Estimo 1 crédito por carácter (en las voces anteriores se
 cobró más o menos así); el Agente Helenita confirma el costo real. Una sola toma por frase.
 
 | Archivo | Texto para generar | Caracteres |
 |---|---|---|
-| `tut-r1-e1` | ¡Hola! Soy Elenita. Le muestro cómo usar la página nueva de Santa Helena del Valle IPS. | 87 |
+| `tut-r1-e1` | ¡Hola! Le muestro cómo usar la página nueva de Santa Helena del Valle IPS. | 74 |
 | `tut-r1-e2` | Arriba está el menú: servicios, sedes, preguntas frecuentes y Pe Cu Erre Ese. | 77 |
 | `tut-r1-e3` | Para pedir una cita, toque Agendar cita. | 40 |
 | `tut-r1-e4` | En Servicios elija un área y vea lo que ofrecemos. | 50 |
-| `tut-r1-e5` | En Sedes encontrará el mapa, las direcciones y cómo llegar. | 59 |
+| `tut-r1-e5` | En Sedes encontrará el mapa, las direcciones, los horarios y cómo llegar. | 73 |
 | `tut-r1-e6` | Y en Pe Cu Erre Ese puede enviar una petición, queja, reclamo, sugerencia o felicitación. | 89 |
 | `tut-r1-e7` | Si necesita ayuda, toque mi carita abajo. | 41 |
 | `tut-r2-e1` | ¡Hola! Hoy le muestro cómo pedir su cita. | 41 |
@@ -157,7 +155,7 @@ cobró más o menos así); el Agente Helenita confirma el costo real. Una sola t
 | `tut-r3-e6` | Revíselo y envíelo: llega a atención al usuario, con copia a Calidad. | 69 |
 | `tut-r3-e7` | Respondemos dentro de los términos de ley, hasta quince días hábiles. | 69 |
 | `tut-r3-e8` | Gracias por ayudarnos a mejorar. | 32 |
-| **Total** | | **1.049 caracteres ≈ 1.049 créditos** |
+| **Total** | | **1.050 caracteres ≈ 1.050 créditos** |
 
 Reutilizadas (no cuestan): `paso1`, `paso2`, `paso3` y `listo` (reel 2).
 
@@ -170,7 +168,7 @@ Reutilizadas (no cuestan): `paso1`, `paso2`, `paso3` y `listo` (reel 2).
 Soy el Agente Copies Redes. Nicolas quiere 3 reels tutorial de Helenita sobre cómo usar la página nueva y necesita las voces nuevas.
 Guiones: entregas/copies-redes/2026-11-12-guiones-reels-tutorial-pagina.md (rama agente/copies-redes), sección «Frases NUEVAS».
 
-Genera SOLO estas 19 frases con Valeria (JddqVF50ZSIR7SRbJE6u, eleven_v4), 1 toma cada una, recortando silencios y a -16 LUFS como las del comercial. Escribe «Elenita» por Helenita y «Pe Cu Erre Ese» por PQRS (ya van así en la tabla). Total: 1.049 caracteres (≈ 1.049 créditos si cobra 1 por carácter; confírmame el costo real antes de generar si es mayor).
+Genera SOLO estas 19 frases con Valeria (JddqVF50ZSIR7SRbJE6u, eleven_v4), 1 toma cada una, recortando silencios y a -16 LUFS como las del comercial. Escribe «Pe Cu Erre Ese» por PQRS (ya va así en la tabla). Ninguna frase dice «Soy Helenita»: Nicolas no quiere que lo diga en todos los videos de la cuenta. Total: 1.050 caracteres (≈ 1.050 créditos si cobra 1 por carácter; confírmame el costo real antes de generar si es mayor).
 Nombres de archivo: tut-r1-e1 … tut-r3-e8, como en la tabla. Guárdalas en marca/helenita/voces/tutorial-pagina/ y anótalas en marca/helenita/CATALOGO.md.
 No hay que animar la boca: solo voz. Las animaciones que usan los reels ya existen (saludar, hablar, invitar, senalar, pensar, pulgar, reposo, empatia).
 (Tabla de las 19 frases con su texto exacto: ver el archivo de guiones.)
@@ -187,7 +185,6 @@ Guiones escena por escena (pantalla, texto en pantalla, animación y frase): ent
 - Voces: las pone el Agente Helenita (las 4 del reel 2 ya existen: paso1, paso2, paso3, listo; las demás son nuevas, ya pedidas). Sincroniza cada escena con su audio.
 - Estilo: franja navy #0A2233 con detalle amarillo #FFE81A, Bricolage Grotesque 600 y Figtree, subtítulos con la frase, logo al final. Flor del logo (no sol).
 - En el reel 3 el correo siau@santahelenadelvalleips.com va escrito en pantalla, no en la voz.
-- Antes de grabar, revisa que el horario de la tarjeta de Valledupar en la página sea el correcto.
 Entrega: 3 MP4 en entregas/creativo-instagram/. Captions en el archivo de guiones.
 ```
 
@@ -195,5 +192,4 @@ Entrega: 3 MP4 en entregas/creativo-instagram/. Captions en el archivo de guione
 
 ## Pendientes para Nicolas
 1. Aprobar los guiones (o decirme qué cambiar).
-2. Confirmar el horario correcto de Valledupar, porque aparece en la tarjeta de sedes que se graba en el reel 1.
-3. Decidir si en el reel 2 se reutiliza `saludo.mp3` (ahorra 41 créditos, pero Helenita volvería a decir «Soy Helenita»).
+2. Confirmar que los 3 reels son los que quiere (recorrido, cita y PQRS) y que en ninguno Helenita dice su nombre.
