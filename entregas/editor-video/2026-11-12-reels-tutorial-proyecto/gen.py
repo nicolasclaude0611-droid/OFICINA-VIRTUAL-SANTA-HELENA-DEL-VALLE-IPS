@@ -200,7 +200,7 @@ def reel1():
 #hele { position: absolute; left: -90px; top: 980px; width: 580px; height: 580px; }
 #hele .anim { width: 580px; height: 580px; }
 .final { background: #0A2233; }
-.final img { position: absolute; left: 190px; top: 700px; width: 700px; }
+.final img { position: absolute; left: 155px; top: 700px; width: 700px; }
 .final p { position: absolute; left: 0; top: 1150px; width: 1080px; text-align: center; font-size: 40px; font-weight: 700; color: #FFE81A; }
 '''
     escenas = [
@@ -209,8 +209,7 @@ def reel1():
         ('tut-r1-e3', 'Para pedir una cita, toque Agendar cita.', 'Agendar cita', 'invitar'),
         ('tut-r1-e4', 'En Servicios elija un área y vea lo que ofrecemos.', 'Servicios por áreas', 'hablar'),
         ('tut-r1-e5', 'En Sedes encontrará el mapa, las direcciones, los horarios y cómo llegar.', 'Sedes y mapa', 'senalar'),
-        ('tut-r1-e6', 'Y aquí puede enviarnos sus peticiones, quejas o reclamos, y también sugerencias o felicitaciones.', 'Peticiones, quejas y reclamos', 'pensar'),
-        ('tut-r1-e7', 'Si necesita ayuda, toque mi carita abajo.', '¿Dudas? Toque a Helenita', 'pulgar'),
+        ('tut-r1-e6', 'Y aquí puede enviarnos sus peticiones, quejas o reclamos, y también sugerencias o felicitaciones.', 'Peticiones, quejas y reclamos', 'pulgar'),
     ]
     textos, anims, faltan = [], [], []
     R.mostrar('top', 0)
@@ -273,7 +272,7 @@ def reel2():
 #hele { position: absolute; left: -150px; top: 1000px; width: 540px; height: 540px; }
 #hele .anim { width: 540px; height: 540px; }
 .final { background: #FBFCFD; }
-.final img { position: absolute; left: 190px; top: 700px; width: 700px; }
+.final img { position: absolute; left: 155px; top: 700px; width: 700px; }
 .final p { position: absolute; left: 0; top: 1120px; width: 1080px; text-align: center; font-size: 40px; font-weight: 700; color: #06709A; }
 '''
     escenas = [
@@ -357,7 +356,7 @@ def reel3():
 .bur { position: absolute; left: 400px; top: 262px; width: 620px; padding: 26px 30px; border-radius: 30px; background: #fff; color: #0A2233; font-size: 37px; font-weight: 600; line-height: 1.22; opacity: 0; }
 .bur::before { content: ""; position: absolute; left: -20px; top: 40px; border: 20px solid transparent; border-right-color: #fff; border-left: 0; }
 .final { background: linear-gradient(160deg, #06709A 0%, #0A2233 70%); }
-.final img { position: absolute; left: 190px; top: 700px; width: 700px; }
+.final img { position: absolute; left: 155px; top: 700px; width: 700px; }
 .final p { position: absolute; left: 0; top: 1130px; width: 1080px; text-align: center; font-size: 40px; font-weight: 700; color: #FFE81A; }
 '''
     escenas = [
