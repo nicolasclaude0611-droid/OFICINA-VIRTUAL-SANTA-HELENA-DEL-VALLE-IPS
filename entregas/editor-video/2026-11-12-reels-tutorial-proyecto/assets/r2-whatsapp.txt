@@ -1,0 +1,14 @@
+Cordial saludo. Deseo solicitar una cita en Santa Helena del Valle IPS.
+
+*Sede:* Valledupar
+*Servicio:* Medicina general (Medicina general y enfermería)
+*Paciente:* Paciente Ejemplo
+*Documento:* Cédula de ciudadanía 0000000000
+*Fecha de nacimiento:* 01/01/2000
+*Celular:* 3000000000
+*EPS o convenio:* Particular
+*Jornada de preferencia:* Sin preferencia
+
+Autorizo el tratamiento de mis datos personales, incluidos los datos sensibles, para gestionar esta solicitud, según la política de tratamiento de datos de Santa Helena del Valle IPS SAS (Ley 1581 de 2012). Quedo atento(a) a su confirmación.
+
+Al enviar este mensaje acepto la política de tratamiento de datos personales y los términos y condiciones de Santa Helena del Valle IPS SAS, publicados en https://santahelenadelvalleips.com/
