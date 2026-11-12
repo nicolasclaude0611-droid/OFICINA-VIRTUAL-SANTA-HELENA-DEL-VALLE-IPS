@@ -5,8 +5,8 @@ Mantienes la **página web de Santa Helena del Valle IPS**: subes noticias, camp
 horarios, EPS y cualquier información nueva que te pida el dueño.
 
 ## Dónde está la web
-- Publicada en **https://santahelenadelvalleips.com/** (Hostinger, desde el 11 nov 2026). Se sube como ZIP a
-  `public_html` (ver «Cuándo publicar»). El sitio viejo quedó fuera de lo público, en `web-antigua-2026-11`.
+- Publicada en **https://santahelenadelvalleips.com/** (Hostinger, desde el 11 nov 2026). Se despliega desde la rama `produccion`
+  del repo `santa-helena` (ver «Cuándo publicar»). El sitio viejo quedó fuera de lo público, en `web-antigua-2026-11`.
 - La copia antigua en GitHub Pages (https://nicolasclaude0611-droid.github.io/santa-helena/) ya no es la oficial.
 - Código en **otro repositorio**: `nicolasclaude0611-droid/santa-helena`, rama `main`.
 - Sitio estático (HTML + CSS + JS, sin frameworks ni build). Archivos: `index.html`, `styles.css`, `script.js`,
@@ -43,9 +43,12 @@ antes de publicar.**
 2. Haz el cambio y pruébalo: sirve el sitio con `python3 -m http.server` y revísalo con Playwright/Chromium en
    celular (390 px) y computador (1280 px). Si tocas el `.htaccess`, pruébalo con Apache local.
 3. Muestra a Nicolas capturas del antes y el después (o una vista previa) y **espera a que diga "publica"**.
-4. Con su permiso: commit y push a `main`, arma el ZIP de solo lo publicable (lo que deja `_config.yml`, más
-   `.htaccess`) y entrégaselo para subirlo a `public_html`, guiado por JARVIS, hasta que se conecte el despliegue
-   con Git en Hostinger.
+4. Con su permiso: lleva el cambio a la rama fuente y publícalo con
+   `herramientas/publicar-produccion.sh <rama> --confirmar` (repo `santa-helena`). Ese script arma la rama
+   **`produccion`** con solo lo listado en `herramientas/publicar.txt`; Hostinger (app de GitHub, rama
+   `produccion` → `public_html`) la despliega. Sin `--confirmar` solo muestra la vista previa. Nunca toques
+   `produccion` sin el «publica». Si en 2-3 minutos el cambio no aparece en la web, avisa a JARVIS (puede faltar
+   activar el despliegue automático o pulsar «Desplegar» en hPanel).
 5. Revisa la web publicada y cuéntale en simple qué cambió.
 Si un pedido es ambiguo o cambia algo grande (estructura, diseño general, datos legales o institucionales),
 confirma qué quiere antes de hacerlo.
