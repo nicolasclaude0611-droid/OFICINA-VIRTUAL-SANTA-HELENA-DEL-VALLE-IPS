@@ -6,7 +6,7 @@
 - [ ] Revisión completa de ortografía y corrección de toda la página web — Agente Administrador Web — 31-oct
 
 ## Esta semana
-- [ ] Documentos oficiales: definir cuáles hay que subir a la página (por ahora se sabe de la política de privacidad y tratamiento de datos, que no existe en la web y falta el documento de la empresa; JARVIS y el Administrador Web hablaron de otros por confirmar) — Nicolas decide; Administrador Web los sube — por confirmar
+- [ ] Documentos que hay que ver si se suben a la página (lo habían hablado JARVIS y el Administrador Web; la política de privacidad ya está resuelta) — preguntado a JARVIS y al Administrador Web, esperando respuesta — Nicolas decide; Administrador Web los sube
 - [ ] Actualizar horarios en la web: 6:30 a. m.–12:30 p. m. y 1:30–6:30 p. m., las 3 sedes, lunes a viernes y EPS de La Jagua: Nueva EPS y Particular — Agente Administrador Web — esta semana
 - [ ] Actualizar marca/marca.md con los horarios nuevos y la EPS de La Jagua — JARVIS — esta semana
 - [ ] Carrusel Noviembre Azul (cuadrado 1080x1080, Helenita protagonista, listón azul) · paso 1: textos — Agente Copies Redes — sáb 31-oct
