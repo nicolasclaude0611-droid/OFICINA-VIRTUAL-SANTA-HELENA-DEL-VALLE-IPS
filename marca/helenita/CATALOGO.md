@@ -93,18 +93,18 @@ El reel 2 reutiliza además `paso1`, `paso2`, `paso3` y `listo` de la web.
 | Archivo | Texto | Duración |
 |---|---|---|
 | `tut-r1-e1.mp3` | «¡Hola! Le muestro cómo usar la página nueva de Santa Helena del Valle IPS.» | 5.0 s |
-| `tut-r1-e2.mp3` | «Arriba está el menú: servicios, sedes, preguntas frecuentes y PQRS.» | 6.7 s |
+| `tut-r1-e2.mp3` | «Arriba está el menú: servicios, sedes, preguntas frecuentes y PQRS.» | 5.8 s |
 | `tut-r1-e3.mp3` | «Para pedir una cita, toque Agendar cita.» | 3.2 s |
 | `tut-r1-e4.mp3` | «En Servicios elija un área y vea lo que ofrecemos.» | 3.5 s |
 | `tut-r1-e5.mp3` | «En Sedes encontrará el mapa, las direcciones, los horarios y cómo llegar.» | 5.0 s |
-| `tut-r1-e6.mp3` | «Y en PQRS puede enviar una petición, queja, reclamo, sugerencia o felicitación.» | 7.4 s |
+| `tut-r1-e6.mp3` | «Y en PQRS puede enviar una petición, queja, reclamo, sugerencia o felicitación.» | 6.5 s |
 | `tut-r1-e7.mp3` | «Si necesita ayuda, toque mi carita abajo.» | 2.9 s |
 | `tut-r2-e1.mp3` | «¡Hola! Hoy le muestro cómo pedir su cita.» | 2.8 s |
 | `tut-r2-e2.mp3` | «Toque el botón Agendar cita.» | 2.1 s |
 | `tut-r2-e6.mp3` | «Acepte la autorización y toque Pedir esta cita.» | 3.7 s |
 | `tut-r2-e8.mp3` | «Nuestro equipo le confirmará la fecha y la hora por WhatsApp.» | 3.2 s |
 | `tut-r3-e1.mp3` | «¡Hola! Hoy le muestro cómo enviar una petición, queja o sugerencia.» | 4.6 s |
-| `tut-r3-e2.mp3` | «Toque PQRS en el menú.» | 2.5 s |
+| `tut-r3-e2.mp3` | «Toque PQRS en el menú.» | 1.7 s |
 | `tut-r3-e3.mp3` | «Elija el tipo de solicitud y escriba sus datos de contacto.» | 3.7 s |
 | `tut-r3-e4.mp3` | «Cuéntenos qué ocurrió, con fecha, sede y servicio.» | 3.7 s |
 | `tut-r3-e5.mp3` | «Toque Preparar correo y se abrirá el mensaje listo.» | 3.1 s |
