@@ -4,136 +4,207 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=1080, height=1920" />
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
-<style>
-@font-face { font-family: "Bricolage Grotesque"; src: url("assets/fonts/bricolage.woff2") format("woff2"); font-weight: 200 800; }
+<style>@font-face { font-family: "Bricolage Grotesque"; src: url("assets/fonts/bricolage.woff2") format("woff2"); font-weight: 200 800; }
 @font-face { font-family: "Figtree"; src: url("assets/fonts/figtree.woff2") format("woff2"); font-weight: 300 900; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EFF4F7; }
-#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #EFF4F7; font-family: "Figtree", sans-serif; }
-#fondo-arco { position: absolute; left: -260px; top: 900px; width: 900px; height: 900px; border-radius: 50%; background: #dbe8f0; }
-.franja { position: absolute; left: 60px; top: 190px; width: 960px; min-height: 200px; padding: 34px 44px 38px 64px; border-radius: 36px; background: #0A2233; color: #fff; font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; letter-spacing: -0.035em; line-height: 1.02; display: flex; align-items: center; opacity: 0; }
-.franja::before { content: ""; position: absolute; left: 30px; top: 40px; bottom: 40px; width: 10px; border-radius: 5px; background: #FFE81A; }
-#cel { position: absolute; left: 500px; top: 440px; width: 528px; height: 1110px; border-radius: 62px; background: #0A2233; box-shadow: 0 30px 70px rgba(10,34,51,.25); }
-#pantalla { position: absolute; left: 14px; top: 14px; width: 500px; height: 1082px; border-radius: 50px; overflow: hidden; background: #fff; }
-.grab { position: absolute; left: 0; top: 0; width: 500px; height: 1082px; object-fit: cover; object-position: top; }
-.globo { position: absolute; left: 40px; top: 450px; width: 440px; padding: 30px 32px; border-radius: 30px; background: #fff; color: #0A2233; font-size: 38px; font-weight: 600; line-height: 1.22; box-shadow: 0 16px 40px rgba(10,34,51,.14); opacity: 0; }
-.globo::after { content: ""; position: absolute; left: 150px; bottom: -22px; border: 22px solid transparent; border-top-color: #fff; border-bottom: 0; }
-#hele { position: absolute; left: -70px; top: 830px; width: 720px; height: 720px; }
-.anim { position: absolute; left: 0; top: 0; width: 720px; height: 720px; }
-.tarjeta { position: absolute; left: 24px; right: 24px; border-radius: 26px; background: #fff; box-shadow: 0 18px 44px rgba(10,34,51,.28); padding: 26px 26px 30px; font-size: 23px; color: #0A2233; line-height: 1.35; opacity: 0; }
-.tarjeta h4 { font-size: 26px; margin-bottom: 14px; color: #06709A; }
-.tarjeta .fila { border-bottom: 1px solid #e3eaef; padding: 8px 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Figtree", sans-serif; }
+.cel { position: absolute; border-radius: 64px; background: #0A2233; box-shadow: 0 34px 80px rgba(0,0,0,.28); }
+.pantalla { position: absolute; left: 14px; top: 14px; overflow: hidden; border-radius: 52px; background: #fff; }
+.pag { position: absolute; left: 0; top: 0; }
+.tira { position: absolute; left: 0; opacity: 0; }
+.capa { position: absolute; left: 0; top: 0; }
+.toque { position: absolute; left: 0; top: 0; width: 78px; height: 78px; margin: -39px 0 0 -39px; border-radius: 50%; border: 7px solid #FFE81A; background: rgba(255,232,26,.25); opacity: 0; }
+.tarjeta { position: absolute; left: 20px; right: 20px; border-radius: 26px; background: #fff; box-shadow: 0 18px 44px rgba(10,34,51,.3); padding: 24px 24px 28px; font-size: 22px; color: #0A2233; line-height: 1.35; opacity: 0; }
+.tarjeta h4 { font-size: 25px; margin-bottom: 12px; color: #06709A; }
+.tarjeta .fila { border-bottom: 1px solid #e3eaef; padding: 7px 0; }
 .tarjeta .fila b { color: #4A6171; font-weight: 600; margin-right: 8px; }
-.burbuja { background: #e9f6ee; border-radius: 18px; padding: 16px 18px; white-space: pre-line; font-size: 21px; }
-#pie { position: absolute; left: 0; top: 1600px; width: 1080px; text-align: center; font-size: 34px; font-weight: 700; color: #06709A; opacity: 0; }
-#final { position: absolute; inset: 0; background: #FBFCFD; opacity: 0; }
-#final img { position: absolute; left: 190px; top: 620px; width: 700px; }
-#final p { position: absolute; left: 0; top: 1060px; width: 1080px; text-align: center; font-size: 42px; font-weight: 700; color: #0A2233; }
-#final span { display: block; margin-top: 18px; font-size: 34px; font-weight: 600; color: #06709A; }
-#toque { position: absolute; left: 963px; top: 1480px; width: 90px; height: 90px; margin: -45px 0 0 -45px; border-radius: 50%; border: 6px solid #FFE81A; opacity: 0; }
+.burbuja { background: #e9f6ee; border-radius: 18px; padding: 14px 16px; white-space: pre-line; font-size: 20px; }
+.anim { position: absolute; left: 0; top: 0; }
+.final { position: absolute; inset: 0; opacity: 0; }
+
+html, body, #root { background: #FBFCFD; }
+
+#titulo { position: absolute; left: 0; top: 130px; width: 1080px; text-align: center; font-family: "Bricolage Grotesque"; font-weight: 600; font-size: 56px; letter-spacing: -0.035em; color: #0A2233; }
+#pasos { position: absolute; left: 190px; top: 220px; width: 700px; height: 130px; }
+#pasos .linea { position: absolute; left: 60px; right: 60px; top: 34px; height: 6px; background: #dfe7ec; border-radius: 3px; }
+#relleno { position: absolute; left: 60px; top: 34px; height: 6px; width: 580px; background: #FFE81A; border-radius: 3px; transform-origin: 0 50%; }
+.paso { position: absolute; top: 0; width: 120px; text-align: center; }
+.paso i { display: block; margin: 0 auto; width: 74px; height: 74px; border-radius: 50%; background: #fff; border: 5px solid #dfe7ec; font-style: normal; font-family: "Bricolage Grotesque"; font-weight: 700; font-size: 36px; line-height: 64px; color: #5d6f7c; }
+.paso i.on { background: #FFE81A; border-color: #FFE81A; color: #0A2233; }
+.paso i.ok { background: #0A2233; border-color: #0A2233; color: #FFE81A; }
+.paso b { display: block; margin-top: 8px; font-size: 28px; color: #4A6171; }
+.sub { position: absolute; left: 90px; top: 1525px; width: 900px; padding: 22px 34px; border-radius: 30px; background: #0A2233; color: #fff; text-align: center; font-size: 38px; font-weight: 600; line-height: 1.22; opacity: 0; }
+.sub::before { content: ""; position: absolute; left: 50%; top: -12px; width: 60px; height: 8px; margin-left: -30px; border-radius: 4px; background: #FFE81A; }
+#hele { position: absolute; left: -150px; top: 1000px; width: 540px; height: 540px; }
+#hele .anim { width: 540px; height: 540px; }
+.final { background: #FBFCFD; }
+.final img { position: absolute; left: 190px; top: 700px; width: 700px; }
+.final p { position: absolute; left: 0; top: 1120px; width: 1080px; text-align: center; font-size: 40px; font-weight: 700; color: #06709A; }
 </style>
 </head>
 <body>
-<!-- Reel tutorial 2 · generado con gen.py (no editar a mano: cambiar gen.py y volver a correrlo) -->
+<!-- Reel tutorial 2 · generado con gen.py (cambiar gen.py y volver a correrlo) -->
 <div id="root" data-composition-id="reel2" data-start="0" data-duration="30.28" data-width="1080" data-height="1920" data-layout-allow-overflow>
-  <div id="fondo-arco"></div>
-  <div id="cel"><div id="pantalla">
-        <video id="grab-e1" class="grab clip" src="assets/grab/r2.mp4" data-start="0.00" data-duration="3.07" data-media-start="0.38" data-playback-rate="0.651" data-track-index="2" muted playsinline></video>
-    <video id="grab-e2" class="grab clip" src="assets/grab/r2.mp4" data-start="3.07" data-duration="2.42" data-media-start="3.18" data-playback-rate="0.657" data-track-index="2" muted playsinline></video>
-    <video id="grab-e3" class="grab clip" src="assets/grab/r2.mp4" data-start="5.49" data-duration="3.75" data-media-start="5.57" data-playback-rate="0.733" data-track-index="2" muted playsinline></video>
-    <video id="grab-e4" class="grab clip" src="assets/grab/r2.mp4" data-start="9.24" data-duration="3.75" data-media-start="9.12" data-playback-rate="1.235" data-track-index="2" muted playsinline></video>
-    <video id="grab-e5" class="grab clip" src="assets/grab/r2.mp4" data-start="12.99" data-duration="2.99" data-media-start="14.55" data-playback-rate="1.600" data-track-index="2" muted playsinline></video>
-    <video id="grab-e6" class="grab clip" src="assets/grab/r2.mp4" data-start="15.98" data-duration="4.01" data-media-start="20.80" data-playback-rate="0.424" data-track-index="2" muted playsinline></video>
-    <video id="grab-e7" class="grab clip" src="assets/grab/r2.mp4" data-start="19.99" data-duration="4.40" data-media-start="23.30" data-playback-rate="0.614" data-track-index="2" muted playsinline></video>
-    <div class="tarjeta" id="extra-e7" style="top:330px"><h4>Su mensaje en WhatsApp</h4><div class="burbuja">Cordial saludo. Deseo solicitar una cita en Santa Helena del Valle IPS.
+<div id="titulo">Pida su cita en 3 pasos</div>
+<div id="pasos"><div class="linea"></div><div id="relleno"></div><div class="paso" style="left:0px"><i id="p1">1</i><b>Sede</b></div><div class="paso" style="left:290px"><i id="p2">2</i><b>Servicio</b></div><div class="paso" style="left:580px"><i id="p3">3</i><b>Datos</b></div></div>
+<div class="cel" id="cel" style="left:276px;top:410px;width:528px;height:1110px">
+  <div class="pantalla" id="pantalla" style="width:500px;height:1082px">
+    <div class="pag" id="pag" style="width:500px"><img class="tira" id="t-top" src="assets/est/top.png" alt="" style="top:0.0px;width:500px" /><img class="tira" id="t-w1" src="assets/est/w1.png" alt="" style="top:1923.08px;width:500px" /><img class="tira" id="t-w1s" src="assets/est/w1s.png" alt="" style="top:1923.08px;width:500px" /><img class="tira" id="t-w2" src="assets/est/w2.png" alt="" style="top:1923.08px;width:500px" /><img class="tira" id="t-w2a" src="assets/est/w2a.png" alt="" style="top:1923.08px;width:500px" /><img class="tira" id="t-w2s" src="assets/est/w2s.png" alt="" style="top:1923.08px;width:500px" /><img class="tira" id="t-w3" src="assets/est/w3.png" alt="" style="top:1923.08px;width:500px" /><img class="tira" id="t-w3n" src="assets/est/w3n.png" alt="" style="top:1923.08px;width:500px" /><img class="tira" id="t-w3d" src="assets/est/w3d.png" alt="" style="top:1923.08px;width:500px" /><img class="tira" id="t-w3t" src="assets/est/w3t.png" alt="" style="top:1923.08px;width:500px" /><img class="tira" id="t-w3c" src="assets/est/w3c.png" alt="" style="top:1923.08px;width:500px" /><img class="tira" id="t-wL" src="assets/est/wL.png" alt="" style="top:1923.08px;width:500px" /></div>
+    <img class="capa" id="cab" src="assets/est/header.png" alt="" style="width:500px" />
+    <img class="capa" id="menu" src="assets/est/menu.png" alt="" style="width:500px;opacity:0" />
+    <img class="capa" id="fab" src="assets/est/fab.png" alt="" style="left:397.44px;top:979.49px;width:84.62px;opacity:0" />
+    <div class="tarjeta" id="wa" style="top:320.51px"><h4>Su mensaje en WhatsApp</h4><div class="burbuja">Cordial saludo. Deseo solicitar una cita en Santa Helena del Valle IPS.
 
 *Sede:* Valledupar
 *Servicio:* Medicina general (Medicina general y enfermería)
-*Paciente:* Paciente Ejemplo
-*Documento:* Cédula de ciudadanía 0000000000
-*Fecha de nacimiento:* 01/01/2000
+*Paciente:* Helenita
+*Documento:* Cédula de ciudadanía 1065000000
+*Fecha de nacimiento:* 30/10/2006
 *Celular:* 3000000000
 *EPS o convenio:* Particular
 *Jornada de preferencia:* Sin preferencia</div></div>
-    <video id="grab-e8" class="grab clip" src="assets/grab/r2.mp4" data-start="24.39" data-duration="3.49" data-media-start="26.80" data-playback-rate="1.355" data-track-index="2" muted playsinline></video>
-  </div></div>
-  <div id="toque"></div>
-  
-  <div id="hele">
-        <video id="anim-e1" class="anim clip" src="assets/helenita/saludar.webm" data-start="0.00" data-duration="3.07" data-track-index="3" muted playsinline></video>
-    <video id="anim-e2" class="anim clip" src="assets/helenita/invitar.webm" data-start="3.07" data-duration="2.42" data-track-index="3" muted playsinline></video>
-    <video id="anim-e3" class="anim clip" src="assets/helenita/senalar.webm" data-start="5.49" data-duration="3.75" data-track-index="3" muted playsinline></video>
-    <video id="anim-e4" class="anim clip" src="assets/helenita/hablar.webm" data-start="9.24" data-duration="3.75" data-track-index="3" muted playsinline></video>
-    <video id="anim-e5" class="anim clip" src="assets/helenita/hablar.webm" data-start="12.99" data-duration="2.99" data-track-index="3" muted playsinline></video>
-    <video id="anim-e6" class="anim clip" src="assets/helenita/senalar.webm" data-start="15.98" data-duration="4.01" data-track-index="3" muted playsinline></video>
-    <video id="anim-e7" class="anim clip" src="assets/helenita/pulgar.webm" data-start="19.99" data-duration="4.40" data-track-index="3" muted playsinline></video>
-    <video id="anim-e8" class="anim clip" src="assets/helenita/reposo.webm" data-start="24.39" data-duration="3.49" data-track-index="3" muted playsinline></video>
+    <div class="toque" id="tq1"></div><div class="toque" id="tq2"></div><div class="toque" id="tq3"></div><div class="toque" id="tq4"></div><div class="toque" id="tq5"></div><div class="toque" id="tq6"></div><div class="toque" id="tq7"></div><div class="toque" id="tq8"></div><div class="toque" id="tq9"></div><div class="toque" id="tq10"></div><div class="toque" id="tq11"></div>
   </div>
-    <div class="franja" id="franja-e1" style="font-size:76px">Pida su cita en 3 pasos</div>
-  <div class="globo" id="globo-e1">¡Hola! Hoy le muestro cómo pedir su cita.</div>
-  <div class="franja" id="franja-e2" style="font-size:76px">Agendar cita</div>
-  <div class="globo" id="globo-e2">Toque el botón Agendar cita.</div>
-  <div class="franja" id="franja-e3" style="font-size:76px">1 · Elija la sede</div>
-  <div class="globo" id="globo-e3">Para comenzar, elija la sede donde desea ser atendido.</div>
-  <div class="franja" id="franja-e4" style="font-size:76px">2 · Elija el servicio</div>
-  <div class="globo" id="globo-e4">Muy bien. Ahora, elija el servicio que necesita.</div>
-  <div class="franja" id="franja-e5" style="font-size:76px">3 · Datos del paciente</div>
-  <div class="globo" id="globo-e5">Por último, escriba los datos del paciente.</div>
-  <div class="franja" id="franja-e6" style="font-size:50px">Marque la autorización y toque «Pedir esta cita»</div>
-  <div class="globo" id="globo-e6">Acepte la autorización y toque Pedir esta cita.</div>
-  <div class="franja" id="franja-e7" style="font-size:62px">El mensaje queda listo en WhatsApp</div>
-  <div class="globo" id="globo-e7">¡Listo! Su mensaje ya está en WhatsApp. Solo debe enviarlo.</div>
-  <div class="franja" id="franja-e8" style="font-size:62px">La IPS le confirma fecha y hora por WhatsApp</div>
-  <div class="globo" id="globo-e8">Nuestro equipo le confirmará la fecha y la hora por WhatsApp.</div>
-  <div id="final"><img src="assets/img/logo.png" alt="Santa Helena del Valle IPS" /><p>¡La salud, nuestro compromiso!<span>santahelenadelvalleips.com</span></p></div>
-    <audio id="voz-e1" class="clip" src="assets/voz/tut-r2-e1.mp3" data-start="0.20" data-duration="2.71" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e1" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="0.00" data-duration="0.6" data-track-index="13" data-volume="0.22"></audio>
-  <audio id="voz-e2" class="clip" src="assets/voz/tut-r2-e2.mp3" data-start="3.27" data-duration="2.06" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e2" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="2.99" data-duration="0.6" data-track-index="12" data-volume="0.22"></audio>
-  <audio id="voz-e3" class="clip" src="assets/voz/pagina-paso1.mp3" data-start="5.69" data-duration="3.39" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e3" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="5.41" data-duration="0.6" data-track-index="13" data-volume="0.22"></audio>
-  <audio id="voz-e4" class="clip" src="assets/voz/pagina-paso2.mp3" data-start="9.44" data-duration="3.39" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e4" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="9.16" data-duration="0.6" data-track-index="12" data-volume="0.22"></audio>
-  <audio id="voz-e5" class="clip" src="assets/voz/pagina-paso3.mp3" data-start="13.19" data-duration="2.63" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e5" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="12.91" data-duration="0.6" data-track-index="13" data-volume="0.22"></audio>
-  <audio id="voz-e6" class="clip" src="assets/voz/tut-r2-e6.mp3" data-start="16.18" data-duration="3.65" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e6" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="15.90" data-duration="0.6" data-track-index="12" data-volume="0.22"></audio>
-  <audio id="voz-e7" class="clip" src="assets/voz/pagina-listo.mp3" data-start="20.19" data-duration="4.04" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e7" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="19.91" data-duration="0.6" data-track-index="13" data-volume="0.22"></audio>
-  <audio id="voz-e8" class="clip" src="assets/voz/tut-r2-e8.mp3" data-start="24.59" data-duration="3.13" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e8" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="24.31" data-duration="0.6" data-track-index="12" data-volume="0.22"></audio>
-  <audio id="musica" class="clip" src="assets/bgm/the-corporate-upbeat.mp3" data-start="0" data-duration="30.28" data-media-start="4" data-track-index="11" data-volume="0.07" data-fade-in="0.5" data-fade-out="1.5"></audio>
-  <audio id="pop-final" class="clip" src="assets/sfx/pop.mp3" data-start="27.88" data-duration="0.7" data-track-index="14" data-volume="0.3"></audio>
+</div>
+<div id="hele"><video id="a-e1-0" class="anim clip" src="assets/helenita/saludar.webm" data-start="0.00" data-duration="3.07" data-track-index="3" muted playsinline></video><video id="a-e2-0" class="anim clip" src="assets/helenita/invitar.webm" data-start="3.07" data-duration="2.42" data-track-index="3" muted playsinline></video><video id="a-e3-0" class="anim clip" src="assets/helenita/senalar.webm" data-start="5.49" data-duration="3.75" data-track-index="3" muted playsinline></video><video id="a-e4-0" class="anim clip" src="assets/helenita/hablar.webm" data-start="9.24" data-duration="3.75" data-track-index="3" muted playsinline></video><video id="a-e5-0" class="anim clip" src="assets/helenita/hablar.webm" data-start="12.99" data-duration="2.99" data-track-index="3" muted playsinline></video><video id="a-e6-0" class="anim clip" src="assets/helenita/senalar.webm" data-start="15.98" data-duration="4.01" data-track-index="3" muted playsinline></video><video id="a-e7-0" class="anim clip" src="assets/helenita/pulgar.webm" data-start="19.99" data-duration="4.40" data-track-index="3" muted playsinline></video><video id="a-e8-0" class="anim clip" src="assets/helenita/reposo.webm" data-start="24.39" data-duration="3.49" data-track-index="3" muted playsinline></video></div>
+<div class="sub" id="sub1">¡Hola! Hoy le muestro cómo pedir su cita.</div>
+<div class="sub" id="sub2">Toque el botón Agendar cita.</div>
+<div class="sub" id="sub3">Para comenzar, elija la sede donde desea ser atendido.</div>
+<div class="sub" id="sub4">Muy bien. Ahora, elija el servicio que necesita.</div>
+<div class="sub" id="sub5">Por último, escriba los datos del paciente.</div>
+<div class="sub" id="sub6">Acepte la autorización y toque Pedir esta cita.</div>
+<div class="sub" id="sub7">¡Listo! Su mensaje ya está en WhatsApp. Solo debe enviarlo.</div>
+<div class="sub" id="sub8">Nuestro equipo le confirmará la fecha y la hora por WhatsApp.</div>
+<div class="final" id="final"><img src="assets/img/logo.png" alt="" /><p>santahelenadelvalleips.com</p></div>
+<audio id="voz-tut-r2-e1" class="clip" src="assets/voz/tut-r2-e1.mp3" data-start="0.15" data-duration="2.71" data-track-index="10" data-volume="1"></audio>
+<audio id="voz-tut-r2-e2" class="clip" src="assets/voz/tut-r2-e2.mp3" data-start="3.22" data-duration="2.06" data-track-index="10" data-volume="1"></audio>
+<audio id="clic1" class="clip" src="assets/sfx/click-soft.mp3" data-start="3.36" data-duration="0.35" data-track-index="16" data-volume="0.35"></audio>
+<audio id="voz-pagina-paso1" class="clip" src="assets/voz/pagina-paso1.mp3" data-start="5.64" data-duration="3.39" data-track-index="10" data-volume="1"></audio>
+<audio id="clic2" class="clip" src="assets/sfx/click-soft.mp3" data-start="6.85" data-duration="0.35" data-track-index="17" data-volume="0.35"></audio>
+<audio id="clic3" class="clip" src="assets/sfx/click-soft.mp3" data-start="8.47" data-duration="0.35" data-track-index="15" data-volume="0.35"></audio>
+<audio id="voz-pagina-paso2" class="clip" src="assets/voz/pagina-paso2.mp3" data-start="9.39" data-duration="3.39" data-track-index="10" data-volume="1"></audio>
+<audio id="clic4" class="clip" src="assets/sfx/click-soft.mp3" data-start="9.74" data-duration="0.35" data-track-index="16" data-volume="0.35"></audio>
+<audio id="clic5" class="clip" src="assets/sfx/click-soft.mp3" data-start="11.09" data-duration="0.35" data-track-index="17" data-volume="0.35"></audio>
+<audio id="clic6" class="clip" src="assets/sfx/click-soft.mp3" data-start="12.29" data-duration="0.35" data-track-index="15" data-volume="0.35"></audio>
+<audio id="voz-pagina-paso3" class="clip" src="assets/voz/pagina-paso3.mp3" data-start="13.14" data-duration="2.63" data-track-index="10" data-volume="1"></audio>
+<audio id="clic7" class="clip" src="assets/sfx/click-soft.mp3" data-start="13.40" data-duration="0.35" data-track-index="16" data-volume="0.35"></audio>
+<audio id="clic8" class="clip" src="assets/sfx/click-soft.mp3" data-start="14.12" data-duration="0.35" data-track-index="17" data-volume="0.35"></audio>
+<audio id="clic9" class="clip" src="assets/sfx/click-soft.mp3" data-start="15.61" data-duration="0.35" data-track-index="15" data-volume="0.35"></audio>
+<audio id="voz-tut-r2-e6" class="clip" src="assets/voz/tut-r2-e6.mp3" data-start="16.13" data-duration="3.65" data-track-index="10" data-volume="1"></audio>
+<audio id="clic10" class="clip" src="assets/sfx/click-soft.mp3" data-start="17.55" data-duration="0.35" data-track-index="16" data-volume="0.35"></audio>
+<audio id="clic11" class="clip" src="assets/sfx/click-soft.mp3" data-start="19.04" data-duration="0.35" data-track-index="17" data-volume="0.35"></audio>
+<audio id="voz-pagina-listo" class="clip" src="assets/voz/pagina-listo.mp3" data-start="20.14" data-duration="4.04" data-track-index="10" data-volume="1"></audio>
+<audio id="voz-tut-r2-e8" class="clip" src="assets/voz/tut-r2-e8.mp3" data-start="24.54" data-duration="3.13" data-track-index="10" data-volume="1"></audio>
+<audio id="pop" class="clip" src="assets/sfx/pop.mp3" data-start="27.88" data-duration="0.7" data-track-index="14" data-volume="0.3"></audio>
+<audio id="musica" class="clip" src="assets/bgm/the-corporate-upbeat.mp3" data-start="0" data-duration="30.28" data-media-start="30" data-track-index="11" data-volume="0.07" data-fade-in="0.4" data-fade-out="1.5"></audio>
 </div>
 <script>
 const tl = gsap.timeline({ paused: true });
-tl.fromTo(["#franja-e1", "#globo-e1"], {opacity:1}, {opacity:1, duration:0.01}, 0);
-tl.to(["#franja-e1", "#globo-e1"], {opacity:0, duration:0.2, ease:"power2.in"}, 2.87);
-tl.fromTo("#franja-e2", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 3.07);
-tl.fromTo("#globo-e2", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 3.17);
-tl.to(["#franja-e2", "#globo-e2"], {opacity:0, duration:0.2, ease:"power2.in"}, 5.29);
-tl.fromTo("#franja-e3", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 5.49);
-tl.fromTo("#globo-e3", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 5.59);
-tl.to(["#franja-e3", "#globo-e3"], {opacity:0, duration:0.2, ease:"power2.in"}, 9.04);
-tl.fromTo("#franja-e4", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 9.24);
-tl.fromTo("#globo-e4", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 9.34);
-tl.to(["#franja-e4", "#globo-e4"], {opacity:0, duration:0.2, ease:"power2.in"}, 12.79);
-tl.fromTo("#franja-e5", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 12.99);
-tl.fromTo("#globo-e5", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 13.09);
-tl.to(["#franja-e5", "#globo-e5"], {opacity:0, duration:0.2, ease:"power2.in"}, 15.78);
-tl.fromTo("#franja-e6", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 15.98);
-tl.fromTo("#globo-e6", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 16.08);
-tl.to(["#franja-e6", "#globo-e6"], {opacity:0, duration:0.2, ease:"power2.in"}, 19.79);
-tl.fromTo("#franja-e7", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 19.99);
-tl.fromTo("#globo-e7", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 20.09);
-tl.to(["#franja-e7", "#globo-e7"], {opacity:0, duration:0.2, ease:"power2.in"}, 24.19);
-tl.fromTo("#extra-e7", {opacity:0, y:120}, {opacity:1, y:0, duration:0.45, ease:"power3.out"}, 20.49);
-tl.to("#extra-e7", {opacity:0, duration:0.25}, 24.14);
-tl.fromTo("#franja-e8", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 24.39);
-tl.fromTo("#globo-e8", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 24.49);
-tl.to(["#franja-e8", "#globo-e8"], {opacity:0, duration:0.2, ease:"power2.in"}, 27.68);
-tl.fromTo("#final", {opacity:0}, {opacity:1, duration:0.4}, 27.88);
-tl.fromTo("#final img", {scale:0.8}, {scale:1, duration:0.6, ease:"back.out(1.6)"}, 27.88);
+tl.set("#t-top", {opacity:1}, 0.00);
+tl.set("#relleno", {scaleX:0}, 0);
+tl.set("#sub1", {opacity:1}, 0);
+tl.to("#sub1", {opacity:0, duration:0.18}, 2.89);
+tl.fromTo("#sub2", {opacity:0, y:24}, {opacity:1, y:0, duration:0.32, ease:"power3.out", immediateRender:false}, 3.07);
+tl.to("#sub2", {opacity:0, duration:0.18}, 5.31);
+tl.set("#tq1", {x:387.18, y:48.72}, 0);
+tl.fromTo("#tq1", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 3.31);
+tl.to("#tq1", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 3.53);
+tl.fromTo("#pag", {y:-0.0}, {y:-2567.95, duration:1.45, ease:"power2.inOut", immediateRender:false}, 3.55);
+tl.fromTo("#sub3", {opacity:0, y:24}, {opacity:1, y:0, duration:0.32, ease:"power3.out", immediateRender:false}, 5.49);
+tl.to("#sub3", {opacity:0, duration:0.18}, 9.06);
+tl.set("#p1", {className:"on"}, 5.49);
+tl.set("#p2", {className:""}, 5.49);
+tl.set("#p3", {className:""}, 5.49);
+tl.to("#relleno", {scaleX:0.00, duration:0.45, ease:"power2.out"}, 5.49);
+tl.fromTo("#t-w1", {opacity:0}, {opacity:1, duration:0.05, ease:"none", immediateRender:false}, 5.49);
+tl.to("#t-top", {opacity:0, duration:0.01}, 5.54);
+tl.set("#cel", {transformOrigin:"264.0px 449.9px"}, 5.57);
+tl.to("#cel", {scale:1.12, duration:0.5, ease:"power3.inOut"}, 5.57);
+tl.set("#tq2", {x:250.0, y:435.9}, 0);
+tl.fromTo("#tq2", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 6.80);
+tl.to("#tq2", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 7.02);
+tl.fromTo("#t-w1s", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 6.99);
+tl.to("#t-w1", {opacity:0, duration:0.01}, 7.14);
+tl.set("#tq3", {x:257.69, y:943.59}, 0);
+tl.fromTo("#tq3", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 8.42);
+tl.to("#tq3", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 8.64);
+tl.fromTo("#t-w2", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 8.64);
+tl.to("#t-w1s", {opacity:0, duration:0.01}, 8.79);
+tl.fromTo("#sub4", {opacity:0, y:24}, {opacity:1, y:0, duration:0.32, ease:"power3.out", immediateRender:false}, 9.24);
+tl.to("#sub4", {opacity:0, duration:0.18}, 12.81);
+tl.set("#p1", {className:"ok"}, 9.24);
+tl.set("#p2", {className:"on"}, 9.24);
+tl.set("#p3", {className:""}, 9.24);
+tl.to("#relleno", {scaleX:0.50, duration:0.45, ease:"power2.out"}, 9.24);
+tl.set("#tq4", {x:250.0, y:423.08}, 0);
+tl.fromTo("#tq4", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 9.69);
+tl.to("#tq4", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 9.91);
+tl.fromTo("#t-w2a", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 9.99);
+tl.to("#t-w2", {opacity:0, duration:0.01}, 10.14);
+tl.set("#tq5", {x:250.0, y:523.08}, 0);
+tl.fromTo("#tq5", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 11.04);
+tl.to("#tq5", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 11.26);
+tl.fromTo("#t-w2s", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 11.27);
+tl.to("#t-w2a", {opacity:0, duration:0.01}, 11.42);
+tl.set("#tq6", {x:337.18, y:741.03}, 0);
+tl.fromTo("#tq6", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 12.24);
+tl.to("#tq6", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 12.46);
+tl.fromTo("#t-w3", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 12.46);
+tl.to("#t-w2s", {opacity:0, duration:0.01}, 12.62);
+tl.fromTo("#sub5", {opacity:0, y:24}, {opacity:1, y:0, duration:0.32, ease:"power3.out", immediateRender:false}, 12.99);
+tl.to("#sub5", {opacity:0, duration:0.18}, 15.80);
+tl.set("#p1", {className:"ok"}, 12.99);
+tl.set("#p2", {className:"ok"}, 12.99);
+tl.set("#p3", {className:"on"}, 12.99);
+tl.to("#relleno", {scaleX:1.00, duration:0.45, ease:"power2.out"}, 12.99);
+tl.set("#tq7", {x:250.0, y:414.1}, 0);
+tl.fromTo("#tq7", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 13.35);
+tl.to("#tq7", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 13.57);
+tl.fromTo("#t-w3n", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 13.53);
+tl.to("#t-w3", {opacity:0, duration:0.01}, 13.68);
+tl.set("#tq8", {x:250.0, y:671.79}, 0);
+tl.fromTo("#tq8", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 14.07);
+tl.to("#tq8", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 14.29);
+tl.fromTo("#t-w3d", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 14.25);
+tl.to("#t-w3n", {opacity:0, duration:0.01}, 14.40);
+tl.fromTo("#pag", {y:-2567.95}, {y:-3055.13, duration:0.90, ease:"power2.inOut", immediateRender:false}, 14.63);
+tl.set("#tq9", {x:250.0, y:441.03}, 0);
+tl.fromTo("#tq9", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 15.56);
+tl.to("#tq9", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 15.78);
+tl.fromTo("#t-w3t", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 15.68);
+tl.to("#t-w3d", {opacity:0, duration:0.01}, 15.83);
+tl.fromTo("#sub6", {opacity:0, y:24}, {opacity:1, y:0, duration:0.32, ease:"power3.out", immediateRender:false}, 15.98);
+tl.to("#sub6", {opacity:0, duration:0.18}, 19.81);
+tl.fromTo("#pag", {y:-3055.13}, {y:-3542.31, duration:1.20, ease:"power2.inOut", immediateRender:false}, 15.98);
+tl.set("#tq10", {x:74.36, y:470.51}, 0);
+tl.fromTo("#tq10", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 17.50);
+tl.to("#tq10", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 17.72);
+tl.fromTo("#t-w3c", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 17.70);
+tl.to("#t-w3t", {opacity:0, duration:0.01}, 17.85);
+tl.set("#tq11", {x:250.0, y:873.08}, 0);
+tl.fromTo("#tq11", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 18.99);
+tl.to("#tq11", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 19.21);
+tl.fromTo("#t-wL", {opacity:0}, {opacity:1, duration:0.02, ease:"none", immediateRender:false}, 19.19);
+tl.to("#t-w3c", {opacity:0, duration:0.01}, 19.21);
+tl.fromTo("#sub7", {opacity:0, y:24}, {opacity:1, y:0, duration:0.32, ease:"power3.out", immediateRender:false}, 19.99);
+tl.to("#sub7", {opacity:0, duration:0.18}, 24.21);
+tl.set("#p1", {className:"ok"}, 19.99);
+tl.set("#p2", {className:"ok"}, 19.99);
+tl.set("#p3", {className:"ok"}, 19.99);
+tl.to("#relleno", {scaleX:1.00, duration:0.45, ease:"power2.out"}, 19.99);
+tl.set("#cel", {transformOrigin:"264.0px 526.82px"}, 19.99);
+tl.to("#cel", {scale:1.0, duration:0.4, ease:"power3.inOut"}, 19.99);
+tl.fromTo("#pag", {y:-3542.31}, {y:-2179.49, duration:1.32, ease:"power2.inOut", immediateRender:false}, 19.99);
+tl.fromTo("#wa", {opacity:0}, {opacity:1, duration:0.3, immediateRender:false}, 21.44);
+tl.to("#wa", {opacity:0, duration:0.3}, 24.24);
+tl.fromTo("#sub8", {opacity:0, y:24}, {opacity:1, y:0, duration:0.32, ease:"power3.out", immediateRender:false}, 24.39);
+tl.to("#sub8", {opacity:0, duration:0.18}, 27.70);
+tl.fromTo("#pag", {y:-2179.49}, {y:-2000.0, duration:0.87, ease:"power2.inOut", immediateRender:false}, 24.39);
+tl.set("#cel", {transformOrigin:"264.0px 347.33px"}, 25.26);
+tl.to("#cel", {scale:1.15, duration:0.6, ease:"power3.inOut"}, 25.26);
+tl.fromTo("#final", {opacity:0}, {opacity:1, duration:0.4, immediateRender:false}, 27.88);
+tl.fromTo("#final img", {scale:0.8}, {scale:1, duration:0.6, ease:"back.out(1.6)", immediateRender:false}, 27.88);
 window.__timelines["reel2"] = tl;
 </script>
 </body>

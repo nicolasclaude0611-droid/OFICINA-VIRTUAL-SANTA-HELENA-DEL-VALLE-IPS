@@ -4,133 +4,166 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=1080, height=1920" />
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
-<style>
-@font-face { font-family: "Bricolage Grotesque"; src: url("assets/fonts/bricolage.woff2") format("woff2"); font-weight: 200 800; }
+<style>@font-face { font-family: "Bricolage Grotesque"; src: url("assets/fonts/bricolage.woff2") format("woff2"); font-weight: 200 800; }
 @font-face { font-family: "Figtree"; src: url("assets/fonts/figtree.woff2") format("woff2"); font-weight: 300 900; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EFF4F7; }
-#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #EFF4F7; font-family: "Figtree", sans-serif; }
-#fondo-arco { position: absolute; left: -260px; top: 900px; width: 900px; height: 900px; border-radius: 50%; background: #dbe8f0; }
-.franja { position: absolute; left: 60px; top: 190px; width: 960px; min-height: 200px; padding: 34px 44px 38px 64px; border-radius: 36px; background: #0A2233; color: #fff; font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; letter-spacing: -0.035em; line-height: 1.02; display: flex; align-items: center; opacity: 0; }
-.franja::before { content: ""; position: absolute; left: 30px; top: 40px; bottom: 40px; width: 10px; border-radius: 5px; background: #FFE81A; }
-#cel { position: absolute; left: 500px; top: 440px; width: 528px; height: 1110px; border-radius: 62px; background: #0A2233; box-shadow: 0 30px 70px rgba(10,34,51,.25); }
-#pantalla { position: absolute; left: 14px; top: 14px; width: 500px; height: 1082px; border-radius: 50px; overflow: hidden; background: #fff; }
-.grab { position: absolute; left: 0; top: 0; width: 500px; height: 1082px; object-fit: cover; object-position: top; }
-.globo { position: absolute; left: 40px; top: 450px; width: 440px; padding: 30px 32px; border-radius: 30px; background: #fff; color: #0A2233; font-size: 38px; font-weight: 600; line-height: 1.22; box-shadow: 0 16px 40px rgba(10,34,51,.14); opacity: 0; }
-.globo::after { content: ""; position: absolute; left: 150px; bottom: -22px; border: 22px solid transparent; border-top-color: #fff; border-bottom: 0; }
-#hele { position: absolute; left: -70px; top: 830px; width: 720px; height: 720px; }
-.anim { position: absolute; left: 0; top: 0; width: 720px; height: 720px; }
-.tarjeta { position: absolute; left: 24px; right: 24px; border-radius: 26px; background: #fff; box-shadow: 0 18px 44px rgba(10,34,51,.28); padding: 26px 26px 30px; font-size: 23px; color: #0A2233; line-height: 1.35; opacity: 0; }
-.tarjeta h4 { font-size: 26px; margin-bottom: 14px; color: #06709A; }
-.tarjeta .fila { border-bottom: 1px solid #e3eaef; padding: 8px 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Figtree", sans-serif; }
+.cel { position: absolute; border-radius: 64px; background: #0A2233; box-shadow: 0 34px 80px rgba(0,0,0,.28); }
+.pantalla { position: absolute; left: 14px; top: 14px; overflow: hidden; border-radius: 52px; background: #fff; }
+.pag { position: absolute; left: 0; top: 0; }
+.tira { position: absolute; left: 0; opacity: 0; }
+.capa { position: absolute; left: 0; top: 0; }
+.toque { position: absolute; left: 0; top: 0; width: 78px; height: 78px; margin: -39px 0 0 -39px; border-radius: 50%; border: 7px solid #FFE81A; background: rgba(255,232,26,.25); opacity: 0; }
+.tarjeta { position: absolute; left: 20px; right: 20px; border-radius: 26px; background: #fff; box-shadow: 0 18px 44px rgba(10,34,51,.3); padding: 24px 24px 28px; font-size: 22px; color: #0A2233; line-height: 1.35; opacity: 0; }
+.tarjeta h4 { font-size: 25px; margin-bottom: 12px; color: #06709A; }
+.tarjeta .fila { border-bottom: 1px solid #e3eaef; padding: 7px 0; }
 .tarjeta .fila b { color: #4A6171; font-weight: 600; margin-right: 8px; }
-.burbuja { background: #e9f6ee; border-radius: 18px; padding: 16px 18px; white-space: pre-line; font-size: 21px; }
-#pie { position: absolute; left: 0; top: 1600px; width: 1080px; text-align: center; font-size: 34px; font-weight: 700; color: #06709A; opacity: 0; }
-#final { position: absolute; inset: 0; background: #FBFCFD; opacity: 0; }
-#final img { position: absolute; left: 190px; top: 620px; width: 700px; }
-#final p { position: absolute; left: 0; top: 1060px; width: 1080px; text-align: center; font-size: 42px; font-weight: 700; color: #0A2233; }
-#final span { display: block; margin-top: 18px; font-size: 34px; font-weight: 600; color: #06709A; }
-#toque { position: absolute; left: 963px; top: 1480px; width: 90px; height: 90px; margin: -45px 0 0 -45px; border-radius: 50%; border: 6px solid #FFE81A; opacity: 0; }
+.burbuja { background: #e9f6ee; border-radius: 18px; padding: 14px 16px; white-space: pre-line; font-size: 20px; }
+.anim { position: absolute; left: 0; top: 0; }
+.final { position: absolute; inset: 0; opacity: 0; }
+
+html, body, #root { background: linear-gradient(160deg, #06709A 0%, #0A2233 70%); }
+
+#circulo { position: absolute; left: 60px; top: 200px; width: 300px; height: 300px; border-radius: 50%; overflow: hidden; background: #FFE81A; box-shadow: 0 0 0 10px rgba(255,255,255,.18); }
+#circulo .anim { width: 620px; height: 620px; left: -160px; top: -40px; }
+.etq { position: absolute; left: 400px; top: 196px; font-weight: 700; color: #0A2233; background: #FFE81A; padding: 8px 22px; border-radius: 26px; opacity: 0; }
+.bur { position: absolute; left: 400px; top: 262px; width: 620px; padding: 26px 30px; border-radius: 30px; background: #fff; color: #0A2233; font-size: 37px; font-weight: 600; line-height: 1.22; opacity: 0; }
+.bur::before { content: ""; position: absolute; left: -20px; top: 40px; border: 20px solid transparent; border-right-color: #fff; border-left: 0; }
+.final { background: linear-gradient(160deg, #06709A 0%, #0A2233 70%); }
+.final img { position: absolute; left: 190px; top: 700px; width: 700px; }
+.final p { position: absolute; left: 0; top: 1130px; width: 1080px; text-align: center; font-size: 40px; font-weight: 700; color: #FFE81A; }
 </style>
 </head>
 <body>
-<!-- Reel tutorial 3 · generado con gen.py (no editar a mano: cambiar gen.py y volver a correrlo) -->
-<div id="root" data-composition-id="reel3" data-start="0" data-duration="33.23" data-width="1080" data-height="1920" data-layout-allow-overflow>
-  <div id="fondo-arco"></div>
-  <div id="cel"><div id="pantalla">
-        <video id="grab-e1" class="grab clip" src="assets/grab/r3.mp4" data-start="0.00" data-duration="4.92" data-media-start="0.39" data-playback-rate="0.691" data-track-index="2" muted playsinline></video>
-    <video id="grab-e2" class="grab clip" src="assets/grab/r3.mp4" data-start="4.92" data-duration="2.02" data-media-start="4.59" data-playback-rate="1.203" data-track-index="2" muted playsinline></video>
-    <video id="grab-e3" class="grab clip" src="assets/grab/r3.mp4" data-start="6.94" data-duration="3.96" data-media-start="7.82" data-playback-rate="1.371" data-track-index="2" muted playsinline></video>
-    <video id="grab-e4" class="grab clip" src="assets/grab/r3.mp4" data-start="10.90" data-duration="3.96" data-media-start="14.05" data-playback-rate="0.836" data-track-index="2" muted playsinline></video>
-    <video id="grab-e5" class="grab clip" src="assets/grab/r3.mp4" data-start="14.86" data-duration="3.41" data-media-start="18.16" data-playback-rate="1.202" data-track-index="2" muted playsinline></video>
-    <video id="grab-e6" class="grab clip" src="assets/grab/r3.mp4" data-start="18.27" data-duration="5.45" data-media-start="21.50" data-playback-rate="0.275" data-track-index="2" muted playsinline></video>
-    <div class="tarjeta" id="extra-e6" style="top:260px"><h4>Su correo, listo para enviar</h4><div class="fila"><b>Para:</b>siau@santahelenadelvalleips.com</div><div class="fila"><b>CC:</b>calidad@santahelenadelvalleips.com</div><div class="fila"><b>Asunto:</b>PQRS · Sugerencia · Ejemplo de sugerencia</div><div class="burbuja" style="background:#EFF4F7;margin-top:14px">Señores
+<!-- Reel tutorial 3 · generado con gen.py (cambiar gen.py y volver a correrlo) -->
+<div id="root" data-composition-id="reel3" data-start="0" data-duration="33.52" data-width="1080" data-height="1920" data-layout-allow-overflow>
+<div class="cel" id="cel" style="left:301px;top:600px;width:478px;height:1002px">
+  <div class="pantalla" id="pantalla" style="width:450px;height:974px">
+    <div class="pag" id="pag" style="width:450px"><img class="tira" id="t-top" src="assets/est/top.png" alt="" style="top:0.0px;width:450px" /><img class="tira" id="t-pqrs0" src="assets/est/pqrs0.png" alt="" style="top:12115.38px;width:450px" /><img class="tira" id="t-p1" src="assets/est/p1.png" alt="" style="top:12115.38px;width:450px" /><img class="tira" id="t-p2" src="assets/est/p2.png" alt="" style="top:12115.38px;width:450px" /><img class="tira" id="t-p3" src="assets/est/p3.png" alt="" style="top:12115.38px;width:450px" /><img class="tira" id="t-p4" src="assets/est/p4.png" alt="" style="top:12115.38px;width:450px" /><img class="tira" id="t-p5" src="assets/est/p5.png" alt="" style="top:12115.38px;width:450px" /><img class="tira" id="t-p6" src="assets/est/p6.png" alt="" style="top:12115.38px;width:450px" /><img class="tira" id="t-p7" src="assets/est/p7.png" alt="" style="top:12115.38px;width:450px" /></div>
+    <img class="capa" id="cab" src="assets/est/header.png" alt="" style="width:450px" />
+    <img class="capa" id="menu" src="assets/est/menu.png" alt="" style="width:450px;opacity:0" />
+    <img class="capa" id="fab" src="assets/est/fab.png" alt="" style="left:357.69px;top:881.54px;width:76.15px;opacity:0" />
+    <div class="tarjeta" id="correo" style="top:196.15px;font-size:19px"><h4>Su correo, listo para enviar</h4><div class="fila"><b>Para:</b>siau@santahelenadelvalleips.com</div><div class="fila"><b>CC:</b>calidad@santahelenadelvalleips.com</div><div class="fila"><b>Asunto:</b>PQRS · Sugerencia · Ejemplo de sugerencia</div><div class="burbuja" style="background:#EFF4F7;margin-top:12px;font-size:18px">Señores
 Sistema de Información y Atención al Usuario (SIAU)
 Santa Helena del Valle IPS
 
 Cordial saludo. Por medio de este correo presento una sugerencia…</div></div>
-    <video id="grab-e7" class="grab clip" src="assets/grab/r3.mp4" data-start="23.72" data-duration="4.69" data-media-start="8.00" data-playback-rate="0.107" data-track-index="2" muted playsinline></video>
-  </div></div>
-  <div id="toque"></div>
-  <img id="logo-esc" src="assets/img/logo.png" alt="" style="position:absolute;left:500px;top:620px;width:540px;opacity:0" />
-  <div id="hele">
-        <video id="anim-e1" class="anim clip" src="assets/helenita/saludar.webm" data-start="0.00" data-duration="4.92" data-track-index="3" muted playsinline></video>
-    <video id="anim-e2" class="anim clip" src="assets/helenita/invitar.webm" data-start="4.92" data-duration="2.02" data-track-index="3" muted playsinline></video>
-    <video id="anim-e3" class="anim clip" src="assets/helenita/hablar.webm" data-start="6.94" data-duration="3.96" data-track-index="3" muted playsinline></video>
-    <video id="anim-e4" class="anim clip" src="assets/helenita/hablar.webm" data-start="10.90" data-duration="3.96" data-track-index="3" muted playsinline></video>
-    <video id="anim-e5" class="anim clip" src="assets/helenita/senalar.webm" data-start="14.86" data-duration="3.41" data-track-index="3" muted playsinline></video>
-    <video id="anim-e6" class="anim clip" src="assets/helenita/hablar.webm" data-start="18.27" data-duration="5.00" data-track-index="3" muted playsinline></video>
-    <video id="anim-e6b" class="anim clip" src="assets/helenita/hablar.webm" data-start="23.27" data-duration="0.45" data-track-index="3" muted playsinline></video>
-    <video id="anim-e7" class="anim clip" src="assets/helenita/pensar.webm" data-start="23.72" data-duration="4.69" data-track-index="3" muted playsinline></video>
-    <video id="anim-e8" class="anim clip" src="assets/helenita/empatia.webm" data-start="28.41" data-duration="2.42" data-track-index="3" muted playsinline></video>
+    <div class="toque" id="tq1"></div><div class="toque" id="tq2"></div><div class="toque" id="tq3"></div><div class="toque" id="tq4"></div><div class="toque" id="tq5"></div><div class="toque" id="tq6"></div><div class="toque" id="tq7"></div><div class="toque" id="tq8"></div><div class="toque" id="tq9"></div>
   </div>
-    <div class="franja" id="franja-e1" style="font-size:62px">¿Quiere enviarnos una queja o sugerencia?</div>
-  <div class="globo" id="globo-e1">¡Hola! Hoy le muestro cómo enviar una petición, queja o sugerencia.</div>
-  <div class="franja" id="franja-e2" style="font-size:76px">PQRS</div>
-  <div class="globo" id="globo-e2">Toque PQRS en el menú.</div>
-  <div class="franja" id="franja-e3" style="font-size:62px">1 · Tipo de solicitud y sus datos</div>
-  <div class="globo" id="globo-e3">Elija el tipo de solicitud y escriba sus datos de contacto.</div>
-  <div class="franja" id="franja-e4" style="font-size:76px">2 · Cuéntenos qué ocurrió</div>
-  <div class="globo" id="globo-e4">Cuéntenos qué ocurrió, con fecha, sede y servicio.</div>
-  <div class="franja" id="franja-e5" style="font-size:76px">3 · Preparar correo</div>
-  <div class="globo" id="globo-e5">Toque Preparar correo y se abrirá el mensaje listo.</div>
-  <div class="franja" id="franja-e6" style="font-size:50px">Envíelo a siau@santahelenadelvalleips.com (copia: calidad@)</div>
-  <div class="globo" id="globo-e6">Revíselo y envíelo: llega a atención al usuario, con copia a Calidad.</div>
-  <div class="franja" id="franja-e7" style="font-size:62px">Respuesta: hasta 15 días hábiles</div>
-  <div class="globo" id="globo-e7">Respondemos dentro de los términos de ley, hasta quince días hábiles.</div>
-  <div class="franja" id="franja-e8" style="font-size:62px">Su opinión nos ayuda a mejorar</div>
-  <div class="globo" id="globo-e8">Gracias por ayudarnos a mejorar.</div>
-  <div id="final"><img src="assets/img/logo.png" alt="Santa Helena del Valle IPS" /><p>¡La salud, nuestro compromiso!<span>santahelenadelvalleips.com</span></p></div>
-    <audio id="voz-e1" class="clip" src="assets/voz/tut-r3-e1.mp3" data-start="0.20" data-duration="4.56" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e1" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="0.00" data-duration="0.6" data-track-index="13" data-volume="0.22"></audio>
-  <audio id="voz-e2" class="clip" src="assets/voz/tut-r3-e2.mp3" data-start="5.12" data-duration="1.66" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e2" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="4.84" data-duration="0.6" data-track-index="12" data-volume="0.22"></audio>
-  <audio id="voz-e3" class="clip" src="assets/voz/tut-r3-e3.mp3" data-start="7.14" data-duration="3.60" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e3" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="6.86" data-duration="0.6" data-track-index="13" data-volume="0.22"></audio>
-  <audio id="voz-e4" class="clip" src="assets/voz/tut-r3-e4.mp3" data-start="11.10" data-duration="3.60" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e4" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="10.82" data-duration="0.6" data-track-index="12" data-volume="0.22"></audio>
-  <audio id="voz-e5" class="clip" src="assets/voz/tut-r3-e5.mp3" data-start="15.06" data-duration="3.05" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e5" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="14.78" data-duration="0.6" data-track-index="13" data-volume="0.22"></audio>
-  <audio id="voz-e6" class="clip" src="assets/voz/tut-r3-e6.mp3" data-start="18.47" data-duration="5.09" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e6" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="18.19" data-duration="0.6" data-track-index="12" data-volume="0.22"></audio>
-  <audio id="voz-e7" class="clip" src="assets/voz/tut-r3-e7.mp3" data-start="23.92" data-duration="4.33" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e7" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="23.64" data-duration="0.6" data-track-index="13" data-volume="0.22"></audio>
-  <audio id="voz-e8" class="clip" src="assets/voz/tut-r3-e8.mp3" data-start="28.61" data-duration="2.06" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e8" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="28.33" data-duration="0.6" data-track-index="12" data-volume="0.22"></audio>
-  <audio id="musica" class="clip" src="assets/bgm/the-corporate-upbeat.mp3" data-start="0" data-duration="33.23" data-media-start="4" data-track-index="11" data-volume="0.07" data-fade-in="0.5" data-fade-out="1.5"></audio>
-  <audio id="pop-final" class="clip" src="assets/sfx/pop.mp3" data-start="30.83" data-duration="0.7" data-track-index="14" data-volume="0.3"></audio>
+</div>
+<div id="circulo"><video id="a-e1-0" class="anim clip" src="assets/helenita/saludar.webm" data-start="0.00" data-duration="4.92" data-track-index="3" muted playsinline></video><video id="a-e2-0" class="anim clip" src="assets/helenita/invitar.webm" data-start="4.92" data-duration="3.51" data-track-index="3" muted playsinline></video><video id="a-e3-0" class="anim clip" src="assets/helenita/hablar.webm" data-start="8.43" data-duration="3.96" data-track-index="3" muted playsinline></video><video id="a-e4-0" class="anim clip" src="assets/helenita/hablar.webm" data-start="12.39" data-duration="3.96" data-track-index="3" muted playsinline></video><video id="a-e5-0" class="anim clip" src="assets/helenita/senalar.webm" data-start="16.35" data-duration="3.41" data-track-index="3" muted playsinline></video><video id="a-e6-0" class="anim clip" src="assets/helenita/hablar.webm" data-start="19.76" data-duration="5.00" data-track-index="3" muted playsinline></video><video id="a-e6-1" class="anim clip" src="assets/helenita/hablar.webm" data-start="24.76" data-duration="0.45" data-track-index="3" muted playsinline></video><video id="a-e7-0" class="anim clip" src="assets/helenita/pensar.webm" data-start="25.21" data-duration="4.69" data-track-index="3" muted playsinline></video><video id="a-e8-0" class="anim clip" src="assets/helenita/empatia.webm" data-start="29.90" data-duration="2.42" data-track-index="3" muted playsinline></video></div>
+<div class="etq" id="etq1" style="font-size:30px">¿Una queja o sugerencia?</div><div class="bur" id="bur1">¡Hola! Hoy le muestro cómo enviar una petición, queja o sugerencia.</div>
+<div class="etq" id="etq2" style="font-size:30px">Abra el menú</div><div class="bur" id="bur2">Toque Peticiones, quejas o reclamos en el menú.</div>
+<div class="etq" id="etq3" style="font-size:30px">Paso 1 · Tipo y datos</div><div class="bur" id="bur3">Elija el tipo de solicitud y escriba sus datos de contacto.</div>
+<div class="etq" id="etq4" style="font-size:30px">Paso 2 · Qué ocurrió</div><div class="bur" id="bur4">Cuéntenos qué ocurrió, con fecha, sede y servicio.</div>
+<div class="etq" id="etq5" style="font-size:30px">Paso 3 · Preparar correo</div><div class="bur" id="bur5">Toque Preparar correo y se abrirá el mensaje listo.</div>
+<div class="etq" id="etq6" style="font-size:25px">Para: siau@santahelenadelvalleips.com</div><div class="bur" id="bur6">Revíselo y envíelo: llega a atención al usuario, con copia a Calidad.</div>
+<div class="etq" id="etq7" style="font-size:25px">Respuesta: hasta 15 días hábiles</div><div class="bur" id="bur7">Respondemos dentro de los términos de ley, hasta quince días hábiles.</div>
+<div class="etq" id="etq8" style="font-size:25px">Su opinión nos ayuda a mejorar</div><div class="bur" id="bur8">Gracias por ayudarnos a mejorar.</div>
+<div class="final" id="final"><img src="assets/img/logo-lema.png" alt="" /><p>santahelenadelvalleips.com</p></div>
+<audio id="voz-tut-r3-e1" class="clip" src="assets/voz/tut-r3-e1.mp3" data-start="0.15" data-duration="4.56" data-track-index="10" data-volume="1"></audio>
+<audio id="voz-tut-r3-e2" class="clip" src="assets/voz/tut-r3-e2.mp3" data-start="5.07" data-duration="3.15" data-track-index="10" data-volume="1"></audio>
+<audio id="clic1" class="clip" src="assets/sfx/click-soft.mp3" data-start="5.25" data-duration="0.35" data-track-index="16" data-volume="0.35"></audio>
+<audio id="clic2" class="clip" src="assets/sfx/click-soft.mp3" data-start="6.90" data-duration="0.35" data-track-index="17" data-volume="0.35"></audio>
+<audio id="voz-tut-r3-e3" class="clip" src="assets/voz/tut-r3-e3.mp3" data-start="8.58" data-duration="3.60" data-track-index="10" data-volume="1"></audio>
+<audio id="clic3" class="clip" src="assets/sfx/click-soft.mp3" data-start="9.83" data-duration="0.35" data-track-index="15" data-volume="0.35"></audio>
+<audio id="clic4" class="clip" src="assets/sfx/click-soft.mp3" data-start="10.70" data-duration="0.35" data-track-index="16" data-volume="0.35"></audio>
+<audio id="clic5" class="clip" src="assets/sfx/click-soft.mp3" data-start="12.04" data-duration="0.35" data-track-index="17" data-volume="0.35"></audio>
+<audio id="voz-tut-r3-e4" class="clip" src="assets/voz/tut-r3-e4.mp3" data-start="12.54" data-duration="3.60" data-track-index="10" data-volume="1"></audio>
+<audio id="clic6" class="clip" src="assets/sfx/click-soft.mp3" data-start="13.79" data-duration="0.35" data-track-index="15" data-volume="0.35"></audio>
+<audio id="clic7" class="clip" src="assets/sfx/click-soft.mp3" data-start="14.90" data-duration="0.35" data-track-index="16" data-volume="0.35"></audio>
+<audio id="voz-tut-r3-e5" class="clip" src="assets/voz/tut-r3-e5.mp3" data-start="16.50" data-duration="3.05" data-track-index="10" data-volume="1"></audio>
+<audio id="clic8" class="clip" src="assets/sfx/click-soft.mp3" data-start="17.42" data-duration="0.35" data-track-index="17" data-volume="0.35"></audio>
+<audio id="clic9" class="clip" src="assets/sfx/click-soft.mp3" data-start="18.28" data-duration="0.35" data-track-index="15" data-volume="0.35"></audio>
+<audio id="voz-tut-r3-e6" class="clip" src="assets/voz/tut-r3-e6.mp3" data-start="19.91" data-duration="5.09" data-track-index="10" data-volume="1"></audio>
+<audio id="voz-tut-r3-e7" class="clip" src="assets/voz/tut-r3-e7.mp3" data-start="25.36" data-duration="4.33" data-track-index="10" data-volume="1"></audio>
+<audio id="voz-tut-r3-e8" class="clip" src="assets/voz/tut-r3-e8.mp3" data-start="30.05" data-duration="2.06" data-track-index="10" data-volume="1"></audio>
+<audio id="pop" class="clip" src="assets/sfx/pop.mp3" data-start="31.12" data-duration="0.7" data-track-index="14" data-volume="0.3"></audio>
+<audio id="musica" class="clip" src="assets/bgm/the-corporate-upbeat.mp3" data-start="0" data-duration="33.52" data-media-start="60" data-track-index="11" data-volume="0.07" data-fade-in="0.4" data-fade-out="1.5"></audio>
 </div>
 <script>
 const tl = gsap.timeline({ paused: true });
-tl.fromTo(["#franja-e1", "#globo-e1"], {opacity:1}, {opacity:1, duration:0.01}, 0);
-tl.to(["#franja-e1", "#globo-e1"], {opacity:0, duration:0.2, ease:"power2.in"}, 4.72);
-tl.fromTo("#franja-e2", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 4.92);
-tl.fromTo("#globo-e2", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 5.02);
-tl.to(["#franja-e2", "#globo-e2"], {opacity:0, duration:0.2, ease:"power2.in"}, 6.74);
-tl.fromTo("#franja-e3", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 6.94);
-tl.fromTo("#globo-e3", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 7.04);
-tl.to(["#franja-e3", "#globo-e3"], {opacity:0, duration:0.2, ease:"power2.in"}, 10.70);
-tl.fromTo("#franja-e4", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 10.90);
-tl.fromTo("#globo-e4", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 11.00);
-tl.to(["#franja-e4", "#globo-e4"], {opacity:0, duration:0.2, ease:"power2.in"}, 14.66);
-tl.fromTo("#franja-e5", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 14.86);
-tl.fromTo("#globo-e5", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 14.96);
-tl.to(["#franja-e5", "#globo-e5"], {opacity:0, duration:0.2, ease:"power2.in"}, 18.07);
-tl.fromTo("#franja-e6", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 18.27);
-tl.fromTo("#globo-e6", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 18.37);
-tl.to(["#franja-e6", "#globo-e6"], {opacity:0, duration:0.2, ease:"power2.in"}, 23.52);
-tl.fromTo("#extra-e6", {opacity:0, y:120}, {opacity:1, y:0, duration:0.45, ease:"power3.out"}, 18.47);
-tl.to("#extra-e6", {opacity:0, duration:0.25}, 23.47);
-tl.fromTo("#franja-e7", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 23.72);
-tl.fromTo("#globo-e7", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 23.82);
-tl.to(["#franja-e7", "#globo-e7"], {opacity:0, duration:0.2, ease:"power2.in"}, 28.21);
-tl.fromTo("#franja-e8", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 28.41);
-tl.fromTo("#globo-e8", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 28.51);
-tl.to(["#franja-e8", "#globo-e8"], {opacity:0, duration:0.2, ease:"power2.in"}, 30.63);
-tl.fromTo("#cel", {opacity:1}, {opacity:0, duration:0.3}, 28.41);
-tl.fromTo("#logo-esc", {opacity:0, scale:0.8}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.6)"}, 28.61);
-tl.fromTo("#final", {opacity:0}, {opacity:1, duration:0.4}, 30.83);
-tl.fromTo("#final img", {scale:0.8}, {scale:1, duration:0.6, ease:"back.out(1.6)"}, 30.83);
+tl.set("#t-top", {opacity:1}, 0.00);
+tl.set(["#etq1", "#bur1"], {opacity:1}, 0);
+tl.to(["#etq1", "#bur1"], {opacity:0, duration:0.18}, 4.74);
+tl.fromTo(["#etq2", "#bur2"], {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:"back.out(1.5)", immediateRender:false}, 4.92);
+tl.to(["#etq2", "#bur2"], {opacity:0, duration:0.18}, 8.25);
+tl.set("#tq1", {x:231.92, y:43.85}, 0);
+tl.fromTo("#tq1", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 5.20);
+tl.to("#tq1", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 5.42);
+tl.fromTo("#menu", {opacity:0}, {opacity:1, duration:0.2, immediateRender:false}, 5.41);
+tl.to("#menu", {opacity:0, duration:0.2}, 7.31);
+tl.set("#tq2", {x:225.0, y:400.38}, 0);
+tl.fromTo("#tq2", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 6.85);
+tl.to("#tq2", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 7.07);
+tl.fromTo("#pantalla", {filter:"blur(0px)"}, {filter:"blur(10px)", duration:0.12, immediateRender:false}, 7.28);
+tl.to("#pantalla", {filter:"blur(0px)", duration:0.25}, 7.42);
+tl.fromTo("#t-pqrs0", {opacity:0}, {opacity:1, duration:0.08, ease:"none", immediateRender:false}, 7.38);
+tl.to("#t-top", {opacity:0, duration:0.01}, 7.46);
+tl.set("#pag", {y:-12276.92}, 7.38);
+tl.fromTo(["#etq3", "#bur3"], {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:"back.out(1.5)", immediateRender:false}, 8.43);
+tl.to(["#etq3", "#bur3"], {opacity:0, duration:0.18}, 12.21);
+tl.fromTo("#pag", {y:-12276.92}, {y:-12750.0, duration:1.11, ease:"power2.inOut", immediateRender:false}, 8.43);
+tl.set("#tq3", {x:250.38, y:210.0}, 0);
+tl.fromTo("#tq3", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 9.78);
+tl.to("#tq3", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 10.00);
+tl.fromTo("#t-p1", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 9.97);
+tl.to("#t-pqrs0", {opacity:0, duration:0.01}, 10.12);
+tl.set("#tq4", {x:225.0, y:401.54}, 0);
+tl.fromTo("#tq4", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 10.65);
+tl.to("#tq4", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 10.87);
+tl.fromTo("#t-p2", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 10.89);
+tl.to("#t-p1", {opacity:0, duration:0.01}, 11.04);
+tl.fromTo("#pag", {y:-12750.0}, {y:-13153.85, duration:0.79, ease:"power2.inOut", immediateRender:false}, 11.20);
+tl.set("#tq5", {x:225.0, y:345.0}, 0);
+tl.fromTo("#tq5", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 11.99);
+tl.to("#tq5", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 12.21);
+tl.fromTo("#t-p3", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 12.15);
+tl.to("#t-p2", {opacity:0, duration:0.01}, 12.30);
+tl.fromTo(["#etq4", "#bur4"], {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:"back.out(1.5)", immediateRender:false}, 12.39);
+tl.to(["#etq4", "#bur4"], {opacity:0, duration:0.18}, 16.17);
+tl.fromTo("#pag", {y:-13153.85}, {y:-13569.23, duration:1.11, ease:"power2.inOut", immediateRender:false}, 12.39);
+tl.set("#tq6", {x:225.0, y:276.92}, 0);
+tl.fromTo("#tq6", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 13.74);
+tl.to("#tq6", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 13.96);
+tl.fromTo("#t-p4", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 13.97);
+tl.to("#t-p3", {opacity:0, duration:0.01}, 14.12);
+tl.set("#tq7", {x:225.0, y:628.85}, 0);
+tl.fromTo("#tq7", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 14.85);
+tl.to("#tq7", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 15.07);
+tl.fromTo("#t-p5", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 15.08);
+tl.to("#t-p4", {opacity:0, duration:0.01}, 15.23);
+tl.fromTo(["#etq5", "#bur5"], {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:"back.out(1.5)", immediateRender:false}, 16.35);
+tl.to(["#etq5", "#bur5"], {opacity:0, duration:0.18}, 19.58);
+tl.fromTo("#pag", {y:-13569.23}, {y:-13915.38, duration:0.85, ease:"power2.inOut", immediateRender:false}, 16.35);
+tl.set("#tq8", {x:66.92, y:401.54}, 0);
+tl.fromTo("#tq8", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 17.37);
+tl.to("#tq8", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 17.59);
+tl.fromTo("#t-p6", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 17.54);
+tl.to("#t-p5", {opacity:0, duration:0.01}, 17.69);
+tl.set("#tq9", {x:225.0, y:609.23}, 0);
+tl.fromTo("#tq9", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 18.23);
+tl.to("#tq9", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 18.45);
+tl.fromTo("#t-p7", {opacity:0}, {opacity:1, duration:0.02, ease:"none", immediateRender:false}, 18.40);
+tl.to("#t-p6", {opacity:0, duration:0.01}, 18.42);
+tl.fromTo("#pag", {y:-13915.38}, {y:-14192.31, duration:0.95, ease:"power2.inOut", immediateRender:false}, 18.67);
+tl.fromTo(["#etq6", "#bur6"], {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:"back.out(1.5)", immediateRender:false}, 19.76);
+tl.to(["#etq6", "#bur6"], {opacity:0, duration:0.18}, 25.03);
+tl.fromTo("#correo", {opacity:0}, {opacity:1, duration:0.3, immediateRender:false}, 20.03);
+tl.to("#correo", {opacity:0, duration:0.3}, 25.09);
+tl.fromTo(["#etq7", "#bur7"], {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:"back.out(1.5)", immediateRender:false}, 25.21);
+tl.to(["#etq7", "#bur7"], {opacity:0, duration:0.18}, 29.72);
+tl.fromTo("#t-pqrs0", {opacity:0}, {opacity:1, duration:0.25, ease:"none", immediateRender:false}, 25.26);
+tl.to("#t-p7", {opacity:0, duration:0.01}, 25.51);
+tl.set("#pag", {y:-12276.92}, 25.26);
+tl.set("#cel", {transformOrigin:"239.0px 244.77px"}, 25.91);
+tl.to("#cel", {scale:1.3, duration:0.6, ease:"power3.inOut"}, 25.91);
+tl.fromTo(["#etq8", "#bur8"], {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:"back.out(1.5)", immediateRender:false}, 29.90);
+tl.to(["#etq8", "#bur8"], {opacity:0, duration:0.18}, 32.14);
+tl.to("#cel", {opacity:0, y:60, duration:0.35, ease:"power2.in"}, 29.90);
+tl.fromTo("#final", {opacity:0}, {opacity:1, duration:0.4, immediateRender:false}, 31.12);
+tl.fromTo("#final img", {scale:0.8}, {scale:1, duration:0.6, ease:"back.out(1.6)", immediateRender:false}, 31.12);
 window.__timelines["reel3"] = tl;
 </script>
 </body>

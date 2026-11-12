@@ -4,120 +4,133 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=1080, height=1920" />
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
-<style>
-@font-face { font-family: "Bricolage Grotesque"; src: url("assets/fonts/bricolage.woff2") format("woff2"); font-weight: 200 800; }
+<style>@font-face { font-family: "Bricolage Grotesque"; src: url("assets/fonts/bricolage.woff2") format("woff2"); font-weight: 200 800; }
 @font-face { font-family: "Figtree"; src: url("assets/fonts/figtree.woff2") format("woff2"); font-weight: 300 900; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EFF4F7; }
-#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #EFF4F7; font-family: "Figtree", sans-serif; }
-#fondo-arco { position: absolute; left: -260px; top: 900px; width: 900px; height: 900px; border-radius: 50%; background: #dbe8f0; }
-.franja { position: absolute; left: 60px; top: 190px; width: 960px; min-height: 200px; padding: 34px 44px 38px 64px; border-radius: 36px; background: #0A2233; color: #fff; font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; letter-spacing: -0.035em; line-height: 1.02; display: flex; align-items: center; opacity: 0; }
-.franja::before { content: ""; position: absolute; left: 30px; top: 40px; bottom: 40px; width: 10px; border-radius: 5px; background: #FFE81A; }
-#cel { position: absolute; left: 500px; top: 440px; width: 528px; height: 1110px; border-radius: 62px; background: #0A2233; box-shadow: 0 30px 70px rgba(10,34,51,.25); }
-#pantalla { position: absolute; left: 14px; top: 14px; width: 500px; height: 1082px; border-radius: 50px; overflow: hidden; background: #fff; }
-.grab { position: absolute; left: 0; top: 0; width: 500px; height: 1082px; object-fit: cover; object-position: top; }
-.globo { position: absolute; left: 40px; top: 450px; width: 440px; padding: 30px 32px; border-radius: 30px; background: #fff; color: #0A2233; font-size: 38px; font-weight: 600; line-height: 1.22; box-shadow: 0 16px 40px rgba(10,34,51,.14); opacity: 0; }
-.globo::after { content: ""; position: absolute; left: 150px; bottom: -22px; border: 22px solid transparent; border-top-color: #fff; border-bottom: 0; }
-#hele { position: absolute; left: -70px; top: 830px; width: 720px; height: 720px; }
-.anim { position: absolute; left: 0; top: 0; width: 720px; height: 720px; }
-.tarjeta { position: absolute; left: 24px; right: 24px; border-radius: 26px; background: #fff; box-shadow: 0 18px 44px rgba(10,34,51,.28); padding: 26px 26px 30px; font-size: 23px; color: #0A2233; line-height: 1.35; opacity: 0; }
-.tarjeta h4 { font-size: 26px; margin-bottom: 14px; color: #06709A; }
-.tarjeta .fila { border-bottom: 1px solid #e3eaef; padding: 8px 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Figtree", sans-serif; }
+.cel { position: absolute; border-radius: 64px; background: #0A2233; box-shadow: 0 34px 80px rgba(0,0,0,.28); }
+.pantalla { position: absolute; left: 14px; top: 14px; overflow: hidden; border-radius: 52px; background: #fff; }
+.pag { position: absolute; left: 0; top: 0; }
+.tira { position: absolute; left: 0; opacity: 0; }
+.capa { position: absolute; left: 0; top: 0; }
+.toque { position: absolute; left: 0; top: 0; width: 78px; height: 78px; margin: -39px 0 0 -39px; border-radius: 50%; border: 7px solid #FFE81A; background: rgba(255,232,26,.25); opacity: 0; }
+.tarjeta { position: absolute; left: 20px; right: 20px; border-radius: 26px; background: #fff; box-shadow: 0 18px 44px rgba(10,34,51,.3); padding: 24px 24px 28px; font-size: 22px; color: #0A2233; line-height: 1.35; opacity: 0; }
+.tarjeta h4 { font-size: 25px; margin-bottom: 12px; color: #06709A; }
+.tarjeta .fila { border-bottom: 1px solid #e3eaef; padding: 7px 0; }
 .tarjeta .fila b { color: #4A6171; font-weight: 600; margin-right: 8px; }
-.burbuja { background: #e9f6ee; border-radius: 18px; padding: 16px 18px; white-space: pre-line; font-size: 21px; }
-#pie { position: absolute; left: 0; top: 1600px; width: 1080px; text-align: center; font-size: 34px; font-weight: 700; color: #06709A; opacity: 0; }
-#final { position: absolute; inset: 0; background: #FBFCFD; opacity: 0; }
-#final img { position: absolute; left: 190px; top: 620px; width: 700px; }
-#final p { position: absolute; left: 0; top: 1060px; width: 1080px; text-align: center; font-size: 42px; font-weight: 700; color: #0A2233; }
-#final span { display: block; margin-top: 18px; font-size: 34px; font-weight: 600; color: #06709A; }
-#toque { position: absolute; left: 963px; top: 1480px; width: 90px; height: 90px; margin: -45px 0 0 -45px; border-radius: 50%; border: 6px solid #FFE81A; opacity: 0; }
+.burbuja { background: #e9f6ee; border-radius: 18px; padding: 14px 16px; white-space: pre-line; font-size: 20px; }
+.anim { position: absolute; left: 0; top: 0; }
+.final { position: absolute; inset: 0; opacity: 0; }
+
+html, body, #root { background: #0A2233; }
+
+#brillo { position: absolute; left: 380px; top: 160px; width: 900px; height: 900px; border-radius: 50%; background: radial-gradient(circle, rgba(5,150,200,.35), rgba(5,150,200,0) 65%); }
+#marca { position: absolute; left: 60px; top: 150px; width: 250px; }
+.cap { position: absolute; left: 60px; top: 300px; width: 380px; opacity: 0; }
+.cap .num { display: inline-block; font-family: "Bricolage Grotesque"; font-weight: 700; font-size: 34px; color: #0A2233; background: #FFE81A; border-radius: 30px; padding: 6px 20px; }
+.cap h2 { margin-top: 22px; font-family: "Bricolage Grotesque"; font-weight: 600; font-size: 60px; line-height: 1.0; letter-spacing: -0.035em; color: #fff; }
+.cap p { margin-top: 26px; font-size: 36px; line-height: 1.25; font-weight: 600; color: #bfe6f4; }
+#hele { position: absolute; left: -90px; top: 980px; width: 580px; height: 580px; }
+#hele .anim { width: 580px; height: 580px; }
+.final { background: #0A2233; }
+.final img { position: absolute; left: 190px; top: 700px; width: 700px; }
+.final p { position: absolute; left: 0; top: 1150px; width: 1080px; text-align: center; font-size: 40px; font-weight: 700; color: #FFE81A; }
 </style>
 </head>
 <body>
-<!-- Reel tutorial 1 · generado con gen.py (no editar a mano: cambiar gen.py y volver a correrlo) -->
-<div id="root" data-composition-id="reel1" data-start="0" data-duration="36.39" data-width="1080" data-height="1920" data-layout-allow-overflow>
-  <div id="fondo-arco"></div>
-  <div id="cel"><div id="pantalla">
-        <video id="grab-e1" class="grab clip" src="assets/grab/r1.mp4" data-start="0.00" data-duration="5.29" data-media-start="0.39" data-playback-rate="0.794" data-track-index="2" muted playsinline></video>
-    <video id="grab-e2" class="grab clip" src="assets/grab/r1.mp4" data-start="5.29" data-duration="6.10" data-media-start="5.39" data-playback-rate="0.597" data-track-index="2" muted playsinline></video>
-    <video id="grab-e3" class="grab clip" src="assets/grab/r1.mp4" data-start="11.39" data-duration="3.54" data-media-start="9.83" data-playback-rate="0.573" data-track-index="2" muted playsinline></video>
-    <video id="grab-e4" class="grab clip" src="assets/grab/r1.mp4" data-start="14.93" data-duration="3.80" data-media-start="12.66" data-playback-rate="1.274" data-track-index="2" muted playsinline></video>
-    <video id="grab-e5" class="grab clip" src="assets/grab/r1.mp4" data-start="18.73" data-duration="5.26" data-media-start="18.30" data-playback-rate="0.823" data-track-index="2" muted playsinline></video>
-    <video id="grab-e6" class="grab clip" src="assets/grab/r1.mp4" data-start="23.99" data-duration="6.80" data-media-start="25.00" data-playback-rate="0.406" data-track-index="2" muted playsinline></video>
-    <video id="grab-e7" class="grab clip" src="assets/grab/r1.mp4" data-start="30.79" data-duration="3.20" data-media-start="28.56" data-playback-rate="0.747" data-track-index="2" muted playsinline></video>
-  </div></div>
-  <div id="toque"></div>
-  
-  <div id="hele">
-        <video id="anim-e1" class="anim clip" src="assets/helenita/saludar.webm" data-start="0.00" data-duration="5.00" data-track-index="3" muted playsinline></video>
-    <video id="anim-e1b" class="anim clip" src="assets/helenita/saludar.webm" data-start="5.00" data-duration="0.29" data-track-index="3" muted playsinline></video>
-    <video id="anim-e2" class="anim clip" src="assets/helenita/hablar.webm" data-start="5.29" data-duration="5.00" data-track-index="3" muted playsinline></video>
-    <video id="anim-e2b" class="anim clip" src="assets/helenita/hablar.webm" data-start="10.29" data-duration="1.10" data-track-index="3" muted playsinline></video>
-    <video id="anim-e3" class="anim clip" src="assets/helenita/invitar.webm" data-start="11.39" data-duration="3.54" data-track-index="3" muted playsinline></video>
-    <video id="anim-e4" class="anim clip" src="assets/helenita/hablar.webm" data-start="14.93" data-duration="3.80" data-track-index="3" muted playsinline></video>
-    <video id="anim-e5" class="anim clip" src="assets/helenita/senalar.webm" data-start="18.73" data-duration="5.00" data-track-index="3" muted playsinline></video>
-    <video id="anim-e5b" class="anim clip" src="assets/helenita/senalar.webm" data-start="23.73" data-duration="0.26" data-track-index="3" muted playsinline></video>
-    <video id="anim-e6" class="anim clip" src="assets/helenita/pensar.webm" data-start="23.99" data-duration="5.00" data-track-index="3" muted playsinline></video>
-    <video id="anim-e6b" class="anim clip" src="assets/helenita/pensar.webm" data-start="28.99" data-duration="1.80" data-track-index="3" muted playsinline></video>
-    <video id="anim-e7" class="anim clip" src="assets/helenita/pulgar.webm" data-start="30.79" data-duration="3.20" data-track-index="3" muted playsinline></video>
+<!-- Reel tutorial 1 · generado con gen.py (cambiar gen.py y volver a correrlo) -->
+<div id="root" data-composition-id="reel1" data-start="0" data-duration="37.93" data-width="1080" data-height="1920" data-layout-allow-overflow>
+<div id="brillo"></div>
+<img id="marca" src="assets/img/logo-lema.png" alt="Santa Helena del Valle IPS" />
+<div class="cel" id="cel" style="left:470px;top:300px;width:568px;height:1197px">
+  <div class="pantalla" id="pantalla" style="width:540px;height:1169px">
+    <div class="pag" id="pag" style="width:540px"><img class="tira" id="t-top" src="assets/est/top.png" alt="" style="top:0.0px;width:540px" /><img class="tira" id="t-serv-apoyo" src="assets/est/serv-apoyo.png" alt="" style="top:3738.46px;width:540px" /><img class="tira" id="t-mid" src="assets/est/mid.png" alt="" style="top:3738.46px;width:540px" /><img class="tira" id="t-pqrs0" src="assets/est/pqrs0.png" alt="" style="top:14538.46px;width:540px" /></div>
+    <img class="capa" id="cab" src="assets/est/header.png" alt="" style="width:540px" />
+    <img class="capa" id="menu" src="assets/est/menu.png" alt="" style="width:540px;opacity:0" />
+    <img class="capa" id="fab" src="assets/est/fab.png" alt="" style="left:429.23px;top:1057.85px;width:91.38px;opacity:0" />
+    
+    <div class="toque" id="tq1"></div><div class="toque" id="tq2"></div><div class="toque" id="tq3"></div><div class="toque" id="tq4"></div><div class="toque" id="tq5"></div><div class="toque" id="tq6"></div>
   </div>
-    <div class="franja" id="franja-e1" style="font-size:76px">Así se usa nuestra página</div>
-  <div class="globo" id="globo-e1">¡Hola! Le muestro cómo usar la página nueva de Santa Helena del Valle IPS.</div>
-  <div class="franja" id="franja-e2" style="font-size:62px">Menú: Servicios · Sedes · Preguntas · PQRS</div>
-  <div class="globo" id="globo-e2">Arriba está el menú: servicios, sedes, preguntas frecuentes y PQRS.</div>
-  <div class="franja" id="franja-e3" style="font-size:76px">Agendar cita</div>
-  <div class="globo" id="globo-e3">Para pedir una cita, toque Agendar cita.</div>
-  <div class="franja" id="franja-e4" style="font-size:76px">Servicios por áreas</div>
-  <div class="globo" id="globo-e4">En Servicios elija un área y vea lo que ofrecemos.</div>
-  <div class="franja" id="franja-e5" style="font-size:62px">Sedes: mapa, direcciones y horarios</div>
-  <div class="globo" id="globo-e5">En Sedes encontrará el mapa, las direcciones, los horarios y cómo llegar.</div>
-  <div class="franja" id="franja-e6" style="font-size:50px">PQRS: petición, queja, reclamo, sugerencia o felicitación</div>
-  <div class="globo" id="globo-e6">Y en PQRS puede enviar una petición, queja, reclamo, sugerencia o felicitación.</div>
-  <div class="franja" id="franja-e7" style="font-size:76px">¿Dudas? Toque a Helenita</div>
-  <div class="globo" id="globo-e7">Si necesita ayuda, toque mi carita abajo.</div>
-  <div id="final"><img src="assets/img/logo.png" alt="Santa Helena del Valle IPS" /><p>¡La salud, nuestro compromiso!<span>santahelenadelvalleips.com</span></p></div>
-    <audio id="voz-e1" class="clip" src="assets/voz/tut-r1-e1.mp3" data-start="0.20" data-duration="4.93" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e1" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="0.00" data-duration="0.6" data-track-index="13" data-volume="0.22"></audio>
-  <audio id="voz-e2" class="clip" src="assets/voz/tut-r1-e2.mp3" data-start="5.49" data-duration="5.74" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e2" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="5.21" data-duration="0.6" data-track-index="12" data-volume="0.22"></audio>
-  <audio id="voz-e3" class="clip" src="assets/voz/tut-r1-e3.mp3" data-start="11.59" data-duration="3.18" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e3" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="11.31" data-duration="0.6" data-track-index="13" data-volume="0.22"></audio>
-  <audio id="voz-e4" class="clip" src="assets/voz/tut-r1-e4.mp3" data-start="15.13" data-duration="3.44" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e4" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="14.85" data-duration="0.6" data-track-index="12" data-volume="0.22"></audio>
-  <audio id="voz-e5" class="clip" src="assets/voz/tut-r1-e5.mp3" data-start="18.93" data-duration="4.90" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e5" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="18.65" data-duration="0.6" data-track-index="13" data-volume="0.22"></audio>
-  <audio id="voz-e6" class="clip" src="assets/voz/tut-r1-e6.mp3" data-start="24.19" data-duration="6.44" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e6" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="23.91" data-duration="0.6" data-track-index="12" data-volume="0.22"></audio>
-  <audio id="voz-e7" class="clip" src="assets/voz/tut-r1-e7.mp3" data-start="30.99" data-duration="2.84" data-track-index="10" data-volume="1"></audio>
-  <audio id="wh-e7" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="30.71" data-duration="0.6" data-track-index="13" data-volume="0.22"></audio>
-  <audio id="musica" class="clip" src="assets/bgm/the-corporate-upbeat.mp3" data-start="0" data-duration="36.39" data-media-start="4" data-track-index="11" data-volume="0.07" data-fade-in="0.5" data-fade-out="1.5"></audio>
-  <audio id="pop-final" class="clip" src="assets/sfx/pop.mp3" data-start="33.99" data-duration="0.7" data-track-index="14" data-volume="0.3"></audio>
+</div>
+<div class="cap" id="cap1"><span class="num">01 / 07</span><h2>Así se usa nuestra página</h2><p>¡Hola! Le muestro cómo usar la página nueva de Santa Helena del Valle IPS.</p></div>
+<div class="cap" id="cap2"><span class="num">02 / 07</span><h2>El menú</h2><p>Arriba está el menú: servicios, sedes, preguntas frecuentes y peticiones, quejas o reclamos.</p></div>
+<div class="cap" id="cap3"><span class="num">03 / 07</span><h2>Agendar cita</h2><p>Para pedir una cita, toque Agendar cita.</p></div>
+<div class="cap" id="cap4"><span class="num">04 / 07</span><h2>Servicios por áreas</h2><p>En Servicios elija un área y vea lo que ofrecemos.</p></div>
+<div class="cap" id="cap5"><span class="num">05 / 07</span><h2>Sedes y mapa</h2><p>En Sedes encontrará el mapa, las direcciones, los horarios y cómo llegar.</p></div>
+<div class="cap" id="cap6"><span class="num">06 / 07</span><h2>Peticiones, quejas y reclamos</h2><p>Y aquí puede enviarnos sus peticiones, quejas o reclamos, y también sugerencias o felicitaciones.</p></div>
+<div class="cap" id="cap7"><span class="num">07 / 07</span><h2>¿Dudas? Toque a Helenita</h2><p>Si necesita ayuda, toque mi carita abajo.</p></div>
+<div id="hele"><video id="a-e1-0" class="anim clip" src="assets/helenita/saludar.webm" data-start="0.00" data-duration="5.00" data-track-index="3" muted playsinline></video><video id="a-e1-1" class="anim clip" src="assets/helenita/saludar.webm" data-start="5.00" data-duration="0.29" data-track-index="3" muted playsinline></video><video id="a-e2-0" class="anim clip" src="assets/helenita/hablar.webm" data-start="5.29" data-duration="5.00" data-track-index="3" muted playsinline></video><video id="a-e2-1" class="anim clip" src="assets/helenita/hablar.webm" data-start="10.29" data-duration="2.64" data-track-index="3" muted playsinline></video><video id="a-e3-0" class="anim clip" src="assets/helenita/invitar.webm" data-start="12.93" data-duration="3.54" data-track-index="3" muted playsinline></video><video id="a-e4-0" class="anim clip" src="assets/helenita/hablar.webm" data-start="16.47" data-duration="3.80" data-track-index="3" muted playsinline></video><video id="a-e5-0" class="anim clip" src="assets/helenita/senalar.webm" data-start="20.27" data-duration="5.00" data-track-index="3" muted playsinline></video><video id="a-e5-1" class="anim clip" src="assets/helenita/senalar.webm" data-start="25.27" data-duration="0.26" data-track-index="3" muted playsinline></video><video id="a-e6-0" class="anim clip" src="assets/helenita/pensar.webm" data-start="25.53" data-duration="5.00" data-track-index="3" muted playsinline></video><video id="a-e6-1" class="anim clip" src="assets/helenita/pensar.webm" data-start="30.53" data-duration="1.80" data-track-index="3" muted playsinline></video><video id="a-e7-0" class="anim clip" src="assets/helenita/pulgar.webm" data-start="32.33" data-duration="3.20" data-track-index="3" muted playsinline></video></div>
+<div class="final" id="final"><img src="assets/img/logo-lema.png" alt="" /><p>santahelenadelvalleips.com</p></div>
+<audio id="voz-tut-r1-e1" class="clip" src="assets/voz/tut-r1-e1.mp3" data-start="0.15" data-duration="4.93" data-track-index="10" data-volume="1"></audio>
+<audio id="voz-tut-r1-e2" class="clip" src="assets/voz/tut-r1-e2.mp3" data-start="5.44" data-duration="7.28" data-track-index="10" data-volume="1"></audio>
+<audio id="clic1" class="clip" src="assets/sfx/click-soft.mp3" data-start="5.95" data-duration="0.35" data-track-index="16" data-volume="0.35"></audio>
+<audio id="voz-tut-r1-e3" class="clip" src="assets/voz/tut-r1-e3.mp3" data-start="13.08" data-duration="3.18" data-track-index="10" data-volume="1"></audio>
+<audio id="clic2" class="clip" src="assets/sfx/click-soft.mp3" data-start="13.69" data-duration="0.35" data-track-index="17" data-volume="0.35"></audio>
+<audio id="clic3" class="clip" src="assets/sfx/click-soft.mp3" data-start="15.10" data-duration="0.35" data-track-index="15" data-volume="0.35"></audio>
+<audio id="voz-tut-r1-e4" class="clip" src="assets/voz/tut-r1-e4.mp3" data-start="16.62" data-duration="3.44" data-track-index="10" data-volume="1"></audio>
+<audio id="clic4" class="clip" src="assets/sfx/click-soft.mp3" data-start="18.88" data-duration="0.35" data-track-index="16" data-volume="0.35"></audio>
+<audio id="voz-tut-r1-e5" class="clip" src="assets/voz/tut-r1-e5.mp3" data-start="20.42" data-duration="4.90" data-track-index="10" data-volume="1"></audio>
+<audio id="voz-tut-r1-e6" class="clip" src="assets/voz/tut-r1-e6.mp3" data-start="25.68" data-duration="6.44" data-track-index="10" data-volume="1"></audio>
+<audio id="voz-tut-r1-e7" class="clip" src="assets/voz/tut-r1-e7.mp3" data-start="32.48" data-duration="2.84" data-track-index="10" data-volume="1"></audio>
+<audio id="clic5" class="clip" src="assets/sfx/click-soft.mp3" data-start="33.34" data-duration="0.35" data-track-index="17" data-volume="0.35"></audio>
+<audio id="clic6" class="clip" src="assets/sfx/click-soft.mp3" data-start="34.46" data-duration="0.35" data-track-index="15" data-volume="0.35"></audio>
+<audio id="pop" class="clip" src="assets/sfx/pop.mp3" data-start="35.53" data-duration="0.7" data-track-index="14" data-volume="0.3"></audio>
+<audio id="musica" class="clip" src="assets/bgm/the-corporate-upbeat.mp3" data-start="0" data-duration="37.93" data-media-start="4" data-track-index="11" data-volume="0.07" data-fade-in="0.4" data-fade-out="1.5"></audio>
 </div>
 <script>
 const tl = gsap.timeline({ paused: true });
-tl.fromTo(["#franja-e1", "#globo-e1"], {opacity:1}, {opacity:1, duration:0.01}, 0);
-tl.to(["#franja-e1", "#globo-e1"], {opacity:0, duration:0.2, ease:"power2.in"}, 5.09);
-tl.fromTo("#franja-e2", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 5.29);
-tl.fromTo("#globo-e2", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 5.39);
-tl.to(["#franja-e2", "#globo-e2"], {opacity:0, duration:0.2, ease:"power2.in"}, 11.19);
-tl.fromTo("#franja-e3", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 11.39);
-tl.fromTo("#globo-e3", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 11.49);
-tl.to(["#franja-e3", "#globo-e3"], {opacity:0, duration:0.2, ease:"power2.in"}, 14.73);
-tl.fromTo("#franja-e4", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 14.93);
-tl.fromTo("#globo-e4", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 15.03);
-tl.to(["#franja-e4", "#globo-e4"], {opacity:0, duration:0.2, ease:"power2.in"}, 18.53);
-tl.fromTo("#franja-e5", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 18.73);
-tl.fromTo("#globo-e5", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 18.83);
-tl.to(["#franja-e5", "#globo-e5"], {opacity:0, duration:0.2, ease:"power2.in"}, 23.79);
-tl.fromTo("#franja-e6", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 23.99);
-tl.fromTo("#globo-e6", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 24.09);
-tl.to(["#franja-e6", "#globo-e6"], {opacity:0, duration:0.2, ease:"power2.in"}, 30.59);
-tl.fromTo("#franja-e7", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 30.79);
-tl.fromTo("#globo-e7", {opacity:0, scale:0.9, y:20}, {opacity:1, scale:1, y:0, duration:0.3, ease:"back.out(1.7)"}, 30.89);
-tl.to(["#franja-e7", "#globo-e7"], {opacity:0, duration:0.2, ease:"power2.in"}, 33.79);
-tl.fromTo("#toque", {opacity:0, scale:0.5}, {opacity:1, scale:1.15, duration:0.5, ease:"power2.out", repeat:3, yoyo:true}, 31.39);
-tl.fromTo("#final", {opacity:0}, {opacity:1, duration:0.4}, 33.99);
-tl.fromTo("#final img", {scale:0.8}, {scale:1, duration:0.6, ease:"back.out(1.6)"}, 33.99);
+tl.set("#t-top", {opacity:1}, 0.00);
+tl.set("#cap1", {opacity:1}, 0);
+tl.to("#cap1", {opacity:0, duration:0.18}, 5.11);
+tl.fromTo("#cap2", {opacity:0, x:-40}, {opacity:1, x:0, duration:0.35, ease:"power3.out", immediateRender:false}, 5.29);
+tl.to("#cap2", {opacity:0, duration:0.18}, 12.75);
+tl.set("#tq1", {x:278.31, y:52.62}, 0);
+tl.fromTo("#tq1", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 5.90);
+tl.to("#tq1", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 6.12);
+tl.fromTo("#menu", {opacity:0}, {opacity:1, duration:0.2, immediateRender:false}, 6.36);
+tl.to("#menu", {opacity:0, duration:0.2}, 12.78);
+tl.fromTo("#cap3", {opacity:0, x:-40}, {opacity:1, x:0, duration:0.35, ease:"power3.out", immediateRender:false}, 12.93);
+tl.to("#cap3", {opacity:0, duration:0.18}, 16.29);
+tl.set("#tq2", {x:418.15, y:52.62}, 0);
+tl.fromTo("#tq2", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 13.64);
+tl.to("#tq2", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 13.86);
+tl.set("#tq3", {x:418.15, y:52.62}, 0);
+tl.fromTo("#tq3", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 15.05);
+tl.to("#tq3", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 15.27);
+tl.fromTo("#cap4", {opacity:0, x:-40}, {opacity:1, x:0, duration:0.35, ease:"power3.out", immediateRender:false}, 16.47);
+tl.to("#cap4", {opacity:0, duration:0.18}, 20.09);
+tl.fromTo("#pag", {y:-0.0}, {y:-3888.0, duration:1.71, ease:"power2.inOut", immediateRender:false}, 16.62);
+tl.set("#tq4", {x:415.38, y:562.15}, 0);
+tl.fromTo("#tq4", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 18.83);
+tl.to("#tq4", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 19.05);
+tl.fromTo("#t-serv-apoyo", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 18.98);
+tl.to("#t-top", {opacity:0, duration:0.01}, 19.13);
+tl.fromTo("#cap5", {opacity:0, x:-40}, {opacity:1, x:0, duration:0.35, ease:"power3.out", immediateRender:false}, 20.27);
+tl.to("#cap5", {opacity:0, duration:0.18}, 25.35);
+tl.fromTo("#t-mid", {opacity:0}, {opacity:1, duration:0.15, ease:"none", immediateRender:false}, 20.27);
+tl.to("#t-serv-apoyo", {opacity:0, duration:0.01}, 20.42);
+tl.fromTo("#pag", {y:-3888.0}, {y:-8939.08, duration:2.21, ease:"power2.inOut", immediateRender:false}, 20.43);
+tl.fromTo("#pag", {y:-8939.08}, {y:-9276.92, duration:1.84, ease:"power2.inOut", immediateRender:false}, 23.16);
+tl.fromTo("#cap6", {opacity:0, x:-40}, {opacity:1, x:0, duration:0.35, ease:"power3.out", immediateRender:false}, 25.53);
+tl.to("#cap6", {opacity:0, duration:0.18}, 32.15);
+tl.fromTo("#pantalla", {filter:"blur(0px)"}, {filter:"blur(10px)", duration:0.12, immediateRender:false}, 25.43);
+tl.to("#pantalla", {filter:"blur(0px)", duration:0.25}, 25.57);
+tl.fromTo("#t-pqrs0", {opacity:0}, {opacity:1, duration:0.1, ease:"none", immediateRender:false}, 25.53);
+tl.to("#t-mid", {opacity:0, duration:0.01}, 25.63);
+tl.set("#pag", {y:-14732.31}, 25.55);
+tl.fromTo("#pag", {y:-14732.31}, {y:-15230.77, duration:3.06, ease:"power2.inOut", immediateRender:false}, 28.59);
+tl.fromTo("#cap7", {opacity:0, x:-40}, {opacity:1, x:0, duration:0.35, ease:"power3.out", immediateRender:false}, 32.33);
+tl.to("#cap7", {opacity:0, duration:0.18}, 35.35);
+tl.fromTo("#fab", {opacity:0}, {opacity:1, duration:0.2, immediateRender:false}, 32.38);
+tl.set("#tq5", {x:474.92, y:1103.54}, 0);
+tl.fromTo("#tq5", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 33.29);
+tl.to("#tq5", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 33.51);
+tl.set("#tq6", {x:474.92, y:1103.54}, 0);
+tl.fromTo("#tq6", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.18, ease:"power2.out", immediateRender:false}, 34.41);
+tl.to("#tq6", {opacity:0, scale:1.5, duration:0.35, ease:"power1.out"}, 34.63);
+tl.fromTo("#final", {opacity:0}, {opacity:1, duration:0.4, immediateRender:false}, 35.53);
+tl.fromTo("#final img", {scale:0.8}, {scale:1, duration:0.6, ease:"back.out(1.6)", immediateRender:false}, 35.53);
 window.__timelines["reel1"] = tl;
 </script>
 </body>
