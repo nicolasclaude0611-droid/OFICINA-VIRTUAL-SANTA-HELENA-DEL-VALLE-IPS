@@ -9,8 +9,8 @@ import json, os, subprocess, html
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 FPS_CHARS = 14.0  # si falta una voz, se estima con 14 caracteres por segundo
-PAUSA = 0.45      # aire después de cada frase
-FINAL = 2.2       # tarjeta final con el logo
+PAUSA = 0.3      # aire después de cada frase
+FINAL = 1.8       # tarjeta final con el logo
 WA = open(os.path.join(AQUI, 'assets/r2-whatsapp.txt'), encoding='utf-8').read().strip()
 
 def dur(path):
