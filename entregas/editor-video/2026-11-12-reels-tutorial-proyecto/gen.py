@@ -10,7 +10,7 @@ import json, os, subprocess, html
 AQUI = os.path.dirname(os.path.abspath(__file__))
 FPS_CHARS = 14.0  # si falta una voz, se estima con 14 caracteres por segundo
 PAUSA = 0.3      # aire después de cada frase
-FINAL = 1.8       # tarjeta final con el logo
+FINAL = 2.4       # tarjeta final con el logo
 WA = open(os.path.join(AQUI, 'assets/r2-whatsapp.txt'), encoding='utf-8').read().strip()
 
 def dur(path):
@@ -29,7 +29,7 @@ REELS = {
    ('tut-r1-e3', 'Para pedir una cita, toque Agendar cita.', 'Agendar cita', 'invitar', ('e3', 'e4'), None),
    ('tut-r1-e4', 'En Servicios elija un área y vea lo que ofrecemos.', 'Servicios por áreas', 'hablar', ('e4', 'e5'), None),
    ('tut-r1-e5', 'En Sedes encontrará el mapa, las direcciones, los horarios y cómo llegar.', 'Sedes: mapa, direcciones y horarios', 'senalar', ('e5', 'e6'), None),
-   ('tut-r1-e6', 'Y en PQRS puede enviar una petición, queja, reclamo, sugerencia o felicitación.', 'PQRS: petición, queja, reclamo, sugerencia o felicitación', 'pensar', ('e6', 'e7'), None),
+   ('tut-r1-e6', 'Y en PQRS puede enviar una petición, queja, reclamo, sugerencia o felicitación.', 'PQRS: petición, queja, reclamo, sugerencia o felicitación', 'pensar', (25.0, 'e7'), None),
    ('tut-r1-e7', 'Si necesita ayuda, toque mi carita abajo.', '¿Dudas? Toque a Helenita', 'pulgar', ('e7', 'fin'), 'fab'),
  ]),
  2: dict(gancho='Pida su cita en 3 pasos', escenas=[
@@ -49,7 +49,7 @@ REELS = {
    ('tut-r3-e4', 'Cuéntenos qué ocurrió, con fecha, sede y servicio.', '2 · Cuéntenos qué ocurrió', 'hablar', ('e4', 'e5'), None),
    ('tut-r3-e5', 'Toque Preparar correo y se abrirá el mensaje listo.', '3 · Preparar correo', 'senalar', ('e5', 'e7'), None),
    ('tut-r3-e6', 'Revíselo y envíelo: llega a atención al usuario, con copia a Calidad.', 'Envíelo a siau@santahelenadelvalleips.com (copia: calidad@)', 'hablar', (21.5, 23.0), 'correo'),
-   ('tut-r3-e7', 'Respondemos dentro de los términos de ley, hasta quince días hábiles.', 'Respuesta: hasta 15 días hábiles', 'pensar', (7.6, 9.0), 'nota15'),
+   ('tut-r3-e7', 'Respondemos dentro de los términos de ley, hasta quince días hábiles.', 'Respuesta: hasta 15 días hábiles', 'pensar', (8.0, 8.5), 'nota15'),
    ('tut-r3-e8', 'Gracias por ayudarnos a mejorar.', 'Su opinión nos ayuda a mejorar', 'empatia', None, 'logo'),
  ]),
 }
@@ -100,7 +100,7 @@ def construir(n):
         sid = f'e{i}'
         # voz
         if os.path.exists(os.path.join(AQUI, vpath)):
-            audios.append(f'<audio id="voz-{sid}" class="clip" src="{vpath}" data-start="{ini + 0.2:.2f}" data-duration="{d_voz:.2f}" data-track-index="10" data-volume="1"></audio>')
+            audios.append(f'<audio id="voz-{sid}" class="clip" src="{vpath}" data-start="{ini + 0.2:.2f}" data-duration="{d_voz - 0.06:.2f}" data-track-index="10" data-volume="1"></audio>')
         # grabación
         if tramo:
             a, b = tramo
@@ -110,7 +110,7 @@ def construir(n):
                 b -= 0.8  # quita la espera final, para que el siguiente paso aparezca con la siguiente voz
             b = min(b, vid_dur - 0.05)
             seg = max(0.3, b - a)
-            rate = max(0.5, min(1.6, seg / d))
+            rate = max(0.08, min(1.6, seg / d))
             partes.append(f'<video id="grab-{sid}" class="grab clip" src="assets/grab/r{n}.mp4" data-start="{ini:.2f}" data-duration="{d:.2f}" data-media-start="{a:.2f}" data-playback-rate="{rate:.3f}" data-track-index="2" muted playsinline></video>')
         # animación
         partes.append(f'<video id="anim-{sid}" class="anim clip" src="assets/helenita/{anim}.webm" data-start="{ini:.2f}" data-duration="{min(d, 5.0):.2f}" data-track-index="3" muted playsinline></video>')
@@ -189,7 +189,8 @@ window.__timelines["reel{n}"] = tl;
 </body>
 </html>
 '''
-    open(os.path.join(AQUI, f'reel{n}.html'), 'w', encoding='utf-8').write(doc)
+    os.makedirs(os.path.join(AQUI, 'fuentes'), exist_ok=True)
+    open(os.path.join(AQUI, f'fuentes/reel{n}.html'), 'w', encoding='utf-8').write(doc)
     faltan = [e[0] for e in R['escenas'] if not os.path.exists(os.path.join(AQUI, f'assets/voz/{e[0]}.mp3'))]
     print(f'reel{n}.html · {total:.1f} s · voces que faltan: {len(faltan)}')
 
