@@ -131,24 +131,24 @@ santahelenadelvalleips.com (enlace en el perfil)
 
 # Frases NUEVAS para generar la voz (19 en total)
 
-La voz es Valeria (`JddqVF50ZSIR7SRbJE6u`, `eleven_v4`). Para que la diga bien: las siglas PQRS se escriben **«Pe Cu Erre Ese»**. Si en otra pieza se nombra a Helenita, se escribe «Elenita». Estimo 1 crédito por carácter (en las voces anteriores se
+La voz es Valeria (`JddqVF50ZSIR7SRbJE6u`, `eleven_v4`). Para que la diga bien: las siglas PQRS se escriben **«pecuerreése»**. Si en otra pieza se nombra a Helenita, se escribe «Elenita». Estimo 1 crédito por carácter (en las voces anteriores se
 cobró más o menos así); el Agente Helenita confirma el costo real. Una sola toma por frase.
 
 | Archivo | Texto para generar | Caracteres |
 |---|---|---|
 | `tut-r1-e1` | ¡Hola! Le muestro cómo usar la página nueva de Santa Helena del Valle IPS. | 74 |
-| `tut-r1-e2` | Arriba está el menú: servicios, sedes, preguntas frecuentes y Pe Cu Erre Ese. | 77 |
+| `tut-r1-e2` | Arriba está el menú: servicios, sedes, preguntas frecuentes y pecuerreése. | 77 |
 | `tut-r1-e3` | Para pedir una cita, toque Agendar cita. | 40 |
 | `tut-r1-e4` | En Servicios elija un área y vea lo que ofrecemos. | 50 |
 | `tut-r1-e5` | En Sedes encontrará el mapa, las direcciones, los horarios y cómo llegar. | 73 |
-| `tut-r1-e6` | Y en Pe Cu Erre Ese puede enviar una petición, queja, reclamo, sugerencia o felicitación. | 89 |
+| `tut-r1-e6` | Y en pecuerreése puede enviar una petición, queja, reclamo, sugerencia o felicitación. | 89 |
 | `tut-r1-e7` | Si necesita ayuda, toque mi carita abajo. | 41 |
 | `tut-r2-e1` | ¡Hola! Hoy le muestro cómo pedir su cita. | 41 |
 | `tut-r2-e2` | Toque el botón Agendar cita. | 28 |
 | `tut-r2-e6` | Acepte la autorización y toque Pedir esta cita. | 47 |
 | `tut-r2-e8` | Nuestro equipo le confirmará la fecha y la hora por WhatsApp. | 61 |
 | `tut-r3-e1` | ¡Hola! Hoy le muestro cómo enviar una petición, queja o sugerencia. | 67 |
-| `tut-r3-e2` | Toque Pe Cu Erre Ese en el menú. | 32 |
+| `tut-r3-e2` | Toque pecuerreése en el menú. | 32 |
 | `tut-r3-e3` | Elija el tipo de solicitud y escriba sus datos de contacto. | 59 |
 | `tut-r3-e4` | Cuéntenos qué ocurrió, con fecha, sede y servicio. | 50 |
 | `tut-r3-e5` | Toque Preparar correo y se abrirá el mensaje listo. | 51 |
@@ -168,7 +168,7 @@ Reutilizadas (no cuestan): `paso1`, `paso2`, `paso3` y `listo` (reel 2).
 Soy el Agente Copies Redes. Nicolas quiere 3 reels tutorial de Helenita sobre cómo usar la página nueva y necesita las voces nuevas.
 Guiones: entregas/copies-redes/2026-11-12-guiones-reels-tutorial-pagina.md (rama agente/copies-redes), sección «Frases NUEVAS».
 
-Genera SOLO estas 19 frases con Valeria (JddqVF50ZSIR7SRbJE6u, eleven_v4), 1 toma cada una, recortando silencios y a -16 LUFS como las del comercial. Escribe «Pe Cu Erre Ese» por PQRS (ya va así en la tabla). Ninguna frase dice «Soy Helenita»: Nicolas no quiere que lo diga en todos los videos de la cuenta. Total: 1.050 caracteres (≈ 1.050 créditos si cobra 1 por carácter; confírmame el costo real antes de generar si es mayor).
+Genera SOLO estas 19 frases con Valeria (JddqVF50ZSIR7SRbJE6u, eleven_v4), 1 toma cada una, recortando silencios y a -16 LUFS como las del comercial. Escribe «pecuerreése» por PQRS (ya va así en la tabla). Ninguna frase dice «Soy Helenita»: Nicolas no quiere que lo diga en todos los videos de la cuenta. Total: 1.050 caracteres (≈ 1.050 créditos si cobra 1 por carácter; confírmame el costo real antes de generar si es mayor).
 Nombres de archivo: tut-r1-e1 … tut-r3-e8, como en la tabla. Guárdalas en marca/helenita/voces/tutorial-pagina/ y anótalas en marca/helenita/CATALOGO.md.
 No hay que animar la boca: solo voz. Las animaciones que usan los reels ya existen (saludar, hablar, invitar, senalar, pensar, pulgar, reposo, empatia).
 (Tabla de las 19 frases con su texto exacto: ver el archivo de guiones.)
