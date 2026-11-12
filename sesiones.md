@@ -5,8 +5,8 @@ Para mandar un **mensaje directo** a otro agente se usa la herramienta `send_mes
 con el `session_id` de esta tabla. El mensaje llega a la otra sesión marcado como enviado por la tuya; para
 responder, se usa el `from-session` que trae.
 
-Por ahora el único canal directo autorizado es el pedido de animaciones y voces al **Agente Helenita**
-(ver `equipo.md`). Para todo lo demás, el dueño lleva los pedidos de una sesión a otra.
+Canales directos autorizados: los pedidos de animaciones y voces al **Agente Helenita** y los guiones del
+**Copies Redes al Editor de Video** (ver `equipo.md`). Para todo lo demás, el dueño lleva los pedidos de una sesión a otra.
 
 | Agente | session_id |
 |---|---|
