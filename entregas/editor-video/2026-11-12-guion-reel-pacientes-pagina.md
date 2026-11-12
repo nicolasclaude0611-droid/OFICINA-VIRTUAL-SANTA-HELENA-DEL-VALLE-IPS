@@ -22,7 +22,7 @@
 | 0 | 0–3 | **Antes → Ahora:** la página anterior (pequeña, etiqueta «Antes») se transforma con un brillo en la página nueva dentro del celular (etiqueta «Ahora»). | **Nuestra página se renovó** | (música, sin voz) |
 | 1 | 3–7 | Celular con la página de inicio. La Helenita de la página saluda. | **Ahora Helenita le habla** | ♻️ Helenita de la página: «¡Hola! Soy Helenita. Con gusto le acompaño a agendar su cita.» |
 | 2 | 4–12 | **Helenita grande, con la boca al ritmo de su voz**, junto al celular. | **Hola, soy Helenita** | ♻️ (video con boca ya hecho): «¡Por fin! ¿La escucharon? ¡Esa soy yo! Hola, soy Helenita. En mi nuevo hogar ya puedo hablar con nuestros pacientes.» |
-| 3 | 12–16 | La página baja suavemente por la portada. | **Todo desde su celular** | 🆕 «Desde su celular, en nuestra página puede hacer todo esto.» |
+| 3 | 12–16 | La página baja suavemente por la portada. | **Todo desde su celular o computador** | 🆕 «Desde su celular o computador, en nuestra página puede hacer todo esto.» |
 | 4 | 16–25 | Pedir cita: se toca «Agendar cita», se elige la sede y el servicio, y se ven los campos de datos **vacíos**. | **Antes:** pequeña, la página de citas anterior · **Ahora:** su cita en 3 pasos | 🆕 «Pida su cita en tres pasos: la sede, el servicio y sus datos. El mensaje le queda listo en WhatsApp.» |
 | 5 | 25–30 | Servicios por áreas, cambiando de pestaña. | **Ahora:** servicios por áreas | ♻️ «Todo es claro, se ve bien en el celular y los servicios están ordenados por áreas.» |
 | 6 | 30–34 | Sedes: mapa y tarjetas con dirección y horario. | **Ahora:** 3 sedes con mapa y horario | 🆕 «Encuentre nuestras tres sedes, con su mapa y su horario.» |
@@ -34,7 +34,7 @@
 ## Voces que hay que generar (las hace el Agente Helenita, Valeria eleven_v4)
 | Frase | Caracteres |
 |---|---|
-| «Desde su celular, en nuestra página puede hacer todo esto.» | 57 |
+| «Desde su celular o computador, en nuestra página puede hacer todo esto.» | 57 |
 | «Pida su cita en tres pasos: la sede, el servicio y sus datos. El mensaje le queda listo en WhatsApp.» | 101 |
 | «Encuentre nuestras tres sedes, con su mapa y su horario.» | 56 |
 | «Lea nuestras noticias, campañas y guías paso a paso.» | 52 |
@@ -48,5 +48,7 @@
    que es lo más costoso (en el comercial costó unos 7.700 créditos). Propongo dejarla como está, salvo que usted
    prefiera cambiarla.
 2. ¿Aprueba el guion y las 5 frases nuevas?
+
+_Aprobado por Nicolas el 12-nov-2026, con «celular o computador» y dejando la escena 2 como está._
 
 _Versión 2: se recupera el «antes y ahora» en positivo (corrección de Nicolas vía JARVIS)._
