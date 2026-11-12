@@ -240,7 +240,10 @@ def construir():
     TL.append(f'tl.to(["#cie1", "#cie2"], {{opacity:0, duration:0.3}}, {t + 8.25:.2f});')
     t += d9
     fin = round(t, 2)
-    total = round(fin + 2.6, 2)
+    # Helenita dice la dirección de la página sobre la tarjeta final (pedido de Nicolas)
+    dv10, falta10 = voz('rp-e10', fin + 0.5, 'Visítenos en triple w punto Santa Helena del Valle IPS punto com.')
+    faltan += ['rp-e10'] if falta10 else []
+    total = round(fin + max(2.6, dv10 + 1.3), 2)
     TL.append(f'tl.fromTo("#final", {{opacity:0}}, {{opacity:1, duration:0.4, immediateRender:false}}, {fin:.2f});')
     TL.append(f'tl.fromTo("#final img", {{scale:0.8}}, {{scale:1, duration:0.6, ease:"back.out(1.6)", immediateRender:false}}, {fin:.2f});')
     AUD.append(f'<audio id="pop" class="clip" src="assets/sfx/pop.mp3" data-start="{fin:.2f}" data-duration="0.7" data-track-index="14" data-volume="0.3"></audio>')
@@ -267,7 +270,7 @@ def construir():
 <div id="guia">{''.join(anims)}</div>
 {''.join(EXTRA)}
 {chr(10).join(titulos)}
-<div class="final" id="final"><img src="assets/img/logo.png" alt="Santa Helena del Valle IPS" /><p>santahelenadelvalleips.com</p></div>
+<div class="final" id="final"><img src="assets/img/logo.png" alt="Santa Helena del Valle IPS" /><p>www.santahelenadelvalleips.com</p></div>
 {chr(10).join(AUD)}
 </div>
 <script>

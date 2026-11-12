@@ -14,7 +14,7 @@ Ahora, desde su celular o computador, puede:
 
 Y Helenita le acompaña en cada paso.
 
-Visítenos en santahelenadelvalleips.com (enlace en el perfil).
+Visítenos en www.santahelenadelvalleips.com (enlace en el perfil).
 ¡La salud, nuestro compromiso!
 
 Música: The Corporate Upbeat – Soundrider (CC BY)
