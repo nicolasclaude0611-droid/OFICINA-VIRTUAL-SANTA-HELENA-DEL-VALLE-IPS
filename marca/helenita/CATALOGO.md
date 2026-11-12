@@ -86,8 +86,8 @@ No se repiten en bucle: son tomas únicas para ese texto. En `boca-v8` la voz se
 tramo por tramo a los tiempos de la boca original (diferencias de centésimas; el tramo «¡La salud,» quedó 11 % más lento).
 
 ### Reels tutorial de la página nueva (2026-11-12, pedido del Agente Copies Redes, aprobado por Nicolas)
-Voces (Valeria, `eleven_v4`, 1 toma c/u, silencios recortados, -16 LUFS) en `marca/helenita/voces/tutorial-pagina/`. Total: 1.050 créditos.
-En la voz, «PQRS» se escribió «Pe Cu Erre Ese». Ninguna dice «Soy Helenita». Originales: `entregas/helenita/2026-11-12-voces-tutorial-pagina/original/`.
+Voces (Valeria, `eleven_v4`, 1 toma c/u, silencios recortados, -16 LUFS) en `marca/helenita/voces/tutorial-pagina/`. Total: 1.050 + 189 = 1.239 créditos.
+En la voz, «PQRS» se escribe **«pecuerreése»** (una palabra, suena fluido; aprobado por Nicolas el 12-nov). Las 3 frases con PQRS se rehicieron así (+189 créditos). Ninguna dice «Soy Helenita». Originales: `entregas/helenita/2026-11-12-voces-tutorial-pagina/original/`.
 El reel 2 reutiliza además `paso1`, `paso2`, `paso3` y `listo` de la web.
 
 | Archivo | Texto | Duración |
