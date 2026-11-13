@@ -53,7 +53,10 @@ Domingos y festivos: POR DEFINIR.
 - **Apoyo al paciente:** albergue para pacientes de zonas apartadas, telesalud, atención domiciliaria.
 - **Atención primaria territorial:** Equipos de Salud Territorial que visitan hogares, veredas y corregimientos.
 - **Empresas:** exámenes ocupacionales, análisis de puestos de trabajo, asesoría en SST.
-- Colposcopia y citología VPH aparecen en la vidriera pero **no** en el REPS que tenemos: no publicarlas sin confirmar.
+- **Tamizaje de cáncer de cuello uterino** (citología cervicouterina y prueba de VPH): confirmado por Nicolas el 13 nov
+  2026 por **convenio con EPS Sanitas**, para mujeres de 30 a 65 años sin histerectomía (contributivo y subsidiado).
+  Sedes donde aplica: POR DEFINIR (Sanitas se atiende en Valledupar y San Juan del Cesar). Colposcopia: sigue sin
+  confirmar, no publicarla.
 
 ## Público
 Pacientes y familias de Valledupar, La Jagua de Ibirico, San Juan del Cesar y sus zonas rurales (niños,
@@ -115,5 +118,5 @@ Público amplio: lenguaje claro y letra grande.
 - Las **6 noticias actuales son ejemplos** y hay que reemplazarlas por reales.
 
 ## Pendientes de la marca (pregúntale al dueño cuando haga falta)
-Domingos y festivos · otras redes además de Instagram · misión e historia · confirmar colposcopia/citología VPH ·
+Domingos y festivos · otras redes además de Instagram · misión e historia · confirmar colposcopia y en qué sedes aplica el tamizaje de cuello uterino ·
 versión blanca del logo · documentos institucionales para la web (derechos y deberes, participación social).
