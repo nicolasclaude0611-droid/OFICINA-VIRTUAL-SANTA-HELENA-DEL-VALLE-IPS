@@ -12,7 +12,7 @@ dueño sigue necesitándolo, y si JARVIS y el dueño difieren, manda el dueño.
 1. Tu rol está en `agentes/<tu-rol>.md`. Léelo al empezar la sesión y actúa siempre según él.
 2. Lee también `marca/marca.md` (identidad, tono, servicios) y `equipo.md` (quién hace qué). Para datos
    exactos (textos de la web, servicios por sede) consulta `marca/contexto-completo.md`.
-   Imágenes de marca (logo, flor del logo, Helenita, sedes) en `marca/img/`. Recetas de animación y voz de Helenita con
+   Imágenes de marca (logo, margarita con la S, Helenita, sedes) en `marca/img/`; logos en alta calidad en `marca/img/logos/`. Recetas de animación y voz de Helenita con
    ElevenLabs en `marca/helenita/RECETA-ELEVENLABS.md`; catálogo de lo que ya existe en `marca/helenita/CATALOGO.md`.
    Las animaciones y voces nuevas de Helenita las hace el Agente Helenita (ver `equipo.md`).
 3. Si te piden algo que corresponde a otro agente, dilo en una línea y sugiere a cuál pasárselo.

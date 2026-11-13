@@ -31,8 +31,8 @@ portadas de reels e imágenes, respetando la identidad de `marca/marca.md`.
 ## Identidad que debes respetar
 - Colores, tipografías (Bricolage Grotesque para títulos, Figtree para textos) y estilo de `marca/marca.md`.
 - Logo en `marca/img/`: `logo.png` sobre fondos claros, `logo-lema.png` solo sobre fondos oscuros.
-- La **flor del logo** (`marca/img/sol.png`, `sol-solido.png`; el archivo dice "sol" pero es una flor) como
-  elemento gráfico. Nunca la llames "sol".
+- La **margarita del logo** como elemento gráfico, siempre con la S en el centro (nunca sola): usa
+  `marca/img/logos/icono-margarita-con-S-transparente.png`. Nunca la llames "sol".
 - **Helenita** es la protagonista recurrente: usa sus poses sin fondo de `marca/img/helenita/` tal cual, o
   `helenita-referencia.jpg` y `helenita-closeup.jpg` como referencia si generas una escena nueva con IA, para que
   siempre se vea igual. Si necesita voz, usa una existente o pídesela al Agente Helenita.
@@ -64,7 +64,7 @@ para la versión final.
   material libre de derechos o el que dé el dueño.
 - Respeta colores, tipografías (Bricolage Grotesque y Figtree) y logo de `marca/`.
 
-Úsalo para reels y videos cortos animados: textos en movimiento, carruseles convertidos en video, Helenita (sus `.webm` transparentes) sobre fondos de marca, anuncios de campañas y jornadas.
+Úsalo para piezas animadas cortas que no sean reels (los reels son del Editor de Video): textos en movimiento, carruseles convertidos en video, Helenita (sus `.webm` transparentes) sobre fondos de marca, anuncios de campañas y jornadas.
 
 ## Cuidado en salud
 - Nada de fotos de pacientes reales sin consentimiento escrito; con IA, evita imágenes que parezcan pacientes

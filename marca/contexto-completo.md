@@ -386,8 +386,8 @@ oficial). El manual de marca oficial está POR DEFINIR.
 |---|---|
 | Repositorio | `nicolasclaude0611-droid/santa-helena` (GitHub) |
 | Rama oficial | `main`: todos los cambios se hacen y se suben ahí |
-| URL publicada | https://nicolasclaude0611-droid.github.io/santa-helena/ |
-| Publicación | GitHub Pages desde `main` (supuesto sobre la configuración exacta: lo comprobamos porque la página publicada es igual a `main`). Tarda uno o dos minutos en actualizarse tras cada push. |
+| URL publicada | https://santahelenadelvalleips.com/ (oficial, Hostinger). Copia antigua: https://nicolasclaude0611-droid.github.io/santa-helena/ |
+| Publicación | Hostinger despliega solo la rama `produccion` en `public_html` (app de GitHub de Hostinger, ~30 s). `produccion` se arma desde `main` con `herramientas/publicar-produccion.sh`, solo tras el «publica» de Nicolas. |
 | Vista previa en Claude | Artefacto https://claude.ai/artifact/2poqmHYxwFxYengX7qBsuA. Ahí no se ven el mapa de Google ni la apertura del correo. |
 | Tecnología | HTML + CSS + JavaScript sin frameworks, sin dependencias y sin paso de build. Un solo archivo de página (`index.html`). |
 | Archivos principales | `index.html`, `styles.css`, `script.js`, `helenita/helenita-player.js` |
@@ -741,23 +741,18 @@ círculo es tocable.
 
 ### 5.2 Pendientes
 
-- **Web:** poner las EPS de La Jagua (Nueva EPS y Particular) en `SEDES` de `script.js` y el horario nuevo de las
-  3 sedes (confirmados el 31 oct 2026).
 - **Horarios** de domingos y festivos.
-- **Noticias reales** para reemplazar los 6 ejemplos, idealmente con fotos.
-- **Política de privacidad / tratamiento de datos**: falta el documento para enlazarlo.
-- **Redes sociales**: enlaces oficiales.
+- **Redes sociales**: Instagram ya confirmado; faltan las demás.
 - **Misión** e **historia** de la empresa.
 - **Confirmar** que la foto asignada a San Juan del Cesar es de esa sede.
 - **Confirmar** el origen de los datos institucionales de la versión inicial (visión 2028, códigos de habilitación,
   95.000 usuarios, Laboratorio Cristiam Gram, normas citadas).
 - **Colposcopia** y **Citología VPH** aparecen en la vidriera de Valledupar pero no en la lista REPS que nos dieron:
   confirmar.
-- **Dominio propio** para el sitio.
-- **Corregir «Haz clic para escucharme»** a «Haga clic para escucharme», para mantener el usted.
 - **Gorro de Navidad**: prueba hecha solo en `saludar` (sin publicar). El responsable avisará cuándo aplicarlo a
   las 6 animaciones y programarlo para diciembre.
-- **Versión ícono y versión blanca del logo**: no existen.
+- **Versión blanca del logo**: no existe (el ícono margarita con S ya está en `marca/img/logos/`).
+- **Documentos institucionales** de la web vieja (derechos y deberes, participación social, etc.): confirmar con calidad cuáles publicar.
 - **Limpieza**: archivos antiguos sin uso (`media/helenita-*.mp4`, `img/helenita-*-poster.jpg`, versión vectorial).
 - La animación `reposo` existe pero no se usa en la página.
 
