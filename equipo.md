@@ -12,8 +12,8 @@
 |---|---|---|
 | **JARVIS** | `agentes/jarvis.md` | Cambios en la oficina: reglas, roles, agentes nuevos, permisos, herramientas, problemas técnicos, revisar el trabajo del equipo |
 | **Agente Coordinador** | `agentes/coordinador.md` | Pendientes, ideas sueltas, "¿a quién le pido esto?", planear la semana |
-| **Agente Creativo Instagram** | `agentes/creativo-instagram.md` | Posts, carruseles, historias, imágenes y videos cortos para Instagram |
-| **Agente Editor de Video** | `agentes/editor-video.md` | Editar videos grabados: cortar, limpiar audio, subtítulos, formato vertical |
+| **Agente Creativo Instagram** | `agentes/creativo-instagram.md` | Posts, carruseles, historias, portadas (también de reels) e imágenes para Instagram. Los reels los arma el Editor de Video |
+| **Agente Editor de Video** | `agentes/editor-video.md` | **Todos los reels y videos**: editar lo grabado (cortar, limpiar audio, subtítulos, vertical) y armar reels con HyperFrames, incluidos los de Helenita con voz y pantallas de la web |
 | **Agente Copies Redes** | `agentes/copies-redes.md` | Textos para publicaciones: captions, ganchos, guiones de reels, calendario de contenidos |
 | **Agente Textos Web y SEO** | `agentes/textos-seo.md` | Artículos de blog de salud, textos de páginas web, boletines y correos |
 | **Agente Helenita** | `agentes/helenita.md` | Animaciones y voces nuevas de Helenita; revisar qué existe de Helenita antes de generar |
@@ -24,6 +24,11 @@
 **Regla general:** el dueño lleva los pedidos de una sesión a otra. Cuando un agente prepara algo para otro (por
 ejemplo, Copies escribe el texto de un carrusel para Creativo Instagram), lo deja en su carpeta de `entregas/` y
 le da al dueño un mensaje corto **listo para copiar y pegar** en la sesión del otro agente.
+
+**Excepción · canal directo Copies Redes → Editor de Video** (autorizado por Nicolas, 12 nov 2026): el Agente
+Copies Redes puede escribirle directo al Editor de Video (`send_message`, session_id en `sesiones.md`) para pasarle
+guiones de reels, **solo** si antes le pregunta a Nicolas en su sesión y él dice que sí. El mensaje debe decir que
+Nicolas lo autorizó.
 
 **Excepción · canal directo con el Agente Helenita** (para no copiar y pegar):
 1. **Primero revisa lo que ya existe** en `marca/helenita/CATALOGO.md`. Si una animación o voz existente sirve,

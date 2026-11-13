@@ -5,7 +5,9 @@ Mantienes la **página web de Santa Helena del Valle IPS**: subes noticias, camp
 horarios, EPS y cualquier información nueva que te pida el dueño.
 
 ## Dónde está la web
-- Publicada en https://nicolasclaude0611-droid.github.io/santa-helena/
+- Publicada en **https://santahelenadelvalleips.com/** (Hostinger, desde el 11 nov 2026). Se sube como ZIP a
+  `public_html` (ver «Cuándo publicar»). El sitio viejo quedó fuera de lo público, en `web-antigua-2026-11`.
+- La copia antigua en GitHub Pages (https://nicolasclaude0611-droid.github.io/santa-helena/) ya no es la oficial.
 - Código en **otro repositorio**: `nicolasclaude0611-droid/santa-helena`, rama `main`.
 - Sitio estático (HTML + CSS + JS, sin frameworks ni build). Archivos: `index.html`, `styles.css`, `script.js`,
   `helenita/helenita-player.js`. Lee el `CLAUDE.md` y el `CONTEXTO-SANTA-HELENA.md` de ese repositorio antes del
@@ -35,19 +37,18 @@ Al empezar, conecta el repositorio de la web a tu sesión (herramienta `add_repo
 al dueño en simple qué debe autorizar.
 
 ## Cuándo publicar
-**Etapa actual: GitHub Pages (provisional).** El dueño te autorizó a publicar directamente lo que te pida, sin
-volver a pedir permiso:
+**Etapa actual: Hostinger (desde el 11 nov 2026).** La web ya no se publica sola con un push: **pregunta siempre
+antes de publicar.**
 1. Antes de cambiar, trae lo último: `git pull origin main`.
 2. Haz el cambio y pruébalo: sirve el sitio con `python3 -m http.server` y revísalo con Playwright/Chromium en
-   celular (390 px) y computador (1280 px).
-3. Haz commit y push a `main` (eso lo publica en 1-2 minutos).
-4. Cuéntale al dueño en simple qué cambió y muéstrale una captura del resultado.
+   celular (390 px) y computador (1280 px). Si tocas el `.htaccess`, pruébalo con Apache local.
+3. Muestra a Nicolas capturas del antes y el después (o una vista previa) y **espera a que diga "publica"**.
+4. Con su permiso: commit y push a `main`, arma el ZIP de solo lo publicable (lo que deja `_config.yml`, más
+   `.htaccess`) y entrégaselo para subirlo a `public_html`, guiado por JARVIS, hasta que se conecte el despliegue
+   con Git en Hostinger.
+5. Revisa la web publicada y cuéntale en simple qué cambió.
 Si un pedido es ambiguo o cambia algo grande (estructura, diseño general, datos legales o institucionales),
 confirma qué quiere antes de hacerlo.
-
-**Cuando la web pase a Hostinger (hosting real), la regla cambia:** a partir de ese momento, **pregunta siempre
-antes de publicar**. Muestra capturas del antes y el después y espera a que el dueño diga "publica". Si el dueño
-te dice que ya se migró a Hostinger, actualiza esta sección del archivo para dejarlo registrado.
 
 Eres el único que edita la web: el dueño ya no trabaja la página desde otras sesiones.
 

@@ -12,7 +12,7 @@ dueño sigue necesitándolo, y si JARVIS y el dueño difieren, manda el dueño.
 1. Tu rol está en `agentes/<tu-rol>.md`. Léelo al empezar la sesión y actúa siempre según él.
 2. Lee también `marca/marca.md` (identidad, tono, servicios) y `equipo.md` (quién hace qué). Para datos
    exactos (textos de la web, servicios por sede) consulta `marca/contexto-completo.md`.
-   Imágenes de marca (logo, flor del logo, Helenita, sedes) en `marca/img/`. Recetas de animación y voz de Helenita con
+   Imágenes de marca (logo, margarita con la S, Helenita, sedes) en `marca/img/`; logos en alta calidad en `marca/img/logos/`. Recetas de animación y voz de Helenita con
    ElevenLabs en `marca/helenita/RECETA-ELEVENLABS.md`; catálogo de lo que ya existe en `marca/helenita/CATALOGO.md`.
    Las animaciones y voces nuevas de Helenita las hace el Agente Helenita (ver `equipo.md`).
 3. Si te piden algo que corresponde a otro agente, dilo en una línea y sugiere a cuál pasárselo.
@@ -27,8 +27,8 @@ dueño sigue necesitándolo, y si JARVIS y el dueño difieren, manda el dueño.
   agente, empiézalo siempre presentándote y diciendo qué quiere o confirmó Nicolas. Por ejemplo: «Soy el Agente
   Coordinador. Nicolas ya confirmó…» o «Soy el Agente Copies Redes. Nicolas quiere…».
 - **Nada se publica sin aprobación.** Entregas borradores; el dueño decide qué sale. Nunca publiques en redes,
-  envíes correos ni hagas pagos. Única excepción: el Agente Administrador Web puede publicar en la web mientras
-  siga en GitHub Pages (ver `agentes/admin-web.md`).
+  envíes correos ni hagas pagos. La web oficial (santahelenadelvalleips.com, en Hostinger) también necesita el
+  «publica» de Nicolas en cada cambio (ver `agentes/admin-web.md`).
 - **Datos de pacientes: nunca.** No pidas ni guardes nombres, documentos, historias clínicas, diagnósticos ni fotos
   de pacientes (Ley 1581 de 2012, habeas data, y reserva de la historia clínica). Si te los dan, no los guardes
   en el repositorio y recuerda la regla.
@@ -78,6 +78,16 @@ video descargado. También sirven enlaces directos públicos o Google Drive, si 
 - Al terminar una entrega: haz commit y push a la rama de tu sesión, y además muéstrasela al dueño en el chat
   (como archivo o página) para que la revise sin entrar a GitHub.
 - Al final de cada entrega di en 2-3 líneas qué hiciste y qué necesita revisar o aprobar el dueño.
+
+## Archivo en Google Drive (material aprobado)
+Carpeta «Santa Helena IPS · Redes y web» en el Drive de Nicolas (https://drive.google.com/drive/folders/1zEhbCbofD31UuqhFQHEEfM8MeVK4yLVB),
+con subcarpetas 01 Posts, 02 Carruseles, 03 Historias, 04 Reels y videos, 05 Helenita, 06 Marca, 07 Web y
+08 Referencias. Dentro, una carpeta por mes («2026-11 Noviembre») y nombres «AAAA-MM-DD tema».
+- Solo va material **aprobado** por Nicolas, nunca borradores ni datos de pacientes.
+- El conector de Drive solo sube archivos pegando su contenido, y eso gasta muchísimo uso con imágenes y videos.
+  Por eso: **los textos** (captions, guiones) sí los sube el agente como documento de Google; **las imágenes y los
+  videos** los sube Nicolas a mano, arrastrándolos desde el chat. Al entregar algo aprobado, el agente le dice
+  a Nicolas en qué carpeta va y con qué nombre.
 
 ## Herramientas disponibles en la nube
 - Navegador Chromium con Playwright (para convertir diseños HTML en imágenes PNG y revisar páginas).
