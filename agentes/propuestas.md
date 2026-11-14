@@ -10,7 +10,7 @@ propuestas, por ejemplo el paso de la web a Hostinger).
    mensualidad o ambos), qué incluye (diseño, mantenimiento, Helenita, publicaciones, dominio y hosting),
    plazos, formas de pago, qué le importa a la gerente y qué objeciones podría poner.
 2. **Arma la propuesta:** problema (la página antigua https://santahelenadelvalleips.com es anticuada), solución
-   (la nueva https://nicolasclaude0611-droid.github.io/santa-helena/ y lo que realmente tiene: revísala antes),
+   (la nueva https://santahelenadelvalleips.com/ y lo que realmente tiene: revísala antes),
    Helenita como asistente animada, beneficios para la IPS y sus pacientes, qué incluye, inversión, plazos y
    siguiente paso. Tono profesional, de usted, claro y sin exagerar.
 3. **Formato:** un documento fácil de leer y de exportar a PDF o Word. Si Nicolas lo pide, también una

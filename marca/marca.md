@@ -3,7 +3,7 @@
 > Resumen de lo esencial. El detalle completo (textos exactos de la web, servicios por sede, decisiones y
 > pendientes) está en **`marca/contexto-completo.md`**: consúltalo cuando necesites un dato preciso.
 > **POR DEFINIR** = no lo tenemos: pregúntalo, no lo inventes.
-> Fuente: página web https://nicolasclaude0611-droid.github.io/santa-helena/ (repo `nicolasclaude0611-droid/santa-helena`).
+> Fuente: página web https://santahelenadelvalleips.com/ (antes https://nicolasclaude0611-droid.github.io/santa-helena/) (repo `nicolasclaude0611-droid/santa-helena`).
 
 ## Quiénes somos
 - **Santa Helena del Valle IPS SAS** · NIT 900.085.612-7
@@ -53,7 +53,11 @@ Domingos y festivos: POR DEFINIR.
 - **Apoyo al paciente:** albergue para pacientes de zonas apartadas, telesalud, atención domiciliaria.
 - **Atención primaria territorial:** Equipos de Salud Territorial que visitan hogares, veredas y corregimientos.
 - **Empresas:** exámenes ocupacionales, análisis de puestos de trabajo, asesoría en SST.
-- Colposcopia y citología VPH aparecen en la vidriera pero **no** en el REPS que tenemos: no publicarlas sin confirmar.
+- **Tamizaje de cáncer de cuello uterino** (citología cervicouterina y prueba de VPH): confirmado por Nicolas el 13 nov
+  2026 por **convenio con EPS Sanitas**, para mujeres de 30 a 65 años sin histerectomía (contributivo y subsidiado).
+  **Sin costo.** Sedes: **Valledupar**, y **San Juan del Cesar** para afiliadas de Sanitas de El Molino, Urumita,
+  Villanueva y San Juan. Se agenda por todos los medios de la IPS (WhatsApp, línea de atención y formulario web).
+  Colposcopia: sigue sin confirmar, no publicarla.
 
 ## Público
 Pacientes y familias de Valledupar, La Jagua de Ibirico, San Juan del Cesar y sus zonas rurales (niños,
@@ -103,17 +107,17 @@ Público amplio: lenguaje claro y letra grande.
   logo** como marca de agua; fotos reales de las sedes, **sin fotos de banco**.
 - **Logo** en `marca/img/`: `logo.png` (color, sin lema, para fondos claros) y `logo-lema.png` (con lema blanco,
   **solo sobre fondos oscuros**). Flor del logo: `sol.png` (marca de agua) y `sol-solido.png` (los archivos se llaman "sol" por un error
-  anterior; **el símbolo es una flor**, no un sol). No hay versión blanca ni archivo del ícono
-  «margarita con S» (POR DEFINIR). `sol.png` es solo marca de agua decorativa, no un logo.
+  anterior; **el símbolo es una flor**, no un sol). Logos en alta calidad (vector SVG y PNG transparentes) e ícono
+  «margarita con S» corregido en `marca/img/logos/`. No hay versión blanca (POR DEFINIR). `sol.png` es solo marca de agua decorativa, no un logo.
 - **Fotos de las sedes** en `marca/img/sedes/` (la de San Juan está pendiente de confirmar).
 
 ## Página web
-- Publicada en https://nicolasclaude0611-droid.github.io/santa-helena/ · repo `nicolasclaude0611-droid/santa-helena`,
+- Publicada en https://santahelenadelvalleips.com/ (Hostinger, desde el 12 nov 2026; copia antigua en https://nicolasclaude0611-droid.github.io/santa-helena/) · repo `nicolasclaude0611-droid/santa-helena`,
   rama `main` (lo que se sube a `main` **se publica solo**, en 1-2 minutos).
 - Sitio estático (HTML, CSS, JS) de una sola página: inicio, cifras, agendar cita por WhatsApp, servicios,
   noticias, atención territorial, apoyo al paciente, sedes, nosotros, preguntas frecuentes, PQRS, EPS y empresas.
 - Las **6 noticias actuales son ejemplos** y hay que reemplazarlas por reales.
 
 ## Pendientes de la marca (pregúntale al dueño cuando haga falta)
-Domingos y festivos · redes sociales · misión e historia · política de privacidad ·
-dominio propio · confirmar colposcopia/citología VPH · versión blanca e ícono del logo.
+Domingos y festivos · otras redes además de Instagram · misión e historia · confirmar colposcopia ·
+versión blanca del logo · documentos institucionales para la web (derechos y deberes, participación social).
