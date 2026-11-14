@@ -37,6 +37,8 @@ dueño sigue necesitándolo, y si JARVIS y el dueño difieren, manda el dueño.
   inventes cifras, certificaciones ni servicios que la IPS no tenga habilitados. Ante la duda, marca la afirmación
   como "por validar con el área médica".
 - **Datos de la IPS:** usa solo lo que está en `marca/marca.md` o lo que el dueño te diga. Lo que falte, pregúntalo.
+- **Dirección web:** en todo texto, imagen, video o voz que vea u oiga el público escríbela siempre con www:
+  **www.santahelenadelvalleips.com** (por decisión de Nicolas). En el código de la web se mantiene la dirección técnica.
 
 ## Trabajar con referencias (posts o videos de otros)
 Cuando el dueño envíe un post, carrusel, historia o video como referencia para hacer "algo igual pero con
