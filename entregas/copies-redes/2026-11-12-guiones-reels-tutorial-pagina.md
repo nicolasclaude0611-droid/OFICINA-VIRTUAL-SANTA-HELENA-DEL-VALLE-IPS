@@ -51,7 +51,7 @@ Un recorrido rápido por nuestra página nueva 💙 Helenita le muestra dónde e
 áreas, las sedes con su mapa y el formulario de PQRS. En los próximos videos: cómo pedir una cita y cómo enviar
 una PQRS.
 
-santahelenadelvalleips.com (enlace en el perfil)
+www.santahelenadelvalleips.com (enlace en el perfil)
 
 #SantaHelenaDelValleIPS #Helenita #Valledupar #LaJaguaDeIbirico #SanJuanDelCesar #Tutorial
 ```
@@ -85,7 +85,7 @@ Notas:
 Cómo pedir su cita en nuestra página, paso a paso 📲 Elija la sede, elija el servicio y escriba los datos del
 paciente. La solicitud se abre en WhatsApp con el mensaje listo y nuestro equipo le confirma la fecha y la hora.
 
-santahelenadelvalleips.com (enlace en el perfil)
+www.santahelenadelvalleips.com (enlace en el perfil)
 
 #SantaHelenaDelValleIPS #Helenita #Tutorial #CitasMédicas #Valledupar #Cesar #LaGuajira
 ```
@@ -122,7 +122,7 @@ Notas:
 Elija el tipo de solicitud, cuéntenos qué ocurrió y toque «Preparar correo»: se abre su correo con el mensaje listo
 para el área de atención al usuario (SIAU). Respondemos dentro de los términos de ley, hasta 15 días hábiles.
 
-santahelenadelvalleips.com (enlace en el perfil)
+www.santahelenadelvalleips.com (enlace en el perfil)
 
 #SantaHelenaDelValleIPS #PQRS #AtenciónAlUsuario #Tutorial #Valledupar #Cesar #LaGuajira
 ```
@@ -176,7 +176,7 @@ No hay que animar la boca: solo voz. Las animaciones que usan los reels ya exist
 
 ### Para el Agente Editor de Video (arma los reels; antes decía Creativo Instagram)
 ```
-Soy el Agente Copies Redes. Nicolas aprobó los guiones y quiere que armes 3 reels tutorial verticales (9:16, 1080 x 1920, 28 a 31 s cada uno) de Helenita sobre cómo usar la página nueva (santahelenadelvalleips.com). Es un tutorial, sin tono de venta.
+Soy el Agente Copies Redes. Nicolas aprobó los guiones y quiere que armes 3 reels tutorial verticales (9:16, 1080 x 1920, 28 a 31 s cada uno) de Helenita sobre cómo usar la página nueva (www.santahelenadelvalleips.com). Es un tutorial, sin tono de venta.
 Guiones escena por escena (pantalla, texto en pantalla, animación y frase) y captions: entregas/copies-redes/2026-11-12-guiones-reels-tutorial-pagina.md (rama agente/copies-redes).
 
 1) Recorrido por la página · 2) Cómo pedir una cita · 3) Cómo enviar una PQRS.
