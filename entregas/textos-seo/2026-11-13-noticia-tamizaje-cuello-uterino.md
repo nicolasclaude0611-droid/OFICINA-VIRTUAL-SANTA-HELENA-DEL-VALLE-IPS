@@ -2,10 +2,9 @@
 
 **Para:** carrusel de noticias de https://santahelenadelvalleips.com/
 **Pedido por:** JARVIS, de parte de Nicolas (13 nov 2026). Parte de un texto interno que se reescribió completo.
-**Estado:** borrador. Nicolas debe aprobarlo y responder las preguntas del final.
+**Estado:** borrador completo con las respuestas de Nicolas (14 nov 2026). Falta su aprobación.
 
 > - **[POR VALIDAR CON EL ÁREA MÉDICA]** marca los datos médicos que debe revisar un profesional de la IPS.
-> - **[POR CONFIRMAR CON NICOLAS]** marca los datos que no tenemos.
 
 ---
 
@@ -14,9 +13,9 @@
 | Campo | Texto |
 |---|---|
 | Categoría | Prevención |
-| Fecha | 13 nov 2026 |
+| Fecha | Día de publicación (por ejemplo, 14 nov 2026) |
 | Título | Tamizaje de cáncer de cuello uterino para afiliadas a EPS Sanitas |
-| Resumen | Si tiene entre 30 y 65 años y está afiliada a EPS Sanitas, agende su citología y prueba de VPH. Un examen sencillo que ayuda a detectar cambios a tiempo. |
+| Resumen | Si tiene entre 30 y 65 años y está afiliada a EPS Sanitas, agende sin costo su citología y prueba de VPH. Un examen sencillo que ayuda a detectar cambios a tiempo. |
 | Botón | Ver detalles |
 
 (Si el título no cabe en la tarjeta, opción más corta: «Citología y prueba de VPH con EPS Sanitas».)
@@ -26,7 +25,7 @@
 ## 2. Texto de la ventana (al abrir la noticia)
 
 Santa Helena del Valle IPS tiene convenio con **EPS Sanitas** para realizar el **tamizaje de cáncer de cuello
-uterino** a sus afiliadas del régimen contributivo y del subsidiado.
+uterino** a sus afiliadas del régimen contributivo y del subsidiado. **El examen no tiene ningún costo.**
 
 #### ¿Quiénes pueden tomarlo?
 - Mujeres afiliadas a EPS Sanitas, del régimen contributivo o subsidiado.
@@ -51,11 +50,14 @@ cremas vaginales y no hacerse duchas vaginales. Lo ideal es no estar en el perí
 **[POR VALIDAR CON EL ÁREA MÉDICA: cuántos días antes aplica cada recomendación.]**
 
 #### ¿Dónde?
-En nuestra sede de **[POR CONFIRMAR CON NICOLAS: Valledupar y/o San Juan del Cesar]**.
+- **Valledupar:** Carrera 11 # 14-34, local 2.
+- **San Juan del Cesar:** Calle 7 # 9-73, para afiliadas a Sanitas de **San Juan del Cesar, El Molino, Urumita y
+  Villanueva**.
 
 #### Agende su cita
 - Por **WhatsApp al 311 339 8988**.
-- O con el **formulario de citas** de esta página: elija la sede y el servicio, y escriba sus datos.
+- Por la **línea de atención (605) 588 5690**, ext. 201 a 301.
+- Con el **formulario de citas** de esta página: elija la sede y el servicio, y escriba sus datos.
 
 Lleve su documento de identidad el día del examen.
 
@@ -63,36 +65,38 @@ Lleve su documento de identidad el día del examen.
 
 ---
 
-## 3. Versión corta para Instagram (opcional)
+## 3. Versión corta para Instagram
 
-*(Si Nicolas la quiere, conviene pasarla al Agente Copies Redes y al Creativo Instagram para el diseño.)*
+*(Cuando Nicolas la apruebe, el diseño de la pieza le corresponde al Agente Creativo Instagram.)*
 
 **Post (texto de la publicación):**
 > ¿Tiene entre 30 y 65 años y está afiliada a EPS Sanitas? 🌸
 > Agende su tamizaje de cáncer de cuello uterino: citología y prueba de VPH (virus del papiloma humano).
 > Es un examen sencillo que ayuda a detectar a tiempo cambios en el cuello uterino, aunque usted se sienta bien.
+> ✅ Sin ningún costo
 > ✅ Régimen contributivo y subsidiado
 > ✅ Mujeres sin histerectomía
-> 📍 Sede [por confirmar]
-> 📲 Agende por WhatsApp: 311 339 8988 o en santahelenadelvalleips.com
+> 📍 Valledupar · San Juan del Cesar (afiliadas de San Juan, El Molino, Urumita y Villanueva)
+> 📲 Agende por WhatsApp 311 339 8988, en la línea (605) 588 5690 o en santahelenadelvalleips.com
 > ¡La salud, nuestro compromiso!
-> #CuidarseATiempo #CitologíaYVPH #EPSSanitas #SantaHelenaDelValleIPS #Valledupar #SanJuanDelCesar
+> #CuidarseATiempo #CitologíaYVPH #EPSSanitas #SantaHelenaDelValleIPS #Valledupar #SanJuanDelCesar #ElMolino #Urumita #Villanueva
 
 **Historia (3 pantallas):**
 1. «¿Afiliada a EPS Sanitas y entre 30 y 65 años?»
-2. «Agende su citología y prueba de VPH. Ayuda a detectar a tiempo.»
-3. «WhatsApp 311 339 8988 · santahelenadelvalleips.com» (con sticker de enlace a la web).
+2. «Agende sin costo su citología y prueba de VPH. Ayuda a detectar a tiempo.»
+3. «Valledupar y San Juan del Cesar · WhatsApp 311 339 8988 · santahelenadelvalleips.com» (con sticker de enlace
+   a la web).
 
 ---
 
-## 4. Preguntas para Nicolas
+## 4. Respuestas de Nicolas (14 nov 2026)
 
-1. ¿En qué sedes aplica? (Sanitas se atiende en Valledupar y San Juan del Cesar.)
-2. ¿Tiene algún costo para la paciente (por ejemplo, cuota moderadora o copago) o es sin costo?
-3. ¿Hay fecha límite, o el convenio es permanente?
-4. ¿La cita se pide por el WhatsApp general 311 339 8988 o por otro número?
-5. ¿Hay que llevar algo más además del documento (por ejemplo, orden médica)?
-6. ¿Quiere la versión para Instagram?
+1. Sedes: Valledupar, y San Juan del Cesar solo para afiliadas a Sanitas de San Juan del Cesar, El Molino, Urumita
+   y Villanueva.
+2. No tiene ningún costo.
+3. Se agenda por todos los medios: WhatsApp 311 339 8988, línea (605) 588 5690 y formulario de citas de la web.
+4. Fecha límite: no se mencionó, así que la noticia no habla de plazos.
+5. Qué llevar: la noticia solo pide el documento de identidad.
 
 ---
 
