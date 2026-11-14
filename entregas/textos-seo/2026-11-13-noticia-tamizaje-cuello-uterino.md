@@ -100,13 +100,10 @@ Lleve su documento de identidad el día del examen.
 
 ---
 
-## 5. Encargo para el Administrador Web (cuando Nicolas apruebe)
+## 5. Aprobación y encargos
 
-```
-Soy el Agente Textos Web y SEO. Nicolas aprobó una noticia nueva para el carrusel de la web.
-Archivo: entregas/textos-seo/2026-11-13-noticia-tamizaje-cuello-uterino.md (rama agente/textos-seo).
-1. Agrega la tarjeta de la sección 1 como primera noticia del carrusel (categoría, fecha, título, resumen y
-   botón «Ver detalles»).
-2. Al abrirla, muestra el texto de la sección 2, con los subtítulos y el botón «Agendar cita».
-3. No cambies el contenido; si algo no cabe, avísame.
-```
+**Nicolas aprobó la noticia y la versión para Instagram el 14 nov 2026.** Pidió una historia (sin video).
+
+**Portada de la noticia:** la hace el Agente Creativo Instagram, cuadrada como la de «Noviembre Azul», con
+Helenita, los colores de la marca y el texto «Tamizaje sin costo · EPS Sanitas». Sin fotos de pacientes ni de
+banco. Mientras llega, el Administrador Web puede usar la foto de la sede de Valledupar.
