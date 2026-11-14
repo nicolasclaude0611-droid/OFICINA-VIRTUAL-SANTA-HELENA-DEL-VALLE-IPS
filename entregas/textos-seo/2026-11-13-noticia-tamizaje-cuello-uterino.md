@@ -76,7 +76,7 @@ Lleve su documento de identidad el día del examen.
 > ✅ Sin ningún costo
 > ✅ Régimen contributivo y subsidiado
 > ✅ Mujeres sin histerectomía
-> 📍 Valledupar · San Juan del Cesar (afiliadas de San Juan, El Molino, Urumita y Villanueva)
+> 📍 Valledupar · San Juan del Cesar (para afiliadas de San Juan, El Molino, Urumita y Villanueva)
 > 📲 Agende por WhatsApp 311 339 8988, en la línea (605) 588 5690 o en santahelenadelvalleips.com
 > ¡La salud, nuestro compromiso!
 > #CuidarseATiempo #CitologíaYVPH #EPSSanitas #SantaHelenaDelValleIPS #Valledupar #SanJuanDelCesar #ElMolino #Urumita #Villanueva
@@ -91,7 +91,7 @@ Lleve su documento de identidad el día del examen.
 
 ## 4. Respuestas de Nicolas (14 nov 2026)
 
-1. Sedes: Valledupar, y San Juan del Cesar solo para afiliadas a Sanitas de San Juan del Cesar, El Molino, Urumita
+1. Sedes: Valledupar, y San Juan del Cesar para afiliadas a Sanitas de San Juan del Cesar, El Molino, Urumita
    y Villanueva.
 2. No tiene ningún costo.
 3. Se agenda por todos los medios: WhatsApp 311 339 8988, línea (605) 588 5690 y formulario de citas de la web.
