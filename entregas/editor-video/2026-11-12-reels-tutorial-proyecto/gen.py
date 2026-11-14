@@ -249,7 +249,7 @@ def reel1():
 {R.html_celular()}
 {chr(10).join(textos)}
 <div id="hele">{''.join(anims)}</div>
-<div class="final" id="final"><img src="assets/img/logo-lema.png" alt="" /><p>santahelenadelvalleips.com</p></div>'''
+<div class="final" id="final"><img src="assets/img/logo-lema.png" alt="" /><p>www.santahelenadelvalleips.com</p></div>'''
     return R.documento(css, cuerpo, total), total, faltan
 
 
@@ -341,7 +341,7 @@ def reel2():
 {R.html_celular(wa)}
 <div id="hele">{''.join(anims)}</div>
 {chr(10).join(textos)}
-<div class="final" id="final"><img src="assets/img/logo.png" alt="" /><p>santahelenadelvalleips.com</p></div>'''
+<div class="final" id="final"><img src="assets/img/logo.png" alt="" /><p>www.santahelenadelvalleips.com</p></div>'''
     return R.documento(css, cuerpo, total), total, faltan
 
 
@@ -419,7 +419,7 @@ def reel3():
     cuerpo = f'''{R.html_celular(correo)}
 <div id="circulo">{''.join(anims)}</div>
 {chr(10).join(textos)}
-<div class="final" id="final"><img src="assets/img/logo-lema.png" alt="" /><p>santahelenadelvalleips.com</p></div>'''
+<div class="final" id="final"><img src="assets/img/logo-lema.png" alt="" /><p>www.santahelenadelvalleips.com</p></div>'''
     return R.documento(css, cuerpo, total), total, faltan
 
 
