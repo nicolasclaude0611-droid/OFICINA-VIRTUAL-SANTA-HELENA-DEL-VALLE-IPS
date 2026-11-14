@@ -1,6 +1,6 @@
 # Noticia · Tamizaje de cáncer de cuello uterino (convenio EPS Sanitas) · BORRADOR
 
-**Para:** carrusel de noticias de https://santahelenadelvalleips.com/
+**Para:** carrusel de noticias de www.santahelenadelvalleips.com
 **Pedido por:** JARVIS, de parte de Nicolas (13 nov 2026). Parte de un texto interno que se reescribió completo.
 **Estado:** borrador completo con las respuestas de Nicolas (14 nov 2026). Falta su aprobación.
 
@@ -77,14 +77,14 @@ Lleve su documento de identidad el día del examen.
 > ✅ Régimen contributivo y subsidiado
 > ✅ Mujeres sin histerectomía
 > 📍 Valledupar · San Juan del Cesar (para afiliadas de San Juan, El Molino, Urumita y Villanueva)
-> 📲 Agende por WhatsApp 311 339 8988, en la línea (605) 588 5690 o en santahelenadelvalleips.com
+> 📲 Agende por WhatsApp 311 339 8988, en la línea (605) 588 5690 o en www.santahelenadelvalleips.com
 > ¡La salud, nuestro compromiso!
 > #CuidarseATiempo #CitologíaYVPH #EPSSanitas #SantaHelenaDelValleIPS #Valledupar #SanJuanDelCesar #ElMolino #Urumita #Villanueva
 
 **Historia (3 pantallas):**
 1. «¿Afiliada a EPS Sanitas y entre 30 y 65 años?»
 2. «Agende sin costo su citología y prueba de VPH. Ayuda a detectar a tiempo.»
-3. «Valledupar y San Juan del Cesar · WhatsApp 311 339 8988 · santahelenadelvalleips.com» (con sticker de enlace
+3. «Valledupar y San Juan del Cesar · WhatsApp 311 339 8988 · www.santahelenadelvalleips.com» (con sticker de enlace
    a la web).
 
 ---
