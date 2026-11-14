@@ -83,6 +83,7 @@ video descargado. También sirven enlaces directos públicos o Google Drive, si 
 Carpeta «Santa Helena IPS · Redes y web» en el Drive de Nicolas (https://drive.google.com/drive/folders/1zEhbCbofD31UuqhFQHEEfM8MeVK4yLVB),
 con subcarpetas 01 Posts, 02 Carruseles, 03 Historias, 04 Reels y videos, 05 Helenita, 06 Marca, 07 Web y
 08 Referencias. Dentro, una carpeta por mes («2026-11 Noviembre») y nombres «AAAA-MM-DD tema».
+- **Las noticias de la página web van en «07 Web/Noticias»**, nunca en «01 Posts» (Posts es solo para Instagram).
 - Solo va material **aprobado** por Nicolas, nunca borradores ni datos de pacientes.
 - El conector de Drive solo sube archivos pegando su contenido, y eso gasta muchísimo uso con imágenes y videos.
   Por eso: **los textos** (captions, guiones) sí los sube el agente como documento de Google; **las imágenes y los
