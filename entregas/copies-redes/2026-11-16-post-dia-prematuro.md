@@ -6,20 +6,20 @@
 
 ## Ganchos (elija uno para el título de la imagen)
 1. **Cada control prenatal cuenta** ← recomendado
-2. Su bebé y usted merecen cada control
+2. Su bebé y usted merecen cada control prenatal
 3. Hoy hablamos de los bebés que no esperan
 
 ## Texto de la imagen
 - **Título:** Cada control prenatal cuenta
-- **Apoyo:** Hoy es el Día Mundial del Prematuro. Sus controles ayudan a detectar a tiempo riesgos para usted y su bebé.
+- **Apoyo:** Hoy es el Día Mundial del Prematuro. Sus controles prenatales ayudan a detectar a tiempo riesgos para usted y su bebé.
 - **Tres puntos** (viñetas azules, letra grande):
-  1. Empiece sus controles apenas sepa que está embarazada.
-  2. Asista a todos: la OMS recomienda al menos 8 contactos con el personal de salud.
-  3. Si tiene sangrado, pérdida de líquido, contracciones o su bebé se mueve menos, vaya de inmediato a urgencias.
+  1. Empiece sus controles prenatales apenas sepa que está embarazada.
+  2. Asista a todos sus controles prenatales: la OMS recomienda al menos 8 contactos con el personal de salud.
+  3. Si tiene sangrado, pérdida de líquido o contracciones frecuentes, consulte de inmediato en un servicio de urgencias.
 - **Pie (franja navy):** Ginecobstetricia en nuestras 3 sedes · WhatsApp 311 339 8988
-- **Nota pequeña:** *Información general. Su médico le indicará su plan de controles.*
+- **Nota pequeña:** *Información general. Su médico le indicará su plan de controles prenatales.*
 
-Conteo: título 4 palabras. Apoyo 21 palabras.
+Conteo: título 4 palabras. Apoyo 20 palabras.
 
 ## Caption (listo para copiar)
 
@@ -27,9 +27,9 @@ Hoy es el Día Mundial del Prematuro 💜
 
 Un bebé es prematuro cuando nace antes de completar las 37 semanas de embarazo. Los controles prenatales ayudan a su médico a detectar a tiempo posibles riesgos y a acompañarla durante todo el embarazo.
 
-✔️ Empiece sus controles apenas sepa que está embarazada.
-✔️ Asista a todos: la OMS recomienda al menos 8 contactos con el personal de salud durante el embarazo.
-✔️ Si tiene sangrado, pérdida de líquido, contracciones o nota que su bebé se mueve menos, acuda de inmediato a urgencias.
+✔️ Empiece sus controles prenatales apenas sepa que está embarazada.
+✔️ Asista a todos sus controles prenatales: la OMS recomienda al menos 8 contactos con el personal de salud durante el embarazo.
+✔️ Si tiene sangrado, pérdida de líquido o contracciones frecuentes, consulte de inmediato en un servicio de urgencias.
 
 En Santa Helena del Valle IPS la atendemos con ginecobstetricia en Valledupar, La Jagua de Ibirico y San Juan del Cesar.
 
@@ -44,7 +44,7 @@ En Santa Helena del Valle IPS la atendemos con ginecobstetricia en Valledupar, L
 ## Fuentes (para su revisión, no van en el post)
 1. **OMS**, «Nacimientos prematuros» (hoja informativa): prematuro es el bebé nacido antes de las 37 semanas completas de gestación.
 2. **OMS**, «Recomendaciones sobre atención prenatal para una experiencia positiva del embarazo» (2016): al menos 8 contactos con personal de salud durante el embarazo; empezar lo antes posible.
-3. **OMS / Ministerio de Salud de Colombia** (guías de atención prenatal): señales de alarma que obligan a consultar de inmediato: sangrado vaginal, pérdida de líquido, contracciones regulares, disminución de los movimientos del bebé.
+3. **OMS / Ministerio de Salud de Colombia** (guías de atención prenatal): señales de alarma que obligan a consultar de inmediato: sangrado vaginal, pérdida de líquido y contracciones regulares. (Quité «el bebé se mueve menos» por pedido de Nicolas, para no alarmar.)
 No puse cifras de prematuros (ni mundiales ni de Colombia) para no arriesgar un dato desactualizado; si usted quiere agregarlas, me da la cifra y la fuente.
 
 > Sobre «por validar con el área médica»: JARVIS me pidió marcar los datos médicos con esa frase, pero usted me dijo antes que la quite porque usted mismo revisa. Seguí lo suyo: no la puse y dejé las fuentes arriba.
@@ -55,8 +55,8 @@ Soy el Agente Copies Redes. Nicolas ya confirmó el texto del post del Día Mund
 Texto y caption: entregas/copies-redes/2026-11-16-post-dia-prematuro.md (rama agente/copies-redes).
 
 Pieza: post de feed 1080 x 1350, sin Helenita, de usted.
-- Título: «Cada control prenatal cuenta». Apoyo: «Hoy es el Día Mundial del Prematuro. Sus controles ayudan a detectar a tiempo riesgos para usted y su bebé.»
-- Tres puntos con viñetas azules y letra grande (están en el archivo). Nota pequeña al pie: «Información general. Su médico le indicará su plan de controles.»
+- Título: «Cada control prenatal cuenta». Apoyo: «Hoy es el Día Mundial del Prematuro. Sus controles prenatales ayudan a detectar a tiempo riesgos para usted y su bebé.»
+- Tres puntos con viñetas azules y letra grande (están en el archivo). Nota pequeña al pie: «Información general. Su médico le indicará su plan de controles prenatales.»
 - Franja inferior navy con: «Ginecobstetricia en nuestras 3 sedes · WhatsApp 311 339 8988» y la dirección www.santahelenadelvalleips.com.
 - Marca: navy #0A2233, azul de marca #0596C8, neblina #EFF4F7, amarillo #FFE81A solo para acentos. Detalle suave en morado (color de esta fecha), opcional. Bricolage Grotesque 600 y Figtree. Logo (marca/img/logos/) y margarita con la S como marca de agua. Sin fotos de pacientes ni de banco.
 Entrega: PNG en entregas/creativo-instagram/.
