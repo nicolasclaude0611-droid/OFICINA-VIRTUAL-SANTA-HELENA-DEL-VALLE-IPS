@@ -30,6 +30,10 @@ Copies Redes puede escribirle directo al Editor de Video (`send_message`, sessio
 guiones de reels, **solo** si antes le pregunta a Nicolas en su sesión y él dice que sí. El mensaje debe decir que
 Nicolas lo autorizó.
 
+**Excepción · canal directo Copies Redes → Creativo Instagram** (autorizado por Nicolas, 16 nov 2026): el Agente
+Copies Redes le pasa directo al Creativo Instagram (`send_message`) los textos de posts, carruseles e historias **ya
+aprobados por Nicolas**. El mensaje dice que Nicolas los aprobó.
+
 **Excepción · canal directo con el Agente Helenita** (para no copiar y pegar):
 1. **Primero revisa lo que ya existe** en `marca/helenita/CATALOGO.md`. Si una animación o voz existente sirve,
    úsala y no pidas nada nuevo.
