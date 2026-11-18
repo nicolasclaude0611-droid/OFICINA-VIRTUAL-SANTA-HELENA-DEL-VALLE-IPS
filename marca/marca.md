@@ -89,20 +89,31 @@ Público amplio: lenguaje claro y letra grande.
 > **Importante:** el símbolo amarillo del logo es una **margarita** (confirmado por Nicolas, 11 nov 2026), no un sol. **Regla:** la margarita **nunca se usa sola**; cuando va sin el texto del logo, siempre lleva la **«S» azul en el centro** (ícono «margarita con S»). 
 > Nunca la llames "sol" en textos, prompts ni descripciones.
 
-| Color | Hex | Uso |
-|---|---|---|
-| Navy (principal) | `#0A2233` | Textos, botones principales, fondos oscuros |
-| Navy 2 | `#0F2F47` | Fondos oscuros secundarios |
-| Azul de marca | `#0596C8` | Detalles, viñetas, acentos |
-| Azul profundo | `#06709A` | Fondos y portadas |
-| Amarillo (flor del logo) | `#FFE81A` | Botones de acción, líneas destacadas, acentos |
-| Neblina | `#EFF4F7` | Fondos claros, tarjetas |
-| Fondo | `#FBFCFD` / blanco `#FFFFFF` | Fondo general |
-| Texto secundario | `#4A6171` | |
-| Rosado (campañas de prevención) | `#E9739B` | Ej. cáncer de mama |
+> **Manual oficial (desde el 18 nov 2026):** `marca/manual/manual-identidad-corporativa-2026.pdf`. Manda sobre
+> todo lo demás de esta sección. Aplica a todas las piezas nuevas (posts, carruseles, historias, reels, noticias).
 
-- **Tipografías (Google Fonts):** **Bricolage Grotesque** 600 para títulos y cifras (interletrado negativo);
-  **Figtree** 400–700 para textos y botones.
+**Colores oficiales del manual:**
+
+| Color | Hex | CMYK | Uso |
+|---|---|---|---|
+| Amarillo claro | `#FFF212` | Y100 | Fondo de la margarita, acentos vivos |
+| Azul claro | `#1894D1` | C80 M30 | Letra «S», tipografía principal, eslogan |
+| Amarillo ocre | `#FFCC29` | — | Sombras de la margarita, descriptor «IPS» |
+| Blanco | `#FFFFFF` | — | Sombra de la «S» y del logotipo, contorno sobre fondos oscuros |
+
+- **Fondos de las piezas:** blanco, o azul institucional en degradado (azul claro `#1894D1` hacia un azul más
+  profundo), como en el manual. Sobre fondo oscuro, el logo va **con contorno blanco** (`logo-con-lema-transparente.png`).
+- **Colores de apoyo** (solo para texto o fondos neutros): azul oscuro `#0A2233` para textos largos y gris claro
+  `#EFF4F7`. **No introducir otros tonos** (el manual prohíbe rojos, verdes u otros no normados). Campañas con color
+  propio, como el rosado del cáncer de mama, solo con aprobación de Nicolas.
+- **Tipografía oficial:** **Eras Bold ITC** (títulos) y **Eras Demi ITC** (textos); el eslogan del logo usa
+  **Futura Md BT**. Son fuentes con licencia: los archivos están POR DEFINIR (pedírselos a Nicolas). Mientras
+  llegan, en piezas nuevas usa la más parecida disponible y avisa en la entrega que se cambiará.
+- **Eslogan oficial:** «¡La Salud, nuestro compromiso!» (con «Salud» en mayúscula). Va en las piezas principales.
+- **Área de protección:** deja alrededor del logo un margen libre de al menos el ancho de la «S».
+- **Prohibido:** estirar o deformar el logo, cambiar sus colores, sombras exageradas, biseles o efectos 3D.
+- **Co-branding** (por ejemplo, con FOMAG): logos en proporción equilibrada y con espacio entre ellos.
+- **La web** sigue con Bricolage Grotesque y Figtree hasta que Nicolas decida actualizarla.
 - **Estilo:** esquinas muy redondeadas (30 px), botones en píldora, casi sin sombras, mucho aire; la **flor del
   logo** como marca de agua; fotos reales de las sedes, **sin fotos de banco**.
 - **Logo** en `marca/img/`: `logo.png` (color, sin lema, para fondos claros) y `logo-lema.png` (con lema blanco,
