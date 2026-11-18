@@ -2,7 +2,7 @@
 
 - **Idea 3 de la semana** · publicación: **hoy, miércoles 18 de noviembre de 2026** (tercer miércoles de noviembre) · Instagram, post de feed (1080 × 1350).
 - **Con Helenita** (pedido de Nicolas). De usted. BORRADOR para aprobación de Nicolas. Helenita no se presenta ni dice su nombre: solo acompaña con un globo de texto.
-- Servicios mencionados (habilitados): medicina general y medicina interna (3 sedes) y terapia respiratoria (Valledupar y La Jagua de Ibirico). No menciono neumología ni espirometría, que no están en nuestros servicios.
+- Servicios mencionados (habilitados): medicina general y medicina interna (3 sedes). No menciono terapia respiratoria (aún no funciona, aviso de Nicolas), ni neumología ni espirometría.
 
 ## Ganchos (elija uno para el título de la imagen)
 1. **Tos que no se quita: consulte a tiempo** ← recomendado
@@ -40,7 +40,7 @@ Helenita le recuerda: cuide su respiración y consulte a tiempo.
 
 El humo de cigarrillo y el humo de leña son de los principales riesgos: evitarlos es cuidar sus pulmones. La EPOC se puede tratar y controlar, y el médico es quien indica el estudio y el tratamiento que usted necesita.
 
-En Santa Helena del Valle IPS le atendemos con medicina general y medicina interna en Valledupar, La Jagua de Ibirico y San Juan del Cesar, y con terapia respiratoria en Valledupar y La Jagua de Ibirico.
+En Santa Helena del Valle IPS le atendemos con medicina general y medicina interna en Valledupar, La Jagua de Ibirico y San Juan del Cesar.
 
 📲 Agende su cita por WhatsApp: 311 339 8988
 🌐 www.santahelenadelvalleips.com
