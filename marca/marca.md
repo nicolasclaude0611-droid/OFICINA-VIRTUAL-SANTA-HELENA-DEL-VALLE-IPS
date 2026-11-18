@@ -39,12 +39,14 @@ Domingos y festivos: POR DEFINIR.
 - **La Jagua de Ibirico:** Nueva EPS y Particular.
 
 ## Servicios (solo habilitados en el REPS — no publiques otros)
+> **Terapia respiratoria:** está habilitada pero **aún no funciona** (Nicolas, 18 nov 2026). No la menciones en
+> ninguna pieza hasta que Nicolas avise que ya está funcionando.
 - **Medicina general y enfermería** (3 sedes).
 - **Especialidades:** ginecobstetricia, pediatría y medicina interna (3 sedes); medicina del trabajo y laboral
   (Valledupar y La Jagua); cardiología, cirugía general, ortopedia y/o traumatología, otorrinolaringología,
   psiquiatría, reumatología, infectología, medicina física y rehabilitación, medicina física y del deporte, dolor
   y cuidados paliativos, toxicología (solo Valledupar).
-- **Nutrición y psicología** (3 sedes); fisioterapia, terapia respiratoria, terapia ocupacional, fonoaudiología
+- **Nutrición y psicología** (3 sedes); fisioterapia, terapia ocupacional, fonoaudiología
   (Valledupar y La Jagua).
 - **Odontología general** (Valledupar y La Jagua); **optometría** (Valledupar).
 - **Vacunación** PAI intramural, domiciliaria y extramural (Valledupar y San Juan).
