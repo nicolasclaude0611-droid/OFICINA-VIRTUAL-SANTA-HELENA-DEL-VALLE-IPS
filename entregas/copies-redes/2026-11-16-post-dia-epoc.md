@@ -5,13 +5,13 @@
 - Servicios mencionados (habilitados): medicina general y medicina interna (3 sedes). No menciono terapia respiratoria (aún no funciona, aviso de Nicolas), ni neumología ni espirometría.
 
 ## Ganchos (elija uno para el título de la imagen)
-1. **Tos que no se quita: consulte a tiempo** ← recomendado
+1. Tos que no se quita: consulte a tiempo
 2. ¿Le falta el aire al caminar? Consulte
-3. Respirar bien también es salud
+3. **Respirar bien también es salud** ← elegido por Nicolas
 
 ## Texto de la imagen
-- **Título:** Tos que no se quita: consulte a tiempo
-- **Apoyo:** Hoy es el Día Mundial de la EPOC. Una tos constante o la falta de aire merecen una consulta con su médico.
+- **Título (elegido por Nicolas):** Respirar bien también es salud
+- **Apoyo:** Hoy es el Día Mundial de la EPOC. Si tiene tos que no se quita o le falta el aire, consulte a su médico.
 - **Señales para consultar** (viñetas azules, letra grande):
   1. Tos que dura semanas
   2. Flema o moco con frecuencia
@@ -22,7 +22,7 @@
 - **Helenita:** pose `hablar` (`marca/img/helenita/hablar.png`), abajo a la derecha, con un globo de texto: **«Cuide su respiración: consulte a tiempo.»** (6 palabras).
 - **Nota pequeña:** *Información general. Solo su médico puede hacer el diagnóstico.*
 
-Conteo: título 7 palabras. Apoyo 22 palabras.
+Conteo: título 5 palabras. Apoyo 24 palabras.
 
 ## Caption (listo para copiar)
 
@@ -62,7 +62,7 @@ Soy el Agente Copies Redes. Nicolas ya confirmó el texto del post del Día Mund
 Texto y caption: entregas/copies-redes/2026-11-16-post-dia-epoc.md (rama agente/copies-redes).
 
 Pieza: post de feed 1080 x 1350, CON Helenita, de usted.
-- Título: «Tos que no se quita: consulte a tiempo». Apoyo: «Hoy es el Día Mundial de la EPOC. Una tos constante o la falta de aire merecen una consulta con su médico.»
+- Título: «Respirar bien también es salud». Apoyo: «Hoy es el Día Mundial de la EPOC. Si tiene tos que no se quita o le falta el aire, consulte a su médico.»
 - Cuatro señales con viñetas azules y letra grande (están en el archivo) y una línea aparte: «Para cuidar sus pulmones: evite el humo de cigarrillo y de leña.» Helenita (marca/img/helenita/hablar.png) abajo a la derecha con un globo: «Cuide su respiración: consulte a tiempo.» (ella no se presenta). Nota pequeña al pie: «Información general. Solo su médico puede hacer el diagnóstico.»
 - Franja inferior navy con: «Medicina general y medicina interna en nuestras 3 sedes · WhatsApp 311 339 8988» y la dirección www.santahelenadelvalleips.com.
 - Marca: navy #0A2233, azul de marca #0596C8, neblina #EFF4F7, amarillo #FFE81A solo para acentos. Ícono sencillo de pulmones, estilo plano. Bricolage Grotesque 600 y Figtree. Logo (marca/img/logos/) y margarita con la S como marca de agua. Sin fotos de pacientes ni de banco.
