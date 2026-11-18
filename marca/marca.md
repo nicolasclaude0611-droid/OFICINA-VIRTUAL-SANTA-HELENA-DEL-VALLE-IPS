@@ -39,12 +39,14 @@ Domingos y festivos: POR DEFINIR.
 - **La Jagua de Ibirico:** Nueva EPS y Particular.
 
 ## Servicios (solo habilitados en el REPS — no publiques otros)
+> **Terapia respiratoria:** está habilitada pero **aún no funciona** (Nicolas, 18 nov 2026). No la menciones en
+> ninguna pieza hasta que Nicolas avise que ya está funcionando.
 - **Medicina general y enfermería** (3 sedes).
 - **Especialidades:** ginecobstetricia, pediatría y medicina interna (3 sedes); medicina del trabajo y laboral
   (Valledupar y La Jagua); cardiología, cirugía general, ortopedia y/o traumatología, otorrinolaringología,
   psiquiatría, reumatología, infectología, medicina física y rehabilitación, medicina física y del deporte, dolor
   y cuidados paliativos, toxicología (solo Valledupar).
-- **Nutrición y psicología** (3 sedes); fisioterapia, terapia respiratoria, terapia ocupacional, fonoaudiología
+- **Nutrición y psicología** (3 sedes); fisioterapia, terapia ocupacional, fonoaudiología
   (Valledupar y La Jagua).
 - **Odontología general** (Valledupar y La Jagua); **optometría** (Valledupar).
 - **Vacunación** PAI intramural, domiciliaria y extramural (Valledupar y San Juan).
@@ -89,20 +91,32 @@ Público amplio: lenguaje claro y letra grande.
 > **Importante:** el símbolo amarillo del logo es una **margarita** (confirmado por Nicolas, 11 nov 2026), no un sol. **Regla:** la margarita **nunca se usa sola**; cuando va sin el texto del logo, siempre lleva la **«S» azul en el centro** (ícono «margarita con S»). 
 > Nunca la llames "sol" en textos, prompts ni descripciones.
 
-| Color | Hex | Uso |
-|---|---|---|
-| Navy (principal) | `#0A2233` | Textos, botones principales, fondos oscuros |
-| Navy 2 | `#0F2F47` | Fondos oscuros secundarios |
-| Azul de marca | `#0596C8` | Detalles, viñetas, acentos |
-| Azul profundo | `#06709A` | Fondos y portadas |
-| Amarillo (flor del logo) | `#FFE81A` | Botones de acción, líneas destacadas, acentos |
-| Neblina | `#EFF4F7` | Fondos claros, tarjetas |
-| Fondo | `#FBFCFD` / blanco `#FFFFFF` | Fondo general |
-| Texto secundario | `#4A6171` | |
-| Rosado (campañas de prevención) | `#E9739B` | Ej. cáncer de mama |
+> **Manual oficial (desde el 18 nov 2026):** `marca/manual/manual-identidad-corporativa-2026.pdf`. Manda sobre
+> todo lo demás de esta sección. Aplica a todas las piezas nuevas (posts, carruseles, historias, reels, noticias).
 
-- **Tipografías (Google Fonts):** **Bricolage Grotesque** 600 para títulos y cifras (interletrado negativo);
-  **Figtree** 400–700 para textos y botones.
+**Colores oficiales del manual:**
+
+| Color | Hex | CMYK | Uso |
+|---|---|---|---|
+| Amarillo claro | `#FFF212` | Y100 | Fondo de la margarita, acentos vivos |
+| Azul claro | `#1894D1` | C80 M30 | Letra «S», tipografía principal, eslogan |
+| Amarillo ocre | `#FFCC29` | — | Sombras de la margarita, descriptor «IPS» |
+| Blanco | `#FFFFFF` | — | Sombra de la «S» y del logotipo, contorno sobre fondos oscuros |
+
+- **Fondos de las piezas:** blanco, o azul institucional en degradado (azul claro `#1894D1` hacia un azul más
+  profundo), como en el manual. Sobre fondo oscuro, el logo va **con contorno blanco** (`logo-con-lema-transparente.png`).
+- **Colores de apoyo** (solo para texto o fondos neutros): azul oscuro `#0A2233` para textos largos y gris claro
+  `#EFF4F7`. **No introducir otros tonos** (el manual prohíbe rojos, verdes u otros no normados). Colores de campaña
+  según el contexto (por ejemplo, rosado para cáncer de mama o azul celeste para Noviembre Azul) **solo cuando
+  Nicolas lo pida expresamente**; ningún agente los usa por su cuenta.
+- **Tipografía oficial:** **Eras Bold ITC** (títulos) y **Eras Demi ITC** (textos); el eslogan del logo usa
+  **Futura Md BT**. Son fuentes con licencia: los archivos están POR DEFINIR (pedírselos a Nicolas). Mientras
+  llegan, en piezas nuevas usa la más parecida disponible y avisa en la entrega que se cambiará.
+- **Eslogan oficial:** «¡La Salud, nuestro compromiso!» (con «Salud» en mayúscula). Va en las piezas principales.
+- **Área de protección:** deja alrededor del logo un margen libre de al menos el ancho de la «S».
+- **Prohibido:** estirar o deformar el logo, cambiar sus colores, sombras exageradas, biseles o efectos 3D.
+- **Co-branding** (por ejemplo, con FOMAG): logos en proporción equilibrada y con espacio entre ellos.
+- **La web** sigue con Bricolage Grotesque y Figtree hasta que Nicolas decida actualizarla.
 - **Estilo:** esquinas muy redondeadas (30 px), botones en píldora, casi sin sombras, mucho aire; la **flor del
   logo** como marca de agua; fotos reales de las sedes, **sin fotos de banco**.
 - **Logo** en `marca/img/`: `logo.png` (color, sin lema, para fondos claros) y `logo-lema.png` (con lema blanco,
@@ -113,10 +127,13 @@ Público amplio: lenguaje claro y letra grande.
 
 ## Página web
 - Publicada en https://santahelenadelvalleips.com/ (Hostinger, desde el 12 nov 2026; copia antigua en https://nicolasclaude0611-droid.github.io/santa-helena/) · repo `nicolasclaude0611-droid/santa-helena`,
-  rama `main` (lo que se sube a `main` **se publica solo**, en 1-2 minutos).
+  Hostinger publica solo la rama `produccion`, que arma el Administrador Web desde `main` y únicamente tras el
+  «publica» de Nicolas (ver `agentes/admin-web.md`).
 - Sitio estático (HTML, CSS, JS) de una sola página: inicio, cifras, agendar cita por WhatsApp, servicios,
   noticias, atención territorial, apoyo al paciente, sedes, nosotros, preguntas frecuentes, PQRS, EPS y empresas.
-- Las **6 noticias actuales son ejemplos** y hay que reemplazarlas por reales.
+- Noticias reales publicadas: tamizaje de cuello uterino (EPS Sanitas), Noviembre Azul, estreno de la web, guía de
+  citas y guía de PQRS.
+- Pendiente al alinear la web con el manual: el eslogan dice «¡La salud…» y debe ser «¡La Salud, nuestro compromiso!».
 
 ## Pendientes de la marca (pregúntale al dueño cuando haga falta)
 Domingos y festivos · otras redes además de Instagram · misión e historia · confirmar colposcopia ·
