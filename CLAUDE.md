@@ -12,7 +12,7 @@ dueño sigue necesitándolo, y si JARVIS y el dueño difieren, manda el dueño.
 1. Tu rol está en `agentes/<tu-rol>.md`. Léelo al empezar la sesión y actúa siempre según él.
 2. Lee también `marca/marca.md` (identidad, tono, servicios) y `equipo.md` (quién hace qué). Para datos
    exactos (textos de la web, servicios por sede) consulta `marca/contexto-completo.md`.
-   Imágenes de marca (logo, flor del logo, Helenita, sedes) en `marca/img/`. Recetas de animación y voz de Helenita con
+   Imágenes de marca (logo, margarita con la S, Helenita, sedes) en `marca/img/`; logos en alta calidad en `marca/img/logos/`. Recetas de animación y voz de Helenita con
    ElevenLabs en `marca/helenita/RECETA-ELEVENLABS.md`; catálogo de lo que ya existe en `marca/helenita/CATALOGO.md`.
    Las animaciones y voces nuevas de Helenita las hace el Agente Helenita (ver `equipo.md`).
 3. Si te piden algo que corresponde a otro agente, dilo en una línea y sugiere a cuál pasárselo.
@@ -37,6 +37,8 @@ dueño sigue necesitándolo, y si JARVIS y el dueño difieren, manda el dueño.
   inventes cifras, certificaciones ni servicios que la IPS no tenga habilitados. Ante la duda, marca la afirmación
   como "por validar con el área médica".
 - **Datos de la IPS:** usa solo lo que está en `marca/marca.md` o lo que el dueño te diga. Lo que falte, pregúntalo.
+- **Dirección web:** en todo texto, imagen, video o voz que vea u oiga el público escríbela siempre con www:
+  **www.santahelenadelvalleips.com** (por decisión de Nicolas). En el código de la web se mantiene la dirección técnica.
 
 ## Trabajar con referencias (posts o videos de otros)
 Cuando el dueño envíe un post, carrusel, historia o video como referencia para hacer "algo igual pero con
@@ -83,10 +85,12 @@ video descargado. También sirven enlaces directos públicos o Google Drive, si 
 Carpeta «Santa Helena IPS · Redes y web» en el Drive de Nicolas (https://drive.google.com/drive/folders/1zEhbCbofD31UuqhFQHEEfM8MeVK4yLVB),
 con subcarpetas 01 Posts, 02 Carruseles, 03 Historias, 04 Reels y videos, 05 Helenita, 06 Marca, 07 Web y
 08 Referencias. Dentro, una carpeta por mes («2026-11 Noviembre») y nombres «AAAA-MM-DD tema».
+- **Las noticias de la página web van en «07 Web/Noticias»**, nunca en «01 Posts» (Posts es solo para Instagram).
 - Solo va material **aprobado** por Nicolas, nunca borradores ni datos de pacientes.
-- El conector de Drive solo sube archivos pegando su contenido, y eso gasta muchísimo uso con imágenes y videos.
-  Por eso: **los textos** (captions, guiones) sí los sube el agente como documento de Google; **las imágenes y los
-  videos** los sube Nicolas a mano, arrastrándolos desde el chat. Al entregar algo aprobado, el agente le dice
+- **Textos** (captions, guiones): el agente los sube como documento de Google. **Archivos de menos de 3 MB**
+  (casi todas las imágenes): el agente los sube con el conector usando una referencia al archivo
+  (`base64Content` = `sha256:<huella>:<ruta>`), sin pegar su contenido. **Archivos más grandes** (videos): el
+  conector no los acepta; los sube Nicolas a mano o JARVIS con una llave temporal. Al entregar algo aprobado, el agente le dice
   a Nicolas en qué carpeta va y con qué nombre.
 
 ## Herramientas disponibles en la nube
