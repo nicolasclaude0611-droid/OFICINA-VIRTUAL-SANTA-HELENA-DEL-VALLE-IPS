@@ -104,8 +104,9 @@ Público amplio: lenguaje claro y letra grande.
 - **Fondos de las piezas:** blanco, o azul institucional en degradado (azul claro `#1894D1` hacia un azul más
   profundo), como en el manual. Sobre fondo oscuro, el logo va **con contorno blanco** (`logo-con-lema-transparente.png`).
 - **Colores de apoyo** (solo para texto o fondos neutros): azul oscuro `#0A2233` para textos largos y gris claro
-  `#EFF4F7`. **No introducir otros tonos** (el manual prohíbe rojos, verdes u otros no normados). Campañas con color
-  propio, como el rosado del cáncer de mama, solo con aprobación de Nicolas.
+  `#EFF4F7`. **No introducir otros tonos** (el manual prohíbe rojos, verdes u otros no normados). Colores de campaña
+  según el contexto (por ejemplo, rosado para cáncer de mama o azul celeste para Noviembre Azul) **solo cuando
+  Nicolas lo pida expresamente**; ningún agente los usa por su cuenta.
 - **Tipografía oficial:** **Eras Bold ITC** (títulos) y **Eras Demi ITC** (textos); el eslogan del logo usa
   **Futura Md BT**. Son fuentes con licencia: los archivos están POR DEFINIR (pedírselos a Nicolas). Mientras
   llegan, en piezas nuevas usa la más parecida disponible y avisa en la entrega que se cambiará.
