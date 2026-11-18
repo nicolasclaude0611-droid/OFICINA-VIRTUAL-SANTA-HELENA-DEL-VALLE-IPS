@@ -124,10 +124,13 @@ Público amplio: lenguaje claro y letra grande.
 
 ## Página web
 - Publicada en https://santahelenadelvalleips.com/ (Hostinger, desde el 12 nov 2026; copia antigua en https://nicolasclaude0611-droid.github.io/santa-helena/) · repo `nicolasclaude0611-droid/santa-helena`,
-  rama `main` (lo que se sube a `main` **se publica solo**, en 1-2 minutos).
+  Hostinger publica solo la rama `produccion`, que arma el Administrador Web desde `main` y únicamente tras el
+  «publica» de Nicolas (ver `agentes/admin-web.md`).
 - Sitio estático (HTML, CSS, JS) de una sola página: inicio, cifras, agendar cita por WhatsApp, servicios,
   noticias, atención territorial, apoyo al paciente, sedes, nosotros, preguntas frecuentes, PQRS, EPS y empresas.
-- Las **6 noticias actuales son ejemplos** y hay que reemplazarlas por reales.
+- Noticias reales publicadas: tamizaje de cuello uterino (EPS Sanitas), Noviembre Azul, estreno de la web, guía de
+  citas y guía de PQRS.
+- Pendiente al alinear la web con el manual: el eslogan dice «¡La salud…» y debe ser «¡La Salud, nuestro compromiso!».
 
 ## Pendientes de la marca (pregúntale al dueño cuando haga falta)
 Domingos y festivos · otras redes además de Instagram · misión e historia · confirmar colposcopia ·
