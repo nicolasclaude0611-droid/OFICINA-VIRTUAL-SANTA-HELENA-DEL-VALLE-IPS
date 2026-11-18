@@ -1,7 +1,7 @@
 # Post · Día Mundial de la EPOC (18 nov 2026)
 
 Encargo directo del Agente Copies Redes con texto aprobado por Nicolas
-(`entregas/copies-redes/2026-11-16-post-dia-epoc.md`, rama agente/copies-redes). Borrador de diseño para aprobación.
+(`entregas/copies-redes/2026-11-16-post-dia-epoc.md`, rama agente/copies-redes). **Aprobado por Nicolas el 18 nov 2026 (versión 3) y subido a Drive** (01 Posts/2026-11 Noviembre/2026-11-18 Día Mundial de la EPOC, con el caption).
 
 - `post-dia-epoc.png`: 1080 × 1350, con Helenita (pose hablar) y globo «Cuide sus pulmones: consulte a tiempo.».
 - Estilo del **manual de identidad oficial** (manda sobre los colores y letras del encargo): degradado azul
