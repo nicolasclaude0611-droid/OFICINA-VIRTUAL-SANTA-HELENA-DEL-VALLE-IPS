@@ -110,8 +110,10 @@ Público amplio: lenguaje claro y letra grande.
   según el contexto (por ejemplo, rosado para cáncer de mama o azul celeste para Noviembre Azul) **solo cuando
   Nicolas lo pida expresamente**; ningún agente los usa por su cuenta.
 - **Tipografía oficial:** **Eras Bold ITC** (títulos) y **Eras Demi ITC** (textos); el eslogan del logo usa
-  **Futura Md BT**. Son fuentes con licencia: los archivos están POR DEFINIR (pedírselos a Nicolas). Mientras
-  llegan, en piezas nuevas usa la más parecida disponible y avisa en la entrega que se cambiará.
+  **Futura Md BT**. Son fuentes **con licencia**: **nunca las subas a
+  este repositorio (es público)**. Nicolas las adjunta en el chat de cada agente que diseña (ERASBD, ERASDEMI,
+  ERASMD y ERASLGHT .TTF). Instálalas solo en tu sesión (copia a `~/.local/share/fonts/` y ejecuta `fc-cache -f`).
+  Copia privada en el Drive: 06 Marca/Fuentes (privado, con licencia). Futura Md BT: POR DEFINIR.
 - **Eslogan oficial:** «¡La Salud, nuestro compromiso!» (con «Salud» en mayúscula). Va en las piezas principales.
 - **Área de protección:** deja alrededor del logo un margen libre de al menos el ancho de la «S».
 - **Prohibido:** estirar o deformar el logo, cambiar sus colores, sombras exageradas, biseles o efectos 3D.
