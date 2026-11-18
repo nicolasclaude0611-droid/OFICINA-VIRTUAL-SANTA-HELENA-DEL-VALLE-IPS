@@ -14,4 +14,8 @@ Encargo directo del Agente Copies Redes con texto aprobado por Nicolas
 Pedido de Nicolas vía JARVIS: menos «ícono», más escenas. Se cambió el ícono de pulmones por la ilustración.
 - Licencia unDraw: uso libre, también comercial, sin pedir permiso ni dar crédito (undraw.co/license). Archivo
   `fuente/img/undraw-doctor.svg` (original `doctor_aum1`, con el color de acento cambiado a #1894D1).
-- `antes-despues.png`: comparación. `post-dia-epoc-v1-iconos.png` y `fuente/post-v1-iconos.html`: versión anterior.
+- `antes-despues.png`: comparación (ícono vs. versión 3). `post-dia-epoc-v1-iconos.png` y `fuente/post-v1-iconos.html`: versión anterior.
+
+## Versión 3 (18 nov 2026)
+A Nicolas no le gustó la ilustración de unDraw. Se cambió por unos **pulmones grandes dibujados a mano, en
+blanco con opacidad muy baja** (13 %), como marca de agua detrás del título. Sin material de terceros.
