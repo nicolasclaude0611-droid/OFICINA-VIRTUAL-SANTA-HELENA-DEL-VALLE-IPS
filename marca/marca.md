@@ -39,12 +39,14 @@ Domingos y festivos: POR DEFINIR.
 - **La Jagua de Ibirico:** Nueva EPS y Particular.
 
 ## Servicios (solo habilitados en el REPS — no publiques otros)
+> **Terapia respiratoria:** está habilitada pero **aún no funciona** (Nicolas, 18 nov 2026). No la menciones en
+> ninguna pieza hasta que Nicolas avise que ya está funcionando.
 - **Medicina general y enfermería** (3 sedes).
 - **Especialidades:** ginecobstetricia, pediatría y medicina interna (3 sedes); medicina del trabajo y laboral
   (Valledupar y La Jagua); cardiología, cirugía general, ortopedia y/o traumatología, otorrinolaringología,
   psiquiatría, reumatología, infectología, medicina física y rehabilitación, medicina física y del deporte, dolor
   y cuidados paliativos, toxicología (solo Valledupar).
-- **Nutrición y psicología** (3 sedes); fisioterapia, terapia respiratoria, terapia ocupacional, fonoaudiología
+- **Nutrición y psicología** (3 sedes); fisioterapia, terapia ocupacional, fonoaudiología
   (Valledupar y La Jagua).
 - **Odontología general** (Valledupar y La Jagua); **optometría** (Valledupar).
 - **Vacunación** PAI intramural, domiciliaria y extramural (Valledupar y San Juan).
@@ -108,8 +110,10 @@ Público amplio: lenguaje claro y letra grande.
   según el contexto (por ejemplo, rosado para cáncer de mama o azul celeste para Noviembre Azul) **solo cuando
   Nicolas lo pida expresamente**; ningún agente los usa por su cuenta.
 - **Tipografía oficial:** **Eras Bold ITC** (títulos) y **Eras Demi ITC** (textos); el eslogan del logo usa
-  **Futura Md BT**. Son fuentes con licencia: los archivos están POR DEFINIR (pedírselos a Nicolas). Mientras
-  llegan, en piezas nuevas usa la más parecida disponible y avisa en la entrega que se cambiará.
+  **Futura Md BT**. Son fuentes **con licencia**: **nunca las subas a
+  este repositorio (es público)**. Nicolas las adjunta en el chat de cada agente que diseña (ERASBD, ERASDEMI,
+  ERASMD y ERASLGHT .TTF). Instálalas solo en tu sesión (copia a `~/.local/share/fonts/` y ejecuta `fc-cache -f`).
+  Copia privada en el Drive: 06 Marca/Fuentes (privado, con licencia). Futura Md BT: POR DEFINIR.
 - **Eslogan oficial:** «¡La Salud, nuestro compromiso!» (con «Salud» en mayúscula). Va en las piezas principales.
 - **Área de protección:** deja alrededor del logo un margen libre de al menos el ancho de la «S».
 - **Prohibido:** estirar o deformar el logo, cambiar sus colores, sombras exageradas, biseles o efectos 3D.
