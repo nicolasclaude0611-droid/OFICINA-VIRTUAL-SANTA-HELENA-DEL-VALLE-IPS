@@ -252,7 +252,10 @@ def construir():
 
     # ---------- Helenita ----------
     HEL = []
+    CON_H = {1, 10, 11, 12}
     for e in escenas:
+        if e['n'] not in CON_H:
+            continue
         d = e['fin'] - e['ini']
         n = 0
         while d - n * 5.0 > 0.05:
@@ -260,6 +263,8 @@ def construir():
             HEL.append(f'<video id="h{e["n"]}-{n}" class="anim clip" src="assets/helenita/{e["anim"]}.webm" data-start="{e["ini"] + n * 5.0:.2f}" data-duration="{seg:.2f}" data-track-index="5" muted playsinline></video>')
             n += 1
     TL.append('tl.fromTo("#guia", {opacity:0, y:120}, {opacity:1, y:0, duration:0.6, ease:"power3.out", immediateRender:false}, 0.15);')
+    TL.append(f'tl.to("#guia", {{opacity:0, y:260, duration:0.45, ease:"power2.in"}}, {escenas[0]["fin"] - 0.45:.2f});')
+    TL.append(f'tl.to("#guia", {{opacity:1, y:0, duration:0.55, ease:"power3.out"}}, {escenas[9]["ini"]:.2f});')
 
     # ---------- escenas ----------
     for e in escenas:
@@ -297,15 +302,15 @@ def construir():
 
     # 2 · bacterias y virus
     e = E[2]
-    bs = [(80, 640, 160, -10), (250, 700, 130, 20), (110, 800, 140, 8)]
-    vs = [(640, 620, 150), (820, 700, 130), (690, 810, 140)]
+    bs = [(150, 610, 200, -10), (410, 650, 170, 15), (650, 600, 200, 8)]
+    vs = [(170, 1000, 190), (445, 1050, 170), (700, 1000, 190)]
     H[2] = (''.join(bacteria(f'b2-{k}', x, y, w, r) for k, (x, y, w, r) in enumerate(bs))
             + ''.join(virus(f'v2-{k}', x, y, w) for k, (x, y, w) in enumerate(vs))
-            + etiqueta('t2b', 120, 990, 'BACTERIAS', BAC) + etiqueta('t2v', 700, 990, 'VIRUS', VIR)
-            + '<div id="vs2" class="obj vs" style="left:470px;top:760px">VS</div>')
+            + etiqueta('t2b', 395, 790, 'BACTERIAS', BAC) + etiqueta('t2v', 455, 1245, 'VIRUS', VIR)
+            + '<div id="vs2" class="obj vs" style="left:478px;top:880px">VS</div>')
     for k in range(3):
-        pop(f'#b2-{k}', W(e, 'tipos') - 0.2 + k * 0.12, sonido=(k == 0), desde='{opacity:0,x:-300}', ease='power3.out')
-        pop(f'#v2-{k}', W(e, 'gérmenes') - 0.2 + k * 0.12, sonido=(k == 0), desde='{opacity:0,x:300}', ease='power3.out')
+        pop(f'#b2-{k}', W(e, 'tipos') - 0.2 + k * 0.12, sonido=(k == 0), desde='{opacity:0,y:-200}', ease='power3.out')
+        pop(f'#v2-{k}', W(e, 'gérmenes') - 0.2 + k * 0.12, sonido=(k == 0), desde='{opacity:0,y:200}', ease='power3.out')
     TL.append(f'tl.to(["#b2-0","#b2-1","#b2-2"], {{scale:1.15,duration:0.25,yoyo:true,repeat:1}}, {W(e, "bacterias"):.2f});')
     TL.append(f'tl.to(["#v2-0","#v2-1","#v2-2"], {{scale:1.15,duration:0.25,yoyo:true,repeat:1}}, {W(e, "virus"):.2f});')
     pop('#t2b', W(e, 'bacterias') - 0.05, sonido=False)
@@ -320,7 +325,7 @@ def construir():
             + ''.join(bacteria(f'b3-{k + 1}', x, y, 80, (k * 37) % 50 - 25) for k, (x, y) in enumerate(pos8))
             + '<div id="cnt3" class="obj cnt" style="left:800px;top:640px">×2</div>'
             + etiqueta('t3', 770, 790, 'SE<br>MULTIPLICAN', BAC)
-            + nota('n3', 520, 1190, 410, 'Pueden causar <b>infecciones</b>'))
+            + nota('n3', 330, 1240, 420, 'Pueden causar <b>infecciones</b>'))
     pop('#cuerpo', e['ini'] + 0.2, 0.6, sonido=False)
     pop('#b3-0', W(e, 'bacterias'), desde='{opacity:0,x:-200}', ease='power3.out')
     t_ent = W(e, 'entran')
@@ -466,12 +471,16 @@ def construir():
     H[10] = ('<div id="lst10" class="obj tarjeta ancha" style="left:50px;top:590px;width:980px"><div class="tit">RECUERDE</div>'
              + ''.join(f'<div class="regla" id="r10-{k}"><span class="caja-v" id="cv10-{k}"></span><span>{txt}</span></div>' for k, (txt, _) in enumerate(reglas))
              + '</div>'
-             + ''.join(visto(f'v10-{k}', 92, 718 + k * 120, 84) for k in range(3)))
+             + ''.join(visto(f'v10-{k}', 92, 718 + k * 120, 84) for k in range(3))
+             + ''.join(f'<div id="pc10-{k}" class="obj popc">{c}</div>' for k, c in enumerate(['NO SE<br>AUTOMEDIQUE', 'NO USE<br>SOBRANTES', 'SIGA EL<br>TRATAMIENTO'])))
     pop('#lst10', e['ini'] + 0.15, 0.5)
     for k, (_, p) in enumerate(reglas):
-        pop(f'#r10-{k}', W(e, p) - 0.45, 0.3, sonido=False, desde='{opacity:0.25}', ease='none')
-        pop(f'#v10-{k}', W(e, p) - 0.1, 0.4, sonido=False, desde='{opacity:0,scale:0}', ease='back.out(2.5)')
-        sfx('chime', W(e, p) - 0.1, 1.0, 0.25)
+        tp = W(e, p)
+        pop(f'#pc10-{k}', tp - 0.65, 0.45, desde='{opacity:0,scale:0.1}', ease='back.out(1.7)')
+        TL.append(f'tl.to("#pc10-{k}", {{x:-420,y:{-760 + k * 120},scale:0.35,opacity:0,duration:0.5,ease:"power2.in"}}, {tp + 0.45:.2f});')
+        pop(f'#r10-{k}', tp + 0.85, 0.3, sonido=False, desde='{opacity:0.25}', ease='none')
+        pop(f'#v10-{k}', tp + 0.85, 0.4, sonido=False, desde='{opacity:0,scale:0}', ease='back.out(2.5)')
+        sfx('chime', tp + 0.85, 1.0, 0.25)
 
     # 11 · cuidar a todos
     e = E[11]
@@ -497,7 +506,17 @@ def construir():
     TL.append(f'tl.to("#com12", {{scale:1.07,yoyo:true,repeat:5,duration:0.35,ease:"sine.inOut"}}, {W(e, "comentarios") + 0.3:.2f});')
     pop('#www12', W(e, 'comentarios') + 0.3, 0.4, sonido=False, desde='{opacity:0,y:20}', ease='power3.out')
 
-    escs = ''.join(f'<div class="esc" id="e{k}">{H[k]}</div>' for k in sorted(H))
+    CAJA = {2: (150, 890, 600, 1310), 3: (60, 1090, 560, 1330), 4: (140, 960, 580, 1060), 5: (60, 1060, 590, 1070),
+            6: (70, 1050, 590, 1118), 7: (60, 1020, 600, 1290), 8: (40, 1010, 620, 1360), 9: (70, 1030, 620, 1060)}
+
+    def lienzo(k):
+        if k not in CAJA:
+            return ''
+        x0, x1, y0, y1 = CAJA[k]
+        sc = min(1040 / (x1 - x0), 1000 / (y1 - y0), 1.35)
+        tx, ty = 540 - sc * (x0 + x1) / 2, 1050 - sc * (y0 + y1) / 2
+        return f' style="transform:translate({tx:.0f}px,{ty:.0f}px) scale({sc:.3f})"'
+    escs = ''.join(f'<div class="esc" id="e{k}"><div class="lienzo"{lienzo(k)}>{H[k]}</div></div>' for k in sorted(H))
 
     AUD.append(f'<audio id="musica" class="clip" src="assets/bgm/the-corporate-upbeat.mp3" data-start="0" data-duration="{total:.2f}" data-media-start="4" data-track-index="12" data-volume="0.055" data-fade-in="0.5" data-fade-out="2"></audio>')
 
