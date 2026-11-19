@@ -23,7 +23,7 @@
 | **La Jagua de Ibirico** (Cesar) | Carrera 3A # 8-17 | Lun-vie 6:30 a. m.–12:30 p. m. y 1:30 p. m.–6:30 p. m. |
 | **San Juan del Cesar** (La Guajira) | Calle 7 # 9-73 | Lun-vie 6:30 a. m.–12:30 p. m. y 1:30 p. m.–6:30 p. m. |
 
-Domingos y festivos: POR DEFINIR.
+Sábados, domingos y festivos: **no se atiende** (confirmado por Nicolas, 19 nov 2026).
 
 ## Contacto
 - **WhatsApp citas:** 311 339 8988 (https://wa.me/573113398988)
@@ -138,5 +138,5 @@ Público amplio: lenguaje claro y letra grande.
   citas y guía de PQRS.
 
 ## Pendientes de la marca (pregúntale al dueño cuando haga falta)
-Domingos y festivos · otras redes además de Instagram · misión e historia · confirmar colposcopia ·
+Otras redes además de Instagram · misión e historia · confirmar colposcopia ·
 versión blanca del logo · documentos institucionales para la web (derechos y deberes, participación social).

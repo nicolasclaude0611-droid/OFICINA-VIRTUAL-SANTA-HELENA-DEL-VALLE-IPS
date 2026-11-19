@@ -77,7 +77,7 @@ continúe el trabajo. Corte: 30 de octubre de 2026 (versión del sitio en la ram
 | Valledupar | Lun. a vie. 6:30 a. m. a 12:30 p. m. y 1:30 p. m. a 6:30 p. m. |
 | La Jagua de Ibirico | Lun. a vie. 6:30 a. m. a 12:30 p. m. y 1:30 p. m. a 6:30 p. m. |
 | San Juan del Cesar | Lun. a vie. 6:30 a. m. a 12:30 p. m. y 1:30 p. m. a 6:30 p. m. |
-| Domingos y festivos | POR DEFINIR |
+| Sábados, domingos y festivos | No se atiende (Nicolas, 19 nov 2026) |
 
 ### 1.5 Contacto y agendamiento
 
@@ -741,7 +741,7 @@ círculo es tocable.
 
 ### 5.2 Pendientes
 
-- **Horarios** de domingos y festivos.
+
 - **Redes sociales**: Instagram ya confirmado; faltan las demás.
 - **Misión** e **historia** de la empresa.
 - **Confirmar** que la foto asignada a San Juan del Cesar es de esa sede.
