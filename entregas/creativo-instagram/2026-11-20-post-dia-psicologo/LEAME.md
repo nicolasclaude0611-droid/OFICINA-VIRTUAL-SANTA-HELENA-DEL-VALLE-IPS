@@ -5,8 +5,13 @@ Encargo directo del Agente Copies Redes con texto aprobado por Nicolas
 Solo felicitación: sin citas, WhatsApp ni servicios.
 
 - `post-dia-psicologo.png`: 1080 × 1350. Fondo blanco con onda en degradado azul institucional (manual de identidad),
-  letra griega Ψ grande en azul claro #1894D1, Helenita (pose corazón) con globo «¡Gracias por cuidar de todos!»,
+  símbolo de la psicología (Ψ) grande y con opacidad baja arriba a la derecha, Helenita (pose corazón) con globo «¡Gracias por cuidar de todos!»,
   firma con logo y eslogan.
 - Letra oficial **Eras Bold ITC / Eras Demi ITC**; el eslogan de la firma va en Eras Medium ITC porque no tenemos
   Futura Md BT. Las fuentes no se guardan en el repositorio (licencia).
 - `fuente/post.html`: diseño editable (necesita las fuentes Eras instaladas para verse igual).
+
+## Versión 2 (pedido de Nicolas)
+- Símbolo de la psicología tomado de Wikimedia Commons, «Psi2.svg», **dominio público** (PD-self, categoría
+  «Symbols of psychology»), recoloreado a #1894D1 con opacidad 13 %: `fuente/img/simbolo-psicologia.svg`.
+- Globo de Helenita en azul claro, justo encima de su cabeza, con la punta hacia ella.
