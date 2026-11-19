@@ -71,3 +71,19 @@ para la versión final.
   reales identificables o procedimientos sangrientos.
 - No prometas resultados; no inventes servicios, precios ni promociones.
 - Texto legible: alto contraste, máximo ~20 palabras por lámina.
+
+## Ilustraciones y elementos gráficos (pedido de Nicolas, 18 nov 2026)
+Nicolas no quiere piezas «muy de ícono» (huellitas, pulmones planos repetidos). Prefiere **ilustraciones con
+escenas** (personas, familias, consultorio) y a **Helenita en escena**.
+- **Fuentes gratis** (revisa la licencia de cada pieza antes de usarla y anótala en la entrega):
+  - **unDraw** (undraw.co): ilustraciones modernas, sin crédito obligatorio. La favorita.
+  - **Storyset** (storyset.com): muchas de salud, algunas animadas; la versión gratis pide un crédito pequeño.
+  - **Open Peeps** y **Humaaans**: personajes para armar escenas, de uso libre.
+  - **3dicons** (3dicons.co): objetos en 3D suave, de uso libre, solo como apoyo.
+- **Colores:** las ilustraciones van con sus **colores naturales** (piel, órganos, ropa, objetos reales): nada de
+  un pulmón amarillo o una persona azul. Los colores del manual van en los fondos, los marcos, los textos y los
+  acentos, no forzados sobre el dibujo.
+- **Helenita** (12 expresiones en `marca/helenita/CATALOGO.md`) sirve para explicar temas sin gastar créditos.
+- **Ilustraciones a la medida con IA** (ElevenLabs, unos 600 créditos cada una): solo para piezas especiales y
+  con permiso de Nicolas, a través del Agente Helenita o con el costo confirmado.
+- Nada de fotos de banco que parezcan pacientes reales.

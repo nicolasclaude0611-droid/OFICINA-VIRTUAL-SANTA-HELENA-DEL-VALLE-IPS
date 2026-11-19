@@ -23,7 +23,7 @@
 | **La Jagua de Ibirico** (Cesar) | Carrera 3A # 8-17 | Lun-vie 6:30 a. m.–12:30 p. m. y 1:30 p. m.–6:30 p. m. |
 | **San Juan del Cesar** (La Guajira) | Calle 7 # 9-73 | Lun-vie 6:30 a. m.–12:30 p. m. y 1:30 p. m.–6:30 p. m. |
 
-Domingos y festivos: POR DEFINIR.
+Domingos y festivos: **no se atiende** (confirmado por Nicolas, 19 nov 2026).
 
 ## Contacto
 - **WhatsApp citas:** 311 339 8988 (https://wa.me/573113398988)
@@ -103,20 +103,23 @@ Público amplio: lenguaje claro y letra grande.
 | Amarillo ocre | `#FFCC29` | — | Sombras de la margarita, descriptor «IPS» |
 | Blanco | `#FFFFFF` | — | Sombra de la «S» y del logotipo, contorno sobre fondos oscuros |
 
-- **Fondos de las piezas:** blanco, o azul institucional en degradado (azul claro `#1894D1` hacia un azul más
-  profundo), como en el manual. Sobre fondo oscuro, el logo va **con contorno blanco** (`logo-con-lema-transparente.png`).
+- **Fondos de las piezas:** blanco, o azul institucional en degradado (azul institucional `#004BAD` hacia
+  `#1679C6`), como en el manual y en la web. Sobre fondo oscuro, el logo va **con contorno blanco** (`logo-con-lema-transparente.png`).
 - **Colores de apoyo** (solo para texto o fondos neutros): azul oscuro `#0A2233` para textos largos y gris claro
   `#EFF4F7`. **No introducir otros tonos** (el manual prohíbe rojos, verdes u otros no normados). Colores de campaña
   según el contexto (por ejemplo, rosado para cáncer de mama o azul celeste para Noviembre Azul) **solo cuando
   Nicolas lo pida expresamente**; ningún agente los usa por su cuenta.
 - **Tipografía oficial:** **Eras Bold ITC** (títulos) y **Eras Demi ITC** (textos); el eslogan del logo usa
-  **Futura Md BT**. Son fuentes con licencia: los archivos están POR DEFINIR (pedírselos a Nicolas). Mientras
-  llegan, en piezas nuevas usa la más parecida disponible y avisa en la entrega que se cambiará.
+  **Futura Md BT**. Son fuentes **con licencia**: **nunca las subas a
+  este repositorio (es público)**. Nicolas las adjunta en el chat de cada agente que diseña (ERASBD, ERASDEMI,
+  ERASMD y ERASLGHT .TTF). Instálalas solo en tu sesión (copia a `~/.local/share/fonts/` y ejecuta `fc-cache -f`).
+  Copia privada en el Drive: 06 Marca/Fuentes (privado, con licencia). Futura Md BT: POR DEFINIR.
 - **Eslogan oficial:** «¡La Salud, nuestro compromiso!» (con «Salud» en mayúscula). Va en las piezas principales.
 - **Área de protección:** deja alrededor del logo un margen libre de al menos el ancho de la «S».
 - **Prohibido:** estirar o deformar el logo, cambiar sus colores, sombras exageradas, biseles o efectos 3D.
 - **Co-branding** (por ejemplo, con FOMAG): logos en proporción equilibrada y con espacio entre ellos.
-- **La web** sigue con Bricolage Grotesque y Figtree hasta que Nicolas decida actualizarla.
+- **La web** ya está alineada con el manual (colores, eslogan, logos; 18 nov 2026), pero sigue con Bricolage
+  Grotesque y Figtree: las Eras que tenemos no tienen licencia para web. Nicolas espera la licencia web.
 - **Estilo:** esquinas muy redondeadas (30 px), botones en píldora, casi sin sombras, mucho aire; la **flor del
   logo** como marca de agua; fotos reales de las sedes, **sin fotos de banco**.
 - **Logo** en `marca/img/`: `logo.png` (color, sin lema, para fondos claros) y `logo-lema.png` (con lema blanco,
@@ -133,8 +136,7 @@ Público amplio: lenguaje claro y letra grande.
   noticias, atención territorial, apoyo al paciente, sedes, nosotros, preguntas frecuentes, PQRS, EPS y empresas.
 - Noticias reales publicadas: tamizaje de cuello uterino (EPS Sanitas), Noviembre Azul, estreno de la web, guía de
   citas y guía de PQRS.
-- Pendiente al alinear la web con el manual: el eslogan dice «¡La salud…» y debe ser «¡La Salud, nuestro compromiso!».
 
 ## Pendientes de la marca (pregúntale al dueño cuando haga falta)
-Domingos y festivos · otras redes además de Instagram · misión e historia · confirmar colposcopia ·
+Otras redes además de Instagram · misión e historia · confirmar colposcopia ·
 versión blanca del logo · documentos institucionales para la web (derechos y deberes, participación social).
