@@ -20,10 +20,10 @@ BAC, VIR, GRIS, ROJO, VERDE = '#FF9F1C', '#A66BFF', '#B8C2CC', '#E5383B', '#2ECC
 
 ESC = [
     ('abx2-e1', '¿Los antibióticos sirven para la gripa? En esta Semana Mundial de Concientización sobre la Resistencia a los Antimicrobianos, le explicamos cómo funcionan.', 'saludar', ['antibióticos', 'gripa?', 'Semana', 'Mundial']),
-    ('abx2-e2', 'Hay dos tipos de gérmenes que nos enferman: las bacterias y los virus.', 'hablar', ['bacterias', 'virus.']),
+    ('abx2-e2', 'Hay varios tipos de gérmenes que pueden enfermarnos; los más comunes son las bacterias y los virus.', 'hablar', ['bacterias', 'virus.']),
     ('abx2-e3', 'Las bacterias son seres vivos muy pequeños. Cuando entran al cuerpo, se multiplican y pueden causar infecciones.', 'senalar', ['multiplican', 'infecciones.']),
     ('abx2-e4', 'El antibiótico las ataca: las elimina o no las deja multiplicarse, y así ayuda al cuerpo a recuperarse.', 'hablar', ['elimina', 'multiplicarse,']),
-    ('abx2-e5', 'Los virus son distintos: causan la gripa y los resfriados, y los antibióticos no hacen nada contra ellos.', 'pensar', ['gripa', 'resfriados,', 'nada']),
+    ('abx2-e5', 'Los virus son distintos: causan enfermedades como la gripa y el resfriado, y los antibióticos no sirven contra ellos.', 'pensar', ['gripa', 'resfriado,', 'sirven']),
     ('abx2-e6', 'Por eso solo su médico puede decidir si usted necesita un antibiótico, cuál y por cuántos días.', 'senalar', ['médico', 'cuál', 'días.']),
     ('abx2-e7', 'Si se toman cuando no hacen falta, o se dejan a medias, algunas bacterias sobreviven.', 'empatia', ['falta,', 'medias,', 'sobreviven.']),
     ('abx2-e8', 'Esas bacterias se multiplican y se vuelven resistentes: el antibiótico ya no las puede eliminar.', 'hablar', ['resistentes:', 'eliminar.']),
@@ -306,8 +306,8 @@ def construir():
     for k in range(3):
         pop(f'#b2-{k}', W(e, 'bacterias') - 0.35 + k * 0.12, sonido=(k == 0), desde='{opacity:0,x:-300}', ease='power3.out')
         pop(f'#v2-{k}', W(e, 'virus') - 0.35 + k * 0.12, sonido=(k == 0), desde='{opacity:0,x:300}', ease='power3.out')
-    pop('#t2b', W(e, 'bacterias') + 0.3, sonido=False)
-    pop('#t2v', W(e, 'virus') + 0.3, sonido=False)
+    pop('#t2b', W(e, 'bacterias') - 0.05, sonido=False)
+    pop('#t2v', W(e, 'virus') - 0.05, sonido=False)
     pop('#vs2', W(e, 'gérmenes'), 0.4)
 
     # 3 · cuerpo y multiplicación
@@ -372,14 +372,14 @@ def construir():
     pop('#v5', W(e, 'virus'), 0.5)
     pop('#c5', W(e, 'distintos') - 0.1, desde='{opacity:0,x:-260}', ease='power3.out')
     pop('#t5g', W(e, 'gripa'), 0.35)
-    pop('#t5r', W(e, 'resfriados'), 0.35)
+    pop('#t5r', W(e, 'resfriado'), 0.35)
     tn = W(e, 'antibióticos')
     TL.append(f'tl.to("#c5", {{x:330,duration:0.45,ease:"power2.in"}}, {tn - 0.2:.2f});')
     TL.append(f'tl.to("#c5", {{x:40,rotation:-40,duration:0.6,ease:"back.out(2)"}}, {tn + 0.25:.2f});')
     TL.append(f'tl.to("#v5", {{scale:1.08,duration:0.15,yoyo:true,repeat:1}}, {tn + 0.22:.2f});')
     sfx('click-soft', tn + 0.22, 0.4, 0.35)
-    pop('#x5', W(e, 'nada') - 0.1, 0.4)
-    pop('#t5', W(e, 'nada') + 0.2, sonido=False)
+    pop('#x5', W(e, 'sirven') - 0.1, 0.4)
+    pop('#t5', W(e, 'sirven') + 0.2, sonido=False)
 
     # 6 · solo su médico decide
     e = E[6]
