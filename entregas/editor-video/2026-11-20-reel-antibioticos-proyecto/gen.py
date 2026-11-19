@@ -304,11 +304,13 @@ def construir():
             + etiqueta('t2b', 120, 990, 'BACTERIAS', BAC) + etiqueta('t2v', 700, 990, 'VIRUS', VIR)
             + '<div id="vs2" class="obj vs" style="left:470px;top:760px">VS</div>')
     for k in range(3):
-        pop(f'#b2-{k}', W(e, 'bacterias') - 0.35 + k * 0.12, sonido=(k == 0), desde='{opacity:0,x:-300}', ease='power3.out')
-        pop(f'#v2-{k}', W(e, 'virus') - 0.35 + k * 0.12, sonido=(k == 0), desde='{opacity:0,x:300}', ease='power3.out')
+        pop(f'#b2-{k}', W(e, 'tipos') - 0.2 + k * 0.12, sonido=(k == 0), desde='{opacity:0,x:-300}', ease='power3.out')
+        pop(f'#v2-{k}', W(e, 'gérmenes') - 0.2 + k * 0.12, sonido=(k == 0), desde='{opacity:0,x:300}', ease='power3.out')
+    TL.append(f'tl.to(["#b2-0","#b2-1","#b2-2"], {{scale:1.15,duration:0.25,yoyo:true,repeat:1}}, {W(e, "bacterias"):.2f});')
+    TL.append(f'tl.to(["#v2-0","#v2-1","#v2-2"], {{scale:1.15,duration:0.25,yoyo:true,repeat:1}}, {W(e, "virus"):.2f});')
     pop('#t2b', W(e, 'bacterias') - 0.05, sonido=False)
     pop('#t2v', W(e, 'virus') - 0.05, sonido=False)
-    pop('#vs2', W(e, 'gérmenes'), 0.4)
+    pop('#vs2', W(e, 'enfermarnos'), 0.4)
 
     # 3 · cuerpo y multiplicación
     e = E[3]
