@@ -1,6 +1,6 @@
 # Reel · ¿Cómo funcionan los antibióticos? (versión 2.1, explicativo con motion graphics)
 
-- Reel vertical 9:16 (1080 × 1920), **≈ 82 s** (1.159 caracteres de voz a unos 14 por segundo). Largo porque es explicativo, como la referencia de Nicolas (1 min 49 s).
+- Reel vertical 9:16 (1080 × 1920), **≈ 82 s** (1.200 caracteres de voz a unos 14 por segundo). Largo porque es explicativo, como la referencia de Nicolas (1 min 49 s).
 - **Cambios de esta versión (pedido de Nicolas):** (1) se entiende que es de la **Semana Mundial de Concientización sobre la Resistencia a los Antimicrobianos (18 al 24 de noviembre)**: lo dice la voz al inicio y al final, y una insignia fija lo muestra todo el video; (2) **colores pensados para que el paciente entienda**: bacterias, virus y demás con colores propios; fondo y elementos principales en colores de la marca.
 - Estilo de la referencia (análisis en `referencias/2026-11-19-reel-explicativo-motion/analisis.md`), adaptado a la marca.
 - **Publicación: viernes 20 de noviembre de 2026** (decidido por Nicolas). Aprobado.
@@ -41,10 +41,10 @@ Insignia grande de la semana y subtítulo **«¿Los antibióticos sirven para la
 | # | Seg. | Motion graphics (pantalla) | Texto / etiquetas | Helenita | Frase que dice (voz NUEVA) |
 |---|---|---|---|---|---|
 | 1 | 0–11 | Insignia grande del escudo con el nombre de la semana y las fechas; luego se reduce arriba; cápsula frente a un virus con «?». Nota: «Antimicrobianos: medicinas contra gérmenes» | **SEMANA MUNDIAL DE CONCIENTIZACIÓN SOBRE LA RESISTENCIA A LOS ANTIMICROBIANOS · 18–24 NOV** · **¿Los antibióticos sirven para la gripa?** | `saludar` | 🆕 «¿Los antibióticos sirven para la gripa? En esta Semana Mundial de Concientización sobre la Resistencia a los Antimicrobianos, le explicamos cómo funcionan.» |
-| 2 | 11–16 | Dos grupos de gérmenes entran: bacterias naranja y virus violeta con puntas | **BACTERIAS (naranja) · VIRUS (violeta)** | `hablar` | 🆕 «Hay dos tipos de gérmenes que nos enferman: las bacterias y los virus.» |
+| 2 | 11–16 | Dos grupos de gérmenes entran: bacterias naranja y virus violeta con puntas | **BACTERIAS (naranja) · VIRUS (violeta)** | `hablar` | 🆕 «Hay varios tipos de gérmenes que pueden enfermarnos; los más comunes son las bacterias y los virus.» |
 | 3 | 16–24 | Silueta del cuerpo; una bacteria naranja entra y se divide en 2, 4, 8 | **Las bacterias se multiplican** · «Pueden causar infecciones» | `senalar` | 🆕 «Las bacterias son seres vivos muy pequeños. Cuando entran al cuerpo, se multiplican y pueden causar infecciones.» |
 | 4 | 24–31 | La cápsula azul y amarilla llega: unas bacterias se rompen y otras quedan quietas sin dividirse | **El antibiótico las elimina o no las deja multiplicarse** | `hablar` | 🆕 «El antibiótico las ataca: las elimina o no las deja multiplicarse, y así ayuda al cuerpo a recuperarse.» |
-| 5 | 31–38 | La cápsula choca con un virus violeta y rebota; X roja; aparecen «GRIPA» y «RESFRIADO» | **Contra los virus no sirven** (X roja) | `pensar` | 🆕 «Los virus son distintos: causan la gripa y los resfriados, y los antibióticos no hacen nada contra ellos.» |
+| 5 | 31–38 | La cápsula choca con un virus violeta y rebota; X roja; aparecen «GRIPA» y «RESFRIADO» | **Contra los virus no sirven** (X roja) | `pensar` | 🆕 «Los virus son distintos: causan enfermedades como la gripa y el resfriado, y los antibióticos no sirven contra ellos.» |
 | 6 | 38–45 | Un médico dibujado (bata y estetoscopio, sin cara real) con una lista: ¿bacteria?, ¿cuál antibiótico?, ¿cuántos días? | **Solo su médico decide: cuál · cuánto · cuántos días** | `senalar` | 🆕 «Por eso solo su médico puede decidir si usted necesita un antibiótico, cuál y por cuántos días.» |
 | 7 | 45–51 | Calendario con 7 casillas; se corta a la mitad; entre las bacterias unas naranja quedan vivas | **Mal uso: sin necesidad o a medias** | `empatia` | 🆕 «Si se toman cuando no hacen falta, o se dejan a medias, algunas bacterias sobreviven.» |
 | 8 | 51–58 | Las bacterias sobrevivientes se dividen y se ponen un **escudo gris**; la cápsula rebota | **Bacterias RESISTENTES** · «No es usted quien se vuelve resistente: son las bacterias» | `hablar` | 🆕 «Esas bacterias se multiplican y se vuelven resistentes: el antibiótico ya no las puede eliminar.» |
@@ -65,10 +65,10 @@ Voz Valeria (`JddqVF50ZSIR7SRbJE6u`, `eleven_v4`), una toma por frase.
 | Archivo | Texto | Caracteres |
 |---|---|---|
 | `abx2-e1` | ¿Los antibióticos sirven para la gripa? En esta Semana Mundial de Concientización sobre la Resistencia a los Antimicrobianos, le explicamos cómo funcionan. | 155 |
-| `abx2-e2` | Hay dos tipos de gérmenes que nos enferman: las bacterias y los virus. | 70 |
+| `abx2-e2` | Hay varios tipos de gérmenes que pueden enfermarnos; los más comunes son las bacterias y los virus. | 99 |
 | `abx2-e3` | Las bacterias son seres vivos muy pequeños. Cuando entran al cuerpo, se multiplican y pueden causar infecciones. | 112 |
 | `abx2-e4` | El antibiótico las ataca: las elimina o no las deja multiplicarse, y así ayuda al cuerpo a recuperarse. | 103 |
-| `abx2-e5` | Los virus son distintos: causan la gripa y los resfriados, y los antibióticos no hacen nada contra ellos. | 105 |
+| `abx2-e5` | Los virus son distintos: causan enfermedades como la gripa y el resfriado, y los antibióticos no sirven contra ellos. | 117 |
 | `abx2-e6` | Por eso solo su médico puede decidir si usted necesita un antibiótico, cuál y por cuántos días. | 95 |
 | `abx2-e7` | Si se toman cuando no hacen falta, o se dejan a medias, algunas bacterias sobreviven. | 85 |
 | `abx2-e8` | Esas bacterias se multiplican y se vuelven resistentes: el antibiótico ya no las puede eliminar. | 96 |
@@ -76,7 +76,7 @@ Voz Valeria (`JddqVF50ZSIR7SRbJE6u`, `eleven_v4`), una toma por frase.
 | `abx2-e10` | Por eso, no se automedique, no use sobrantes ni medicinas de otra persona, y siga el tratamiento como su médico se lo indicó. | 125 |
 | `abx2-e11` | En esta semana mundial, cuidar los antibióticos es cuidar la salud de todos. | 76 |
 | `abx2-e12` | ¿Qué tema de salud quiere que le expliquemos? Cuéntenos en los comentarios. | 75 |
-| **Total** | | **1.159 caracteres ≈ 1.159 créditos** |
+| **Total** | | **1.200 caracteres ≈ 1.200 créditos** |
 
 ## Caption (listo para copiar)
 
@@ -107,7 +107,7 @@ No puse cifras ni el lema oficial de este año, para no arriesgar un dato desact
 **Al Agente Helenita (voces nuevas):**
 ```
 Soy el Agente Copies Redes. Nicolas aprobó el guion explicativo del reel de antibióticos (versión 2.1) y necesita 12 voces nuevas de Helenita.
-Guion: entregas/copies-redes/2026-11-19-guion-reel-antibioticos-v2.md (rama agente/copies-redes), sección «Voces nuevas». Total 1.159 caracteres (≈ 1.159 créditos si cobra 1 por carácter; confírmale el costo real a Nicolas antes de generar).
+Guion: entregas/copies-redes/2026-11-19-guion-reel-antibioticos-v2.md (rama agente/copies-redes), sección «Voces nuevas». Total 1.200 caracteres (≈ 1.200 créditos si cobra 1 por carácter; confírmale el costo real a Nicolas antes de generar).
 Valeria (JddqVF50ZSIR7SRbJE6u, eleven_v4), 1 toma cada una, silencios recortados y -16 LUFS. Nombres abx2-e1 … abx2-e12 (textos exactos en la tabla). Guárdalas en marca/helenita/voces/ y anótalas en el catálogo. Avísale al Editor de Video (session_01KgBCaLkbXqZuUAhSgQfo2r) y a Nicolas cuando estén. Solo voz, sin animar la boca.
 ```
 **Al Agente Editor de Video (arma el reel):**
@@ -120,4 +120,4 @@ Entrega: MP4 en entregas/editor-video/ y muéstraselo a Nicolas.
 
 ## Qué necesito de Nicolas
 1. Aprobar el guion, el caption, los colores y los datos médicos (con las fuentes), y elegir el día (sugiero lunes 23).
-2. Permiso para pedirle las 12 voces al Agente Helenita (≈ 1.159 créditos) y pasarle el guion al Editor de Video.
+2. Permiso para pedirle las 12 voces al Agente Helenita (≈ 1.200 créditos) y pasarle el guion al Editor de Video.
