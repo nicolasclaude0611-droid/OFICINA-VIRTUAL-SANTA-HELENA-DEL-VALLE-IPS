@@ -1,7 +1,7 @@
 # Post · Día del Psicólogo (20 nov 2026)
 
 Encargo directo del Agente Copies Redes con texto aprobado por Nicolas
-(`entregas/copies-redes/2026-11-19-post-dia-psicologo.md`, rama agente/copies-redes). Borrador de diseño para aprobación.
+(`entregas/copies-redes/2026-11-19-post-dia-psicologo.md`, rama agente/copies-redes). **Aprobado por Nicolas el 19 nov 2026 (versión 2) y subido a Drive** (01 Posts/2026-11 Noviembre/2026-11-20 Día del Psicólogo, con el caption).
 Solo felicitación: sin citas, WhatsApp ni servicios.
 
 - `post-dia-psicologo.png`: 1080 × 1350. Fondo blanco con onda en degradado azul institucional (manual de identidad),
