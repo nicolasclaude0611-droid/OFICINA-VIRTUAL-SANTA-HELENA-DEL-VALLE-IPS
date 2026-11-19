@@ -3,7 +3,7 @@
 - Reel vertical 9:16 (1080 × 1920), **≈ 82 s** (1.159 caracteres de voz a unos 14 por segundo). Largo porque es explicativo, como la referencia de Nicolas (1 min 49 s).
 - **Cambios de esta versión (pedido de Nicolas):** (1) se entiende que es de la **Semana Mundial de Concientización sobre la Resistencia a los Antimicrobianos (18 al 24 de noviembre)**: lo dice la voz al inicio y al final, y una insignia fija lo muestra todo el video; (2) **colores pensados para que el paciente entienda**: bacterias, virus y demás con colores propios; fondo y elementos principales en colores de la marca.
 - Estilo de la referencia (análisis en `referencias/2026-11-19-reel-explicativo-motion/analisis.md`), adaptado a la marca.
-- **Fecha sugerida: lunes 23 de noviembre** (la semana termina el martes 24). Nicolas decide.
+- **Publicación: viernes 20 de noviembre de 2026** (decidido por Nicolas). Aprobado.
 - Lo arma el **Agente Editor de Video**; las voces nuevas las genera el **Agente Helenita**.
 - Lenguaje muy simple, una idea por escena. Helenita explica con la voz, **no se presenta**, de usted, sin boca sincronizada.
 - Reemplaza la versión 1. BORRADOR para aprobación de Nicolas.
