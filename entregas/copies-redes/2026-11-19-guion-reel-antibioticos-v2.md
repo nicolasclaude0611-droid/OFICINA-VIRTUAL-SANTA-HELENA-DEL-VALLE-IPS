@@ -14,17 +14,17 @@
 - Una nota pequeña en pantalla aclara la palabra difícil: «Antimicrobianos: medicinas contra gérmenes. Los antibióticos son un tipo de ellos.»
 
 ## Colores (para que el paciente entienda)
-**Marca (fondo y elementos principales):** fondo navy #0A2233 a #0F2F47; contornos, tarjetas y títulos en azul de marca #0596C8 y neblina #EFF4F7; amarillo #FFE81A para lo que hay que recordar.
+**Marca (fondo y elementos principales):** fondo navy #0A2233 a #0F2F47; contornos, tarjetas y títulos en azul de marca #0596C8 y neblina #EFF4F7; amarillo #FFE81A solo para destacar lo importante (no para el «sí»: el «sí» va en verde).
 
 **Colores propios de los personajes** (siempre el mismo color para lo mismo, más una etiqueta y una forma distinta para quien no distingue colores):
 | Elemento | Color | Forma |
 |---|---|---|
-| **Bacteria** | Verde #4CD964 | Redonda o alargada, lisa |
+| **Bacteria** | Naranja #FF9F1C | Redonda o alargada, lisa |
 | **Virus** | Violeta #A66BFF | Bolita con puntas |
 | **Antibiótico** | Cápsula azul de marca y amarilla | Cápsula |
-| **Bacteria resistente** | Verde con **escudo gris plateado** #B8C2CC | Bacteria con escudo |
-| **Lo que NO se debe hacer** | Rojo coral #FF5A5F | X |
-| **Lo que SÍ se debe hacer** | Amarillo #FFE81A | Visto (✔) |
+| **Bacteria resistente** | Naranja con **escudo gris plateado** #B8C2CC | Bacteria con escudo |
+| **Lo que NO se debe hacer** | Rojo #E5383B | X |
+| **Lo que SÍ se debe hacer** | **Verde #2ECC71** | Visto (✔) |
 | **El médico** | Blanco y azul de marca | Bata y estetoscopio, sin cara real |
 
 ## Cómo se ve (para el Editor de Video)
@@ -41,15 +41,15 @@ Insignia grande de la semana y subtítulo **«¿Los antibióticos sirven para la
 | # | Seg. | Motion graphics (pantalla) | Texto / etiquetas | Helenita | Frase que dice (voz NUEVA) |
 |---|---|---|---|---|---|
 | 1 | 0–11 | Insignia grande del escudo con el nombre de la semana y las fechas; luego se reduce arriba; cápsula frente a un virus con «?». Nota: «Antimicrobianos: medicinas contra gérmenes» | **SEMANA MUNDIAL DE CONCIENTIZACIÓN SOBRE LA RESISTENCIA A LOS ANTIMICROBIANOS · 18–24 NOV** · **¿Los antibióticos sirven para la gripa?** | `saludar` | 🆕 «¿Los antibióticos sirven para la gripa? En esta Semana Mundial de Concientización sobre la Resistencia a los Antimicrobianos, le explicamos cómo funcionan.» |
-| 2 | 11–16 | Dos grupos de gérmenes entran: bacterias verdes y virus violeta con puntas | **BACTERIAS (verdes) · VIRUS (violeta)** | `hablar` | 🆕 «Hay dos tipos de gérmenes que nos enferman: las bacterias y los virus.» |
-| 3 | 16–24 | Silueta del cuerpo; una bacteria verde entra y se divide en 2, 4, 8 | **Las bacterias se multiplican** · «Pueden causar infecciones» | `senalar` | 🆕 «Las bacterias son seres vivos muy pequeños. Cuando entran al cuerpo, se multiplican y pueden causar infecciones.» |
+| 2 | 11–16 | Dos grupos de gérmenes entran: bacterias naranja y virus violeta con puntas | **BACTERIAS (naranja) · VIRUS (violeta)** | `hablar` | 🆕 «Hay dos tipos de gérmenes que nos enferman: las bacterias y los virus.» |
+| 3 | 16–24 | Silueta del cuerpo; una bacteria naranja entra y se divide en 2, 4, 8 | **Las bacterias se multiplican** · «Pueden causar infecciones» | `senalar` | 🆕 «Las bacterias son seres vivos muy pequeños. Cuando entran al cuerpo, se multiplican y pueden causar infecciones.» |
 | 4 | 24–31 | La cápsula azul y amarilla llega: unas bacterias se rompen y otras quedan quietas sin dividirse | **El antibiótico las elimina o no las deja multiplicarse** | `hablar` | 🆕 «El antibiótico las ataca: las elimina o no las deja multiplicarse, y así ayuda al cuerpo a recuperarse.» |
 | 5 | 31–38 | La cápsula choca con un virus violeta y rebota; X roja; aparecen «GRIPA» y «RESFRIADO» | **Contra los virus no sirven** (X roja) | `pensar` | 🆕 «Los virus son distintos: causan la gripa y los resfriados, y los antibióticos no hacen nada contra ellos.» |
 | 6 | 38–45 | Un médico dibujado (bata y estetoscopio, sin cara real) con una lista: ¿bacteria?, ¿cuál antibiótico?, ¿cuántos días? | **Solo su médico decide: cuál · cuánto · cuántos días** | `senalar` | 🆕 «Por eso solo su médico puede decidir si usted necesita un antibiótico, cuál y por cuántos días.» |
-| 7 | 45–51 | Calendario con 7 casillas; se corta a la mitad; entre las bacterias unas verdes quedan vivas | **Mal uso: sin necesidad o a medias** | `empatia` | 🆕 «Si se toman cuando no hacen falta, o se dejan a medias, algunas bacterias sobreviven.» |
+| 7 | 45–51 | Calendario con 7 casillas; se corta a la mitad; entre las bacterias unas naranja quedan vivas | **Mal uso: sin necesidad o a medias** | `empatia` | 🆕 «Si se toman cuando no hacen falta, o se dejan a medias, algunas bacterias sobreviven.» |
 | 8 | 51–58 | Las bacterias sobrevivientes se dividen y se ponen un **escudo gris**; la cápsula rebota | **Bacterias RESISTENTES** · «No es usted quien se vuelve resistente: son las bacterias» | `hablar` | 🆕 «Esas bacterias se multiplican y se vuelven resistentes: el antibiótico ya no las puede eliminar.» |
 | 9 | 58–62 | Círculo de «más difícil» sobre una infección común | **Infección común → más difícil de tratar** | `pensar` | 🆕 «Así, una infección común puede volverse más difícil de tratar.» |
-| 10 | 62–71 | Lista de 3 reglas que se marcan una por una: ✔ amarillo | **✔ No se automedique · ✔ No use sobrantes ni medicinas de otra persona · ✔ Siga el tratamiento como su médico lo indicó** | `senalar` | 🆕 «Por eso, no se automedique, no use sobrantes ni medicinas de otra persona, y siga el tratamiento como su médico se lo indicó.» |
+| 10 | 62–71 | Lista de 3 reglas que se marcan una por una con ✔ verde | **✔ No se automedique · ✔ No use sobrantes ni medicinas de otra persona · ✔ Siga el tratamiento como su médico lo indicó** | `senalar` | 🆕 «Por eso, no se automedique, no use sobrantes ni medicinas de otra persona, y siga el tratamiento como su médico se lo indicó.» |
 | 11 | 71–76 | Escudo grande de la semana protegiendo a una familia dibujada | **SEMANA MUNDIAL · Cuidar los antibióticos es cuidar la salud de todos** | `corazon` | 🆕 «En esta semana mundial, cuidar los antibióticos es cuidar la salud de todos.» |
 | 12 | 76–82 | Tarjeta final: logo, margarita con la S y texto grande «COMENTA ▼» | **¿Qué tema de salud le explicamos ahora? · COMENTA ▼ · www.santahelenadelvalleips.com** | `pulgar` | 🆕 «¿Qué tema de salud quiere que le expliquemos? Cuéntenos en los comentarios.» |
 
