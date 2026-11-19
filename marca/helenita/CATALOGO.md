@@ -21,6 +21,11 @@ Variantes:
 - **Navidad (prueba, sin publicar):** `saludar` con gorro, en `media/helenita/navidad/` (web). Herramienta:
   `marca/helenita/tools/gorro.py`. El dueño avisará cuándo aplicarlo a las 6 y programarlo para diciembre.
 
+**Para que Helenita señale algo** (decisión de Nicolas, 19-nov): usar `senalar` (hacia la derecha de la pantalla),
+`senalar-izquierda` (hacia la izquierda) o `invitar`, y acomodar a Helenita en la pantalla para que apunte a lo que
+se quiere mostrar. No se generan direcciones nuevas (arriba, abajo, diagonales) salvo que un video lo necesite de
+verdad: cada una cuesta ~2.100 créditos y se pide a Nicolas.
+
 Imagen base en verde para generar nuevas: `helenita/fuentes/helenita-base-verde.png` (web).
 Referencias de apariencia: `marca/img/helenita/helenita-referencia.jpg` (cuerpo) y `helenita-closeup.jpg` (rostro).
 
