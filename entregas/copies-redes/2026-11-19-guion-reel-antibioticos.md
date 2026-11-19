@@ -1,6 +1,6 @@
 # Reel · Resistencia a los antibióticos (con Helenita)
 
-> **VERSIÓN 1, REEMPLAZADA.** Nicolas pidió algo más explicativo, con muchos motion graphics sobre cómo funcionan los antibióticos. Es un REEL (confirmado por Nicolas). Espero su video de referencia para escribir la versión 2. No usar este guion ni pedir sus voces.
+> **VERSIÓN 1, REEMPLAZADA.** Nicolas pidió algo más explicativo, con muchos motion graphics sobre cómo funcionan los antibióticos. Es un REEL. La versión 2 (explicativa) está en `2026-11-19-guion-reel-antibioticos-v2.md`. No usar este guion ni pedir sus voces.
 
 - Reemplaza la historia de antibióticos de la semana. Reel vertical 9:16 (1080 × 1920), **≈ 38 s** (536 caracteres de voz a unos 14 por segundo).
 - **Fecha sugerida: sábado 21 de noviembre** (cae dentro de la Semana Mundial de Concientización sobre la Resistencia a los Antimicrobianos, 18 al 24 de noviembre). Nicolas decide el día.
