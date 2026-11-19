@@ -23,7 +23,7 @@
 | **La Jagua de Ibirico** (Cesar) | Carrera 3A # 8-17 | Lun-vie 6:30 a. m.–12:30 p. m. y 1:30 p. m.–6:30 p. m. |
 | **San Juan del Cesar** (La Guajira) | Calle 7 # 9-73 | Lun-vie 6:30 a. m.–12:30 p. m. y 1:30 p. m.–6:30 p. m. |
 
-Sábados, domingos y festivos: **no se atiende** (confirmado por Nicolas, 19 nov 2026).
+Domingos y festivos: **no se atiende** (confirmado por Nicolas, 19 nov 2026).
 
 ## Contacto
 - **WhatsApp citas:** 311 339 8988 (https://wa.me/573113398988)
