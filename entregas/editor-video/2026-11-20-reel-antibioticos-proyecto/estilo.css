@@ -15,7 +15,7 @@ html, body { width: 1080px; height: 1920px; overflow: hidden; background: #0A223
   font-family: "Eras Bold", sans-serif; font-size: 66px; line-height: 1.12; text-align: center;
   text-shadow: 0 4px 14px rgba(10,34,51,0.55); }
 .sub .w { display: inline-block; margin: 0 9px; opacity: 0; }
-.sub .k { background: #FFF212; color: #0A2233; padding: 2px 14px 6px; border-radius: 14px; text-shadow: none; }
+.sub .k { display: inline-block; font-weight: normal; background: #FFF212; color: #0A2233; padding: 2px 14px 6px; border-radius: 14px; text-shadow: none; margin: 0 2px; }
 
 /* insignia fija de la semana */
 #insignia { position: absolute; left: 0; top: 455px; width: 1080px; opacity: 0; display: flex; justify-content: center; }

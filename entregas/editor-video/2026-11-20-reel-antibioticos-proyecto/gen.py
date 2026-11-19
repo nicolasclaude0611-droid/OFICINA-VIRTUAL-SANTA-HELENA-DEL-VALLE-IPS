@@ -180,6 +180,9 @@ CUERPO = (f'<svg viewBox="0 0 360 560"><g fill="rgba(255,255,255,0.07)" stroke="
 
 MEDICO = (f'<svg viewBox="0 0 300 480"><g stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round">'
           f'<circle cx="150" cy="70" r="54" fill="#F2D3B3"/>'
+          f'<circle cx="131" cy="74" r="6.5" fill="{NAVY}" stroke="none"/><circle cx="169" cy="74" r="6.5" fill="{NAVY}" stroke="none"/>'
+          f'<circle cx="120" cy="92" r="8" fill="#F4A6A0" stroke="none" opacity="0.7"/><circle cx="180" cy="92" r="8" fill="#F4A6A0" stroke="none" opacity="0.7"/>'
+          f'<path d="M134 94 Q150 108 166 94" fill="none" stroke="{NAVY}" stroke-width="5" stroke-linecap="round"/>'
           f'<path d="M96 40 Q150 -6 204 40 Q190 22 150 22 Q110 22 96 40 Z" fill="{NAVY}"/>'
           f'<path d="M60 150 Q70 128 110 128 H190 Q230 128 240 150 L262 470 H38 Z" fill="#FFFFFF"/>'
           f'<path d="M110 128 L150 230 L190 128" fill="{AZ}"/>'
@@ -241,7 +244,12 @@ def construir():
             bloques.append(cur)
         for b, idx in enumerate(bloques):
             bid = f's{e["n"]}-{b}'
-            spans = ''.join(f'<span id="{bid}-{j}" class="w{" k" if pal[j][0] in e["claves"] else ""}">{pal[j][0]}</span> ' for j in idx)
+            def palabra(p, clave):
+                if not clave:
+                    return p
+                m = re.match(r'^([¿¡]*)(.*?)([,.:;?!]*)$', p)
+                return f'{m.group(1)}<b class="k">{m.group(2)}</b>{m.group(3)}'
+            spans = ''.join(f'<span id="{bid}-{j}" class="w">{palabra(pal[j][0], pal[j][0] in e["claves"])}</span> ' for j in idx)
             SUB.append(f'<div id="{bid}" class="sub">{spans}</div>')
             t0 = e['voz'] + pal[idx[0]][1]
             t1 = e['voz'] + pal[bloques[b + 1][0]][1] if b + 1 < len(bloques) else e['fin'] - 0.15
@@ -270,12 +278,12 @@ def construir():
     for e in escenas:
         n, ini, fin = e['n'], e['ini'], e['fin']
         if n > 1:
-            TL.append(f'tl.fromTo("#e{n}", {{opacity:0}}, {{opacity:1,duration:0.3,immediateRender:false}}, {ini:.2f});')
+            TL.append(f'tl.fromTo("#e{n}", {{opacity:0,x:160,scale:0.96}}, {{opacity:1,x:0,scale:1,duration:0.45,ease:"power3.out",immediateRender:false}}, {ini - 0.05:.2f});')
             sfx('whoosh-short', ini - 0.05, 0.5, 0.18)
         else:
             TL.append(f'tl.set("#e1", {{opacity:1}}, 0);')
         if n < len(escenas):
-            TL.append(f'tl.to("#e{n}", {{opacity:0,duration:0.28}}, {fin - 0.28:.2f});')
+            TL.append(f'tl.to("#e{n}", {{opacity:0,x:-160,scale:0.96,duration:0.32,ease:"power2.in"}}, {fin - 0.3:.2f});')
 
     E = {e['n']: e for e in escenas}
     H = {}
@@ -288,12 +296,19 @@ def construir():
             + capsula('c1', 150, 960, 230, -15) + virus('v1', 690, 925, 170)
             + '<div id="q1" class="obj preg" style="left:470px;top:930px">?</div>'
             + nota('n1', 500, 1190, 430, '<b>Antimicrobianos:</b> medicinas contra gérmenes. Los antibióticos son un tipo de ellos.'))
-    pop('#ins-g', 0.3, 0.6)
-    pop('#c1', 0.9, desde='{opacity:0,x:-260,rotation:-60}', ease='power3.out')
-    pop('#v1', 1.1, desde='{opacity:0,x:260,scale:0.5}', ease='back.out(1.6)')
-    pop('#q1', W(e, 'gripa'), 0.4)
+    TL.append('tl.fromTo("#v1", {opacity:0,scale:0.4,y:-260}, {opacity:1,scale:1,y:-260,duration:0.4,ease:"back.out(1.8)",immediateRender:false}, 0.12);')
+    TL.append('tl.fromTo("#c1", {opacity:0,x:-300,y:-260,rotation:-60}, {opacity:1,x:0,y:-260,rotation:0,duration:0.4,ease:"power3.out",immediateRender:false}, 0.2);')
+    sfx('pop', 0.12, 0.5, 0.22)
+    TL.append('tl.to("#c1", {x:300,duration:0.32,ease:"power2.in"}, 0.7);')
+    TL.append('tl.to("#c1", {x:-20,rotation:-45,duration:0.6,ease:"back.out(2)"}, 1.02);')
+    TL.append('tl.to("#v1", {scale:1.12,duration:0.12,yoyo:true,repeat:1}, 1.0);')
+    sfx('click-soft', 1.0, 0.4, 0.4)
+    TL.append(f'tl.fromTo("#q1", {{opacity:0,scale:0.4,y:-260}}, {{opacity:1,scale:1,y:-260,duration:0.4,ease:"back.out(1.8)",immediateRender:false}}, {W(e, "gripa"):.2f});')
+    sfx('pop', W(e, 'gripa'), 0.5, 0.22)
     TL.append(f'tl.to("#q1", {{scale:1.18,yoyo:true,repeat:5,duration:0.32,ease:"sine.inOut"}}, {W(e, "gripa") + 0.45:.2f});')
-    TL.append(f'tl.to("#ins-g", {{scale:1.05,yoyo:true,repeat:1,duration:0.3}}, {W(e, "Semana"):.2f});')
+    t_ins = W(e, 'Semana') - 0.6
+    TL.append(f'tl.to(["#c1","#v1","#q1"], {{y:0,duration:0.5,ease:"power3.inOut"}}, {t_ins:.2f});')
+    pop('#ins-g', t_ins + 0.15, 0.6)
     pop('#n1', W(e, 'Antimicrobianos') + 0.2, 0.5)
     t_enc = W(e, 'explicamos')
     a('#ins-g', f'{{opacity:0,scale:0.4,y:-330,duration:0.55,ease:"power3.in"}}', t_enc - 0.1)

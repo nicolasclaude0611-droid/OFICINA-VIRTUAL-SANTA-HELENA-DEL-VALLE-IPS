@@ -1,0 +1,109 @@
+<!doctype html><html><head><meta charset="utf-8"><style>@font-face { font-family: "Eras Bold"; src: url("assets/fonts/ERASBD.TTF") format("truetype"); }
+@font-face { font-family: "Eras Demi"; src: url("assets/fonts/ERASDEMI.TTF") format("truetype"); }
+@font-face { font-family: "Eras Medium"; src: url("assets/fonts/ERASMD.TTF") format("truetype"); }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #0A2233; }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Eras Demi", sans-serif; color: #fff; }
+#fondo { position: absolute; inset: 0; background: linear-gradient(180deg, #1894D1 0%, #0F5E92 38%, #0B3556 72%, #0A2233 100%); }
+#flor { position: absolute; left: 560px; top: 1150px; width: 820px; opacity: 0.06; }
+#puntos { position: absolute; inset: 0; opacity: 0.18;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.9) 1.5px, transparent 2px); background-size: 72px 72px; }
+
+/* subtítulos arriba, palabra por palabra */
+.sub { position: absolute; left: 70px; top: 190px; width: 940px; height: 240px; display: flex; flex-wrap: wrap;
+  align-content: center; justify-content: center; gap: 4px 0; opacity: 0;
+  font-family: "Eras Bold", sans-serif; font-size: 66px; line-height: 1.12; text-align: center;
+  text-shadow: 0 4px 14px rgba(10,34,51,0.55); }
+.sub .w { display: inline-block; margin: 0 9px; opacity: 0; }
+.sub .k { display: inline-block; font-weight: normal; background: #FFF212; color: #0A2233; padding: 2px 14px 6px; border-radius: 14px; text-shadow: none; margin: 0 2px; }
+
+/* insignia fija de la semana */
+#insignia { position: absolute; left: 0; top: 455px; width: 1080px; opacity: 0; display: flex; justify-content: center; }
+.ins-pill { white-space: nowrap;
+  display: flex; align-items: center; gap: 12px; padding: 10px 26px 10px 14px; border-radius: 40px;
+  background: rgba(10,34,51,0.55); border: 3px solid #FFF212; font-family: "Eras Bold", sans-serif; font-size: 27px; letter-spacing: 0.02em; }
+.ins-mini { width: 34px; height: 41px; display: block; }
+.ins-mini svg { width: 100%; height: 100%; }
+
+/* escenas */
+.esc { position: absolute; inset: 0; opacity: 0; }
+.obj { position: absolute; opacity: 0; }
+.obj svg, .fija svg { width: 100%; height: 100%; display: block; overflow: visible; }
+.bac, .vir, .cap { transform: rotate(var(--r, 0deg)); filter: drop-shadow(0 0 12px rgba(255,255,255,0.45)); }
+.bac.fija { position: absolute; left: 0; top: 0; opacity: 1; }
+.fija { position: absolute; }
+.esc-g { position: absolute; filter: drop-shadow(0 0 8px rgba(255,255,255,0.6)); }
+.equis, .visto { filter: drop-shadow(0 0 10px rgba(255,255,255,0.5)); }
+.tag { font-family: "Eras Bold", sans-serif; font-size: 34px; letter-spacing: 0.04em; padding: 8px 20px; border-radius: 14px;
+  border: 3px solid; background: rgba(10,34,51,0.62); white-space: nowrap; }
+.tag.grande { font-size: 42px; padding: 10px 24px; }
+.nota { background: #fff; color: #0A2233; border-radius: 30px; padding: 22px 26px; font-size: 36px; line-height: 1.2;
+  box-shadow: 0 10px 30px rgba(10,34,51,0.35); }
+.nota b { font-family: "Eras Bold", sans-serif; color: #1894D1; font-weight: normal; }
+.preg { font-family: "Eras Bold", sans-serif; font-size: 170px; color: #FFF212; line-height: 1; text-shadow: 0 0 24px rgba(255,242,18,0.6); }
+.vs { font-family: "Eras Bold", sans-serif; font-size: 80px; color: #FFF212; }
+.cnt { font-family: "Eras Bold", sans-serif; font-size: 110px; color: #FF9F1C; text-shadow: 0 0 20px rgba(255,159,28,0.6); }
+.pausa { font-size: 30px; color: #fff; background: #0A2233; border: 3px solid #FFF212; border-radius: 50%; width: 56px; height: 56px;
+  display: flex; align-items: center; justify-content: center; letter-spacing: -4px; }
+.chispa { font-size: 110px; color: #FFF212; line-height: 1; text-shadow: 0 0 20px rgba(255,242,18,0.8); }
+
+#ins-g { display: flex; align-items: center; gap: 34px; padding: 34px 40px; border-radius: 40px; background: rgba(10,34,51,0.5);
+  border: 4px solid #FFF212; box-shadow: 0 0 40px rgba(255,242,18,0.25); }
+.ins-esc { width: 190px; height: 228px; flex: none; filter: drop-shadow(0 0 14px rgba(255,255,255,0.5)); }
+.ins-esc svg { width: 100%; height: 100%; }
+.ins-txt { display: flex; flex-direction: column; gap: 8px; }
+.ins-txt b { font-family: "Eras Bold", sans-serif; font-weight: normal; font-size: 46px; line-height: 1.05; }
+.ins-txt span { font-size: 36px; line-height: 1.1; color: #DDF1FB; }
+.ins-txt i { font-style: normal; font-family: "Eras Bold", sans-serif; font-size: 52px; color: #FFF212; margin-top: 6px; }
+
+#cuerpo, #med, #esc11, #fam11 { filter: drop-shadow(0 0 14px rgba(255,255,255,0.45)); }
+.tarjeta { background: rgba(10,34,51,0.6); border: 4px solid #fff; border-radius: 30px; padding: 30px 34px;
+  box-shadow: 0 0 30px rgba(255,255,255,0.25); }
+.tarjeta .tit, .cal .tit, .caja .tit { font-family: "Eras Bold", sans-serif; font-size: 44px; color: #FFF212; margin-bottom: 18px; letter-spacing: 0.02em; }
+.fila { font-size: 44px; padding: 18px 0; border-top: 2px solid rgba(255,255,255,0.25); opacity: 0; }
+.regla { display: flex; align-items: center; gap: 26px; font-size: 46px; line-height: 1.12; min-height: 120px; opacity: 0.25; }
+.caja-v { width: 84px; height: 84px; flex: none; border: 4px solid rgba(255,255,255,0.7); border-radius: 50%; }
+.tarjeta.ancha .tit { text-align: left; }
+.cal { }
+.dias { display: flex; gap: 14px; }
+.dia { width: 124px; height: 150px; border: 4px solid #fff; border-radius: 20px; background: rgba(10,34,51,0.5);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+.dia small { font-family: "Eras Bold", sans-serif; font-size: 24px; }
+.dia .mini { font-size: 44px; color: #FFF212; height: 50px; }
+.corte { width: 10px; background: #E5383B; border-radius: 5px; transform-origin: top; box-shadow: 0 0 14px rgba(229,56,59,0.8); }
+.caja { border: 4px solid #fff; border-radius: 30px; background: rgba(10,34,51,0.55); padding-top: 30px; text-align: center; }
+.caja .tit { position: absolute; left: 0; right: 0; bottom: 34px; font-size: 38px; }
+.caja.fuerte { border-color: #FFF212; box-shadow: 0 0 36px rgba(255,242,18,0.45); }
+.flecha { font-size: 130px; color: #FFF212; line-height: 1; }
+
+#logo12 { filter: drop-shadow(0 6px 20px rgba(10,34,51,0.4)); }
+.pr12 { left: 90px; top: 775px; width: 900px; text-align: center; font-family: "Eras Bold", sans-serif; font-size: 54px; line-height: 1.1; }
+.comenta { left: 290px; top: 920px; width: 500px; text-align: center; font-family: "Eras Bold", sans-serif; font-size: 72px;
+  background: #FFF212; color: #0A2233; border-radius: 60px; padding: 14px 0 18px; box-shadow: 0 0 40px rgba(255,242,18,0.5); }
+.www { left: 0; top: 1048px; width: 1080px; text-align: center; font-family: "Eras Bold", sans-serif; font-size: 40px; color: #fff; }
+
+/* Helenita abajo a la izquierda, anclada al borde */
+#guia { position: absolute; left: -150px; top: 1100px; width: 820px; height: 820px; opacity: 0; }
+#guia .anim { position: absolute; left: 0; top: 0; width: 820px; height: 820px; }
+.lienzo { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; transform-origin: 0 0; }
+.popc { left: 625px; top: 1420px; width: 370px; padding: 20px 22px; white-space: nowrap; border-radius: 30px; background: #fff; color: #0A2233;
+  font-family: "Eras Bold", sans-serif; font-size: 37px; line-height: 1.1; border: 5px solid #2ECC71; transform-origin: 0% 100%;
+  box-shadow: 0 0 30px rgba(46,204,113,0.55); }
+
+.cap,.vir{position:absolute}
+#t{position:absolute;left:60px;top:590px;width:960px;text-align:center;font-family:"Eras Bold";font-size:96px;line-height:1.08;color:#fff;text-shadow:0 6px 18px rgba(10,34,51,.5)}
+#t b{font-weight:normal;background:#FFF212;color:#0A2233;padding:0 18px 8px;border-radius:18px}
+#q{position:absolute;left:470px;top:960px;font-family:"Eras Bold";font-size:220px;color:#FFF212;line-height:1;text-shadow:0 0 30px rgba(255,242,18,.6)}
+#hel{position:absolute;left:-120px;top:1140px;width:780px}
+#lg{position:absolute;left:375px;top:265px;width:330px}
+#pil{position:absolute;left:560px;top:1380px;width:440px;background:#fff;color:#0A2233;border-radius:30px;padding:24px 28px;font-family:"Eras Bold";font-size:44px;line-height:1.1;box-shadow:0 10px 30px rgba(10,34,51,.35)}
+#pil span{color:#1894D1}
+</style></head><body><div id="root">
+<div id="fondo"></div><img id="flor" src="assets/img/flor.png"><div id="puntos"></div>
+<img id="lg" src="assets/img/logo-lema.png">
+<div id="insignia" style="opacity:1;top:470px"><div class="ins-pill"><span class="ins-mini"><svg viewBox="0 0 100 120"><path d="M50 6 L92 22 V58 C92 86 72 104 50 114 C28 104 8 86 8 58 V22 Z" fill="#1894D1" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round"/><g transform="translate(26 44) rotate(-25 24 14)"><path d="M14 4 H24 V28 H14 A12 12 0 0 1 14 4 Z" fill="#FFFFFF"/><path d="M24 4 H34 A12 12 0 0 1 34 28 H24 Z" fill="#FFF212"/></g></svg></span>SEMANA MUNDIAL DE CONCIENTIZACIÓN · 18–24 NOV</div></div>
+<div id="t">¿Los antibióticos sirven para la <b>gripa</b>?</div>
+<div id="pc" class="cap" style="left:110px;top:1010px;width:330px;height:139px;--r:-25deg"><svg viewBox="0 0 220 92"><path d="M46 6 H110 V86 H46 A40 40 0 0 1 46 6 Z" fill="#1894D1" stroke="#FFFFFF" stroke-width="6"/><path d="M110 6 H174 A40 40 0 0 1 174 86 H110 Z" fill="#FFF212" stroke="#FFFFFF" stroke-width="6"/><rect x="34" y="20" width="50" height="12" rx="6" fill="#FFFFFF" opacity="0.55"/></svg></div><div id="pv" class="vir" style="left:650px;top:960px;width:260px;height:260px"><svg viewBox="0 0 140 140"><line x1="112.0" y1="70.0" x2="132.0" y2="70.0" stroke="#E3D1FF" stroke-width="7" stroke-linecap="round"/><circle cx="134.0" cy="70.0" r="7" fill="#A66BFF" stroke="#E3D1FF" stroke-width="3"/><line x1="99.7" y1="99.7" x2="113.9" y2="113.8" stroke="#E3D1FF" stroke-width="7" stroke-linecap="round"/><circle cx="115.3" cy="115.2" r="7" fill="#A66BFF" stroke="#E3D1FF" stroke-width="3"/><line x1="70.0" y1="112.0" x2="70.0" y2="132.0" stroke="#E3D1FF" stroke-width="7" stroke-linecap="round"/><circle cx="70.1" cy="134.0" r="7" fill="#A66BFF" stroke="#E3D1FF" stroke-width="3"/><line x1="40.3" y1="99.7" x2="26.2" y2="113.9" stroke="#E3D1FF" stroke-width="7" stroke-linecap="round"/><circle cx="24.8" cy="115.3" r="7" fill="#A66BFF" stroke="#E3D1FF" stroke-width="3"/><line x1="28.0" y1="70.1" x2="8.0" y2="70.1" stroke="#E3D1FF" stroke-width="7" stroke-linecap="round"/><circle cx="6.0" cy="70.1" r="7" fill="#A66BFF" stroke="#E3D1FF" stroke-width="3"/><line x1="40.2" y1="40.4" x2="26.1" y2="26.2" stroke="#E3D1FF" stroke-width="7" stroke-linecap="round"/><circle cx="24.7" cy="24.8" r="7" fill="#A66BFF" stroke="#E3D1FF" stroke-width="3"/><line x1="69.9" y1="28.0" x2="69.9" y2="8.0" stroke="#E3D1FF" stroke-width="7" stroke-linecap="round"/><circle cx="69.8" cy="6.0" r="7" fill="#A66BFF" stroke="#E3D1FF" stroke-width="3"/><line x1="99.6" y1="40.2" x2="113.7" y2="26.0" stroke="#E3D1FF" stroke-width="7" stroke-linecap="round"/><circle cx="115.1" cy="24.6" r="7" fill="#A66BFF" stroke="#E3D1FF" stroke-width="3"/><circle cx="70" cy="70" r="44" fill="#A66BFF" stroke="#E3D1FF" stroke-width="5"/><circle cx="56" cy="62" r="6" fill="#0A2233"/><circle cx="84" cy="62" r="6" fill="#0A2233"/><path d="M58 84 Q70 78 82 84" stroke="#0A2233" stroke-width="4" fill="none" stroke-linecap="round"/></svg></div><div id="q">?</div>
+<img id="hel" src="assets/img/pensar-portada.png">
+<div id="pil">Le explicamos <span>cómo funcionan</span></div>
+</div></body></html>
