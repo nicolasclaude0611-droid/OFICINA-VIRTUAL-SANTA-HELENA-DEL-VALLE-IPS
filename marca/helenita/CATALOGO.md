@@ -129,15 +129,15 @@ Voces (Valeria, `eleven_v4`, 1 toma c/u, silencios recortados, -16 LUFS) en `mar
 | `boca-v8-audio.mp3` | Cierre «…las familias del Cesar y La Guajira. ¡La salud, nuestro compromiso!» con «Cesar» bien dicho (ce-SAR); escrito «Ce-sár» en la voz, escogido por Nicolas entre 2 versiones. Ajustado tramo por tramo a la boca de `animaciones/comercial-web/boca-v8` (usar con ese video). | 8,0 s |
 
 ### Reel de antibióticos (2026-11-19, pedido del Agente Copies Redes, aprobado por Nicolas)
-Voces (Valeria, `eleven_v4`, 1 toma c/u, silencios recortados, -16 LUFS) en `marca/helenita/voces/reel-antibioticos/`. Total: 1.159 créditos. Guion: `entregas/copies-redes/2026-11-19-guion-reel-antibioticos-v2.md` (rama `agente/copies-redes`). Originales: `entregas/helenita/2026-11-19-voces-reel-antibioticos/original/`.
+Voces (Valeria, `eleven_v4`, 1 toma c/u, silencios recortados, -16 LUFS) en `marca/helenita/voces/reel-antibioticos/`. Total: 1.159 + 216 (frases 2 y 5 corregidas) = 1.375 créditos. Guion: `entregas/copies-redes/2026-11-19-guion-reel-antibioticos-v2.md` (rama `agente/copies-redes`). Originales: `entregas/helenita/2026-11-19-voces-reel-antibioticos/original/`.
 
 | Archivo | Texto | Duración |
 |---|---|---|
 | `abx2-e1.mp3` | «¿Los antibióticos sirven para la gripa? En esta Semana Mundial de Concientización sobre la Resistencia a los Antimicrobianos, le explicamos cómo funcionan.» | 9,2 s |
-| `abx2-e2.mp3` | «Hay dos tipos de gérmenes que nos enferman: las bacterias y los virus.» | 4,6 s |
+| `abx2-e2.mp3` | «Hay varios tipos de gérmenes que pueden enfermarnos; los más comunes son las bacterias y los virus.» (corregida por Nicolas) | 6,1 s |
 | `abx2-e3.mp3` | «Las bacterias son seres vivos muy pequeños. Cuando entran al cuerpo, se multiplican y pueden causar infecciones.» | 7,2 s |
 | `abx2-e4.mp3` | «El antibiótico las ataca: las elimina o no las deja multiplicarse, y así ayuda al cuerpo a recuperarse.» | 7,0 s |
-| `abx2-e5.mp3` | «Los virus son distintos: causan la gripa y los resfriados, y los antibióticos no hacen nada contra ellos.» | 6,9 s |
+| `abx2-e5.mp3` | «Los virus son distintos: causan enfermedades como la gripa y el resfriado, y los antibióticos no sirven contra ellos.» (corregida por Nicolas) | 7,5 s |
 | `abx2-e6.mp3` | «Por eso solo su médico puede decidir si usted necesita un antibiótico, cuál y por cuántos días.» | 6,5 s |
 | `abx2-e7.mp3` | «Si se toman cuando no hacen falta, o se dejan a medias, algunas bacterias sobreviven.» | 5,5 s |
 | `abx2-e8.mp3` | «Esas bacterias se multiplican y se vuelven resistentes: el antibiótico ya no las puede eliminar.» | 6,0 s |
