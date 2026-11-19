@@ -94,6 +94,8 @@ Por eso: no se automedique, no use sobrantes ni medicinas de otra persona y siga
 
 ¡La salud, nuestro compromiso!
 
+🎵 Música: The Corporate Upbeat – Soundrider (CC BY)
+
 #SemanaMundialDeConcientización #ResistenciaAntimicrobiana #Antibióticos #NoAutomedicarse #SantaHelenaDelValleIPS #Valledupar #LaJaguaDeIbirico #SanJuanDelCesar #Cesar #LaGuajira
 
 ## Fuentes (para su revisión, no van en el reel)
