@@ -3,7 +3,6 @@
 // WhatsApp 301 655 3822: EXCLUSIVO de esta historia semanal.
 const COMUN = {
   whatsapp: "301 655 3822",
-  sinOrden: "No necesita orden médica",
   sede: "Disponible en nuestra sede de Valledupar · Carrera 11 # 14-34",
   eslogan: "¡La Salud, nuestro compromiso!"
 };

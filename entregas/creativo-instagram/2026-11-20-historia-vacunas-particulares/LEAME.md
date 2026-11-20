@@ -15,3 +15,4 @@ Encargo directo del Agente Copies Redes con textos aprobados por Nicolas
 2. Ejecutar `bash plantilla/crear-imagenes.sh B1` (o B2, B3). Crea la carpeta `B1/` con los 3 PNG.
    Necesita las fuentes Eras instaladas (no se guardan aquí por licencia) y Node con Playwright.
 - `plantilla/historia.html?v=A&p=1` muestra cada pantalla en el navegador. Helenita: cuadros existentes, sin gasto de créditos.
+- Sin la línea «No necesita orden médica» (la quitó Nicolas el 20 nov).
