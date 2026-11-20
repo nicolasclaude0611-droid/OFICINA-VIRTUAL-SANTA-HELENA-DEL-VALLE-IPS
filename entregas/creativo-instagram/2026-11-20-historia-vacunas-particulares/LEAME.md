@@ -1,7 +1,7 @@
 # Historia semanal · Vacunas particulares (plantilla reutilizable)
 
 Encargo directo del Agente Copies Redes con textos aprobados por Nicolas
-(`entregas/copies-redes/2026-11-20-historia-vacunas-particulares.md`, rama agente/copies-redes). Borrador para aprobación.
+(`entregas/copies-redes/2026-11-20-historia-vacunas-particulares.md`, rama agente/copies-redes). **Variación A aprobada por Nicolas el 20 nov 2026 y subida a Drive** (03 Historias/2026-11 Noviembre/2026-11-20 Vacunas particulares A).
 
 - **Variación A lista** en `A/`: `pantalla-1.png`, `pantalla-2.png`, `pantalla-3.png` (1080 × 1920, en imagen, no video,
   por decisión de Nicolas). Helenita: pantalla 1 con la mano abierta («invitar»), pantalla 2 sin Helenita (lista en
