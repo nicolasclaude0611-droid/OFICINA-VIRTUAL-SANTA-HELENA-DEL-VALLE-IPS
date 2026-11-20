@@ -16,3 +16,7 @@ Encargo directo del Agente Copies Redes con textos aprobados por Nicolas
    Necesita las fuentes Eras instaladas (no se guardan aquí por licencia) y Node con Playwright.
 - `plantilla/historia.html?v=A&p=1` muestra cada pantalla en el navegador. Helenita: cuadros existentes, sin gasto de créditos.
 - Sin la línea «No necesita orden médica» (la quitó Nicolas el 20 nov).
+- **Variaciones B1, B2 y B3 hechas el 20 nov 2026** a pedido de Nicolas y subidas a Drive con fechas de la rotación
+  semanal: 03 Historias/2026-11 Noviembre/2026-11-27 (B1 influenza), 2026-12 Diciembre/2026-12-04 (B2 varicela y
+  herpes zóster) y 2026-12-11 (B3 VPH). En las B, la pantalla 2 y el llamado de la 3 van en tarjeta grande.
+  `vista-variaciones-B.png`: resumen.

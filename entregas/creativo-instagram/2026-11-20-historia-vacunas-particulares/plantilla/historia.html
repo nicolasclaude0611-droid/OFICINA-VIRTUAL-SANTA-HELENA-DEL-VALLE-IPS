@@ -20,6 +20,7 @@ h1 em{font-style:normal;color:#FFF212}
 .puntos{display:flex;flex-direction:column;gap:16px;font-size:38px}
 .puntos div{display:flex;gap:16px;align-items:flex-start;line-height:1.2}
 .texto{font-size:46px;line-height:1.3}
+.grande{font-family:"Eras Bold ITC";font-size:62px;line-height:1.22;padding:50px 48px;margin-top:40px}
 .der{position:absolute;left:500px;right:56px}
 .apoyo{font-size:42px;line-height:1.3}
 .llamado{font-size:36px;line-height:1.3}
@@ -57,7 +58,7 @@ if(p===1){
 if(p===2){
   html+=`<div class="arriba"><span class="tag">${esc(v.p2.etiqueta)}</span>`;
   if(v.p2.lista) html+=`<div class="card lista">${v.p2.lista.map(x=>`<div>${esc(x)}</div>`).join('')}</div>`;
-  else html+=`<div class="card texto">${esc(v.p2.texto)}</div>`;
+  else html+=`<div class="card texto grande">${esc(v.p2.texto)}</div><div class="badge" style="position:relative;left:auto;top:auto;margin:90px auto 0;width:340px;height:340px">${ICONO.replace(/190/g,'230')}</div>`;
   html+=`</div>`;
 }
 if(p===3){
@@ -65,10 +66,16 @@ if(p===3){
   if(v.p3.puntos.length) html+=`<div class="card puntos">${v.p3.puntos.map(x=>`<div>${esc(x)}</div>`).join('')}</div>`;
   html+=`</div>`;
   // columna derecha centrada: llamado, botón y sede
-  const top=v.p3.puntos.length?1060:700;
-  html+=`<div class="der col" style="top:${top}px"><p class="llamado">${esc(v.p3.llamado)}</p>
-         <div class="pill"><small>${WA} WhatsApp</small><b>${esc(C.whatsapp)}</b></div>
-         <p class="sede">${esc(C.sede)}</p></div>`;
+  if(v.p3.puntos.length){
+    html+=`<div class="der col" style="top:1060px"><p class="llamado">${esc(v.p3.llamado)}</p>
+           <div class="pill"><small>${WA} WhatsApp</small><b>${esc(C.whatsapp)}</b></div>
+           <p class="sede">${esc(C.sede)}</p></div>`;
+  } else { // variaciones B: llamado grande en tarjeta arriba
+    html=html.replace(/<\/div>$/,'');
+    html+=`<div class="card texto grande">${esc(v.p3.llamado)}</div></div>
+           <div class="der col" style="top:1180px"><div class="pill"><small>${WA} WhatsApp</small><b>${esc(C.whatsapp)}</b></div>
+           <p class="sede">${esc(C.sede)}</p></div>`;
+  }
 }
 if(POSE[p]) html+=`<img class="hel" src="img/helenita-${POSE[p]}.png">`;
 html+=`<div class="amarilla"></div><div class="banda"><p>${esc(C.eslogan)}</p></div>`;
