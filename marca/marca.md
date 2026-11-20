@@ -27,6 +27,8 @@ Domingos y festivos: **no se atiende** (confirmado por Nicolas, 19 nov 2026).
 
 ## Contacto
 - **WhatsApp citas:** 311 339 8988 (https://wa.me/573113398988)
+- **WhatsApp vacunas particulares:** 301 655 3822 (https://wa.me/573016553822). **Solo** para las piezas de
+  vacunas particulares; para todo lo demás se usa el 311 339 8988.
 - **Línea de atención:** (605) 588 5690, ext. 201 a 301 · Móviles: 314 535 6846 · 318 768 9174
 - **Correos:** gerencia@santahelenadelvalleips.com · calidadrh@santahelenadelvalleips.com ·
   PQRS: siau@santahelenadelvalleips.com (copia a calidad@santahelenadelvalleips.com)
@@ -50,6 +52,9 @@ Domingos y festivos: **no se atiende** (confirmado por Nicolas, 19 nov 2026).
   (Valledupar y La Jagua).
 - **Odontología general** (Valledupar y La Jagua); **optometría** (Valledupar).
 - **Vacunación** PAI intramural, domiciliaria y extramural (Valledupar y San Juan).
+- **Vacunas particulares** (confirmado por Nicolas, 20 nov 2026): meningococo, neumococo, virus del papiloma humano
+  (VPH), herpes zóster, hepatitis A, hepatitis B, tétano, varicela, influenza, hexavalente, dengue y otras. Se agenda
+  una valoración con asesoría del equipo de salud. Sedes donde aplica y precios: POR DEFINIR.
 - **Toma de muestras** de laboratorio clínico (procesa Laboratorio Cristiam Gram) y de cuello uterino y
   ginecológicas (3 sedes); **diagnóstico vascular** (Valledupar).
 - **Apoyo al paciente:** albergue para pacientes de zonas apartadas, telesalud, atención domiciliaria.
