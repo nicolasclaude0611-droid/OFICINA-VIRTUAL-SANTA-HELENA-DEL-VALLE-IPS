@@ -89,7 +89,7 @@ Pieza sugerida: Helenita saludando (`saludar.png`), post cuadrado o carrusel de 
 ```
 Estamos cerca de usted 📍
 
-▪️ Valledupar (sede principal): Carrera 11 # 14-34, local 2
+▪️ Valledupar (sede principal): Carrera 11 # 14-34
 ▪️ La Jagua de Ibirico: Carrera 3A # 8-17
 ▪️ San Juan del Cesar: Calle 7 # 9-73
 
@@ -141,7 +141,7 @@ Citas · Sedes · Servicios · EPS · Helenita · Jornadas · Preguntas
 
 B) Publicaciones (1080 x 1080), con Helenita y la marca de siempre (marca/img/helenita/, logo.png, flor como marca de agua):
 1. «Hola, soy Helenita» (saludar.png). Texto: «Hola, soy Helenita, y desde hoy le acompaño aquí». Apoyo: «20 años cuidando a las familias del Cesar y La Guajira».
-2. Carrusel «Tres sedes para estar cerca de usted»: una lámina por sede con dirección (Valledupar: Carrera 11 # 14-34, local 2 · La Jagua de Ibirico: Carrera 3A # 8-17 · San Juan del Cesar: Calle 7 # 9-73), fotos de marca/img/sedes/, y una lámina de servicios.
+2. Carrusel «Tres sedes para estar cerca de usted»: una lámina por sede con dirección (Valledupar: Carrera 11 # 14-34 · La Jagua de Ibirico: Carrera 3A # 8-17 · San Juan del Cesar: Calle 7 # 9-73), fotos de marca/img/sedes/, y una lámina de servicios.
 3. Carrusel «Agendar su cita es tan fácil como escribir un mensaje»: portada + 3 pasos (escribir al WhatsApp 311 339 8988, contar servicio y sede, recibir la confirmación) con botón amarillo y pulgar.png al final.
 Sin horarios, sin otros servicios, sin fotos de pacientes ni de banco. La flor del logo es una flor, no un sol.
 Entrega en entregas/creativo-instagram/.
