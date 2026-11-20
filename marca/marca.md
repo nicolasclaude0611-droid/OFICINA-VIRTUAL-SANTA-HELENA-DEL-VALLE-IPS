@@ -27,8 +27,8 @@ Domingos y festivos: **no se atiende** (confirmado por Nicolas, 19 nov 2026).
 
 ## Contacto
 - **WhatsApp citas:** 311 339 8988 (https://wa.me/573113398988)
-- **WhatsApp vacunas particulares:** 301 655 3822 (https://wa.me/573016553822). **Solo** para las piezas de
-  vacunas particulares; para todo lo demás se usa el 311 339 8988.
+- **WhatsApp 301 655 3822:** se usa **únicamente en la historia semanal de vacunas particulares**. Todo lo demás
+  (incluidas otras piezas de vacunas) va con el 311 339 8988, salvo que Nicolas pida otra cosa.
 - **Línea de atención:** (605) 588 5690, ext. 201 a 301 · Móviles: 314 535 6846 · 318 768 9174
 - **Correos:** gerencia@santahelenadelvalleips.com · calidadrh@santahelenadelvalleips.com ·
   PQRS: siau@santahelenadelvalleips.com (copia a calidad@santahelenadelvalleips.com)
