@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><title>Historia vacunas particulares</title>
 <!-- Plantilla: historia.html?v=A&p=1  (v = A, B1, B2, B3 · p = 1, 2, 3). Textos en textos.js.
-     Helenita (animación «invitar») se pone encima con ffmpeg: ver crear-videos.sh. Zona izquierda-abajo reservada para ella. -->
+     Helenita: pantalla 1 «invitar» (mano abierta), pantalla 2 sin Helenita, pantalla 3 «corazón». Imágenes PNG: crear-imagenes.sh. -->
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#888}
@@ -13,7 +13,7 @@ body{background:#888}
 h1{margin-top:26px;font-family:"Eras Bold ITC";font-weight:400;font-size:92px;line-height:1.02}
 h1 em{font-style:normal;color:#FFF212}
 .card{background:#fff;color:#0A2233;border-radius:30px;padding:30px 36px;margin-top:26px}
-.lista{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;font-size:32px;padding:24px 30px}
+.lista{display:flex;flex-direction:column;gap:22px;font-size:46px;padding:40px 44px}
 .lista div{display:flex;gap:14px;align-items:flex-start;line-height:1.15}
 .lista div::before,.puntos div::before{content:"";flex:none;width:18px;height:18px;margin-top:10px;border-radius:50%;background:#1894D1;box-shadow:0 0 0 6px rgba(24,148,209,.2)}
 .lista .ancho{grid-column:1 / span 2}
@@ -29,6 +29,7 @@ h1 em{font-style:normal;color:#FFF212}
 .sinorden{font-family:"Eras Bold ITC";font-size:28px;white-space:nowrap;color:#FFF212;text-align:center}
 .sede{font-size:28px;line-height:1.3;text-align:center;color:#EAF5FC}
 .badge{position:absolute;left:720px;top:1360px;width:280px;height:280px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center}
+.hel{position:absolute;left:-190px;top:900px;width:900px;height:900px}
 .banda{position:absolute;left:0;right:0;bottom:0;height:220px;background:#fff;display:flex;justify-content:center;padding-top:34px}
 .banda p{font-family:"Eras Medium ITC";font-size:36px;color:#1894D1}
 .amarilla{position:absolute;left:0;right:0;bottom:220px;height:10px;background:linear-gradient(90deg,#FFF212,#FFCC29)}
@@ -43,7 +44,8 @@ const WA=`<svg width="30" height="30" viewBox="0 0 32 32"><path fill="#0A2233" d
 const ICONO=`<svg width="190" height="190" viewBox="0 0 100 100"><path d="M50 8 L84 20 V48 C84 70 68 84 50 92 C32 84 16 70 16 48 V20 Z" fill="#EAF5FC" stroke="#1894D1" stroke-width="5" stroke-linejoin="round"/>
 <g transform="rotate(45 50 52)" stroke="#1894D1" stroke-width="5" stroke-linecap="round" fill="none"><rect x="43" y="34" width="14" height="30" rx="3" fill="#fff"/><path d="M50 64v12M44 34h12M50 34v-8M45 26h10"/><path d="M43 44h6M43 52h6" stroke-width="3"/></g>
 <circle cx="72" cy="74" r="12" fill="#FFF212"/><path d="M66 74l4 4 8-8" stroke="#0A2233" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-let html=`<img class="logo" src="img/logo-con-lema-transparente.png"><div class="amarilla"></div><div class="banda"><p>${esc(C.eslogan)}</p></div>`;
+let html=`<img class="logo" src="img/logo-con-lema-transparente.png">`;
+const POSE={1:'invitar',3:'corazon'};   // pantalla 2 va sin Helenita
 if(p===1){
   const t=v.p1.titulo.replace(/^¡?Vacúnese/,m=>`<em>${m}</em>`);
   html+=`<div class="arriba"><span class="tag">${esc(v.p1.etiqueta)}</span><h1>${t}</h1></div>`;
@@ -52,9 +54,9 @@ if(p===1){
 }
 if(p===2){
   html+=`<div class="arriba"><span class="tag">${esc(v.p2.etiqueta)}</span>`;
-  if(v.p2.lista) html+=`<div class="card lista">${v.p2.lista.map(x=>`<div class="${x.length>20?'ancho':''}">${esc(x)}</div>`).join('')}</div>`;
+  if(v.p2.lista) html+=`<div class="card lista">${v.p2.lista.map(x=>`<div>${esc(x)}</div>`).join('')}</div>`;
   else html+=`<div class="card texto">${esc(v.p2.texto)}</div>`;
-  html+=`</div><div class="badge" style="top:1360px">${ICONO}</div>`;
+  html+=`</div>`;
 }
 if(p===3){
   html+=`<div class="arriba"><span class="tag">${esc(v.p3.etiqueta)}</span>`;
@@ -66,8 +68,7 @@ if(p===3){
          <p class="sinorden" style="margin-top:12px">${esc(C.sinOrden)}</p></div>
          <p class="der sede" style="top:1610px;left:500px">${esc(C.sede)}</p>`;
 }
-if(q.get('capa')==='frente'){ // solo la franja de abajo, para ponerla encima de Helenita
-  html=`<div class="amarilla"></div><div class="banda"><p>${esc(C.eslogan)}</p></div>`; h.style.background='transparent'; document.body.style.background='transparent';
-}
+if(POSE[p]) html+=`<img class="hel" src="img/helenita-${POSE[p]}.png">`;
+html+=`<div class="amarilla"></div><div class="banda"><p>${esc(C.eslogan)}</p></div>`;
 h.innerHTML=html;
 </script></body></html>
