@@ -2,7 +2,7 @@
 
 - Historia vertical 9:16 (1080 × 1920), **3 pantallas** cortas. Se sube **todas las semanas**, rotando 4 variaciones para que no se vea repetida.
 - De usted. Sin promesas: siempre «ayuda a prevenir», nunca «evita». Eslogan: **¡La Salud, nuestro compromiso!**
-- **WhatsApp EXCLUSIVO de vacunas particulares: 301 655 3822** (wa.me/573016553822). En cualquier otra pieza se usa el 311 339 8988.
+- **WhatsApp 301 655 3822** (wa.me/573016553822): EXCLUSIVO de **esta historia semanal** de vacunas particulares. Todo lo demás, incluidos otros posts de vacunas, va con el 311 339 8988, salvo que Nicolas pida otra cosa.
 - Texto original pulido a usted. Dos correcciones sobre el original: «Tétano» → **«Tétanos»**, y quité «asesoría personalizada» (dejé «asesoría de nuestro equipo de salud») para no sonar a recomendación médica individual.
 - Servicio habilitado según `marca/marca.md`: vacunas particulares. **Sedes y precios: por definir.** No pongo ni sede ni precio hasta que Nicolas me diga.
 - BORRADOR para aprobación de Nicolas.
@@ -90,7 +90,7 @@ Textos de las 4 variaciones: entregas/copies-redes/2026-11-20-historia-vacunas-p
 
 - Historia 9:16, 1080 x 1920, 3 pantallas. Plantilla editable (HTML) con el texto separado para cambiar de variación fácil: A portafolio completo, B «¿Sabía que…?» (3 versiones), C adultos, D niños y adolescentes.
 - Misma estructura en todas: P1 título o pregunta, P2 lista o dato, P3 llamado con botón amarillo en píldora «WhatsApp 301 655 3822» y el eslogan «¡La Salud, nuestro compromiso!».
-- IMPORTANTE: el número 301 655 3822 es EXCLUSIVO de las piezas de vacunas particulares. No uses el 311 339 8988 aquí.
+- IMPORTANTE: el número 301 655 3822 es EXCLUSIVO de esta historia semanal de vacunas particulares. No uses el 311 339 8988 aquí, ni uses el 301 655 3822 en ninguna otra pieza.
 - Zona segura: deja libres ~250 px arriba y abajo (interfaz de Instagram). Letra grande, poco texto por pantalla.
 - Marca: navy #0A2233, azul de marca #0596C8, neblina #EFF4F7, amarillo #FFE81A solo para el botón y acentos. Bricolage Grotesque 600 y Figtree. Íconos sencillos de jeringa y escudo; margarita con la S como marca de agua; logo (marca/img/logos/). Sin fotos de pacientes ni de banco.
 - Helenita: [según lo que Nicolas decida; si va, pose «invitar» en P1, sin presentarse].
