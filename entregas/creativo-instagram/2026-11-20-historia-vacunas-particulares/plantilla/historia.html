@@ -27,7 +27,9 @@ h1 em{font-style:normal;color:#FFF212}
 .pill small{font-size:28px;display:flex;align-items:center;gap:10px}
 .pill b{font-weight:400;font-size:46px;margin-top:6px;white-space:nowrap}
 .sinorden{font-family:"Eras Bold ITC";font-size:28px;white-space:nowrap;color:#FFF212;text-align:center}
-.sede{font-size:28px;line-height:1.3;text-align:center;color:#EAF5FC}
+.sede{font-size:30px;line-height:1.3;text-align:center;color:#EAF5FC}
+.col{display:flex;flex-direction:column;align-items:center;text-align:center;gap:34px}
+.col .pill{padding:20px 40px}
 .badge{position:absolute;left:720px;top:1360px;width:280px;height:280px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center}
 .hel{position:absolute;left:-190px;top:900px;width:900px;height:900px}
 .banda{position:absolute;left:0;right:0;bottom:0;height:220px;background:#fff;display:flex;justify-content:center;padding-top:34px}
@@ -62,10 +64,11 @@ if(p===3){
   html+=`<div class="arriba"><span class="tag">${esc(v.p3.etiqueta)}</span>`;
   if(v.p3.puntos.length) html+=`<div class="card puntos">${v.p3.puntos.map(x=>`<div>${esc(x)}</div>`).join('')}</div>`;
   html+=`</div>`;
-  const top=v.p3.puntos.length?1100:700;
-  html+=`<div class="der" style="top:${top}px"><p class="llamado">${esc(v.p3.llamado)}</p></div>`;
-  html+=`<div class="der" style="top:1430px;left:690px;right:48px"><div class="pill"><small>${WA} WhatsApp</small><b>${esc(C.whatsapp)}</b></div></div>
-         <p class="der sede" style="top:1610px;left:500px">${esc(C.sede)}</p>`;
+  // columna derecha centrada: llamado, botón y sede
+  const top=v.p3.puntos.length?1060:700;
+  html+=`<div class="der col" style="top:${top}px"><p class="llamado">${esc(v.p3.llamado)}</p>
+         <div class="pill"><small>${WA} WhatsApp</small><b>${esc(C.whatsapp)}</b></div>
+         <p class="sede">${esc(C.sede)}</p></div>`;
 }
 if(POSE[p]) html+=`<img class="hel" src="img/helenita-${POSE[p]}.png">`;
 html+=`<div class="amarilla"></div><div class="banda"><p>${esc(C.eslogan)}</p></div>`;
