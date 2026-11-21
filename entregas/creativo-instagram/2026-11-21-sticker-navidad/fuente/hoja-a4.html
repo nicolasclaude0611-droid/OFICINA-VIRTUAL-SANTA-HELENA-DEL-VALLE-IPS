@@ -1,0 +1,24 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Sticker Navidad · hoja A4</title><style>
+@page{size:21cm 29.7cm;margin:0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:21cm;height:29.7cm;position:relative;background:#fff}
+/* 2 stickers de 13 x 13 cm (13,6 cm con sangrado), uno encima del otro, con 4 mm entre sangrados */
+.st{position:absolute;left:3.7cm;width:13.6cm;height:13.6cm}
+.m{position:absolute;background:#000}
+.h{height:0.2mm;width:0.8cm}.v{width:0.2mm;height:0.8cm}
+p.nota{position:absolute;left:0;right:0;bottom:0.35cm;text-align:center;font:7pt sans-serif;color:#777}
+</style></head><body>
+<img class="st" src="img/sticker-impresion.jpg" style="top:1.05cm">
+<img class="st" src="img/sticker-impresion.jpg" style="top:15.05cm">
+<div id="marcas"></div>
+<p class="nota">Sticker Navidad Santa Helena del Valle IPS · 2 por hoja · tamaño final 13 × 13 cm · imprimir al 100 % (sin «ajustar a la página») · cortar por las marcas</p>
+<script>
+// marcas de corte en el borde final (3 mm hacia adentro del sangrado)
+const m=document.getElementById('marcas');
+for(const top of [1.05,15.05]){
+  const x0=3.7+0.3, x1=3.7+13.3, y0=top+0.3, y1=top+13.3;
+  const add=(c,l,t)=>{const d=document.createElement('div');d.className='m '+c;d.style.left=l+'cm';d.style.top=t+'cm';m.appendChild(d)};
+  for(const y of [y0,y1]){add('h',x0-1.2,y);add('h',x1+0.4,y);}
+  for(const x of [x0,x1]){ if(top===1.05) add('v',x,y0-1.0); else add('v',x,y1+0.2); }
+}
+</script></body></html>

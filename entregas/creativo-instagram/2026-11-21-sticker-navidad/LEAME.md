@@ -33,3 +33,9 @@ La versión 2 (dibujos propios) quedó en `v2/`.
 Logo más grande y más copos de nieve (solo en la zona azul y los bordes, sin tapar a Helenita ni el texto).
 Archivos de imprenta en la raíz de esta carpeta (13 × 13 cm + 3 mm de sangrado, 300 ppp): PDF y PNG, con y sin
 línea de corte, y `vista-en-caja-24cm.png`. Las dos opciones anteriores quedaron en `v3/`.
+
+## Aprobado (21 nov) · hoja A4
+- `sticker-navidad-hoja-A4-x2.pdf`: hoja A4 con 2 stickers (es lo máximo que cabe a 13 × 13 cm), con marcas de
+  corte. Imprimir al 100 %. Diseño: `fuente/hoja-a4.html`.
+- Subido a Drive: 06 Marca/2026-11 Noviembre/2026-11-21 Sticker Navidad cajas de regalo (hoja A4, PDF de
+  imprenta con y sin línea de corte, y PNG).
