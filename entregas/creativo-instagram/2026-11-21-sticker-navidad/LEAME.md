@@ -21,3 +21,10 @@ Encargo de Nicolas vía JARVIS. Borrador para aprobación.
   superponerse. Árbol, muñeco de nieve, regalos y luces redibujados en estilo plano con volumen, como los
   ejemplos que mandó Nicolas (dibujados aquí, sin usar sus imágenes). Generador: `fuente/generar.py`.
 - La versión 1 queda en `v1/`.
+
+## Versión 3 (21 nov) · escena generada con IA
+Nicolas autorizó generar con ElevenLabs la escena navideña con Helenita (gorro y corazón) incluida: 2 opciones,
+1.624 créditos (812 c/u), modelo Nano Banana 2, flujo `LIa9KsVK7ZMVr1GBiggN`. Referencias: Helenita base y el
+montaje corazón + gorro. Imágenes: `fuente/img/escena-ia-1.png` y `-2.png` (1376 × 768). `opcion-1.jpg` y
+`opcion-2.jpg`: las dos opciones armadas. Diseño: `fuente/sticker.html?op=1` o `?op=2`.
+La versión 2 (dibujos propios) quedó en `v2/`.
