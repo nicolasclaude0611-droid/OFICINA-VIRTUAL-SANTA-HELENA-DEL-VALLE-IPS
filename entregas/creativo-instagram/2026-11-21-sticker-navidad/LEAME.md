@@ -14,3 +14,10 @@ Encargo de Nicolas vía JARVIS. Borrador para aprobación.
   montado sin IA: `fuente/img/helenita-corazon-gorro.png`. Sin gasto de créditos.
 - Letra Eras Bold ITC (título) y Eras Demi ITC (mensaje, unos 11 pt a tamaño real). Las fuentes no se guardan aquí.
 - Mensaje: se usó «la magia de la Navidad» (Nicolas escribió «la magia de la vidas»; por confirmar).
+
+## Versión 2 (correcciones de Nicolas, 21 nov)
+- Título «¡Feliz Navidad!» en letra navideña **Lobster** (Google Fonts, licencia libre); mensaje en Eras Demi ITC.
+- Gorro derecho (sin inclinación). Helenita a la izquierda; texto centrado y más ancho; logo, título y texto sin
+  superponerse. Árbol, muñeco de nieve, regalos y luces redibujados en estilo plano con volumen, como los
+  ejemplos que mandó Nicolas (dibujados aquí, sin usar sus imágenes). Generador: `fuente/generar.py`.
+- La versión 1 queda en `v1/`.
