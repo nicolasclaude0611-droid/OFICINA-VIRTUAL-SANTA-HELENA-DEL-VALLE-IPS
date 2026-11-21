@@ -1,6 +1,6 @@
 # Sticker de Navidad impreso (cajas de regalo de 24 × 24 cm)
 
-Encargo de Nicolas vía JARVIS. Borrador para aprobación.
+Encargo de Nicolas vía JARVIS. Mensaje confirmado por Nicolas: «la magia de la Navidad».
 
 - **Tamaño final: 13 × 13 cm**, centrado en la caja. Archivos con **3 mm de sangrado por lado** (13,6 × 13,6 cm,
   1606 × 1606 px a 300 ppp):
@@ -28,3 +28,8 @@ Nicolas autorizó generar con ElevenLabs la escena navideña con Helenita (gorro
 montaje corazón + gorro. Imágenes: `fuente/img/escena-ia-1.png` y `-2.png` (1376 × 768). `opcion-1.jpg` y
 `opcion-2.jpg`: las dos opciones armadas. Diseño: `fuente/sticker.html?op=1` o `?op=2`.
 La versión 2 (dibujos propios) quedó en `v2/`.
+
+## Versión final elegida (21 nov): opción 1
+Logo más grande y más copos de nieve (solo en la zona azul y los bordes, sin tapar a Helenita ni el texto).
+Archivos de imprenta en la raíz de esta carpeta (13 × 13 cm + 3 mm de sangrado, 300 ppp): PDF y PNG, con y sin
+línea de corte, y `vista-en-caja-24cm.png`. Las dos opciones anteriores quedaron en `v3/`.
