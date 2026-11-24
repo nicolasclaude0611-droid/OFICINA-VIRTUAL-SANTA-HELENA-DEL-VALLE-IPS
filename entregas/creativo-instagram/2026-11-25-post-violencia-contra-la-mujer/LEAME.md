@@ -8,3 +8,9 @@ Encargo directo del Agente Copies Redes con texto aprobado por Nicolas
   Nicolas lo pide expresamente). `comparar-A-B.png`: las dos juntas.
 - Sin Helenita, tono sobrio; ilustración propia de tres mujeres de distintas edades, sin rostro, juntas.
 - Letra Eras Bold / Eras Demi (manual). Diseño: `fuente/post.html?c=naranja` o `?c=marca`.
+
+## Versión 2 (24 nov) · elegida la A (naranja)
+- Línea naranja del ancho del título.
+- Ilustración nueva generada por Nicolas en otra herramienta con el prompt que le di (mujer con la mano abierta
+  en señal de «alto», tonos naranja), recortada del fondo blanco y puesta en un círculo con borde naranja:
+  `fuente/img/mujer-alto.png`.
