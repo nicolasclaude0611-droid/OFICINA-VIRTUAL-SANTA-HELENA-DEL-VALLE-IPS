@@ -2,7 +2,7 @@
 
 - Publicación: **mañana, miércoles 25 de noviembre de 2026**. Post de feed (1080 × 1350). De usted. **Tono sobrio y respetuoso**, sin imágenes ni palabras de violencia gráfica. Sin Helenita. Sin pacientes ni testimonios.
 - **Color: naranja**, el color de la campaña de ONU Mujeres (ÚNETE, 16 días de activismo del 25 de noviembre al 10 de diciembre), combinado con la marca.
-- Servicio mencionado (habilitado): **psicología en las 3 sedes**, como apoyo emocional.
+- Servicio mencionado (habilitado): **psicología en las 3 sedes**.
 - BORRADOR para aprobación de Nicolas.
 
 ## ⚠️ Línea 155: NO la puse (no pude confirmarla)
@@ -22,7 +22,7 @@
   1. Si usted o alguien cercano vive violencia, no tiene que enfrentarlo en silencio: hay ayuda.
   2. Hable con una persona de confianza y busque orientación.
   3. Si hay peligro inmediato, llame al 123.
-- **Franja inferior navy:** En Santa Helena del Valle IPS tenemos psicología en las 3 sedes, como apoyo emocional · WhatsApp 311 339 8988 · www.santahelenadelvalleips.com
+- **Franja inferior navy:** En Santa Helena del Valle IPS tenemos psicología en las 3 sedes · WhatsApp 311 339 8988 · www.santahelenadelvalleips.com
 - **Nota pequeña:** *Información general. Su salud y su seguridad importan.*
 
 ## Caption (listo para copiar)
@@ -33,7 +33,7 @@ Una vida libre de violencia también es salud. Poner fin a la violencia contra l
 
 Si usted o alguien cercano vive violencia, no tiene que enfrentarlo en silencio: hay ayuda. Hable con una persona de confianza y busque orientación. Si hay peligro inmediato, llame al 123.
 
-En Santa Helena del Valle IPS contamos con el servicio de psicología en Valledupar, La Jagua de Ibirico y San Juan del Cesar, como apoyo emocional.
+En Santa Helena del Valle IPS contamos con el servicio de psicología en Valledupar, La Jagua de Ibirico y San Juan del Cesar.
 
 📲 Agende su cita de psicología por WhatsApp: 311 339 8988
 🌐 www.santahelenadelvalleips.com
@@ -56,7 +56,7 @@ Texto y caption: entregas/copies-redes/2026-11-24-post-violencia-contra-la-mujer
 Pieza: post de feed 1080 x 1350, de usted, SIN Helenita, tono sobrio y respetuoso. Nada de violencia gráfica, ni golpes, ni rostros de dolor, ni palabras fuertes en la imagen.
 - COLOR: NARANJA, el color de la campaña de ONU Mujeres (ÚNETE, 16 días de activismo), combinado con la marca: fondo navy #0A2233 o neblina #EFF4F7 con el naranja (#F26B1D) como color principal de acentos, viñetas y listón. El amarillo de la marca solo en detalles muy pequeños.
 - Título: «Una vida libre de violencia también es salud». Apoyo: «Hoy, Día Internacional de la Eliminación de la Violencia contra la Mujer, recordamos que es un compromiso de todos.»
-- Tres puntos (en el archivo) con viñetas naranja y letra grande. Franja inferior navy con: «En Santa Helena del Valle IPS tenemos psicología en las 3 sedes, como apoyo emocional · WhatsApp 311 339 8988 · www.santahelenadelvalleips.com». Nota pequeña al pie.
+- Tres puntos (en el archivo) con viñetas naranja y letra grande. Franja inferior navy con: «En Santa Helena del Valle IPS tenemos psicología en las 3 sedes · WhatsApp 311 339 8988 · www.santahelenadelvalleips.com». Nota pequeña al pie.
 - Imagen sugerida: listón o lazo naranja, siluetas sencillas de mujeres de distintas edades, sin rostro, una junto a otra; o manos que se sostienen. Estilo plano, calmado.
 - Logo según el manual de identidad (marca/manual/manual-identidad-corporativa-2026.pdf; archivos en marca/img/logos/). Margarita con la S como marca de agua suave. Bricolage Grotesque 600 y Figtree. Sin fotos de pacientes ni de banco. No pongas la línea 155 (no está confirmada).
 Entrega: PNG en entregas/creativo-instagram/ y muéstraselo a Nicolas en tu sesión.
