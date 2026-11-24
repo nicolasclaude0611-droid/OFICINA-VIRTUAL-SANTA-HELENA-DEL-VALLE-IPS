@@ -4,18 +4,19 @@
 body{background:#888;padding:30px}
 #post{--acento:#F26B1D;--acento-suave:#FDE6D7;width:1080px;height:1350px;position:relative;overflow:hidden;background:#fff;font-family:"Eras Demi ITC",sans-serif;color:#0A2233}
 #post.marca{--acento:#1894D1;--acento-suave:#E3F1FA}
-.marcaagua{position:absolute;right:-90px;top:420px;width:460px;opacity:.06}
+.marcaagua{position:absolute;left:520px;top:60px;width:680px;opacity:.07}
 .logo{position:absolute;left:60px;top:52px;width:250px}
 .liston{position:absolute;right:70px;top:46px;width:64px}
 .cont{position:absolute;left:64px;right:64px;top:225px}
 .linea{width:560px;height:8px;border-radius:4px;background:var(--acento)}
 h1{margin-top:22px;font-family:"Eras Bold ITC";font-weight:400;font-size:72px;line-height:1.04;width:560px}
 h1 span{color:var(--acento)}
-.apoyo{margin-top:22px;font-size:30px;line-height:1.35;color:#3B5263;width:560px}
+.apoyo{margin-top:22px;font-size:28px;line-height:1.38;color:#3B5263;width:590px;text-align:justify;hyphens:none}
 .escena{position:absolute;right:44px;top:190px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#FFF1E6,var(--acento-suave));overflow:hidden;border:6px solid var(--acento)}
 .escena img{position:absolute;left:-28px;top:6px;width:430px;height:430px}
 ul{list-style:none;margin-top:34px;display:flex;flex-direction:column;gap:14px}
 li{background:#EFF4F7;border-radius:30px;padding:20px 28px;font-size:30px;line-height:1.3;display:flex;gap:20px;align-items:flex-start}
+li div{text-align:justify;flex:1}
 li::before{content:"";flex:none;width:20px;height:20px;margin-top:9px;border-radius:50%;background:var(--acento);box-shadow:0 0 0 7px color-mix(in srgb,var(--acento) 22%,transparent)}
 li b{font-family:"Eras Bold ITC";font-weight:400}
 .nota{margin-top:16px;font-size:22px;font-style:italic;color:#6B8090}
@@ -46,5 +47,10 @@ li b{font-family:"Eras Bold ITC";font-weight:400}
     <p class="dato"><span>WhatsApp 311 339 8988</span> · www.santahelenadelvalleips.com</p>
   </div>
 </section>
-<script>if(new URLSearchParams(location.search).get('c')==='marca')document.getElementById('post').classList.add('marca');</script>
+<script>
+// la imagen queda centrada respecto al bloque título + texto corto
+addEventListener('load',()=>{const h=document.querySelector('h1').getBoundingClientRect(),a=document.querySelector('.apoyo').getBoundingClientRect(),
+ e=document.querySelector('.escena'),pr=document.getElementById('post').getBoundingClientRect();
+ e.style.top=((h.top+a.bottom)/2-pr.top-e.offsetHeight/2)+'px';document.body.dataset.listo=1;});
+if(new URLSearchParams(location.search).get('c')==='marca')document.getElementById('post').classList.add('marca');</script>
 </body></html>

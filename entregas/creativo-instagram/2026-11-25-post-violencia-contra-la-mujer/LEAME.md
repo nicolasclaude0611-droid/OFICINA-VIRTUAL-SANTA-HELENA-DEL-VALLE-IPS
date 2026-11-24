@@ -14,3 +14,4 @@ Encargo directo del Agente Copies Redes con texto aprobado por Nicolas
 - Ilustración nueva generada por Nicolas en otra herramienta con el prompt que le di (mujer con la mano abierta
   en señal de «alto», tonos naranja), recortada del fondo blanco y puesta en un círculo con borde naranja:
   `fuente/img/mujer-alto.png`.
+- Textos justificados, imagen centrada respecto al título y al texto corto, margarita de fondo más grande y arriba a la derecha (detrás de la imagen).
