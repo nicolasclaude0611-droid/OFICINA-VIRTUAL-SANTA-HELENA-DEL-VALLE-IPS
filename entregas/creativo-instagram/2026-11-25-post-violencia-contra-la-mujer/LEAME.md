@@ -15,3 +15,4 @@ Encargo directo del Agente Copies Redes con texto aprobado por Nicolas
   en señal de «alto», tonos naranja), recortada del fondo blanco y puesta en un círculo con borde naranja:
   `fuente/img/mujer-alto.png`.
 - Textos justificados, imagen centrada respecto al título y al texto corto, margarita de fondo más grande y arriba a la derecha (detrás de la imagen).
+- **Aprobado por Nicolas el 24 nov 2026 (versión A naranja) y subido a Drive** (01 Posts/2026-11 Noviembre/2026-11-25 Día de la Eliminación de la Violencia contra la Mujer, con el caption).
