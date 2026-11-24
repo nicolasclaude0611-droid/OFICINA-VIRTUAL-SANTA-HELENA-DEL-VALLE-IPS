@@ -51,6 +51,6 @@ li b{font-family:"Eras Bold ITC";font-weight:400}
 // la imagen queda centrada respecto al bloque título + texto corto
 addEventListener('load',()=>{const h=document.querySelector('h1').getBoundingClientRect(),a=document.querySelector('.apoyo').getBoundingClientRect(),
  e=document.querySelector('.escena'),pr=document.getElementById('post').getBoundingClientRect();
- e.style.top=((h.top+a.bottom)/2-pr.top-e.offsetHeight/2)+'px';document.body.dataset.listo=1;});
+ e.style.top=((document.querySelector('.linea').getBoundingClientRect().top+a.bottom)/2-pr.top-e.offsetHeight/2-25)+'px';document.body.dataset.listo=1;});
 if(new URLSearchParams(location.search).get('c')==='marca')document.getElementById('post').classList.add('marca');</script>
 </body></html>
