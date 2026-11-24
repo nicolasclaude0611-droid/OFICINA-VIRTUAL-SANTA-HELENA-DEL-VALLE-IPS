@@ -84,7 +84,10 @@ video descargado. También sirven enlaces directos públicos o Google Drive, si 
 ## Archivo en Google Drive (material aprobado)
 Carpeta «Santa Helena IPS · Redes y web» en el Drive de Nicolas (https://drive.google.com/drive/folders/1zEhbCbofD31UuqhFQHEEfM8MeVK4yLVB),
 con subcarpetas 01 Posts, 02 Carruseles, 03 Historias, 04 Reels y videos, 05 Helenita, 06 Marca, 07 Web y
-08 Referencias. Dentro, una carpeta por mes («2026-11 Noviembre») y nombres «AAAA-MM-DD tema».
+08 Referencias. **Estructura obligatoria: tipo → mes → una carpeta por pieza → los archivos.** Ejemplo:
+«04 Reels y videos / 2026-11 Noviembre / 2026-11-20 Reel antibióticos / (video, portada, caption)». Cada pieza
+tiene SIEMPRE su propia carpeta «AAAA-MM-DD tema», aunque tenga un solo archivo; nunca dejes archivos sueltos en
+la carpeta del mes ni carpetas fuera de «Santa Helena IPS · Redes y web».
 - **Las noticias de la página web van en «07 Web/Noticias»**, nunca en «01 Posts» (Posts es solo para Instagram).
 - Solo va material **aprobado** por Nicolas, nunca borradores ni datos de pacientes.
 - **Textos** (captions, guiones): el agente los sube como documento de Google. **Archivos de menos de 3 MB**

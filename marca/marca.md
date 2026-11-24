@@ -19,7 +19,7 @@
 ## Sedes y horarios
 | Sede | Dirección | Horario |
 |---|---|---|
-| **Valledupar** (Cesar) · sede principal | Carrera 11 # 14-34, local 2 | Lun-vie 6:30 a. m.–12:30 p. m. y 1:30 p. m.–6:30 p. m. |
+| **Valledupar** (Cesar) · sede principal | Carrera 11 # 14-34 | Lun-vie 6:30 a. m.–12:30 p. m. y 1:30 p. m.–6:30 p. m. |
 | **La Jagua de Ibirico** (Cesar) | Carrera 3A # 8-17 | Lun-vie 6:30 a. m.–12:30 p. m. y 1:30 p. m.–6:30 p. m. |
 | **San Juan del Cesar** (La Guajira) | Calle 7 # 9-73 | Lun-vie 6:30 a. m.–12:30 p. m. y 1:30 p. m.–6:30 p. m. |
 
