@@ -14,9 +14,9 @@
 
 | # | Creencia | Mito o verdad | Respuesta | Servicio | Fuente |
 |---|---|---|---|---|---|
-| 1 | «Si me siento bien, no necesito chequeo.» | **Mito** | Muchas enfermedades, como la hipertensión, la diabetes o el colesterol alto, no dan síntomas al comienzo. Un chequeo las detecta a tiempo, cuando es más fácil tratarlas y prevenir complicaciones. | Medicina general | OMS: hipertensión |
-| 2 | «Las vacunas son solo para niños.» | **Mito** | Las vacunas protegen toda la vida, no solo en la niñez. La protección de algunas baja con los años, por eso hay refuerzos, como el del tétanos. Y otras son para adultos, como la de la influenza. | Vacunación | OPS / CDC: vacunación en adultos |
-| 3 | «Algunas vacunas necesitan refuerzo.» | **Verdad** | Por ejemplo, la del tétanos se refuerza cada diez años. | Vacunación | OMS / CDC: tétanos |
+| 1 | «Si me siento bien, no necesito chequeo.» | **Mito** | Muchas enfermedades, como la hipertensión arterial, la diabetes o las dislipidemias, no dan síntomas al comienzo. Un chequeo las detecta a tiempo, cuando es más fácil tratarlas y prevenir complicaciones. | Medicina general | OMS: hipertensión |
+| 2 | «Las vacunas son solo para niños.» | **Mito** | Las vacunas protegen toda la vida, no solo en la niñez. Algunas necesitan refuerzos con los años, como la vacuna contra el tétanos. Y otras se aplican cada año, como la vacuna contra la influenza. | Vacunación | OPS / CDC: vacunación en adultos |
+| 3 | «Algunas vacunas necesitan refuerzo.» | **Verdad** | Por ejemplo, la vacuna contra el tétanos se refuerza cada diez años. | Vacunación | OMS / CDC: tétanos |
 | 4 | «La vacuna de la influenza me da gripa.» | **Mito** | La vacuna no produce la enfermedad; a veces causa molestias leves y pasajeras. | Vacunación | CDC / OPS: vacuna contra la influenza |
 | 5 | «Las vacunas debilitan las defensas.» | **Mito** | Al contrario: una vacuna le enseña al cuerpo a reconocer un germen, sin enfermarlo, para que sepa defenderse. | Vacunación | OMS: cómo funcionan las vacunas |
 | 6 | «Ya casi no hay esas enfermedades, no hace falta vacunarse.» | **Mito** | Son poco comunes, como el sarampión o la polio, justamente porque la mayoría se vacunó. Pero los gérmenes siguen existiendo, y si baja la vacunación, esas enfermedades pueden volver. | Vacunación | OPS / OMS: sarampión |
@@ -43,7 +43,7 @@ Si quiere este episodio, escribo su guion y lo manejamos igual que el 1.
 
 ---
 
-# 3. Episodio 1 · guion (≈ 41 s) · mitos 1 y 2
+# 3. Episodio 1 · guion (≈ 42 s) · mitos 1 y 2
 
 **Gancho:** primera pantalla con la creencia «Si me siento bien, no necesito chequeo» y el sello «¿MITO O VERDAD?».
 
@@ -60,17 +60,17 @@ Si quiere este episodio, escribo su guion y lo manejamos igual que el 1.
 | 0 | 0–1,5 | Título: «¿Mito o verdad? · Episodio 1» | **¿MITO O VERDAD? · Ep. 1** | `saludar` | (sin voz, sonido de entrada) |
 | 1 | 1,5–4,5 | Tarjeta con la creencia 1 | **«Si me siento bien, no necesito chequeo»** | `hablar` | 🆕 `mv1-a` |
 | 2 | 4,5–6,4 | Sello ¿MITO O VERDAD? con cuenta de ~0,8 s | **¿MITO O VERDAD?** | `pensar` | ♻️ `mv-pregunta` |
-| 3 | 6,4–20,5 | Sello **MITO** (rojo, X); íconos de corazón y análisis de sangre; íconos de presión, azúcar y colesterol; sale la respuesta en dos partes | **MITO** · Hipertensión, diabetes, colesterol alto: sin síntomas al comienzo · Un chequeo las detecta a tiempo | `hablar` | ♻️ `mv-mito` + 🆕 `mv1-b` |
+| 3 | 6,4–20,5 | Sello **MITO** (rojo, X); íconos de corazón y análisis de sangre; íconos de presión arterial, azúcar y grasas en la sangre; sale la respuesta en dos partes | **MITO** · Hipertensión arterial, diabetes, dislipidemias (grasas elevadas en la sangre): sin síntomas al comienzo · Un chequeo las detecta a tiempo | `hablar` | ♻️ `mv-mito` + 🆕 `mv1-b` |
 | 4 | 20,5–23 | Tarjeta con la creencia 2 | **«Las vacunas son solo para niños»** | `hablar` | 🆕 `mv2-a` |
 | 5 | 23–25 | Sello ¿MITO O VERDAD? | **¿MITO O VERDAD?** | `pensar` | ♻️ `mv-pregunta` |
-| 6 | 25–39 | Sello **MITO**; línea de vida con jeringas a distintas edades; íconos de refuerzo (tétanos) y de influenza en adultos | **MITO** · Las vacunas protegen toda la vida · Algunas se refuerzan (tétanos) · Otras son para adultos (influenza) | `hablar` | ♻️ `mv-mito` + 🆕 `mv2-b` |
+| 6 | 25–39 | Sello **MITO**; línea de vida con jeringas a distintas edades; íconos de refuerzo (vacuna contra el tétanos) y de aplicación anual (vacuna contra la influenza) | **MITO** · Las vacunas protegen toda la vida · Algunas se refuerzan: vacuna contra el tétanos · Otras, cada año: vacuna contra la influenza | `hablar` | ♻️ `mv-mito` + 🆕 `mv2-b` |
 | 7 | 39–42 | Cierre con logo, WhatsApp y dirección web | **Si tiene dudas, agende su cita · WhatsApp 311 339 8988 · www.santahelenadelvalleips.com** | `invitar` | 🆕 `mv-cierre` |
 
 Textos exactos de las voces:
 - `mv1-a`: «Si me siento bien, no necesito chequeo.»
-- `mv1-b`: «Muchas enfermedades, como la hipertensión, la diabetes o el colesterol alto, no dan síntomas al comienzo. Un chequeo las detecta a tiempo, cuando es más fácil tratarlas y prevenir complicaciones.»
+- `mv1-b`: «Muchas enfermedades, como la hipertensión arterial, la diabetes o las dislipidemias, no dan síntomas al comienzo. Un chequeo las detecta a tiempo, cuando es más fácil tratarlas y prevenir complicaciones.»
 - `mv2-a`: «Las vacunas son solo para niños.»
-- `mv2-b`: «Las vacunas protegen toda la vida, no solo en la niñez. La protección de algunas baja con los años, por eso hay refuerzos, como el del tétanos. Y otras son para adultos, como la de la influenza.»
+- `mv2-b`: «Las vacunas protegen toda la vida, no solo en la niñez. Algunas necesitan refuerzos con los años, como la vacuna contra el tétanos. Y otras se aplican cada año, como la vacuna contra la influenza.»
 
 # 4. Episodio 2 · guion (≈ 36 s) · mitos 5 y 6
 Misma estructura (título, creencia, ¿Mito o verdad?, sello, respuesta; creencia, ¿Mito o verdad?, sello, respuesta; cierre).
@@ -99,10 +99,10 @@ Voz Valeria (`JddqVF50ZSIR7SRbJE6u`, `eleven_v4`), una toma por frase.
 | `mv-mito` («Mito.») | 5 | 1 y 2 | **Sí, en toda la serie** |
 | `mv-cierre` («Si tiene dudas, agende su cita por WhatsApp.») | 44 | 1 y 2 | **Sí, en toda la serie** |
 | `mv1-a` | 39 | 1 | no |
-| `mv1-b` | 195 | 1 | no |
+| `mv1-b` | 203 | 1 | no |
 | `mv2-a` | 32 | 1 | no |
-| `mv2-b` | 194 | 1 | no |
-| **Total episodio 1** | **524 caracteres ≈ 524 créditos** | | |
+| `mv2-b` | 196 | 1 | no |
+| **Total episodio 1** | **534 caracteres ≈ 534 créditos** | | |
 | `mv5-a` | 35 | 2 | no |
 | `mv5-b` | 109 | 2 | no |
 | `mv6-a` | 58 | 2 | no |
@@ -117,8 +117,8 @@ Voz Valeria (`JddqVF50ZSIR7SRbJE6u`, `eleven_v4`), una toma por frase.
 
 ¿Mito o verdad? 🤔 Episodio 1
 
-1️⃣ «Si me siento bien, no necesito chequeo» → **MITO**. Muchas enfermedades, como la hipertensión, la diabetes o el colesterol alto, no dan síntomas al comienzo. Un chequeo las detecta a tiempo, cuando es más fácil tratarlas y prevenir complicaciones.
-2️⃣ «Las vacunas son solo para niños» → **MITO**. Las vacunas protegen toda la vida, no solo en la niñez. La protección de algunas baja con los años, por eso hay refuerzos, como el del tétanos. Y otras son para adultos, como la de la influenza.
+1️⃣ «Si me siento bien, no necesito chequeo» → **MITO**. Muchas enfermedades, como la hipertensión arterial, la diabetes o las dislipidemias, no dan síntomas al comienzo. Un chequeo las detecta a tiempo, cuando es más fácil tratarlas y prevenir complicaciones.
+2️⃣ «Las vacunas son solo para niños» → **MITO**. Las vacunas protegen toda la vida, no solo en la niñez. Algunas necesitan refuerzos con los años, como la vacuna contra el tétanos. Y otras se aplican cada año, como la vacuna contra la influenza.
 
 Información general. Si tiene dudas, consulte a su médico.
 
@@ -148,8 +148,8 @@ Información general. Si tiene dudas, consulte a su médico.
 #MitoOVerdad #Vacunación #VacunasSeguras #SaludParaTodos #SantaHelenaDelValleIPS #Valledupar #LaJaguaDeIbirico #SanJuanDelCesar #Cesar #LaGuajira
 
 ## Fuentes (para su revisión, no van en el reel)
-1. **OMS**, hojas informativas «Hipertensión» y «Diabetes», y **CDC**, «Colesterol alto»: suelen no dar síntomas al comienzo y se detectan con controles y exámenes.
-2. **OPS / CDC**, vacunación en adultos: los adultos necesitan la vacuna de la influenza, entre otras; **OMS / CDC**, tétanos: refuerzos cada diez años.
+1. **OMS**, hojas informativas «Hipertensión» y «Diabetes», y **OMS / CDC**, dislipidemias (colesterol alto): suelen no dar síntomas al comienzo y se detectan con controles y exámenes.
+2. **OPS / CDC**, vacunación en adultos: la vacuna contra la influenza se aplica cada año; **OMS / CDC**, tétanos: refuerzos cada diez años.
 3. **OMS**, «Cómo funcionan las vacunas»: las vacunas entrenan al sistema inmune para reconocer y combatir gérmenes sin causar la enfermedad.
 4. **OPS / OMS**, sarampión y poliomielitis: son poco comunes por la vacunación, y pueden reaparecer cuando baja la cobertura.
 
@@ -159,19 +159,19 @@ Información general. Si tiene dudas, consulte a su médico.
 **Al Agente Helenita (voces del episodio 1):**
 ```
 Soy el Agente Copies Redes. Nicolas aprobó el episodio 1 de la serie de reels «¿Mito o verdad?» (medicina general y vacunación) y necesita 7 voces nuevas de Helenita. Tres de ellas (mv-pregunta, mv-mito, mv-cierre) se REUTILIZARÁN en todos los episodios de la serie: guárdalas bien en el catálogo.
-Guion y textos exactos: entregas/copies-redes/2026-11-25-serie-mito-o-verdad-ep1.md (rama agente/copies-redes), secciones «Episodio 1» y «Voces». Total 524 caracteres (≈ 524 créditos si cobra 1 por carácter; confírmale el costo real a Nicolas antes de generar).
+Guion y textos exactos: entregas/copies-redes/2026-11-25-serie-mito-o-verdad-ep1.md (rama agente/copies-redes), secciones «Episodio 1» y «Voces». Total 534 caracteres (≈ 534 créditos si cobra 1 por carácter; confírmale el costo real a Nicolas antes de generar).
 Valeria (JddqVF50ZSIR7SRbJE6u, eleven_v4), 1 toma cada una, silencios recortados y -16 LUFS. Nombres: mv-pregunta, mv-mito, mv-cierre, mv1-a, mv1-b, mv2-a, mv2-b. Guárdalas en marca/helenita/voces/serie-mito-o-verdad/ y anótalas en el catálogo. Avísale al Editor de Video (session_01KgBCaLkbXqZuUAhSgQfo2r) y a Nicolas cuando estén. Solo voz: sin animaciones nuevas ni boca sincronizada.
 ```
 **Al Agente Editor de Video (arma el reel):**
 ```
 Soy el Agente Copies Redes. Nicolas aprobó el episodio 1 de la serie de reels «¿Mito o verdad?» con Helenita (medicina general y vacunación) y quiere que lo armes. Es una serie semanal: haz una PLANTILLA reutilizable (HyperFrames) para los siguientes episodios; el episodio 2 ya está escrito en el mismo archivo.
 Guion escena por escena, colores y captions: entregas/copies-redes/2026-11-25-serie-mito-o-verdad-ep1.md (rama agente/copies-redes).
-Reel 9:16, 1080 x 1920, ≈ 41 s. Helenita con sus animaciones que ya existen (saludar, hablar, pensar, invitar), sin boca sincronizada y sin presentarse. Voces: las genera el Agente Helenita (mv-pregunta, mv-mito, mv-cierre, mv1-a, mv1-b, mv2-a, mv2-b) y te avisará dónde quedan. Sellos MITO (rojo #E5383B con X) y VERDAD (verde #2ECC71 con ✔); fondo y tarjetas en colores de la marca; subtítulos palabra por palabra arriba; dirección web siempre con www. No menciones terapia respiratoria ni colposcopia.
+Reel 9:16, 1080 x 1920, ≈ 42 s. Helenita con sus animaciones que ya existen (saludar, hablar, pensar, invitar), sin boca sincronizada y sin presentarse. Voces: las genera el Agente Helenita (mv-pregunta, mv-mito, mv-cierre, mv1-a, mv1-b, mv2-a, mv2-b) y te avisará dónde quedan. Sellos MITO (rojo #E5383B con X) y VERDAD (verde #2ECC71 con ✔); fondo y tarjetas en colores de la marca; subtítulos palabra por palabra arriba; dirección web siempre con www. No menciones terapia respiratoria ni colposcopia.
 Entrega: MP4 y la plantilla en entregas/editor-video/, y muéstraselo a Nicolas.
 ```
 
 ## Qué necesito de Nicolas
 1. Aprobar los textos del episodio 1 (y del 2), o decirme qué cambiar.
-2. Confirmar que le gusta dividirlos en 2 episodios de 2 mitos (≈ 41 s y ≈ 36 s), o si prefiere un solo reel largo de 4 mitos (≈ 75 s).
+2. Confirmar que le gusta dividirlos en 2 episodios de 2 mitos (≈ 42 s y ≈ 36 s), o si prefiere un solo reel largo de 4 mitos (≈ 75 s).
 3. El **día de publicación** del episodio 1.
-4. Permiso para pedirle las voces al Agente Helenita (≈ 524 créditos para el ep. 1) y pasarle el guion al Editor de Video.
+4. Permiso para pedirle las voces al Agente Helenita (≈ 534 créditos para el ep. 1) y pasarle el guion al Editor de Video.
