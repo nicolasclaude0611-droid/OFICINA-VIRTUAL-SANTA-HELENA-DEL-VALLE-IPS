@@ -1,0 +1,77 @@
+@font-face { font-family: "Eras Bold"; src: url("assets/fonts/ERASBD.TTF") format("truetype"); }
+@font-face { font-family: "Eras Demi"; src: url("assets/fonts/ERASDEMI.TTF") format("truetype"); }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #0A2233; }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Eras Demi", sans-serif; color: #fff; }
+#fondo { position: absolute; inset: 0; background: linear-gradient(180deg, #1894D1 0%, #0F5E92 38%, #0B3556 72%, #0A2233 100%); }
+#flor { position: absolute; left: 560px; top: 1150px; width: 820px; opacity: 0.06; }
+#puntos { position: absolute; inset: 0; opacity: 0.18; background-image: radial-gradient(circle, rgba(255,255,255,0.9) 1.5px, transparent 2px); background-size: 72px 72px; }
+
+/* subtítulos */
+.sub { position: absolute; left: 70px; top: 190px; width: 940px; height: 240px; display: flex; flex-wrap: wrap; align-content: center;
+  justify-content: center; gap: 4px 0; opacity: 0; font-family: "Eras Bold", sans-serif; font-size: 66px; line-height: 1.12;
+  text-align: center; text-shadow: 0 4px 14px rgba(10,34,51,0.55); }
+.sub .w { display: inline-block; margin: 0 9px; opacity: 0; }
+.sub .k { display: inline-block; font-weight: normal; background: #FFF212; color: #0A2233; padding: 2px 14px 6px; border-radius: 14px; text-shadow: none; margin: 0 2px; }
+
+/* insignia de la serie con el progreso */
+#insignia { position: absolute; left: 0; top: 455px; width: 1080px; opacity: 0; display: flex; justify-content: center; }
+.ins-pill { display: flex; align-items: center; gap: 16px; padding: 10px 26px; border-radius: 40px; background: rgba(10,34,51,0.55);
+  border: 3px solid #FFF212; font-family: "Eras Bold", sans-serif; font-size: 28px; letter-spacing: 0.03em; white-space: nowrap; }
+.dots { display: flex; gap: 10px; margin-left: 6px; }
+.dots i { width: 20px; height: 20px; border-radius: 50%; border: 3px solid #FFF212; background: transparent; display: block; }
+
+.esc { position: absolute; inset: 0; opacity: 0; }
+.obj { position: absolute; opacity: 0; }
+svg { display: block; width: 100%; height: 100%; overflow: visible; }
+
+/* título */
+#tit { left: 140px; top: 600px; width: 800px; text-align: center; }
+.tit-sello { display: inline-block; background: #FFF212; color: #0A2233; font-family: "Eras Bold", sans-serif; font-size: 128px; line-height: 1.0;
+  padding: 34px 50px 40px; border-radius: 40px; border: 8px solid #fff; box-shadow: 0 0 50px rgba(255,242,18,0.5); }
+.tit-ep { margin-top: 30px; font-family: "Eras Bold", sans-serif; font-size: 56px; letter-spacing: 0.08em; }
+
+/* creencia */
+.num { left: 340px; top: 545px; width: 400px; text-align: center; font-family: "Eras Bold", sans-serif; font-size: 40px; letter-spacing: 0.05em;
+  color: #0A2233; background: #FFCC29; border-radius: 40px; padding: 10px 0; }
+.creencia { left: 70px; top: 630px; width: 940px; background: #fff; color: #0A2233; border-radius: 40px; padding: 40px 54px 46px;
+  font-family: "Eras Bold", sans-serif; font-size: 68px; line-height: 1.14; text-align: center; transform-origin: 50% 0;
+  box-shadow: 0 18px 50px rgba(10,34,51,0.45); }
+.comi { color: #1894D1; font-size: 110px; line-height: 0; position: relative; top: 30px; margin: 0 6px; }
+.preg { left: 330px; top: 1000px; display: flex; align-items: center; gap: 22px; background: #FFF212; color: #0A2233; border-radius: 60px;
+  padding: 18px 40px 18px 22px; font-family: "Eras Bold", sans-serif; font-size: 56px; white-space: nowrap; border: 6px solid #fff;
+  box-shadow: 0 0 40px rgba(255,242,18,0.45); }
+.reloj { width: 76px; height: 76px; display: block; }
+
+/* veredicto */
+.sello { left: 560px; top: 735px; display: flex; align-items: center; gap: 18px; padding: 14px 44px 18px 26px; border-radius: 26px;
+  border: 8px solid #fff; font-family: "Eras Bold", sans-serif; font-size: 100px; line-height: 1; color: #fff; white-space: nowrap; }
+.sello.rojo { background: #E5383B; box-shadow: 0 0 50px rgba(229,56,59,0.6); }
+.sello.verde { background: #2ECC71; box-shadow: 0 0 50px rgba(46,204,113,0.6); }
+.sico { width: 92px; height: 92px; display: block; }
+.etq { left: 70px; top: 795px; }
+.etq span { display: inline-block; background: #FFF212; color: #0A2233; font-family: "Eras Bold", sans-serif; font-size: 36px; line-height: 1.1; padding: 12px 24px; border-radius: 16px; }
+
+/* puntos de la respuesta */
+.ptos { position: absolute; left: 70px; top: 930px; width: 880px; display: flex; flex-direction: column; gap: 22px; }
+.ptos.n2 { top: 990px; gap: 34px; }
+.pto { display: flex; align-items: center; gap: 28px; padding: 18px 28px; border-radius: 30px; background: rgba(10,34,51,0.6);
+  border: 3px solid rgba(255,255,255,0.85); box-shadow: 0 0 24px rgba(255,255,255,0.18); opacity: 0; }
+.ico { width: 108px; height: 108px; flex: none; filter: drop-shadow(0 0 10px rgba(255,255,255,0.35)); }
+.ptxt { font-size: 44px; line-height: 1.15; }
+.ptxt b { font-family: "Eras Bold", sans-serif; font-weight: normal; color: #FFF212; }
+.ptxt small { display: block; font-size: 32px; color: #DDF1FB; }
+
+/* cierre */
+#c-logo { left: 225px; top: 480px; width: 580px; filter: drop-shadow(0 6px 20px rgba(10,34,51,0.4)); }
+.ctxt { left: 0; top: 835px; width: 1080px; text-align: center; font-family: "Eras Bold", sans-serif; font-size: 58px; }
+.ctxt b { font-weight: normal; color: #FFF212; }
+.wa { left: 140px; top: 925px; width: 800px; white-space: nowrap; display: flex; align-items: center; justify-content: center; gap: 18px; background: #1894D1;
+  border: 5px solid #fff; border-radius: 60px; padding: 16px 0 20px; font-family: "Eras Bold", sans-serif; font-size: 50px;
+  box-shadow: 0 0 40px rgba(24,148,209,0.6); }
+.wa svg { width: 62px; height: 62px; }
+.cweb { left: 0; top: 1062px; width: 1080px; text-align: center; font-family: "Eras Bold", sans-serif; font-size: 40px; }
+
+/* Helenita abajo a la izquierda, anclada al borde */
+#guia { position: absolute; left: -150px; top: 1100px; width: 820px; height: 820px; opacity: 0; }
+#guia .anim { position: absolute; left: 0; top: 0; width: 820px; height: 820px; }
