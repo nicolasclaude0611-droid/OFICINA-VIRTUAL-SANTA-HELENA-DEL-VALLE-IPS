@@ -9,6 +9,5 @@ Encargo directo del Agente Copies Redes con texto aprobado por Nicolas
   `vista-A.png` y `vista-B.png`: resumen. Sin WhatsApp ni web (jornada presencial).
 - Letra Eras (manual) y Lobster en el título de la A. Diseño: `fuente/piezas.html?v=A&p=post` (p = post, h1, h2,
   h3, rec); `node fuente/capturar.js` rehace todo.
-- **Helenita PROVISIONAL**: montaje del sticker de Navidad (corazón + gorro). Se cambia por el archivo oficial
-  del Agente Helenita (`marca/helenita/animaciones/navidad/`) cuando llegue: basta reemplazar
-  `fuente/img/helenita-navidad.png` y volver a capturar.
+- Helenita: archivo oficial del Agente Helenita (`marca/helenita/animaciones/navidad/corazon-cuadro.png`, corazón con
+  gorro, 26 nov). Para una historia animada está `corazon.webm` en esa misma carpeta.
