@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Vacunatón Navideña</title>
+<!-- piezas.html?v=A|B&p=post|h1|h2|h3|rec   A = navideña · B = colores de la marca -->
+<style>
+@font-face{font-family:"Lobster";src:url(img/lobster.woff2) format("woff2")}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#888}
+#pz{position:relative;overflow:hidden;font-family:"Eras Demi ITC",sans-serif;color:#fff}
+.post{width:1080px;height:1350px}.hist{width:1080px;height:1920px}
+/* paletas */
+.A{--fondo:radial-gradient(circle at 50% 30%,#123a5c 0%,#0A2233 70%);--ac1:#D32F2F;--ac2:#1E7F4F;--oro:#F2C94C;--tit:#F2C94C;--chip:#D32F2F;--chipT:#fff}
+.B{--fondo:linear-gradient(160deg,#004BAD 0%,#1A6DBD 40%,#1894D1 78%,#4CAFDC 100%);--ac1:#1894D1;--ac2:#1894D1;--oro:#FFF212;--tit:#FFF212;--chip:#FFF212;--chipT:#0A2233}
+#pz{background:var(--fondo)}
+.capa{position:absolute;inset:0;pointer-events:none}
+.logo{position:absolute;width:300px}
+.enc{display:inline-block;background:var(--chip);color:var(--chipT);font-family:"Eras Bold ITC";font-size:26px;letter-spacing:.05em;text-transform:uppercase;padding:12px 26px;border-radius:999px}
+h1{font-family:"Lobster";font-weight:400;color:var(--tit);line-height:1;text-shadow:0 5px 0 rgba(0,0,0,.25)}
+.B h1{font-family:"Eras Bold ITC"}
+.lema{font-size:34px;line-height:1.3;color:#EAF5FC;text-align:justify}
+.lema b{color:#fff;font-family:"Eras Bold ITC";font-weight:400}
+/* bloque grande */
+.cuando{background:#fff;color:#0A2233;border-radius:34px;padding:30px 34px;display:flex;flex-direction:column;gap:16px;box-shadow:0 10px 0 var(--ac1)}
+.fila{display:flex;align-items:center;gap:22px}
+.fila .ic{flex:none;width:66px;height:66px;border-radius:50%;background:var(--ac1);display:flex;align-items:center;justify-content:center}
+.B .fila .ic{background:#1894D1}
+.fila .t{font-family:"Eras Bold ITC";line-height:1.12}
+.grupos{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px}
+.g{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.25);border-radius:22px;padding:12px 16px;line-height:1.15}
+.g .gi{flex:none;width:52px;height:52px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center}
+.pie{text-align:center}
+.gratis{display:inline-block;background:var(--ac2);color:#fff;font-family:"Eras Bold ITC";border-radius:999px;padding:12px 30px}
+.B .gratis{background:#FFF212;color:#0A2233}
+.lleve{color:#EAF5FC}
+.esperamos{font-family:"Lobster";color:var(--tit)}
+.B .esperamos{font-family:"Eras Bold ITC"}
+.hel{position:absolute}
+.marca{position:absolute;opacity:.07}
+</style></head><body>
+<section id="pz"></section>
+<script>
+const q=new URLSearchParams(location.search), V=q.get('v')||'A', P=q.get('p')||'post', pz=document.getElementById('pz');
+pz.className=V+' '+(P==='post'?'post':'hist');
+const W=1080, H=P==='post'?1350:1920;
+// ---------- íconos ----------
+const S='stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"';
+const ico={
+ cal:`<svg width="38" height="38" viewBox="0 0 40 40"><rect x="5" y="8" width="30" height="27" rx="5" stroke="#fff" ${S}/><path d="M5 16h30M13 4v8M27 4v8" stroke="#fff" ${S}/></svg>`,
+ reloj:`<svg width="38" height="38" viewBox="0 0 40 40"><circle cx="20" cy="20" r="15" stroke="#fff" ${S}/><path d="M20 11v10l7 4" stroke="#fff" ${S}/></svg>`,
+ pin:`<svg width="38" height="38" viewBox="0 0 40 40"><path d="M20 36s-12-11-12-20a12 12 0 0 1 24 0c0 9-12 20-12 20z" stroke="#fff" ${S}/><circle cx="20" cy="16" r="4.5" stroke="#fff" ${S}/></svg>`,
+};
+const C='#1894D1', gi=(d)=>`<svg width="34" height="34" viewBox="0 0 40 40" stroke="${C}" ${S}>${d}</svg>`;
+const grupos=[
+ ['Menores de 6 años',gi('<circle cx="20" cy="15" r="8"/><path d="M8 36c0-7 5-12 12-12s12 5 12 12"/><path d="M17 15h.01M23 15h.01"/>')],
+ ['Niños, niñas y adolescentes de 9 a 17 años',gi('<circle cx="14" cy="12" r="5"/><circle cx="27" cy="14" r="4"/><path d="M5 34c0-6 4-10 9-10s9 4 9 10M21 34c0-5 3-8 6-8s7 3 7 8"/>')],
+ ['Mujeres de 10 a 49 años',gi('<circle cx="20" cy="12" r="7"/><path d="M13 12c0 8 0 10-3 12M27 12c0 8 0 10 3 12"/><path d="M9 36c1-7 5-11 11-11s10 4 11 11"/>')],
+ ['Gestantes',gi('<circle cx="18" cy="9" r="5"/><path d="M15 16c-4 4-4 10 0 13l-1 8M19 16c5 2 9 6 8 11-1 4-5 5-8 4v6"/>')],
+ ['Mayores de 60 años',gi('<circle cx="18" cy="10" r="6"/><path d="M10 36l3-14c1-3 3-4 5-4s4 1 5 4l2 6"/><path d="M30 20v16M27 20h3"/>')],
+ ['Fiebre amarilla (población susceptible)',gi('<path d="M20 6l12 4v9c0 8-5 13-12 16C13 32 8 27 8 19v-9z"/><path d="M15 20l4 4 7-8"/>')],
+];
+const gruposHTML=(fs,w,cols=2)=>`<div class="grupos" style="font-size:${fs}px;width:${w}px;grid-template-columns:repeat(${cols},1fr)">${grupos.map(([t,i])=>`<div class="g"><span class="gi">${i}</span><span>${t}</span></div>`).join('')}</div>`;
+const cuando=(fs)=>`<div class="cuando">
+ <div class="fila"><span class="ic">${ico.cal}</span><span class="t" style="font-size:${fs}px">Sábado 12 de diciembre</span></div>
+ <div class="fila"><span class="ic">${ico.reloj}</span><span class="t" style="font-size:${fs}px">8:00 a. m. a 12:00 m.</span></div>
+ <div class="fila"><span class="ic">${ico.pin}</span><span class="t" style="font-size:${fs*0.8}px">Diagonal 23 # 61-38, Leandro Díaz, Etapa 1 · Valledupar</span></div></div>`;
+// ---------- decoración navideña (A) ----------
+function deco(){
+ if(V!=='A') return `<img class="marca" src="img/icono-margarita-con-S-transparente.png" style="right:-40px;top:${P==='post'?60:200}px;width:560px">`;
+ let s=`<svg class="capa" viewBox="0 0 ${W} ${H}">`;
+ let seed=7; const r=()=>{seed=(seed*16807)%2147483647;return seed/2147483647};
+ for(let i=0;i<110;i++){const x=r()*W,y=r()*H,R=[2,3,3,4,5,6][Math.floor(r()*6)];s+=`<circle cx="${x}" cy="${y}" r="${R}" fill="#fff" opacity="${(.25+r()*.5).toFixed(2)}"/>`}
+ const est=(x,y,k)=>`<path transform="translate(${x} ${y}) scale(${k})" d="M0,-20 L5,-6 20,-6 8,3 12,18 0,9 -12,18 -8,3 -20,-6 -5,-6Z" fill="#F2C94C" opacity=".9"/>`;
+ const esf=(x,y,R,c,len)=>`<line x1="${x}" y1="0" x2="${x}" y2="${y-R}" stroke="#F2C94C" stroke-width="3" opacity=".8"/><circle cx="${x}" cy="${y}" r="${R}" fill="${c}"/><circle cx="${x-R*.35}" cy="${y-R*.35}" r="${R*.28}" fill="#fff" opacity=".55"/><rect x="${x-R*.3}" y="${y-R-8}" width="${R*.6}" height="10" rx="3" fill="#F2C94C"/>`;
+ s+=esf(70,120,30,'#D32F2F')+esf(150,70,20,'#1E7F4F')+esf(1010,150,32,'#1E7F4F')+esf(930,80,20,'#D32F2F');
+ s+=est(250,110,1)+est(840,140,.8)+est(60,H*0.55,.7)+est(1020,H*0.5,.9);
+ s+=`</svg>`; return s;
+}
+// ---------- piezas ----------
+let h=deco();
+const logoW=V==='A'?260:280;
+if(P==='post'){
+ h+=`<img class="logo" src="img/logo-con-lema-transparente.png" style="left:${(W-logoW)/2}px;top:40px;width:${logoW}px">`;
+ h+=`<div style="position:absolute;left:60px;right:60px;top:${V==='A'?205:215}px;text-align:center"><span class="enc">Jornada Nacional de Vacunación</span>
+     <h1 style="font-size:${V==='A'?112:84}px;margin-top:14px;white-space:nowrap">Vacunatón Navideña</h1>
+     <p class="lema" style="margin:14px auto 0;width:860px;text-align:center;font-size:31px">Esta Navidad, el mejor regalo es estar protegidos. <b>¡Vacúnese!</b></p></div>`;
+ h+=`<div style="position:absolute;left:56px;right:56px;top:520px">${cuando(46)}</div>`;
+ h+=`<div style="position:absolute;left:56px;top:850px">${gruposHTML(23,640)}</div>`;
+ h+=`<img class="hel" src="img/helenita-navidad.png" style="right:-10px;bottom:0;height:500px">`;
+ h+=`<div class="pie" style="position:absolute;left:40px;width:680px;top:1175px"><span class="gratis" style="font-size:30px">Vacunación gratuita</span>
+     <p class="lleve" style="margin-top:12px;font-size:24px">Lleve su carné de vacunación y su documento de identidad</p>
+     <p class="esperamos" style="font-size:44px;margin-top:6px">¡Lo esperamos!</p></div>`;
+}
+if(P==='h1'||P==='h2'||P==='h3'||P==='rec'){
+ h+=`<img class="logo" src="img/logo-con-lema-transparente.png" style="left:64px;top:262px;width:300px">`;
+}
+if(P==='h1'){
+ h+=`<div style="position:absolute;left:64px;right:64px;top:520px"><span class="enc">Jornada Nacional de Vacunación</span>
+     <h1 style="font-size:${V==='A'?150:120}px;margin-top:24px">Vacunatón Navideña</h1>
+     <p class="lema" style="margin-top:34px;font-size:46px;width:940px;text-align:left">Esta Navidad, el mejor regalo es estar protegidos. <b>¡Vacúnese!</b></p></div>`;
+ h+=`<img class="hel" src="img/helenita-navidad.png" style="left:50%;transform:translateX(-50%);bottom:250px;height:640px">`;
+}
+if(P==='h2'){
+ h+=`<div style="position:absolute;left:64px;right:64px;top:500px"><span class="enc">Vacunatón Navideña</span>
+     <h1 style="font-size:${V==='A'?96:80}px;margin:24px 0 36px">¿Quiénes pueden vacunarse?</h1>
+     ${gruposHTML(38,952,1)}</div>`;
+}
+if(P==='h3'){
+ h+=`<div style="position:absolute;left:64px;right:64px;top:480px"><span class="enc">Vacunatón Navideña</span>
+     <h1 style="font-size:${V==='A'?96:80}px;margin:24px 0 34px">¿Cuándo y dónde?</h1>${cuando(56)}
+     <div style="margin-top:40px;display:flex;flex-direction:column;align-items:flex-start;gap:16px;width:560px">
+     <span class="gratis" style="font-size:38px">Vacunación gratuita</span>
+     <p class="lleve" style="font-size:32px;line-height:1.3;text-align:justify">Lleve su carné de vacunación y su documento de identidad.</p>
+     <p class="esperamos" style="font-size:66px">¡Lo esperamos!</p></div></div>`;
+ h+=`<img class="hel" src="img/helenita-navidad.png" style="right:-20px;bottom:230px;height:500px">`;
+}
+if(P==='rec'){
+ h+=`<div style="position:absolute;left:64px;right:64px;top:500px"><span class="enc">Recordatorio</span>
+     <h1 style="font-size:${V==='A'?104:84}px;margin:22px 0 34px">¡Mañana es la Vacunatón Navideña!</h1>${cuando(54)}
+     <div style="margin-top:36px;display:flex;flex-direction:column;align-items:flex-start;gap:14px;width:560px">
+     <span class="gratis" style="font-size:36px">Vacunación gratuita</span>
+     <p class="lleve" style="font-size:30px;line-height:1.3;text-align:justify">Lleve su carné y su documento. ¡Vacúnese!</p>
+     <p class="esperamos" style="font-size:62px">¡Lo esperamos!</p></div></div>`;
+ h+=`<img class="hel" src="img/helenita-navidad.png" style="right:-20px;bottom:230px;height:470px">`;
+}
+pz.innerHTML=h;
+</script></body></html>
