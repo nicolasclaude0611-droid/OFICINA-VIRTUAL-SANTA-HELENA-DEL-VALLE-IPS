@@ -119,6 +119,12 @@ Público amplio: lenguaje claro y letra grande.
   este repositorio (es público)**. Nicolas las adjunta en el chat de cada agente que diseña (ERASBD, ERASDEMI,
   ERASMD y ERASLGHT .TTF). Instálalas solo en tu sesión (copia a `~/.local/share/fonts/` y ejecuta `fc-cache -f`).
   Copia privada en el Drive: 06 Marca/Fuentes (privado, con licencia). Futura Md BT: POR DEFINIR.
+- **Reglas de diseño de Nicolas (24 nov 2026) para posts, carruseles, historias y portadas:**
+  1. **Textos justificados** (alineados a ambos lados), sin cortar palabras con guion. Si quedan espacios muy
+     grandes en una línea, ajusta el ancho de la columna o el tamaño de la letra.
+  2. **Marca de agua:** la margarita con la S **grande y suave** (opacidad de unos 7 %), ocupando el espacio
+     libre de la pieza (por ejemplo, arriba a la derecha), con la ilustración o imagen principal un poco
+     **encima** de ella. Nunca cortada de forma fea en un borde.
 - **Eslogan oficial:** «¡La Salud, nuestro compromiso!» (con «Salud» en mayúscula). Va en las piezas principales.
 - **Área de protección:** deja alrededor del logo un margen libre de al menos el ancho de la «S».
 - **Prohibido:** estirar o deformar el logo, cambiar sus colores, sombras exageradas, biseles o efectos 3D.
