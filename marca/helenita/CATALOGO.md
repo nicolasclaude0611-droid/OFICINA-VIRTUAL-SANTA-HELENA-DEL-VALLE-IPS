@@ -160,3 +160,20 @@ de la cabeza; borde justo sobre el flequillo, con las cejas visibles; ala curvad
 sombra suave sobre el pelo y la frente; color armonizado (menos saturado).
 > Los archivos antiguos de `navidad/` en el repositorio de la web tienen el gorro a otra altura y sin estos
 > ajustes: no los uses como referencia.
+
+### Serie «¿Mito o verdad?» · episodio 1 (2026-11-26, pedido de Copies Redes, aprobado por Nicolas)
+Voces (Valeria, `eleven_v4`, 1 toma c/u, silencios recortados, -16 LUFS) en `marca/helenita/voces/serie-mito-o-verdad/`. Total real: 1.209 créditos (las etiquetas de emoción entre corchetes también se cobran). Flujo ElevenLabs `YAP3liUmcJrNdKoyl5IC`. Guion: `entregas/copies-redes/2026-11-25-serie-mito-o-verdad-ep1.md` (rama `agente/copies-redes`). Las creencias (`-a`) van con tono de «lo que dice la gente»; las respuestas (`-b`), cálidas y claras. Falta `mv-verdad` («¡Verdad!»): se genera cuando haya un episodio con una verdad.
+
+| Archivo | Texto | Duración | Se reutiliza |
+|---|---|---|---|
+| `mv-pregunta.mp3` | ¿Mito o verdad? | 1,7 s | **sí, toda la serie** |
+| `mv-mito.mp3` | ¡Mito! | 0,7 s | **sí, toda la serie** |
+| `mv-cierre.mp3` | Si tiene dudas, agende su cita por WhatsApp. | 2,7 s | **sí, toda la serie** |
+| `mv1-a.mp3` | «Si me siento bien, no necesito chequeo.» | 2,5 s | ep. 1 |
+| `mv1-b.mp3` | Muchas enfermedades, como la hipertensión arterial, la diabetes o las dislipidemias, no dan síntomas al comienzo. Un chequeo las detecta a tiempo, cuando es más fácil tratarlas y prevenir complicaciones. | 12,4 s | ep. 1 |
+| `mv2-a.mp3` | «Las vacunas son solo para niños.» | 2,1 s | ep. 1 |
+| `mv2-b.mp3` | Las vacunas protegen toda la vida, no solo en la niñez. Algunas necesitan refuerzos con los años, como la vacuna contra el tétanos. Y otras se aplican cada año, como la vacuna contra la influenza. | 12,2 s | ep. 1 |
+| `mv5-a.mp3` | «Las vacunas debilitan las defensas.» | 2,3 s | ep. 1 |
+| `mv5-b.mp3` | Al contrario: una vacuna le enseña al cuerpo a reconocer un germen, sin enfermarlo, para que sepa defenderse. | 6,9 s | ep. 1 |
+| `mv6-a.mp3` | «Ya casi no hay esas enfermedades, no hace falta vacunarse.» | 3,7 s | ep. 1 |
+| `mv6-b.mp3` | Son poco comunes, como el sarampión o la polio, justamente porque la mayoría se vacunó. Pero los gérmenes siguen existiendo, y si baja la vacunación, esas enfermedades pueden volver. | 11,8 s | ep. 1 |
