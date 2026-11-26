@@ -20,7 +20,7 @@ AZ, AM, OC, NAVY = '#1894D1', '#FFF212', '#FFCC29', '#0A2233'
 ROJO, VERDE, VIR = '#E5383B', '#2ECC71', '#A66BFF'
 WHATSAPP = '311 339 8988'
 WEB = 'www.santahelenadelvalleips.com'
-TEXTOS_FIJOS = {'mv-pregunta': '¿Mito o verdad?', 'mv-mito': 'Mito.', 'mv-verdad': 'Verdad.',
+TEXTOS_FIJOS = {'mv-pregunta': '¿Mito o verdad?', 'mv-mito': '¡Mito!', 'mv-verdad': '¡Verdad!',
                 'mv-cierre': 'Si tiene dudas, agende su cita por WhatsApp.'}
 
 AUD, TL, PISTAS = [], [], {}
@@ -219,11 +219,11 @@ def construir(ruta_ep):
         sid = f'e{k}'
         es_mito = m['veredicto'] == 'mito'
         va = Voz(m['voz_a'], m['creencia'], ini + 0.45)
-        vp = Voz('mv-pregunta', TEXTOS_FIJOS['mv-pregunta'], va.fin + 0.3, ['Mito', 'verdad?'])
+        vp = Voz('mv-pregunta', TEXTOS_FIJOS['mv-pregunta'], va.fin + 0.3, ['¿Mito', 'verdad?'])
         t_cuenta = vp.fin + 0.05
         tv = t_cuenta + 0.85
         nv = 'mv-mito' if es_mito else 'mv-verdad'
-        vv = Voz(nv, TEXTOS_FIJOS[nv], tv + 0.05, ['Mito.' if es_mito else 'Verdad.'])
+        vv = Voz(nv, TEXTOS_FIJOS[nv], tv + 0.05, ['¡Mito!' if es_mito else '¡Verdad!'])
         vb = Voz(m['voz_b'], m['texto_b'], vv.fin + 0.35, m.get('claves', []))
         fin = vb.fin + 0.7
         for v in (va, vp, vv, vb):
@@ -235,10 +235,13 @@ def construir(ruta_ep):
         subtitulos(vb, fin - 0.15)
 
         puntos = m['puntos']
+        lineas = -(-len(m['creencia']) // 24)
+        borde = 560 + (88 + lineas * 78) * 0.82  # borde inferior de la tarjeta ya reducida
+        y_sello, y_etq, y_ptos = borde - 40, borde + 35, borde + 170
         filas = ''.join(f'<div class="pto" id="{sid}-p{j}"><span class="ico">{ICONOS[ic]}</span><span class="ptxt">{txt}</span></div>'
                         for j, (ic, txt, _) in enumerate(puntos))
         etq = m.get('etiqueta')
-        sello = (f'<div id="{sid}-ver" class="obj sello {"rojo" if es_mito else "verde"}"><span class="sico">{SELLO_X if es_mito else SELLO_V}</span>'
+        sello = (f'<div id="{sid}-ver" class="obj sello {"rojo" if es_mito else "verde"}" style="top:{y_sello:.0f}px"><span class="sico">{SELLO_X if es_mito else SELLO_V}</span>'
                  f'{"MITO" if es_mito else "VERDAD"}</div>')
         H.append(f'<div class="esc" id="{sid}">'
                  f'<div id="{sid}-num" class="obj num">MITO {k} DE {N}</div>'
@@ -246,8 +249,8 @@ def construir(ruta_ep):
                  f'<div id="{sid}-preg" class="obj preg"><span class="reloj"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(10,34,51,0.25)" stroke-width="12"/>'
                  f'<circle id="{sid}-arco" cx="50" cy="50" r="40" fill="none" stroke="{NAVY}" stroke-width="12" stroke-dasharray="251.3" stroke-dashoffset="0" transform="rotate(-90 50 50)"/></svg></span>¿MITO O VERDAD?</div>'
                  + sello
-                 + (f'<div id="{sid}-etq" class="obj etq"><span>{etq[0]}</span></div>' if etq else '')
-                 + f'<div class="ptos n{len(puntos)}">{filas}</div></div>')
+                 + (f'<div id="{sid}-etq" class="obj etq" style="top:{y_etq:.0f}px"><span>{etq[0]}</span></div>' if etq else '')
+                 + f'<div class="ptos n{len(puntos)}" style="top:{y_ptos + (40 if len(puntos) <= 2 else 0):.0f}px">{filas}</div></div>')
 
         # entrada de la escena
         TL.append(f'tl.fromTo("#{sid}", {{opacity:0,x:160}}, {{opacity:1,x:0,duration:0.45,ease:"power3.out",immediateRender:false}}, {ini - 0.05:.2f});')
