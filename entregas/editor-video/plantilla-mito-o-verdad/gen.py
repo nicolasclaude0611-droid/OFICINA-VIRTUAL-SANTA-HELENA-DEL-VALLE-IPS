@@ -225,7 +225,7 @@ def construir(ruta_ep):
         nv = 'mv-mito' if es_mito else 'mv-verdad'
         vv = Voz(nv, TEXTOS_FIJOS[nv], tv + 0.05, ['¡Mito!' if es_mito else '¡Verdad!'])
         vb = Voz(m['voz_b'], m['texto_b'], vv.fin + 0.35, m.get('claves', []))
-        fin = vb.fin + 0.7
+        fin = vb.fin + 1.5  # tiempo para leer el último punto
         for v in (va, vp, vv, vb):
             if v.falta:
                 faltan.append(v.nombre)
