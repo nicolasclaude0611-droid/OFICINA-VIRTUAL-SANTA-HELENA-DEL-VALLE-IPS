@@ -12,20 +12,36 @@ La animación se reduce un poco (ESCALA) para que el gorro quepa dentro del cuad
 import argparse, subprocess
 from pathlib import Path
 import cv2, numpy as np
+from PIL import Image, ImageEnhance
 
 ROOT = Path(__file__).resolve().parents[2]
 S = 720
 ESCALA = 0.87                      # tamaño de Helenita dentro del cuadro (deja espacio arriba para el gorro)
 # Colocación del gorro sobre el primer cuadro (coordenadas del video original de 720 px)
 CABEZA = (250, 15, 460, 210)       # zona que se sigue: x0, y0, x1, y1
-ALA_CENTRO = (354, 73)              # centro del borde blanco: justo sobre el flequillo, cejas visibles (ajustado a la imagen aprobada por Nicolas el 26-nov)
-ALA_ANCHO = 170                    # ancho del borde blanco en px
-ALA_GIRO = -1                      # grados (positivo = inclinado hacia la derecha de la imagen)
+ALA_CENTRO = (368, 77)              # centro del borde blanco: centrado en la cabeza, justo sobre el flequillo, cejas visibles
+ALA_ANCHO = 168                    # ancho del borde blanco en px (≈ ancho de la cabeza)
+ALA_GIRO = 0                       # grados (positivo = inclinado hacia la derecha de la imagen)
+ALA_CURVA = 18                     # px que bajan los extremos del ala para que abrace la cabeza
+# Valores de la referencia aprobada por Nicolas el 26-nov: marca/helenita/referencias/gorro-navidad/ (pose corazón)
 
 def leer(path):
     p = subprocess.run(['ffmpeg', '-v', 'error', '-i', str(path), '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], capture_output=True, check=True)
     fr = np.frombuffer(p.stdout, np.uint8).reshape(-1, S * 2, S, 3)
     return fr[:, :S].astype(np.float32), fr[:, S:, :, 0].astype(np.float32) / 255
+
+def preparar(path):
+    """Curva el ala (los extremos bajan) y armoniza el color con la ilustración, como en la referencia aprobada."""
+    h = np.array(Image.open(path).convert('RGBA')).astype(np.float32); hh, hw = h.shape[:2]
+    mx, my = np.meshgrid(np.arange(hw), np.arange(hh))
+    t = (mx - hw * 0.62) / (hw * 0.38)
+    dy = ALA_CURVA * np.clip(t, -1.6, 1.2) ** 2 * np.clip((my / hh - 0.45) / 0.55, 0, 1)
+    h = cv2.remap(h, mx.astype(np.float32), (my - dy).astype(np.float32), cv2.INTER_LINEAR, borderValue=(0, 0, 0, 0))
+    im = Image.fromarray(np.clip(h, 0, 255).astype(np.uint8), 'RGBA')
+    rgb = ImageEnhance.Brightness(ImageEnhance.Color(im.convert('RGB')).enhance(0.9)).enhance(0.97)
+    r, g, b = rgb.split(); rgb = Image.merge('RGB', (r, g, b.point(lambda v: int(v * 0.96))))
+    rgb.putalpha(im.split()[-1])
+    return np.array(rgb).astype(np.float32)
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('nombre')
@@ -33,8 +49,8 @@ def main():
     o = ap.parse_args()
     color, alpha = leer(ROOT / f'media/helenita/{o.nombre}-stack.mp4')
     fps = '24'
-    hat = cv2.imread(o.accesorio, cv2.IMREAD_UNCHANGED).astype(np.float32)
-    hat_rgb, hat_a = hat[..., 2::-1], hat[..., 3] / 255
+    hat = preparar(o.accesorio)
+    hat_rgb, hat_a = hat[..., :3], hat[..., 3] / 255
     hh, hw = hat_a.shape
     # borde blanco (ala) dentro de la imagen del gorro: filas inferiores, del 25 % al 100 % del ancho
     ala_x0, ala_x1, ala_y = 0.245 * hw, 0.995 * hw, 0.80 * hh
@@ -80,6 +96,12 @@ def main():
         M = (to3(shrink) @ wi @ to3(base))[:2].astype(np.float32)
         ha = cv2.warpAffine(hat_a, M, (S, S), flags=cv2.INTER_LINEAR)
         hc = cv2.warpAffine(hat_rgb * hat_a[..., None], M, (S, S), flags=cv2.INTER_LINEAR)
+        # sombra suave del ala sobre el pelo y la frente (solo dentro de Helenita)
+        sy = 9 * ESCALA
+        sh = cv2.warpAffine(ha, np.float32([[1, 0, 0], [0, 1, sy]]), (S, S))
+        sh = cv2.GaussianBlur(sh, (0, 0), 7 * ESCALA * 0.6)
+        sh = np.clip(sh - cv2.dilate(ha, np.ones((3, 3), np.uint8)), 0, 1) * a * 0.42
+        c = c * (1 - sh[..., None]) + np.float32([60, 25, 15]) * sh[..., None]
         c = hc + c * (1 - ha[..., None]); a = ha + a * (1 - ha)
         c = np.clip(c, 0, 255)
         fg = np.where(a[..., None] > 1e-3, c / np.maximum(a[..., None], 1e-3), 0)
