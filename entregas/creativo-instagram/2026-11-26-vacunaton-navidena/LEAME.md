@@ -12,3 +12,7 @@ Encargo directo del Agente Copies Redes con texto aprobado por Nicolas
 - Helenita: archivo oficial del Agente Helenita (`marca/helenita/animaciones/navidad/corazon-cuadro.png`, corazón con
   gorro, 26 nov). Para una historia animada está `corazon.webm` en esa misma carpeta.
 - Historias: Helenita más grande y pegada al borde inferior (pedido de Nicolas); también en la pantalla 2.
+- Gorro subido para que se vean las cejas (pedido de Nicolas): `fuente/img/helenita-navidad.png` es un montaje fijo
+  (corazón + gorro de la web) con el gorro más arriba que en el archivo del Agente Helenita.
+- Pantalla 2: sello «GRATIS para toda la familia» abajo a la izquierda. Pantallas 3 y recordatorio: tarjeta
+  «Lleve: carné de vacunación · documento de identidad» con íconos.
