@@ -7,14 +7,21 @@
 - Los grupos y datos de la jornada los copié tal cual del texto que me pasaron (no los modifiqué). Sin «por validar con el área médica», por su indicación anterior: la fuente es el volante de la jornada.
 - BORRADOR para aprobación de Nicolas.
 
-## ❓ Preguntas para Nicolas (antes de aprobar)
-1. ¿La jornada es en **Valledupar**, barrio **Leandro Díaz**? (Pongo «Valledupar» solo si usted lo confirma.)
-2. ¿Es **gratuita**? (La vacunación del PAI lo es, pero no lo escribo hasta que usted lo diga.)
-3. ¿Hay que **llevar el carné de vacunación y el documento**? (Si sí, lo agrego: «Lleve su carné y su documento de identidad».)
-4. ¿Quiere **colores navideños** (rojo, verde y dorado combinados con la marca)? Por regla, solo los uso si usted lo pide. Si no, va en colores de la marca con detalles muy suaves.
-5. ¿Hay que aclarar quién organiza la jornada (por ejemplo, la Secretaría de Salud)? Si hay logos de otras entidades, dígame cuáles.
+## Respuestas de Nicolas (26 nov)
+- **Lugar:** Valledupar (barrio Leandro Díaz). **Gratuita.** **Hay que llevar el carné de vacunación y el documento.**
+- **Sin WhatsApp ni página web** (jornada presencial).
+- **Dos variaciones de color:** **A · navideña** y **B · colores normales de la marca**.
+- **Helenita en las dos:** haciendo el **corazón** y con el **gorro de Navidad**, que debe quedar **perfectamente puesto**. El gorro lo aplica el Agente Helenita con su herramienta (`marca/helenita/tools/gorro.py`) a la pose `corazon`.
 
-Mientras tanto dejo entre corchetes `[ ]` lo que depende de sus respuestas.
+## Las dos variaciones de color
+| | A · Navideña | B · Normal (marca) |
+|---|---|---|
+| Fondo | Navy #0A2233 con nieve suave y destellos dorados | Navy #0A2233 / neblina #EFF4F7 |
+| Acentos | Rojo navideño #D32F2F y verde pino #1E7F4F, dorado #F2C94C | Azul de marca #0596C8 y amarillo #FFE81A |
+| Adornos | Esferas, estrellas y luces **suaves** (sin recargar); el bloque de fecha, hora y lugar sigue siendo lo más grande | Solo íconos de jeringa y escudo; sin adornos navideños (el gorro de Helenita es lo único navideño) |
+| Helenita | Corazón + gorro de Navidad | Corazón + gorro de Navidad |
+| Texto | Mismo texto en las dos | Mismo texto en las dos |
+Reglas en las dos: legibilidad primero (texto blanco sobre navy, o navy sobre claro), la fecha, la hora y el lugar bien grandes, y la zona segura libre en la historia.
 
 ---
 
@@ -39,8 +46,8 @@ Mientras tanto dejo entre corchetes `[ ]` lo que depende de sus respuestas.
 - **Bloque grande (el más visible de la pieza):**
   - 📅 **Sábado 12 de diciembre**
   - 🕗 **8:00 a. m. a 12:00 m.**
-  - 📍 **Diagonal 23 # 61-38, Leandro Díaz, Etapa 1** `[· Valledupar]`
-- **Pie:** [Lleve su carné de vacunación y su documento de identidad.] · ¡Lo esperamos! · Santa Helena del Valle IPS
+  - 📍 **Diagonal 23 # 61-38, Leandro Díaz, Etapa 1 · Valledupar**
+- **Pie:** 🆓 **Vacunación gratuita** · Lleve su carné de vacunación y su documento de identidad · ¡Lo esperamos! · Santa Helena del Valle IPS
 
 ### Caption (listo para copiar, ajustar lo que está entre corchetes)
 
@@ -50,7 +57,8 @@ Esta Navidad, el mejor regalo es estar protegidos. ¡Vacúnese! 💉
 
 📅 Sábado 12 de diciembre de 2026
 🕗 De 8:00 a. m. a 12:00 m.
-📍 Diagonal 23 # 61-38, Leandro Díaz, Etapa 1 [Valledupar]
+📍 Diagonal 23 # 61-38, Leandro Díaz, Etapa 1, Valledupar
+🆓 Vacunación gratuita
 
 Pueden vacunarse:
 👶 Menores de 6 años
@@ -60,7 +68,7 @@ Pueden vacunarse:
 👴 Mayores de 60 años
 🦟 Fiebre amarilla (población susceptible)
 
-[Lleve su carné de vacunación y su documento de identidad.]
+Lleve su carné de vacunación y su documento de identidad.
 
 ¡Lo esperamos!
 💬 Comparta este post con las familias que usted quiere.
@@ -85,28 +93,34 @@ Zona segura: ~250 px libres arriba y abajo. Poco texto por pantalla.
 - 📅 **Sábado 12 de diciembre**
 - 🕗 **8:00 a. m. a 12:00 m.**
 - 📍 **Diagonal 23 # 61-38, Leandro Díaz, Etapa 1**
-- [Lleve su carné de vacunación y su documento] · ¡Lo esperamos!
+- 🆓 **Gratuita** · Lleve su carné de vacunación y su documento · ¡Lo esperamos!
 
 ### Recordatorio · historia del viernes 11 de diciembre (opcional)
-- **Pantalla única:** 🎄 **¡Mañana es la Vacunatón Navideña!** · Sábado 12 de diciembre · 8:00 a. m. a 12:00 m. · Diagonal 23 # 61-38, Leandro Díaz, Etapa 1 · [Lleve su carné y su documento] · ¡Vacúnese! ¡Lo esperamos!
+- **Pantalla única:** 🎄 **¡Mañana es la Vacunatón Navideña!** · Sábado 12 de diciembre · 8:00 a. m. a 12:00 m. · Diagonal 23 # 61-38, Leandro Díaz, Etapa 1 · Gratuita · Lleve su carné y su documento · ¡Vacúnese! ¡Lo esperamos!
 - Y, si quiere, una **historia el mismo sábado 12** por la mañana: «¡Hoy es la jornada! Hasta las 12:00 m.».
 
 ---
 
-## Mensaje para el Agente Creativo Instagram (se envía cuando Nicolas apruebe y responda las preguntas)
+## Mensajes
+**Al Agente Helenita (gorro de Navidad en la pose corazón):**
 ```
-Soy el Agente Copies Redes. Nicolas aprobó el texto de la Vacunatón Navideña (Jornada Nacional de Vacunación, 12 de diciembre) y quiere un POST (1080 x 1350) y una HISTORIA (1080 x 1920, 3 pantallas), más un recordatorio en historia para el viernes 11.
-Textos y caption: entregas/copies-redes/2026-11-26-vacunaton-navidena.md (rama agente/copies-redes).
+Soy el Agente Copies Redes. Nicolas quiere a Helenita haciendo el CORAZÓN y con el GORRO DE NAVIDAD en el post y la historia de la Vacunatón Navideña (12 de diciembre), y pidió que el gorro quede PERFECTAMENTE puesto.
+Por favor aplica el gorro con tu herramienta (marca/helenita/tools/gorro.py) a la pose «corazon»: (1) el cuadro suelto PNG transparente (marca/helenita/animaciones/cuadros/corazon-cuadro.png) para el post, y (2) la animación corazon.webm con el gorro (y su -stack.mp4 para Safari) para la historia. Revisa cuadro por cuadro que el gorro siga la cabeza y no tape el rostro ni el cabello de forma rara. Nicolas lo autorizó. Sin créditos de ElevenLabs (solo tu herramienta); si algo costara, avísale antes.
+Guárdalo en marca/helenita/animaciones/navidad/ y anótalo en el catálogo. Avísale a Nicolas y al Agente Creativo Instagram (session_01KgBCaN2Nb7mn6jAyyriR7q) dónde quedó. Es para la jornada del sábado 12 de diciembre; las piezas se publican antes.
+```
+**Al Agente Creativo Instagram (dos variaciones del post y la historia):**
+```
+Soy el Agente Copies Redes. Nicolas aprobó el texto de la Vacunatón Navideña (Jornada Nacional de Vacunación, sábado 12 de diciembre) y quiere DOS VARIACIONES de cada pieza: A) con colores navideños y B) con los colores normales de la marca. Piezas: POST 1080 x 1350, HISTORIA 1080 x 1920 de 3 pantallas, y un recordatorio en historia para el viernes 11.
+Textos, caption y paleta de las dos variaciones: entregas/copies-redes/2026-11-26-vacunaton-navidena.md (rama agente/copies-redes).
 - De usted. Lema: «Esta Navidad, el mejor regalo es estar protegidos. ¡Vacúnese!». Título: «Vacunatón Navideña».
-- LO MÁS GRANDE de la pieza: fecha, hora y lugar: «Sábado 12 de diciembre · 8:00 a. m. a 12:00 m. · Diagonal 23 # 61-38, Leandro Díaz, Etapa 1».
-- Seis grupos con íconos (en el archivo): menores de 6 años; niños, niñas y adolescentes de 9 a 17 años; mujeres de 10 a 49 años; gestantes; mayores de 60 años; fiebre amarilla (población susceptible).
-- Colores: [SEGÚN LO QUE NICOLAS DIGA: marca (navy #0A2233, azul #0596C8, neblina #EFF4F7, amarillo #FFE81A) con detalles navideños suaves rojo/verde/dorado, o solo marca]. Bricolage Grotesque 600 y Figtree. Logo (marca/img/logos/) y margarita con la S. Sin fotos de pacientes ni de banco. Íconos de jeringa y escudo.
-- SIN WhatsApp y SIN dirección web en estas piezas (pedido de Nicolas, porque es una jornada presencial): el llamado es ir al lugar. Cierra con «¡Lo esperamos!» y el logo.
-- Si hay logos de otras entidades, Nicolas te los dará; si no, solo el nuestro.
-Entrega: PNG del post y de las 3 pantallas de la historia, y el recordatorio, en entregas/creativo-instagram/, y muéstraselo a Nicolas.
+- LO MÁS GRANDE de la pieza: «Sábado 12 de diciembre · 8:00 a. m. a 12:00 m. · Diagonal 23 # 61-38, Leandro Díaz, Etapa 1 · Valledupar». Además: «Vacunación gratuita» y «Lleve su carné de vacunación y su documento de identidad». Seis grupos con íconos (están en el archivo).
+- SIN WhatsApp y SIN dirección web (es una jornada presencial). Cierra con «¡Lo esperamos!» y el logo.
+- HELENITA en las dos variaciones, haciendo el CORAZÓN y con el GORRO DE NAVIDAD perfectamente puesto. El Agente Helenita lo está preparando (marca/helenita/animaciones/navidad/) y te avisará dónde queda; usa ese archivo y no pongas el gorro tú. Para la historia, si puedes, usa la animación; para el post, el cuadro suelto.
+- Variación A (navideña): navy con nieve suave, rojo #D32F2F, verde pino #1E7F4F y dorado #F2C94C; esferas y estrellas suaves, sin recargar. Variación B (normal): navy #0A2233 / neblina #EFF4F7, azul #0596C8 y amarillo #FFE81A; el gorro de Helenita es lo único navideño.
+- Bricolage Grotesque 600 y Figtree. Logo (marca/img/logos/) y margarita con la S. Sin fotos de pacientes ni de banco. Zona segura libre en la historia (~250 px arriba y abajo).
+Entrega: PNG de ambas variaciones (post, 3 pantallas de la historia y recordatorio) en entregas/creativo-instagram/, y muéstraselo a Nicolas.
 ```
 
 ## Qué necesito de Nicolas
-1. Responder las 5 preguntas de arriba (sobre todo: ¿Valledupar?, ¿gratuita?, ¿carné y documento?, ¿colores navideños?).
-2. Elegir título (recomiendo «Vacunatón Navideña») y aprobar texto y caption.
-3. Con su «aprobado» se lo envío al Creativo. La jornada es el 12 de diciembre, así que hay tiempo, pero conviene dejarla lista esta semana.
+1. Revisar las dos variaciones cuando el Creativo las entregue, y el gorro de Helenita cuando el Agente Helenita lo termine.
+2. Elegir una variación (A o B) o decir si publica las dos (por ejemplo, una en el post y otra en la historia).
