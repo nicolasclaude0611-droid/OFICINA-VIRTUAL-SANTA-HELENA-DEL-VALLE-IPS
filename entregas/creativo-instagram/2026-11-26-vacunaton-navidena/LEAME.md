@@ -11,3 +11,4 @@ Encargo directo del Agente Copies Redes con texto aprobado por Nicolas
   h3, rec); `node fuente/capturar.js` rehace todo.
 - Helenita: archivo oficial del Agente Helenita (`marca/helenita/animaciones/navidad/corazon-cuadro.png`, corazón con
   gorro, 26 nov). Para una historia animada está `corazon.webm` en esa misma carpeta.
+- Historias: Helenita más grande y pegada al borde inferior (pedido de Nicolas); también en la pantalla 2.
