@@ -215,7 +215,7 @@ llevarse la mano al corazón (gracias), sostener una tabla de citas.
 - Costo real: ~960 créditos por segundo de video en 1080p (8,2 s = 7.834). El estimado antes de tener la voz sale más
   alto: re-estimar después de generar la voz. MiniMax H3 Max Lip Sync costaba ~5.000 por clip (alternativa barata).
 - Etiquetas de emoción en `eleven_v4` funcionan entre corchetes al inicio: `[softly, a little sad]`, `[determined]`,
-  `[surprised, happy]`, `[warmly, proud]`, `[cheerful]`. No se leen en voz alta.
+  `[surprised, happy]`, `[warmly, proud]`, `[cheerful]`. No se leen en voz alta. **Pero sí se cobran** (cuentan como caracteres): en frases cortas pesan mucho (p. ej. «¿Mito o verdad?» 15 caracteres → 34 créditos). Al estimar, sumar el largo de la etiqueta.
 - La toma salió limpia a la primera; el fondo verde se recorta bien con `keyer.py --size 1080`.
 
 - Muchas voces a la vez: ElevenLabs las procesa de a pocas («concurrency limit») y las reintenta solo, sin cobrar de nuevo. 19 frases tardaron ~5 min.
