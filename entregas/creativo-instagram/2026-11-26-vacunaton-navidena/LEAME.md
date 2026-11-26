@@ -16,3 +16,4 @@ Encargo directo del Agente Copies Redes con texto aprobado por Nicolas
   (corazón + gorro de la web) con el gorro más arriba que en el archivo del Agente Helenita.
 - Pantalla 2: sello «GRATIS para toda la familia» abajo a la izquierda. Pantallas 3 y recordatorio: tarjeta
   «Lleve: carné de vacunación · documento de identidad» con íconos.
+- Gorro (versión final del montaje): centrado en la cabeza, ala curvada que baja a los lados, sombra suave sobre el flequillo y color armonizado. Script: `fuente/gorro-montaje.py` (parámetros 368 77 168 0 18).
