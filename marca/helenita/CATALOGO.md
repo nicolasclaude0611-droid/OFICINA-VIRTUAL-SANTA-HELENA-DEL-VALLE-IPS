@@ -18,7 +18,8 @@ Original en verde: `helenita/fuentes/<nombre>-verde.mp4` (web).
 | `pulgar` | Pulgar arriba, guiña el ojo | Confirmaciones, cierres, "¡listo!" |
 
 Variantes:
-- **Navidad (prueba, sin publicar):** `saludar` con gorro, en `media/helenita/navidad/` (web). Herramienta:
+- **Navidad (prueba, sin publicar):** `saludar` con gorro, en `media/helenita/navidad/` (web).
+- **Navidad · corazón con gorro** (2026-11-26, para el post y la historia de la Vacunatón Navideña del 12-dic; pedido de Copies Redes, autorizado por Nicolas; 0 créditos, hecho con `gorro.py`): `marca/helenita/animaciones/navidad/corazon.webm` (transparente), `corazon-stack.mp4` (Safari/iPhone), `corazon.png` (primer cuadro) y `corazon-cuadro.png` (imagen fija haciendo el corazón, para el post). Revisado cuadro por cuadro: el gorro sigue la cabeza sin tapar el rostro. Helenita queda un poco más pequeña en el cuadro (87 %) para que quepa el gorro. Herramienta:
   `marca/helenita/tools/gorro.py`. El dueño avisará cuándo aplicarlo a las 6 y programarlo para diciembre.
 
 **Para que Helenita señale algo** (decisión de Nicolas, 19-nov): usar `senalar` (hacia la derecha de la pantalla),
