@@ -3,7 +3,7 @@
 - **Jornada:** sábado **12 de diciembre de 2026**, de **8:00 a. m. a 12:00 m.** Lugar: **Diagonal 23 # 61-38, Leandro Díaz, Etapa 1**. Vacunación extramural del PAI.
 - Piezas: **post de feed 1080 × 1350** e **historia 1080 × 1920** (3 pantallas), con la fecha, la hora y el lugar **bien grandes**. Más un **recordatorio en historia el viernes 11**.
 - De usted. Lema navideño adaptado: **«Esta Navidad, el mejor regalo es estar protegidos. ¡Vacúnese!»**
-- Llamado: WhatsApp **311 339 8988** para más información (el 301 655 3822 es solo de la historia semanal de vacunas particulares).
+- **Sin WhatsApp ni página web en esta pieza** (pedido de Nicolas): es una jornada presencial. El llamado es ir al lugar.
 - Los grupos y datos de la jornada los copié tal cual del texto que me pasaron (no los modifiqué). Sin «por validar con el área médica», por su indicación anterior: la fuente es el volante de la jornada.
 - BORRADOR para aprobación de Nicolas.
 
@@ -40,7 +40,7 @@ Mientras tanto dejo entre corchetes `[ ]` lo que depende de sus respuestas.
   - 📅 **Sábado 12 de diciembre**
   - 🕗 **8:00 a. m. a 12:00 m.**
   - 📍 **Diagonal 23 # 61-38, Leandro Díaz, Etapa 1** `[· Valledupar]`
-- **Pie:** [Lleve su carné de vacunación y su documento de identidad.] · Más información: WhatsApp 311 339 8988 · www.santahelenadelvalleips.com
+- **Pie:** [Lleve su carné de vacunación y su documento de identidad.] · ¡Lo esperamos! · Santa Helena del Valle IPS
 
 ### Caption (listo para copiar, ajustar lo que está entre corchetes)
 
@@ -62,8 +62,7 @@ Pueden vacunarse:
 
 [Lleve su carné de vacunación y su documento de identidad.]
 
-Para más información, escríbanos por WhatsApp: 311 339 8988
-🌐 www.santahelenadelvalleips.com
+¡Lo esperamos!
 💬 Comparta este post con las familias que usted quiere.
 
 ¡La salud, nuestro compromiso!
@@ -86,10 +85,10 @@ Zona segura: ~250 px libres arriba y abajo. Poco texto por pantalla.
 - 📅 **Sábado 12 de diciembre**
 - 🕗 **8:00 a. m. a 12:00 m.**
 - 📍 **Diagonal 23 # 61-38, Leandro Díaz, Etapa 1**
-- [Lleve su carné de vacunación y su documento] · Más información: **WhatsApp 311 339 8988**
+- [Lleve su carné de vacunación y su documento] · ¡Lo esperamos!
 
 ### Recordatorio · historia del viernes 11 de diciembre (opcional)
-- **Pantalla única:** 🎄 **¡Mañana es la Vacunatón Navideña!** · Sábado 12 de diciembre · 8:00 a. m. a 12:00 m. · Diagonal 23 # 61-38, Leandro Díaz, Etapa 1 · [Lleve su carné y su documento] · ¡Vacúnese! · WhatsApp 311 339 8988
+- **Pantalla única:** 🎄 **¡Mañana es la Vacunatón Navideña!** · Sábado 12 de diciembre · 8:00 a. m. a 12:00 m. · Diagonal 23 # 61-38, Leandro Díaz, Etapa 1 · [Lleve su carné y su documento] · ¡Vacúnese! ¡Lo esperamos!
 - Y, si quiere, una **historia el mismo sábado 12** por la mañana: «¡Hoy es la jornada! Hasta las 12:00 m.».
 
 ---
@@ -102,7 +101,7 @@ Textos y caption: entregas/copies-redes/2026-11-26-vacunaton-navidena.md (rama a
 - LO MÁS GRANDE de la pieza: fecha, hora y lugar: «Sábado 12 de diciembre · 8:00 a. m. a 12:00 m. · Diagonal 23 # 61-38, Leandro Díaz, Etapa 1».
 - Seis grupos con íconos (en el archivo): menores de 6 años; niños, niñas y adolescentes de 9 a 17 años; mujeres de 10 a 49 años; gestantes; mayores de 60 años; fiebre amarilla (población susceptible).
 - Colores: [SEGÚN LO QUE NICOLAS DIGA: marca (navy #0A2233, azul #0596C8, neblina #EFF4F7, amarillo #FFE81A) con detalles navideños suaves rojo/verde/dorado, o solo marca]. Bricolage Grotesque 600 y Figtree. Logo (marca/img/logos/) y margarita con la S. Sin fotos de pacientes ni de banco. Íconos de jeringa y escudo.
-- Llamado: WhatsApp 311 339 8988 y www.santahelenadelvalleips.com. NO uses el 301 655 3822 (es solo de la historia semanal de vacunas particulares).
+- SIN WhatsApp y SIN dirección web en estas piezas (pedido de Nicolas, porque es una jornada presencial): el llamado es ir al lugar. Cierra con «¡Lo esperamos!» y el logo.
 - Si hay logos de otras entidades, Nicolas te los dará; si no, solo el nuestro.
 Entrega: PNG del post y de las 3 pantallas de la historia, y el recordatorio, en entregas/creativo-instagram/, y muéstraselo a Nicolas.
 ```
