@@ -18,7 +18,7 @@ S = 720
 ESCALA = 0.87                      # tamaño de Helenita dentro del cuadro (deja espacio arriba para el gorro)
 # Colocación del gorro sobre el primer cuadro (coordenadas del video original de 720 px)
 CABEZA = (250, 15, 460, 210)       # zona que se sigue: x0, y0, x1, y1
-ALA_CENTRO = (354, 100)             # centro del borde blanco del gorro sobre la frente
+ALA_CENTRO = (354, 86)              # centro del borde blanco del gorro: donde comienzan las cejas (Nicolas, 26-nov; antes 100)
 ALA_ANCHO = 186                    # ancho del borde blanco en px
 ALA_GIRO = 8                       # grados (positivo = inclinado hacia la derecha de la imagen)
 
