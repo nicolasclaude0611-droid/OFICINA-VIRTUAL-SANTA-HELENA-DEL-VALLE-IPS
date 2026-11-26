@@ -75,6 +75,8 @@ Si quiere este episodio, escribo su guion y lo manejamos igual que el 1.
 La duración final puede variar unos segundos. Como ya está aprobado así, el Editor no lo acorta; si ve que se vuelve pesado, me lo dice.
 
 ## Voces
+> **Costo real del episodio 1: 1.209 créditos** (mi cálculo de 920 se quedó corto: las etiquetas de emoción de la voz también se cobran). **Para estimar los próximos episodios, sumar ~25 créditos por frase.** `mv-mito` quedó como «¡Mito!» con energía.
+
 Voz Valeria (`JddqVF50ZSIR7SRbJE6u`, `eleven_v4`), una toma por frase. `mv-mito` se usa 4 veces y `mv-pregunta` 4 veces en el mismo reel: se genera **una sola vez** cada una.
 
 | Archivo | Texto | Caracteres | ¿Se reutiliza? |
