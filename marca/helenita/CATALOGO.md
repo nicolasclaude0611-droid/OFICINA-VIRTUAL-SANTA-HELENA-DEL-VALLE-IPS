@@ -151,3 +151,12 @@ Voces (Valeria, `eleven_v4`, 1 toma c/u, silencios recortados, -16 LUFS) en `mar
 | `abx2-e10.mp3` | «Por eso, no se automedique, no use sobrantes ni medicinas de otra persona, y siga el tratamiento como su médico se lo indicó.» | 8,0 s |
 | `abx2-e11.mp3` | «En esta semana mundial, cuidar los antibióticos es cuidar la salud de todos.» | 5,0 s |
 | `abx2-e12.mp3` | «¿Qué tema de salud quiere que le expliquemos? Cuéntenos en los comentarios.» | 3,8 s |
+
+## Referencia aprobada: gorro de Navidad (y cualquier accesorio)
+Aprobado por Nicolas el 26 nov 2026. Archivos en `marca/helenita/referencias/gorro-navidad/`: imagen aprobada
+(`helenita-corazon-gorro-APROBADO.png`), acercamiento, `LEEME.md` y el script `gorro-montaje.py`.
+**Reglas para el gorro o cualquier accesorio en la cabeza:** centrado en la cabeza; ala de un ancho similar al
+de la cabeza; borde justo sobre el flequillo, con las cejas visibles; ala curvada que baja hacia los lados;
+sombra suave sobre el pelo y la frente; color armonizado (menos saturado).
+> Los archivos antiguos de `navidad/` en el repositorio de la web tienen el gorro a otra altura y sin estos
+> ajustes: no los uses como referencia.
